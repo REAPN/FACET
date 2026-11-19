@@ -1,0 +1,695 @@
+{
+ "idd_current": {
+  "positives_in_pool": 80,
+  "regex": "intellectual disability|mental retardation|fragile x|rett syndrome|cognitive disability|cognitive impairment|down syndrome|williams syndrome|prader[- ]willi|angelman",
+  "mixed_in_pool": [
+   [
+    "MGI:6189180",
+    "intellectual disability | schizophrenia"
+   ],
+   [
+    "MGI:6287871",
+    "autism spectrum disorder | intellectual disability"
+   ],
+   [
+    "MGI:6468250",
+    "autism spectrum disorder | non-syndromic X-linked intellectual disabil"
+   ],
+   [
+    "MGI:6754173",
+    "autism spectrum disorder | intellectual disability"
+   ],
+   [
+    "MGI:6754175",
+    "autism spectrum disorder | intellectual disability"
+   ],
+   [
+    "MGI:6754183",
+    "autism spectrum disorder | intellectual disability"
+   ],
+   [
+    "MGI:8237980",
+    "autism spectrum disorder | intellectual disability"
+   ]
+  ]
+ },
+ "idd_cand::name says intellectual developmental disorder": {
+  "n_in_pool": 12,
+  "already_positive": 0,
+  "missed": 12,
+  "missed_regex_hit": 0,
+  "missed_by_tier0_group": [
+   [
+    "broad_other",
+    12
+   ]
+  ],
+  "examples": [
+   "autosomal dominant intellectual developmental disorder",
+   "autosomal dominant intellectual developmental disorder 26",
+   "autosomal dominant intellectual developmental disorder 38",
+   "autosomal dominant intellectual developmental disorder 39",
+   "autosomal dominant intellectual developmental disorder 7",
+   "autosomal recessive intellectual developmental disorder",
+   "autosomal recessive intellectual developmental disorder 41",
+   "congenital heart defects, dysmorphic facial features, and in",
+   "syndromic X-linked intellectual developmental disorder bain "
+  ]
+ },
+ "idd_cand::DO term under DOID:1059 intellectual disability": {
+  "n_in_pool": 57,
+  "already_positive": 21,
+  "missed": 36,
+  "missed_regex_hit": 7,
+  "missed_by_tier0_group": [
+   [
+    "broad_other",
+    28
+   ],
+   [
+    "IntellectualDisability_mixed",
+    7
+   ],
+   [
+    "ASD_primary",
+    1
+   ]
+  ],
+  "examples": [
+   "Borjeson-Forssman-Lehmann syndrome",
+   "Christianson syndrome",
+   "Coffin-Siris syndrome 1 | autism spectrum disorder",
+   "GAND syndrome",
+   "Helsmoortel-Van Der Aa Syndrome",
+   "Kaufman oculocerebrofacial syndrome",
+   "Pierpont syndrome",
+   "Tatton-Brown-Rahman syndrome",
+   "Xia-Gibbs Syndrome",
+   "autism spectrum disorder | intellectual disability",
+   "autism spectrum disorder | non-syndromic X-linked intellectu",
+   "autosomal dominant intellectual developmental disorder",
+   "autosomal dominant intellectual developmental disorder 26",
+   "autosomal dominant intellectual developmental disorder 38",
+   "autosomal dominant intellectual developmental disorder 39",
+   "autosomal dominant intellectual developmental disorder 7",
+   "autosomal recessive intellectual developmental disorder",
+   "autosomal recessive intellectual developmental disorder 41",
+   "intellectual disability | schizophrenia",
+   "mega-corpus-callosum syndrome with cerebellar hypoplasia and",
+   "neurodevelopmental disorder with midbrain and hindbrain malf",
+   "neurodevelopmental disorder with poor growth and behavioral ",
+   "spastic tetraplegia, thin corpus callosum, and progressive m",
+   "syndromic X-linked intellectual developmental disorder bain "
+  ]
+ },
+ "idd_cand::OMIM disease with HPO intellectual disability, any frequency": {
+  "n_in_pool": 745,
+  "already_positive": 69,
+  "missed": 676,
+  "missed_regex_hit": 1,
+  "missed_by_tier0_group": [
+   [
+    "broad_other",
+    665
+   ],
+   [
+    "ASD_primary",
+    9
+   ],
+   [
+    "IntellectualDisability_mixed",
+    1
+   ],
+   [
+    "Bipolar_primary",
+    1
+   ]
+  ],
+  "examples": [
+   "3-methylglutaconic aciduria with deafness, encephalopathy, a",
+   "Aicardi-Goutieres syndrome",
+   "Alagille syndrome",
+   "Allan-Herndon-Dudley syndrome",
+   "BH4-deficient hyperphenylalaninemia A",
+   "BH4-deficient hyperphenylalaninemia B",
+   "Bardet-Biedl syndrome 1",
+   "Bardet-Biedl syndrome 1 | obesity",
+   "Bardet-Biedl syndrome 10",
+   "Bardet-Biedl syndrome 16",
+   "Bardet-Biedl syndrome 17",
+   "Bardet-Biedl syndrome 18",
+   "Bardet-Biedl syndrome 2",
+   "Bardet-Biedl syndrome 3",
+   "Bardet-Biedl syndrome 4",
+   "Bardet-Biedl syndrome 4 | obesity",
+   "Bardet-Biedl syndrome 5",
+   "Bardet-Biedl syndrome 6 | obesity",
+   "Bardet-Biedl syndrome 7",
+   "Bardet-Biedl syndrome 8",
+   "Bartter disease type 1",
+   "Bartter disease type 2",
+   "Bartter disease type 4a",
+   "Becker muscular dystrophy | Duchenne muscular dystrophy",
+   "Bloch-Sulzberger syndrome",
+   "Bloom syndrome",
+   "Borjeson-Forssman-Lehmann syndrome",
+   "Bosch-Boonstra-Schaaf optic atrophy syndrome",
+   "Brunner Syndrome",
+   "CEDNIK syndrome",
+   "CHARGE syndrome",
+   "Canavan disease | Leigh disease | amyotrophic lateral sclero",
+   "Chanarin-Dorfman syndrome",
+   "Char syndrome",
+   "Charcot-Marie-Tooth disease type 4B3",
+   "Charlevoix-Saguenay spastic ataxia",
+   "Chediak-Higashi syndrome",
+   "Christianson syndrome",
+   "Coffin-Lowry syndrome",
+   "Coffin-Siris syndrome 1 | autism spectrum disorder"
+  ]
+ },
+ "idd_cand::OMIM disease with HPO intellectual disability, frequent or more": {
+  "n_in_pool": 369,
+  "already_positive": 66,
+  "missed": 303,
+  "missed_regex_hit": 1,
+  "missed_by_tier0_group": [
+   [
+    "broad_other",
+    298
+   ],
+   [
+    "ASD_primary",
+    3
+   ],
+   [
+    "Bipolar_primary",
+    1
+   ],
+   [
+    "IntellectualDisability_mixed",
+    1
+   ]
+  ],
+  "examples": [
+   "3-methylglutaconic aciduria with deafness, encephalopathy, a",
+   "Bardet-Biedl syndrome 1",
+   "Bardet-Biedl syndrome 1 | obesity",
+   "Bardet-Biedl syndrome 10",
+   "Bardet-Biedl syndrome 16",
+   "Bardet-Biedl syndrome 17",
+   "Bardet-Biedl syndrome 18",
+   "Bardet-Biedl syndrome 2",
+   "Bardet-Biedl syndrome 3",
+   "Bardet-Biedl syndrome 4",
+   "Bardet-Biedl syndrome 4 | obesity",
+   "Bardet-Biedl syndrome 5",
+   "Bardet-Biedl syndrome 6 | obesity",
+   "Bardet-Biedl syndrome 7",
+   "Bosch-Boonstra-Schaaf optic atrophy syndrome",
+   "CHARGE syndrome",
+   "Coffin-Lowry syndrome",
+   "Cohen syndrome | cataract",
+   "Cornelia de Lange syndrome 1",
+   "Cornelia de Lange syndrome 3",
+   "Danon disease",
+   "Desbuquois dysplasia",
+   "DiGeorge syndrome",
+   "DiGeorge syndrome | T-cell immunodeficiency, congenital alop",
+   "DiGeorge syndrome | atrial heart septal defect 1 | atriovent",
+   "DiGeorge syndrome | newborn respiratory distress syndrome",
+   "DiGeorge syndrome | otitis media | velocardiofacial syndrome",
+   "DiGeorge syndrome | tetralogy of Fallot",
+   "DiGeorge syndrome | velocardiofacial syndrome",
+   "DiGeorge syndrome | visceral heterotaxy",
+   "Dravet syndrome",
+   "Dravet syndrome | autism spectrum disorder",
+   "Fanconi anemia complementation group D2",
+   "Feingold syndrome",
+   "Fraser syndrome | chromosome 9p deletion syndrome",
+   "GAND syndrome",
+   "Goldberg-Shprintzen syndrome",
+   "Hartnup disease",
+   "Helsmoortel-Van Der Aa Syndrome",
+   "Hermansky-Pudlak syndrome 2 | platelet storage pool deficien"
+  ]
+ },
+ "other::ASD": {
+  "positives": 75,
+  "regex_hits_in_pool": 85,
+  "regex_hits_not_positive": 10,
+  "regex_not_positive_groups": [
+   [
+    "ASD_mixed",
+    10
+   ]
+  ],
+  "DO_closure_in_pool": 84,
+  "DO_closure_not_positive": 10,
+  "DO_not_positive_examples": [
+   "attention deficit hyperactivity disorder | autism spectrum d",
+   "autism spectrum disorder | intellectual disability",
+   "autism spectrum disorder | non-syndromic X-linked intellectu",
+   "autism spectrum disorder | schizophrenia",
+   "autistic disorder"
+  ]
+ },
+ "other::SCZ": {
+  "positives": 39,
+  "regex_hits_in_pool": 42,
+  "regex_hits_not_positive": 3,
+  "regex_not_positive_groups": [
+   [
+    "NDD_non_ASD",
+    2
+   ],
+   [
+    "ASD_mixed",
+    1
+   ]
+  ],
+  "DO_closure_in_pool": 41,
+  "DO_closure_not_positive": 3,
+  "DO_not_positive_examples": [
+   "attention deficit hyperactivity disorder | schizophrenia",
+   "autism spectrum disorder | schizophrenia",
+   "intellectual disability | schizophrenia"
+  ]
+ },
+ "other::NCD": {
+  "positives": 72,
+  "regex_hits_in_pool": 73,
+  "regex_hits_not_positive": 1,
+  "regex_not_positive_groups": [
+   [
+    "psychiatric_non_NDD_non_ASD",
+    1
+   ]
+  ],
+  "DO_closure_in_pool": 11,
+  "DO_closure_not_positive": 1,
+  "DO_not_positive_examples": [
+   "dementia | depressive disorder"
+  ]
+ },
+ "other::MDD": {
+  "positives": 7,
+  "regex_hits_in_pool": 8,
+  "regex_hits_not_positive": 1,
+  "regex_not_positive_groups": [
+   [
+    "psychiatric_non_NDD_non_ASD",
+    1
+   ]
+  ],
+  "DO_closure_in_pool": 8,
+  "DO_closure_not_positive": 1,
+  "DO_not_positive_examples": [
+   "dementia | depressive disorder"
+  ]
+ },
+ "other::ID": {
+  "positives": 80,
+  "regex_hits_in_pool": 87,
+  "regex_hits_not_positive": 7,
+  "regex_not_positive_groups": [
+   [
+    "ASD_mixed",
+    6
+   ],
+   [
+    "NDD_non_ASD",
+    1
+   ]
+  ],
+  "DO_closure_in_pool": 57,
+  "DO_closure_not_positive": 36,
+  "DO_not_positive_examples": [
+   "Borjeson-Forssman-Lehmann syndrome",
+   "Christianson syndrome",
+   "Coffin-Siris syndrome 1 | autism spectrum disorder",
+   "GAND syndrome",
+   "Helsmoortel-Van Der Aa Syndrome",
+   "Kaufman oculocerebrofacial syndrome",
+   "Pierpont syndrome",
+   "Tatton-Brown-Rahman syndrome",
+   "Xia-Gibbs Syndrome",
+   "autism spectrum disorder | intellectual disability",
+   "autism spectrum disorder | non-syndromic X-linked intellectu",
+   "autosomal dominant intellectual developmental disorder",
+   "autosomal dominant intellectual developmental disorder 26",
+   "autosomal dominant intellectual developmental disorder 38",
+   "autosomal dominant intellectual developmental disorder 39"
+  ]
+ },
+ "idd_recomputed": [
+  {
+   "rule": "as run",
+   "positives_in_pool": 80,
+   "genes": 29,
+   "any_evidence": 48,
+   "rule_meeting_curated": 11,
+   "rule_meeting_curated_leaf": 3,
+   "convergent_auroc": 0.7611,
+   "headline_n_pos": 73,
+   "headline_auroc": 0.7332,
+   "headline_ci_gene": [
+    0.6792,
+    0.8315
+   ],
+   "headline_delta_arm3": -0.0143,
+   "headline_delta_arm3_ci_gene": [
+    -0.0798,
+    0.1331
+   ],
+   "fullpool_n_pos": 80,
+   "fullpool_auroc": 0.7408,
+   "fullpool_ci_gene": [
+    0.6869,
+    0.8563
+   ],
+   "fullpool_delta_arm3": -0.1021,
+   "fullpool_delta_arm3_ci_gene": [
+    -0.16,
+    0.0385
+   ]
+  },
+  {
+   "rule": "F1 regex adds 'intellectual developmental disorder'",
+   "positives_in_pool": 92,
+   "genes": 38,
+   "any_evidence": 56,
+   "rule_meeting_curated": 17,
+   "rule_meeting_curated_leaf": 4,
+   "convergent_auroc": 0.7675,
+   "headline_n_pos": 84,
+   "headline_auroc": 0.743,
+   "headline_ci_gene": [
+    0.6922,
+    0.8364
+   ],
+   "headline_delta_arm3": -0.0065,
+   "headline_delta_arm3_ci_gene": [
+    -0.0721,
+    0.1267
+   ],
+   "fullpool_n_pos": 92,
+   "fullpool_auroc": 0.75,
+   "fullpool_ci_gene": [
+    0.6998,
+    0.8514
+   ],
+   "fullpool_delta_arm3": -0.0942,
+   "fullpool_delta_arm3_ci_gene": [
+    -0.152,
+    0.0257
+   ]
+  },
+  {
+   "rule": "F2 F1 plus DO closure under DOID:1059 plus mixed",
+   "positives_in_pool": 117,
+   "genes": 55,
+   "any_evidence": 72,
+   "rule_meeting_curated": 25,
+   "rule_meeting_curated_leaf": 7,
+   "convergent_auroc": 0.7723,
+   "headline_n_pos": 107,
+   "headline_auroc": 0.7529,
+   "headline_ci_gene": [
+    0.7051,
+    0.8259
+   ],
+   "headline_delta_arm3": 0.0457,
+   "headline_delta_arm3_ci_gene": [
+    -0.0299,
+    0.1616
+   ],
+   "fullpool_n_pos": 117,
+   "fullpool_auroc": 0.76,
+   "fullpool_ci_gene": [
+    0.7136,
+    0.8389
+   ],
+   "fullpool_delta_arm3": -0.0515,
+   "fullpool_delta_arm3_ci_gene": [
+    -0.1165,
+    0.0541
+   ]
+  },
+  {
+   "rule": "F3 F2 plus OMIM-HPO intellectual disability (frequent or more)",
+   "positives_in_pool": 398,
+   "genes": 222,
+   "any_evidence": 137,
+   "rule_meeting_curated": 41,
+   "rule_meeting_curated_leaf": 11,
+   "convergent_auroc": 0.6341,
+   "headline_n_pos": 275,
+   "headline_auroc": 0.6569,
+   "headline_ci_gene": [
+    0.6165,
+    0.6965
+   ],
+   "headline_delta_arm3": 0.0464,
+   "headline_delta_arm3_ci_gene": [
+    0.0012,
+    0.0902
+   ],
+   "fullpool_n_pos": 398,
+   "fullpool_auroc": 0.6281,
+   "fullpool_ci_gene": [
+    0.5962,
+    0.6578
+   ],
+   "fullpool_delta_arm3": -0.0186,
+   "fullpool_delta_arm3_ci_gene": [
+    -0.0577,
+    0.0217
+   ]
+  }
+ ],
+ "idd_added_F2": [
+  [
+   "MGI:5302204",
+   "Crbn<tm1.2Jjh>/Crbn<tm1.2Jjh>",
+   "autosomal recessive intellectual developmental disorder",
+   "ID.A"
+  ],
+  [
+   "MGI:5576781",
+   "Arhgef2<Gt(IST13976A8)Tigm>/Arhgef2<Gt(IST139",
+   "neurodevelopmental disorder with midbrain and hindbrain malf",
+   ""
+  ],
+  [
+   "MGI:5617468",
+   "Mbd5<Gt(Ayu21-B205)Imeg>/Mbd5<+>",
+   "autosomal dominant intellectual developmental disorder",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:5902071",
+   "Slc9a6<tm1Dgen>/Y",
+   "Christianson syndrome",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:5902072",
+   "Slc9a6<tm1Dgen>/Slc9a6<tm1Dgen>",
+   "Christianson syndrome",
+   ""
+  ],
+  [
+   "MGI:5902076",
+   "Slc9a6<tm1Dgen>/Slc9a6<+>",
+   "Christianson syndrome",
+   "ID.A"
+  ],
+  [
+   "MGI:6156953",
+   "Auts2<tm1Mhos>/Auts2<+>",
+   "autosomal dominant intellectual developmental disorder 26",
+   "ID.A"
+  ],
+  [
+   "MGI:6159715",
+   "Arid1b<em1Hzhu>/Arid1b<+>",
+   "Coffin-Siris syndrome 1 | autism spectrum disorder",
+   "ID.B"
+  ],
+  [
+   "MGI:6189180",
+   "Hivep2<tm1Sis>/Hivep2<tm1Sis>",
+   "intellectual disability | schizophrenia",
+   ""
+  ],
+  [
+   "MGI:6287871",
+   "Gprasp2<tm1.1Jpe>/Y",
+   "autism spectrum disorder | intellectual disability",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:6295127",
+   "Phf6<em1Azbi>/Y",
+   "Borjeson-Forssman-Lehmann syndrome",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:6295856",
+   "Ube3b<tm1a(EUCOMM)Hmgu>/Ube3b<tm1a(EUCOMM)Hmg",
+   "Kaufman oculocerebrofacial syndrome",
+   "ID.B"
+  ],
+  [
+   "MGI:6358832",
+   "Mast1<em1Dak>/Mast1<+>",
+   "mega-corpus-callosum syndrome with cerebellar hypoplasia and",
+   ""
+  ],
+  [
+   "MGI:6451664",
+   "Cdk13<tm1a(EUCOMM)Hmgu>/Cdk13<tm1a(EUCOMM)Hmg",
+   "congenital heart defects, dysmorphic facial features, and in",
+   ""
+  ],
+  [
+   "MGI:6468250",
+   "Nexmif<tm1(KOMP)Wtsi>/Y",
+   "autism spectrum disorder | non-syndromic X-linked intellectu",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:6507205",
+   "Phf6<tm1.2Avo>/Y",
+   "Borjeson-Forssman-Lehmann syndrome",
+   ""
+  ],
+  [
+   "MGI:6754173",
+   "Elp2<em2Bjw>/Elp2<em2Bjw>",
+   "autism spectrum disorder | intellectual disability",
+   ""
+  ],
+  [
+   "MGI:6754175",
+   "Elp2<em2Bjw>/Elp2<em2Bjw>",
+   "autism spectrum disorder | intellectual disability",
+   "ID.B"
+  ],
+  [
+   "MGI:6754183",
+   "Elp2<em2Bjw>/Elp2<em3Bjw>",
+   "autism spectrum disorder | intellectual disability",
+   "ID.B"
+  ],
+  [
+   "MGI:7264822",
+   "Dyrk1a<em1Kzy>/Dyrk1a<+>",
+   "autosomal dominant intellectual developmental disorder 7",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7265077",
+   "Myt1l<em1Jdd>/Myt1l<+>",
+   "autosomal dominant intellectual developmental disorder 39",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7277684",
+   "Eef1a2<em#Abb>/Eef1a2<+>",
+   "autosomal dominant intellectual developmental disorder 38",
+   ""
+  ],
+  [
+   "MGI:7328859",
+   "Myt1l<em1Mwer>/Myt1l<+>",
+   "autosomal dominant intellectual developmental disorder 39",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7469827",
+   "Tbl1xr1<em2H>/Tbl1xr1<em2H>",
+   "Pierpont syndrome",
+   ""
+  ],
+  [
+   "MGI:7541226",
+   "Hnrnph2<em2Jpat>/Y",
+   "syndromic X-linked intellectual developmental disorder bain ",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7541228",
+   "Hnrnph2<em1Jpat>/Y",
+   "syndromic X-linked intellectual developmental disorder bain ",
+   ""
+  ],
+  [
+   "MGI:7574259",
+   "Slc1a4<em2Tmg>/Slc1a4<em2Tmg>",
+   "spastic tetraplegia, thin corpus callosum, and progressive m",
+   ""
+  ],
+  [
+   "MGI:7579102",
+   "Hnrnph2<em1Jpat>/Hnrnph2<+>",
+   "syndromic X-linked intellectual developmental disorder bain ",
+   ""
+  ],
+  [
+   "MGI:7580988",
+   "Gatad2b<tm1a(EUCOMM)Hmgu>/Gatad2b<+>",
+   "GAND syndrome",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7595529",
+   "Ahdc1<em#Oro>/?",
+   "Xia-Gibbs Syndrome",
+   ""
+  ],
+  [
+   "MGI:7606740",
+   "Kptn<tm1a(EUCOMM)Wtsi>/Kptn<tm1a(EUCOMM)Wtsi>",
+   "autosomal recessive intellectual developmental disorder 41",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:7610011",
+   "Atp9a<em1Bcgen>/Atp9a<em1Bcgen>",
+   "neurodevelopmental disorder with poor growth and behavioral ",
+   "ID.A"
+  ],
+  [
+   "MGI:7867619",
+   "Adnp<em1Ant>/Adnp<+>",
+   "Helsmoortel-Van Der Aa Syndrome",
+   "ID.A"
+  ],
+  [
+   "MGI:7867699",
+   "Adnp<em1Goz>/Adnp<+>",
+   "Helsmoortel-Van Der Aa Syndrome",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:8175487",
+   "Dnmt3a<em1Hwg>/Dnmt3a<+>",
+   "Tatton-Brown-Rahman syndrome",
+   "ID.B"
+  ],
+  [
+   "MGI:8175639",
+   "Dnmt3a<tm1.1Rlvn>/Dnmt3a<+>",
+   "Tatton-Brown-Rahman syndrome",
+   "ID.A;ID.B"
+  ],
+  [
+   "MGI:8237980",
+   "Arid1b<tm1b(EUCOMM)Hmgu>/Arid1b<+>",
+   "autism spectrum disorder | intellectual disability",
+   "ID.A;ID.B"
+  ]
+ ]
+}

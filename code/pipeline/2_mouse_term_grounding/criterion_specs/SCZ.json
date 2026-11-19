@@ -1,0 +1,103 @@
+{
+  "disorder": "SCZ",
+  "disorder_long": "Schizophrenia",
+  "criteria_txt": "DSM5_SCZ_preprocessed/01_diagnostic_criteria.txt",
+  "spec_version": "2026-07-27",
+  "section": null,
+  "counting_rule": "DSM-5-TR Criterion A requires TWO OR MORE of five numbered items, and at least one must be item 1, 2 or 3. That is a counting threshold with an additional gate, so each numbered item is a separately scored unit. Criterion B is a separate requirement of the diagnosis and carries no counting threshold: it lists major life areas with 'one or more' and 'such as', so it is ILLUSTRATIVE and is satisfied by marked dysfunction in any ONE named area. A diagnosis requires Criterion A AND Criterion B.",
+  "scored_grain": "mixed",
+  "scored_grain_note": "Six judged units: the five counted items A1 to A5, plus Criterion B at criterion grain. B was added on 2026-07-28 and is PROVISIONAL: judged in the run, reported separately, and included in breadth only under the opt-in arm. The criteria this project aborts are ONSET, DURATION and EXCLUSION, because mouse annotation cannot express morbidity timing, episode length or a differential diagnosis. Criteria C to F are exactly those and remain unscored.",
+  "status": "BEING RE-RUN 2026-07-28 at criterion grain with DSM's chapter-level definitions and the mixed-grain denominator of 6. This supersedes the previous status line, which said SCZ was not being re-run and pointed at mp_term_taxonomy_scz_5domain_v1 as live. That 5-domain taxonomy is now historical. SCZ_COMPARABILITY_NOTE.md is stale wherever it describes the 5-domain run as current.",
+  "items": [
+    {
+      "item_id": "A1",
+      "letter": "A",
+      "number": "1",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": [],
+      "floor": true,
+      "floor_reason": "A delusion is a belief with propositional content. No organism-level mouse analog exists under any vocabulary. construct_inadmissible."
+    },
+    {
+      "item_id": "A2",
+      "letter": "A",
+      "number": "2",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": [],
+      "floor": true,
+      "floor_reason": "A hallucination is a percept without a stimulus, reportable only by the experiencer. No mouse analog. construct_inadmissible."
+    },
+    {
+      "item_id": "A3",
+      "letter": "A",
+      "number": "3",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": [],
+      "floor": true,
+      "floor_reason": "Mice have no speech. Ultrasonic vocalization syntax is a remote non-criterion proxy and is NOT admitted as strict. construct_inadmissible."
+    },
+    {
+      "item_id": "A4",
+      "letter": "A",
+      "number": "4",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": [],
+      "floor": false,
+      "note": "Partially modellable and explicitly BIDIRECTIONAL: the item names grossly disorganized OR catatonic behavior, so both catalepsy, waxy flexibility, immobility and stupor at one pole, and hyperlocomotion and stereotypy at the other, are organism-level analogs."
+    },
+    {
+      "item_id": "A5",
+      "letter": "A",
+      "number": "5",
+      "extract": "lettered_item",
+      "direction": "deficit",
+      "components": [],
+      "floor": false,
+      "note": "Most modellable. The item's own parenthetical names diminished emotional expression and avolition. Absorbs asociality and social withdrawal."
+    },
+    {
+      "item_id": "B",
+      "letter": "B",
+      "number": null,
+      "extract": "lettered_criterion",
+      "direction": "deficit",
+      "components": [
+        "work",
+        "interpersonal relations",
+        "self-care",
+        "academic functioning",
+        "occupational functioning"
+      ],
+      "components_provenance": "All five names are DSM-5-TR's own words inside Criterion B. The first three come from the primary clause, the last two from the childhood-or-adolescent-onset clause.",
+      "floor": false,
+      "note": "WHAT THIS CRITERION ASKS FOR IS DETERIORATION, NOT A TRAIT DIFFERENCE. DSM asks whether functioning in a major life area is markedly below the level the individual previously achieved, or, for onset in childhood or adolescence, whether an expected level was never achieved. Both readings are about a CHANGE or a FAILURE TO ARRIVE, not about a stable characteristic. A mouse phenotype that is a constant lifelong difference from wild type is the weakest form of this criterion; one that emerges or worsens after development is the strongest. RECORD WHICH ONE YOU ARE LOOKING AT, because the project measures the size of this substitution rather than assuming it. Set qualifier_absent=false when the term itself names emergence, progression, deterioration, age-dependence or a loss of a previously present capacity. Set qualifier_absent=true when the term names only a stable between-genotype difference and is therefore standing in for a deterioration that MGI does not state. Do not default to either. THE BOUNDARY WITH A5, WHICH YOU MUST NOT COLLAPSE. A5 names the SYMPTOM, diminished emotional expression and avolition. B names the CONSEQUENCE at the level of major life areas: work, interpersonal relations, self-care, academic and occupational functioning. Many mouse terms can be read either way. Assign your best single unit in item_id, and when a term genuinely instantiates both, record the other in second_item_id rather than silently choosing one."
+    }
+  ],
+  "excluded_criteria": {
+    "B": "Level of functioning below premorbid. Not scored per D3: a mouse has no premorbid baseline.",
+    "C": "Six month duration. Not a symptom.",
+    "D": "Schizoaffective and mood exclusion. Not a symptom.",
+    "E": "Substance and medical exclusion. Not a symptom.",
+    "F": "ASD and communication disorder qualifier. Not a symptom."
+  },
+  "worked_examples": [],
+  "worked_examples_provenance": "Deliberately empty. See the note in ASD.json.",
+  "extra_rules": [
+    "scz_motor_boundary_from_dsm",
+    "mechanism_is_not_face_validity"
+  ],
+  "mechanism_note": "The aberrant-salience endophenotype (prepulse inhibition, sensorimotor gating, latent inhibition, psychotomimetic hyper-response to amphetamine, MK-801 or PCP) must NEVER be strict-admissible for any Criterion A item. It is the mechanism axis. The term-attribution probe showed prepulse inhibition plus sensorimotor gating alone carry 57 percent of Phenodigm's best matches on SCZ, and endophenotype plus circuit carriers about 80 percent, so this separation is exactly what makes the FACET minus Phenodigm gap interpretable rather than a loss.",
+  "satisfaction_rule": "COUNTED. A scored item is met only by a match to THAT item. Diagnostic gate: at least two of A1 to A5, and at least one of those must be A1, A2 or A3. Breadth denominator is 5 individually-matched units.",
+  "breadth_denominator": 5,
+  "unit_kind": "enumerated_item",
+  "comparability_note": "Breadth denominators differ across disorders (ASD 7, SCZ 5, ID 2, NCD 2) AND the units differ in difficulty, because DSM counts enumerated items in ASD and SCZ but accepts a single example in ID and NCD. Report fraction of scored units met alongside the raw count, and never rank disorders on raw breadth.",
+  "breadth_denominator_with_provisional": 6,
+  "provisional_units": [
+    "B"
+  ],
+  "provisional_note": "Criterion B is JUDGED IN THE RUN exactly like every other unit, and whether it counts toward breadth is a downstream aggregation switch, not a prompt difference. The classifier is not told B is provisional, so the opt-in and opt-out comparison differs only in the roll-up. Primary reporting uses the denominator of 5; the opt-in arm uses 6 and is reported beside it, never instead of it. The reason B is provisional rather than primary: schizophrenia is defined clinically by its symptoms, and functional deterioration establishes clinical significance rather than being an additional symptom class. Mouse analogues of deterioration can strengthen a model, but they are not direct models of Criterion B and must not be labelled as such. Use score_breadth.py to compute both."
+}

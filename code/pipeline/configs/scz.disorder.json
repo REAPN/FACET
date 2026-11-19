@@ -1,0 +1,817 @@
+{
+ "$schema": "./disorder_config.schema.json",
+ "$config_version": "1.0",
+ "$generated": "2026-05-26 — primary disorder config for SCZ pipeline (MDD-template contamination fixed) | 2026-05-27: added 'Associated Features Supporting Diagnosis' to core_phenotype_headings — SCZ-specific (SCZ packs phenotype elaboration in Associated Features, unlike MDD which packs it in Diagnostic Features) | 2026-05-27: added text_replacements for 3 pypdf OCR errors in Associated Features section | 2026-05-27: top_n_bundle 5→10 per per-HPO biology-vs-pipeline audit | 2026-05-27: lexical_factor_when_structural_missing=0.5 sensitivity test | 2026-05-27: contrast rename S_A1↔A2, S_A2↔A1 + drop S_ prefix | 2026-05-27: benchmark_group_table fixed → SCZ_tier_0.csv (was canonical ASD-centric — caused all SCZ contrasts to fail) | 2026-05-27 FULL RESTART surgery (rebuild_scz_config_h1.py): categories_enum + seed_terms_per_domain → SCZ Criterion A (was MDD); b_family → SCZ Criterion A clusters; stage6 k_of_n [5,9]→[2,5]; stage7_viz/domains.strict → SCZ; H1 fix — m_family entries get explicit comparator_groups lists. | 2026-05-27 score-floor policy: keep universal 0.57 (ASD-derived); drop needs_recalibration flag; defer per-floor sensitivity sweep to supplementary. | 2026-05-27 b_family comparator: B1-B4 -> comparator_pool_ids=[A1,A5] (psych pool union ASD). | 2026-05-27 stage1 MDD-residue cleanup: extraction_schema.categories_enum + seed_terms_per_domain replaced with SCZ canonical (mirrors stage2_rerank). Stage 1 output already canonical — schema now self-consistent for re-run. | 2026-05-27 depth-bias sweep: stage5_benchmark.n_mp_thresholds [1,3,4,5,7,10] + n_mp_terms_file (universe-wide phenotype long table). Primary headline threshold n_mp>=4 per §6g audit. | 2026-05-27 taxonomy_tsv repointed to mp_term_taxonomy_scz_v1/03_mp_term_taxonomy.tsv (SCZ-keyed; replaces ASD-derived v3). 237 strict-eligible MPs across the 5 SCZ strict domains; unblocks Stage 3 aggregation of salience/disorganization/negative_symptoms/cognitive_executive. | 2026-05-27 hpo_domain_regex_fallback added to stage2_candidate_features (5 SCZ-strict-domain regex maps); triggers install_mdd_style_hpo_domain_inference monkey-patch in stage2a_candidate_features.py so Stage 1 SCZ category is respected at Stage 2a's human_domain assignment. | 2026-07-27 CRITERION-STRICT 5-DOMAIN REDESIGN (LOCKED): SCZ face-validity domains = the five DSM-5-TR Criterion A items, one domain each (delusions A.1, hallucinations A.2, disorganized_speech A.3, catatonic_disorganized_behavior A.4, negative_symptoms A.5). salience_dysregulation removed to the mechanism axis (endophenotype substrate, not a criterion); cognitive/social associated-feature categories dropped. A.1-A.3 are the scored face-validity floor. SCZ-only recompute (stage1-5) required.",
+ "disorder": {
+  "id": "SCZ",
+  "name": "Schizophrenia Spectrum and Other Psychotic Disorders",
+  "dsm5_section": "DSM-5-TR Chapter 2",
+  "icd10_codes": [
+   "F20",
+   "F25",
+   "F22",
+   "F23",
+   "F21"
+  ]
+ },
+ "stage0_dsm5_extraction": {
+  "pdf_input": "DSM5_SCZ.pdf",
+  "outdir": "DSM5_SCZ_preprocessed/",
+  "chapter_start_anchor": "(?m)^\\s*Schizophrenia\\s*$",
+  "chapter_start_anchor_keep": false,
+  "chapter_end_anchor": "(?m)^\\s*Schizoaffective Disorder\\s*$",
+  "criteria_trim_anchors": [
+   "\\bSpecify if:\\b",
+   "\\bSpecify current severity:\\b"
+  ],
+  "text_normalization": {
+   "hyphen_join_min_chars": 2,
+   "criterion_marker_rejoin": true,
+   "paren_note_rejoin": true
+  },
+  "headings_to_extract": [
+   {
+    "name": "Diagnostic Criteria",
+    "regex": "Diagnostic Criteria(?:\\s+295\\.90\\s+\\(F20\\.9\\))?"
+   },
+   {
+    "name": "Subtypes",
+    "regex": "Subtypes"
+   },
+   {
+    "name": "Specifiers",
+    "regex": "Specifiers"
+   },
+   {
+    "name": "Diagnostic Features",
+    "regex": "Diagnostic Features"
+   },
+   {
+    "name": "Associated Features Supporting Diagnosis",
+    "regex": "Associated Features Supporting Diagnosis|Associated Features"
+   },
+   {
+    "name": "Prevalence",
+    "regex": "Prevalence"
+   },
+   {
+    "name": "Development and Course",
+    "regex": "Development and Course"
+   },
+   {
+    "name": "Risk and Prognostic Factors",
+    "regex": "Risk and Prognostic Factors"
+   },
+   {
+    "name": "Culture-Related Diagnostic Issues",
+    "regex": "Culture-Related Diagnostic Issues"
+   },
+   {
+    "name": "Sex- and Gender-Related Diagnostic Issues",
+    "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
+   },
+   {
+    "name": "Association With Suicidal Thoughts or Behavior",
+    "regex": "Association With Suicidal Thoughts or Behavior|Suicide Risk"
+   },
+   {
+    "name": "Functional Consequences of Schizophrenia",
+    "regex": "Functional Consequences of Schizophrenia"
+   },
+   {
+    "name": "Differential Diagnosis",
+    "regex": "Differential Diagnosis"
+   },
+   {
+    "name": "Comorbidity",
+    "regex": "Comorbidity"
+   }
+  ],
+  "core_phenotype_headings": [
+   "Diagnostic Criteria",
+   "Diagnostic Features",
+   "Associated Features Supporting Diagnosis"
+  ],
+  "running_header_strip_patterns": [
+   "(?mi)^\\s*Schizophrenia\\s*$",
+   "(?mi)^\\s*Schizophrenia Spectrum and Other Psychotic Disorders\\s*$",
+   "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
+   "(?mi)^\\s*\\d+\\s*$"
+  ],
+  "text_replacements": [
+   {
+    "mode": "literal",
+    "find": "Pi;odromal",
+    "replace": "Prodromal",
+    "comment": "pypdf OCR misread: semicolon-for-r"
+   },
+   {
+    "mode": "literal",
+    "find": "conrmion",
+    "replace": "common",
+    "comment": "pypdf OCR misread: rm-for-mm"
+   },
+   {
+    "mode": "literal",
+    "find": "inteφret",
+    "replace": "interpret",
+    "comment": "pypdf OCR misread: Greek phi for rp ligature"
+   },
+   {
+    "mode": "literal",
+    "find": "■",
+    "replace": "",
+    "comment": "stray pypdf mojibake glyph (U+25A0 BLACK SQUARE) — drop"
+   }
+  ]
+ },
+ "stage1_hpo_curation": {
+  "core_text_input": "DSM5_SCZ_preprocessed/SCZ_core_phenotype_only.txt",
+  "hpo_json_input": "hp.json",
+  "outdir": "pilot_hpo_run_scz_v1/",
+  "extraction_schema": {
+   "categories_enum": [
+    "delusions",
+    "hallucinations",
+    "disorganized_speech",
+    "catatonic_disorganized_behavior",
+    "negative_symptoms",
+    "other"
+   ],
+   "polarity_enum": [
+    "present",
+    "absent",
+    "negated",
+    "uncertain",
+    "bidirectional"
+   ],
+   "centrality_enum": [
+    "core",
+    "supporting",
+    "context_only"
+   ],
+   "temporality_enum": [
+    "current",
+    "history",
+    "developmental",
+    "unspecified"
+   ]
+  },
+  "extraction_prompt_addendum": "DSM-5-TR Schizophrenia Criterion A is polythetic (2 or more of five distinct symptoms; at least one from A.1, A.2, A.3). Route each to its OWN domain: A.1 delusions -> delusions; A.2 hallucinations -> hallucinations; A.3 disorganized speech / formal thought disorder -> disorganized_speech; A.4 grossly disorganized or catatonic behavior -> catatonic_disorganized_behavior (bidirectional: immobility AND excessive purposeless activity, emit two items); A.5 negative symptoms -> negative_symptoms (emit diminished emotional expression and avolition as separate items). Do NOT map any symptom to a salience or PPI substrate: the aberrant-salience endophenotype is the mechanism axis, populated on the mouse side, NOT a face-valid analog of the phenomenology. Do NOT emit cognitive-executive or generic-social items as SCZ criteria (those are DSM associated features, not Criterion A) -> other. Extract phenotype FEATURES as short normalized phrases. Delusions, hallucinations, and disorganized speech have no direct mouse analog; that unmodellability is the result and is captured by those domains scoring near zero.",
+  "resolution_prompt_addendum": null,
+  "seed_terms_per_domain": {
+   "delusions": [
+    "delusion",
+    "fixed false belief",
+    "persecutory belief",
+    "paranoia",
+    "thought broadcasting",
+    "thought insertion",
+    "ideas of reference",
+    "grandiose belief"
+   ],
+   "hallucinations": [
+    "hallucination",
+    "auditory hallucination",
+    "hearing voices",
+    "visual hallucination",
+    "perceptual disturbance"
+   ],
+   "disorganized_speech": [
+    "disorganized speech",
+    "derailment",
+    "incoherence",
+    "tangentiality",
+    "word salad",
+    "formal thought disorder",
+    "disordered thought process"
+   ],
+   "catatonic_disorganized_behavior": [
+    "catatonia",
+    "catalepsy",
+    "waxy flexibility",
+    "immobility",
+    "stupor",
+    "posturing",
+    "negativism",
+    "grossly disorganized behavior",
+    "purposeless motor activity"
+   ],
+   "negative_symptoms": [
+    "avolition",
+    "diminished emotional expression",
+    "blunted affect",
+    "flat affect",
+    "anhedonia",
+    "alogia",
+    "asociality",
+    "apathy",
+    "amotivation",
+    "social withdrawal"
+   ]
+  },
+  "llm_model": "gpt-5.4",
+  "embedding_model": "text-embedding-3-large",
+  "llm_seed": 1,
+  "final_filter": {
+   "allowed_centrality": [
+    "core",
+    "supporting"
+   ],
+   "allowed_polarity": [
+    "present",
+    "bidirectional"
+   ],
+   "allowed_relations": [
+    "exact",
+    "broader_than_source",
+    "narrower_than_source"
+   ]
+  }
+ },
+ "stage2_candidate_features": {
+  "hpo_targets_input": "pilot_hpo_run_scz_v1/07_final_resolved_hpo_terms.tsv",
+  "mouse_mp_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv": "mp_term_taxonomy_criterion_v1_SCZ/03_mp_term_taxonomy.tsv",
+  "pairwise_similarity_tsv": "phenio-monarch-hp-mp.0.4.semsimian.tsv",
+  "outdir": "scz_candidate_features_v1/",
+  "mouse_domain_routing": {
+   "mode": "single_bucket",
+   "single_bucket_label": "scz_pool",
+   "mapping": null,
+   "v2_upgrade_note": "v2: re-label mp_term_taxonomy_broad_v3 with SCZ-specific mouse_domain values: sensorimotor_gating (PPI), psychotomimetic_response (locomotor / behavioral response to MK-801/PCP/amphetamine), working_memory_cognition, social_withdrawal (carefully — overlaps with ASD), catatonia_motor (bidirectional immobility/agitation), ultrasonic_vocalization, anhedonia_motivation (overlaps with MDD). Estimated cost ~$15-30 LLM re-classification + manual review.",
+   "v2_upgrade_note_resolved_2026_05_27": "Taxonomy redo COMPLETE 2026-05-27 via rebuild_scz_taxonomy.py + rebuild_scz_config_taxonomy_pointer.py. New file: mp_term_taxonomy_scz_v1/03_mp_term_taxonomy.tsv carries SCZ-keyed primary_domain (8-value enum: 5 strict + 3 non-strict) and allow_strict_scz_face_validity flag (237 strict-eligible MPs after manual override of MP:0009546 absent gastric milk in neonates). Anchor verification: 15/15 prompt-LLM agreement on the canonical SCZ paradigm set (PPI, catalepsy, working memory, sucrose preference, social investigation, plus mechanistic + non-neurological negative controls). Model: gpt-5.4-mini, seed=1, batch_size=15, $1.50 cost, ~100 min wall. Stage 2a-4 will be re-run against this taxonomy."
+  },
+  "tier_filter": {
+   "include": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "exclude": [
+    5
+   ],
+   "tier_5_caveat": null
+  },
+  "include_supporting_hpo": true,
+  "include_tier2_mouse": true,
+  "use_embedding_retrieval": true,
+  "use_lexical_retrieval": true,
+  "use_spillover_default": false,
+  "use_spillover_v2_target": true,
+  "top_k_embedding": 20,
+  "top_k_lexical": 20,
+  "mode": "union",
+  "hpo_domain_regex_fallback": {
+   "delusions": "delusion|fixed false belief|persecutory|paranoi|thought (broadcast|insertion|withdrawal)|ideas of reference|grandiose belief",
+   "hallucinations": "hallucinat|hearing voices|perceptual (disturbance|aberration)",
+   "disorganized_speech": "disorganized speech|derailment|incoheren|tangential|word salad|formal thought|disordered.*thought process|thought disorder",
+   "catatonic_disorganized_behavior": "catatoni|catalep|waxy flex|immobil|stupor|posturing|negativism|grossly disorganized|purposeless (activity|motor)|motor disorganiz|bizarre behavior",
+   "negative_symptoms": "avolition|amotivat|diminished (emotional|affect)|blunted affect|flat affect|anhedon|alogia|asocial|apathy|reduced motivation|social withdrawal|poverty of speech"
+  },
+  "_hpo_domain_regex_fallback_added_2026_05_27": "Populated to trigger stage2a_candidate_features.py's existing install_mdd_style_hpo_domain_inference mechanism, which replaces the ASD-hardcoded B.infer_hpo_domain at module-load time with a version that (a) trusts the Stage 1 SCZ `category` column for the 25 already-strict-tagged HPOs via direct passthrough, and (b) applies the regex fallback below for 'other'-tagged HPOs whose labels match SCZ Criterion A clinical vocabulary. This is the proper fix for the ASD-hardcoded human_domain bug that caused the structural-empty B2/B4 domain results in the prior canonical run.",
+  "inject_descendants": true,
+  "mp_obo": "MPheno_OBO.ontology",
+  "carriage_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv_previous": "mp_term_taxonomy_scz_5domain_v1/03_mp_term_taxonomy.tsv",
+  "taxonomy_provenance_2026_07_28": "Repointed to the criterion-grounded taxonomy for SCZ, built by build_stage2a_taxonomy.py from that disorder's own run and from no other disorder. The previous file carried ASD's relevance_tier column verbatim for SCZ and NCD, 11485 of 11485 values identical, which made the candidate universe for those disorders ASD's universe."
+ },
+ "stage2_rerank": {
+  "outdir": "scz_pair_rerank_v1/",
+  "developer_prompt_addendum": "The 5 SCZ DSM-5-TR Criterion A domains: delusions, hallucinations, disorganized_speech, disorganized_catatonic_behavior, negative_symptoms. Mouse-proxy guidance: (a) positive symptoms (A.1-A.3) lack direct mouse correlates; established operational proxies include prepulse-inhibition (PPI) deficits → direct_analog for sensorimotor-gating dimension of A.1/A.2/A.3, enhanced locomotor/behavioral response to MK-801/PCP/amphetamine → direct_analog for psychotomimetic-response dimension, working-memory deficits → close_support for A.3 disorganized cognition; (b) negative symptoms (A.5): decreased social interaction → close_support for avolition (note: also maps to ASD — disambiguate via downstream disorder-specific gene evidence), anhedonia behaviors → close_support (overlaps with MDD); (c) catatonic behavior (A.4) is BIDIRECTIONAL: motor stereotypy / catalepsy / immobility → direct_analog for catatonic-immobility direction, hyperlocomotion / frenetic activity → direct_analog for catatonic-agitation direction; treat opposite-direction phenotypes that map to the SISTER directional target on the same axis as NOT mismatch (sister-target evidence); (d) ultrasonic vocalization abnormalities → weak_support for A.3 disorganized speech (USV abnormalities are also common in ASD — disambiguation comes downstream). strict_eligible=true only for high-quality organism-level analogs suitable for strict SCZ-domain support.",
+  "behavioral_analog_enum": [
+   "direct_analog",
+   "close_support",
+   "weak_support",
+   "mechanistic_only",
+   "mismatch"
+  ],
+  "evidence_scope_enum": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "mechanistic",
+   "unclear",
+   "cellular_or_circuit_only"
+  ],
+  "score_floor": {
+   "value": 0.57,
+   "policy": "universal_across_disorders",
+   "provenance": "0.57 was derived for ASD broad_v3 (2026-05-09 lab notebook): balanced-accuracy maximization of transparent_score against the LLM's own broad_eligible verdicts on the 180 LLM-judged pairs inside ambiguous-target rerank bundles. At θ=0.57, BA=0.736, precision=0.83, recall=0.70. Note: the 180 pairs were LLM-judged, not hand-curated — θ is a score-self-consistency threshold, not an externally-validated behavioral-analog cutoff.",
+   "applies_to": "Stage 2c fill pass. Pairs with transparent_score >= 0.57 that Stage 2b did not bundle (because their target was non-ambiguous or they sat below top-N) are submitted to the LLM for a second-pass eligibility judgment with the identical prompt and schema. Does NOT filter Stage 2b LLM-strict-eligible pairs (those bypass the floor).",
+   "per_disorder_tuning_policy": "DISALLOWED. Per-disorder θ tuning would add 20 DOF that reviewers see as fishing (Mode C), and the per-disorder calibration set would be each disorder's LLM verdicts — circular (Mode D, since we are gating Stage 2c LLM calls against Stage 2b LLM labels). If a future contributor needs per-disorder floor behavior, switch from a tuned VALUE to a uniform RULE (e.g., 80th-percentile of pair scores per disorder), so the same logic applies automatically across all disorders without per-disorder choices.",
+   "scz_specific_diagnostic_2026_05_27": "BA-max recalibration was performed on the 185 SCZ-specific LLM verdicts as a diagnostic (NOT applied): SCZ optimum θ=0.63 (BA=0.661, P=0.825, R=0.448). The BA-max degradation from 0.736 (ASD) to 0.661 (SCZ) reflects weaker score↔LLM-verdict alignment for SCZ, a consequence of higher structural_missing rate (97% of SCZ pairs lack ontology channels). Per the universal-value policy, this disorder-specific θ was NOT adopted. See scz_pair_rerank_v1/_ba_max_sweep_broad.tsv for the full sweep.",
+   "sensitivity_sweep_plan": {
+    "floors": [
+     0.5,
+     0.55,
+     0.57,
+     0.6,
+     0.65
+    ],
+    "outputs": "rerun Stage 2c -> 3 -> 4 -> 5 once per floor; report AUROC across A2 (headline) and A1 (psychiatric pool); flag if any headline AUROC moves > 0.02 across the range.",
+    "status": "deferred_to_paper_prep",
+    "rationale": "Pre-register the sweep before observing T0 AUROC so the robustness claim is blinded to outcome, not post-hoc."
+   }
+  },
+  "weights": {
+   "embed": 0.45,
+   "lexical": 0.25,
+   "resnik": 0.2,
+   "jaccard": 0.1,
+   "owl": 0.0
+  },
+  "top_n_bundle": 5,
+  "ambiguity_margin": 0.08,
+  "gray_low": 0.35,
+  "gray_high": 0.7,
+  "promote_bonus": 0.1,
+  "demote_penalty": 0.1,
+  "llm_model": "gpt-5.4",
+  "llm_seed": 1,
+  "_top_n_bundle_rationale": "Reverted from 10 to 5 (2026-05-27) so the lexical-downweight sensitivity test isolates the effect of the new factor cleanly. If lexical-downweight alone surfaces the catatonia↔catalepsy match at top_n=5, the wider bundle was a workaround for the wrong underlying problem.",
+  "lexical_factor_when_structural_missing": 0.5,
+  "_lexical_downweight_rationale": "Lexical channel was originally introduced as a guard against LLM/semantic over-reach in ontology mapping (no established protocol for using LLMs in ontology research at design time). When both Resnik IC AND Jaccard channels are absent (structural_missing=True), the redistribution math inflates lexical's effective contribution from its 25%% baseline to ~35.7%% — exactly when lexical's guard role is also least defensible because there is no ontology channel left to validate either signal. Setting factor=0.5 halves lexical's weight in that case (effective ~22%% vs original 25%%), letting embed dominate (~78%%) for cross-jargon semantic matches like Catalepsy↔Catatonia where token overlap is zero but semantic similarity is high. Validated by parity test on ASD: if ASD headline AUROC is stable (most ASD pairs have IC/Jaccard present, factor doesn't fire), the change is defensible to apply across disorders. Test date 2026-05-27.",
+  "categories_enum": [
+   "delusions",
+   "hallucinations",
+   "disorganized_speech",
+   "catatonic_disorganized_behavior",
+   "negative_symptoms",
+   "other"
+  ],
+  "seed_terms_per_domain": {
+   "delusions": [
+    "delusion",
+    "fixed false belief",
+    "persecutory belief",
+    "paranoia",
+    "thought broadcasting",
+    "thought insertion",
+    "ideas of reference",
+    "grandiose belief"
+   ],
+   "hallucinations": [
+    "hallucination",
+    "auditory hallucination",
+    "hearing voices",
+    "visual hallucination",
+    "perceptual disturbance"
+   ],
+   "disorganized_speech": [
+    "disorganized speech",
+    "derailment",
+    "incoherence",
+    "tangentiality",
+    "word salad",
+    "formal thought disorder",
+    "disordered thought process"
+   ],
+   "catatonic_disorganized_behavior": [
+    "catatonia",
+    "catalepsy",
+    "waxy flexibility",
+    "immobility",
+    "stupor",
+    "posturing",
+    "negativism",
+    "grossly disorganized behavior",
+    "purposeless motor activity"
+   ],
+   "negative_symptoms": [
+    "avolition",
+    "diminished emotional expression",
+    "blunted affect",
+    "flat affect",
+    "anhedonia",
+    "alogia",
+    "asociality",
+    "apathy",
+    "amotivation",
+    "social withdrawal"
+   ]
+  }
+ },
+ "stage3_aggregation": {
+  "outdir_template": "scz_support_aggregated_v1_pol{regime}/",
+  "polarity_regimes_to_run": [
+   "off"
+  ],
+  "polarity_regimes_deferred": [
+   "soft",
+   "strict",
+   "schema"
+  ],
+  "polarity_deferral_note": "SCZ polarity considerations: positive symptoms (A.1-A.3) are unidirectional (presence of abnormality); negative symptoms (A.5) are also unidirectional (absence/deficit is itself the abnormality); A.4 catatonic behavior is the only intrinsically BIDIRECTIONAL domain (motor immobility OR excessive activity). v1 uses polarity-off; v2 may add an SCZ-specific polarity schema with catatonia-aware bidirectional handling.",
+  "polarity_weight_maps": null,
+  "support_threshold": 0.3,
+  "lexical_cluster_threshold": 0.65,
+  "overall_aggregator": "mean",
+  "strict_analog_gate": "strong",
+  "eligibility_mode": "score_assisted_broad",
+  "broad_score_threshold": 0.57,
+  "strict_score_threshold": 0.62,
+  "allowed_evidence_scope_strict": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior"
+  ],
+  "allowed_evidence_scope_broad": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "unclear"
+  ],
+  "strong_behavioral_analog_types": [
+   "direct_analog",
+   "close_support"
+  ]
+ },
+ "stage4_permutation_null": {
+  "outdir_template": "scz_pvalue_v1_pol{regime}/",
+  "n_permutations": 10000,
+  "seed": 1,
+  "max_depth_cap": 200,
+  "score_function_fix_version": "2026-05-14"
+ },
+ "stage5_benchmark": {
+  "outdir_template": "benchmark/run_2026-07-28_criterion_v1_scz_pol{regime}_{mode}/",
+  "benchmark_group_table": "benchmark_tables_per_tier/SCZ_tier_0.csv",
+  "contrasts": [
+   {
+    "name": "A2",
+    "description": "Headline. SCZ-primary vs all non-SCZ.",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "__all_non_SCZ_primary__"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A1_headline"
+   },
+   {
+    "name": "A1",
+    "description": "SCZ vs psychiatric pool (mood + anxiety + NDD subgroups).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "ADHD_primary",
+     "IntellectualDisability_primary",
+     "NDD_other_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A2_psychiatric_pool"
+   },
+   {
+    "name": "A3",
+    "description": "SCZ vs Bipolar (psychotic-features overlap).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "Bipolar_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A3_bipolar"
+   },
+   {
+    "name": "A4",
+    "description": "SCZ vs MDD (negative-symptom overlap).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "MDD_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A4_MDD"
+   },
+   {
+    "name": "A5",
+    "description": "SCZ vs ASD (shared CNV architecture: 22q11.2, NRXN1).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "ASD_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A5_ASD"
+   },
+   {
+    "name": "A6",
+    "description": "SCZ vs ID (cognitive overlap).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "IntellectualDisability_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A6_ID"
+   },
+   {
+    "name": "A7",
+    "description": "SCZ vs SubstanceAbuse (often comorbid).",
+    "positive_group": "SCZ_primary",
+    "negative_groups": [
+     "SubstanceAbuse_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_S_A7_SubstanceAbuse"
+   }
+  ],
+  "b_family": [
+   {
+    "name": "B1",
+    "type": "composite_mean",
+    "domains": "all_strict",
+    "label": "Strict 5-domain composite (SCZ Criterion A, one domain per item)",
+    "gated_by": null,
+    "multiplicity_correction": null,
+    "comparator_pool_ids": [
+     "A1"
+    ]
+   },
+   {
+    "name": "B2_positive_floor",
+    "type": "cluster_mean",
+    "domains": [
+     "delusions",
+     "hallucinations",
+     "disorganized_speech"
+    ],
+    "label": "Positive/psychotic floor (A.1-A.3; unmodellable phenomenology)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1"
+    ]
+   },
+   {
+    "name": "B3_catatonic",
+    "type": "cluster_mean",
+    "domains": [
+     "catatonic_disorganized_behavior"
+    ],
+    "label": "Catatonic/disorganized behavior (A.4)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1"
+    ]
+   },
+   {
+    "name": "B4_negative",
+    "type": "cluster_mean",
+    "domains": [
+     "negative_symptoms"
+    ],
+    "label": "Negative symptoms (A.5)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1"
+    ]
+   }
+  ],
+  "m_family": [
+   {
+    "name": "M1_psychiatric_non_SCZ",
+    "model_type": "binary_logit",
+    "positive_label": "SCZ_primary",
+    "comparator_pool_id": "psychiatric_non_SCZ",
+    "comparator_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "ADHD_primary",
+     "IntellectualDisability_primary",
+     "NDD_other_primary"
+    ],
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Mirrors A1 contrast; small-n on several arms — interpret cautiously."
+   },
+   {
+    "name": "M2_all_non_SCZ",
+    "model_type": "binary_logit",
+    "positive_label": "SCZ_primary",
+    "comparator_pool_id": "all_non_SCZ",
+    "comparator_groups": [
+     "ADHD_primary",
+     "ASD_primary",
+     "Anxiety_primary",
+     "Bipolar_primary",
+     "EatingDisorders_primary",
+     "IntellectualDisability_primary",
+     "MDD_primary",
+     "NDD_other_primary",
+     "Neurocognitive_primary",
+     "SCZ_mixed",
+     "Sleep_primary",
+     "SubstanceAbuse_primary",
+     "broad_other",
+     "mixed_psychiatric_other"
+    ],
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Mirrors A2 (headline) contrast — all non-SCZ_primary groups (includes SCZ_mixed as a comparator under the canonical 'exclude only SCZ_primary' rule, parallel to ASD M2)."
+   },
+   {
+    "name": "M3_multinomial_psych_pool",
+    "model_type": "multinomial_logit",
+    "positive_label": "SCZ_primary",
+    "comparator_pool_id": "psychiatric_pool_multinomial_scz",
+    "comparator_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "ADHD_primary",
+     "IntellectualDisability_primary",
+     "NDD_other_primary"
+    ],
+    "multinomial_reference": "MDD_primary",
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Reference = MDD_primary (clinical psychiatric anchor; selected over IntellectualDisability_primary because MDD is a non-psychotic mood disorder, providing the cleanest contrast for SCZ's positive/negative-symptom signature). Falls back to largest comparator if reference is absent at runtime."
+   }
+  ],
+  "n_bootstrap": 1000,
+  "phenodigm_baseline_score_file_template": "benchmark/run_2026-05-28_v2_scz_pol{regime}_{mode}/baseline_scores/01_baseline_genotype_scores__B1_phenodigm_plain.tsv",
+  "_known_limitations": {
+   "specificity_sanity_groups_pending": "S_S1/S_S2 reference SCZ_mixed (not yet emitted by build_per_tier_benchmark_tables). Stage 5 will skip these contrasts until builder support is added."
+  },
+  "_contrast_rename_2026_05_27": {
+   "rationale": "Renamed S_A1 (headline vs all non-SCZ) → A2 and S_A2 (vs psychiatric pool) → A1 for consistency with the new convention where A1 = vs psychiatric pool (narrow comparator) and A2 = vs all non-target (broad headline). Drops 'S_' prefix since 'A' naming is shared with ASD. Cleaner for reader and matches ASD's existing A1 / A1prime convention with A1prime visually relabeled to A2 in figures.",
+   "rename_map": {
+    "S_A1→A2": "Headline. SCZ-primary vs all non-SCZ.",
+    "S_A2→A1": "SCZ vs psychiatric pool (mood + anxiety + NDD subgroups).",
+    "S_A3→A3": "SCZ vs Bipolar (psychotic-features overlap).",
+    "S_A4→A4": "SCZ vs MDD (negative-symptom overlap).",
+    "S_A5→A5": "SCZ vs ASD (shared CNV architecture: 22q11.2, NRXN1).",
+    "S_A6→A6": "SCZ vs ID (cognitive overlap).",
+    "S_A7→A7": "SCZ vs SubstanceAbuse (often comorbid)."
+   }
+  },
+  "_m_family_h1_fix_2026_05_27": {
+   "issue": "Audit H1 2026-05-27: benchmark/confirmatory_logistic_models.py was hardcoded with ASD_primary + PSYCH_NON_ASD = {NDD_non_ASD, psychiatric_non_NDD_non_ASD, language_social_confound_non_ASD}, which silently produced 0-positive fits for SCZ (and every non-ASD disorder).",
+   "resolution": "Script now accepts --m_family_json pointing at this config; comparator_groups lists above are the explicit benchmark_group labels read from the SCZ Tier-0 labels file. Backward-compat: ASD runs without --m_family_json still use ASD defaults."
+  },
+  "_b_family_comparator_2026_05_27": "B1-B4 use comparator_pool_ids = [A1, A5] (union of psychiatric pool and ASD_primary). The Stage 5 driver resolves the union and passes it to domain_hypothesis_tests.py via --negative_groups. This is the powered comparator for SCZ Tier 0 (n~211); A2 would over-dilute.",
+  "n_mp_thresholds": [
+   1,
+   3,
+   4,
+   5,
+   7,
+   10
+  ],
+  "n_mp_terms_file": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "_n_mp_thresholds_2026_05_27": "Depth-bias sweep added per §6g audit (LAB_NOTEBOOK_ENTRY_2026-05-27). Top-100 Phenodigm-ranked mice have median n_mp_terms=1 (q90=3); they score high because their single high-IC MP term dominates the asymmetric BMA mean. Stage 4's permutation null is the depth-stratified correction the new pipeline applies; Phenodigm does not. To make the cross-method comparison interpretable, AUROC is reported restricted to genotypes with n_mp_terms >= K for K in {1, 3, 4, 5, 7, 10}. Primary headline threshold is n_mp >= 4 (excludes ~96% of Phenodigm artifact-zone mice while preserving 77% of SCZ_primary positives, 86% of ASD_primary). n_mp >= 5 is a more aggressive alternative primary (98% artifact exclusion, 65% SCZ_primary retention) reported as robustness check. The n_mp filter is applied at AUROC-compute time inside compute_benchmark_metrics.py + compare_methods_paired.py against BOTH the new pipeline and the Phenodigm baseline — Phenodigm scores do NOT need re-running.",
+  "outdir_template_previous": "benchmark/run_2026-05-28_v2_scz_pol{regime}_{mode}/",
+  "outdir_template_change_2026_07_28": "Each disorder carried its own stale dated stamp: ASD 2026-05-11, SCZ 2026-05-28, ID 2026-06-02, NCD 2026-07-27. ASD's contained no disorder name at all, so its benchmark directories were generically named and could collide. All four now carry one stamp that also records the substrate, which is the distinction that decides whether two run directories are comparable."
+ },
+ "stage6_within_disorder": {
+  "diagnostic_ceiling": {
+   "k_of_n": [
+    2,
+    5
+   ],
+   "label": "2-of-5 DSM-5-TR Criterion A diagnostic threshold (≥2 of 5 symptoms required; ≥1 must be A.1 delusions / A.2 hallucinations / A.3 disorganized speech — the at-least-one-positive constraint is not encoded by k_of_n alone, documented in methods)"
+  },
+  "cochran_q_over_strict_domains": true,
+  "pairwise_mcnemar_correction": "holm",
+  "cochran_armitage_trend": true,
+  "trend_levels": 10
+ },
+ "stage7_viz": {
+  "domain_order": [
+   "delusions",
+   "hallucinations",
+   "disorganized_speech",
+   "catatonic_disorganized_behavior",
+   "negative_symptoms"
+  ],
+  "domain_short_labels": {
+   "delusions": "Delusions (A.1, floor)",
+   "hallucinations": "Hallucinations (A.2, floor)",
+   "disorganized_speech": "Disorg. speech (A.3, floor)",
+   "catatonic_disorganized_behavior": "Catatonic/disorg. (A.4)",
+   "negative_symptoms": "Negative (A.5)"
+  },
+  "domain_colors": null,
+  "palette_name": "RdBu",
+  "b_family_panel_labels": {
+   "B1": "Strict 5-domain composite",
+   "B2_positive_floor": "Positive floor (A.1-A.3)",
+   "B3_catatonic": "Catatonic (A.4)",
+   "B4_negative": "Negative (A.5)"
+  },
+  "headline_contrast": "A2"
+ },
+ "rescue": {
+  "enabled": true,
+  "outdir": "rescue_audit_scz/",
+  "paradigms": [
+   {
+    "name": "SCZ_sensorimotor_gating",
+    "include": "prepulse inhibition|abnormal startle reflex|increased startle reflex|impaired sensorimotor gating|sensorimotor gating",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high",
+    "citations": [
+     "Geyer et al. 2001 (PPI review)",
+     "Powell et al. 2009"
+    ]
+   },
+   {
+    "name": "SCZ_psychotomimetic_response",
+    "include": "abnormal behavioral response to (mk-?801|ketamine|phencyclidine|pcp|amphetamine|cocaine|psychostimulant)|enhanced behavioral response to (mk-?801|ketamine|phencyclidine|pcp|amphetamine)",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high"
+   },
+   {
+    "name": "SCZ_working_memory",
+    "include": "abnormal spatial working memory|impaired (working memory|spatial working memory)|abnormal latent inhibition|impaired latent inhibition",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "moderate"
+   },
+   {
+    "name": "SCZ_social_withdrawal_negative",
+    "include": "social withdrawal|decreased social investigation|abnormal social investigation|decreased social novelty preference",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "low"
+   }
+  ],
+  "phenotype_evidence_weights": {
+   "high": 2.0,
+   "moderate": 1.0,
+   "low": 0.5,
+   "none": 0.0
+  },
+  "min_phenotype_evidence_score": 1.0,
+  "note": "Paradigms verified SCZ-specific (sensorimotor_gating, psychotomimetic_response, working_memory, social_withdrawal_negative). Disgenet tsv path inherits the multi-disorder pull.",
+  "disgenet_tsv_path": "disgenet_api_pull_multi/all_gene_disease_associations.tsv"
+ },
+ "$role": "primary",
+ "domains": {
+  "strict": [
+   {
+    "name": "delusions",
+    "description": "DSM-5-TR SCZ Criterion A.1: delusions, fixed false beliefs <DSM-5-TR text redacted> (persecutory, referential, grandiose, thought insertion/withdrawal/broadcasting).",
+    "polarity": "negative"
+   },
+   {
+    "name": "hallucinations",
+    "description": "DSM-5-TR SCZ Criterion A.2: hallucinations, perception-like experiences without an external stimulus (auditory most common).",
+    "polarity": "negative"
+   },
+   {
+    "name": "disorganized_speech",
+    "description": "DSM-5-TR SCZ Criterion A.3: disorganized speech, derailment, incoherence, tangentiality, word salad.",
+    "polarity": "negative"
+   },
+   {
+    "name": "catatonic_disorganized_behavior",
+    "description": "DSM-5-TR SCZ Criterion A.4: grossly disorganized or catatonic behavior, from childlike silliness to unpredictable agitation, and catatonia (immobility, waxy flexibility, mutism, stupor, negativism, posturing, OR excessive purposeless motor activity). PARTIALLY MODELLABLE and the most tractable positive-pole criterion: catatonia has organism-level mouse analogs. Bidirectional (immobility AND excessive activity). Mouse anchors: catalepsy / bar test, waxy flexibility, immobility, locomotor disorganization.",
+    "polarity": "bidirectional"
+   },
+   {
+    "name": "negative_symptoms",
+    "description": "DSM-5-TR SCZ Criterion A.5: negative symptoms, diminished emotional expression (reduced affect, prosody, gesture) and avolition (reduced motivated goal-directed activity); includes alogia, anhedonia, asociality. MOST MODELLABLE of Criterion A. Mouse anchors: reduced affect proxies, progressive-ratio break point and effort-based decision tasks (avolition), sucrose preference (anhedonia), reduced social engagement (asociality). Emit diminished-expression and avolition as separate items.",
+    "polarity": "negative"
+   }
+  ],
+  "_dsm_realignment_2026-07-23": {
+   "scored_criterionA_domains": {
+    "salience_dysregulation": "DSM-5 A1 delusions + A2 hallucinations. No mouse behavioral analog -> scores ~0 across all genotypes and the background pool. KEPT and reported as un-mappable (FACET deliverable).",
+    "disorganization": "DSM-5 A3 disorganized speech (un-mappable, ~0) + A4 grossly disorganized or catatonic behavior (MAPPABLE via catatonia/catalepsy/disorganized behavior). Carries signal from A4.",
+    "negative_symptoms_motivation": "DSM-5 A5 negative symptoms (diminished emotional expression, avolition). MAPPABLE via social withdrawal, anhedonia, avolition."
+   },
+   "excluded_not_criterionA": {
+    "cognitive_executive": "NOT a DSM-5 Criterion A symptom; DSM lists cognitive impairment as an associated feature, explicitly non-diagnostic. Was the largest contributor (0.0452) -> the baseless part of the prior 0.866.",
+    "social_interaction": "DSM-5 Criterion B (functional decline: work/interpersonal/self-care), not a Criterion A symptom. 2/3 of its terms are B (social/occupational deterioration, impairment in personality functioning). The 1 A5-asociality term (Diminishment of social interactions) belongs conceptually with negative_symptoms_motivation."
+   },
+   "note": "Full DSM-5 Criterion A set is scored, including un-mappable A1/A2/A3 (scored 0, reported). Non-criterion domains (cognitive_executive, social_interaction/Crit B) excluded. Asociality term optionally foldable into A5 via a term re-domain if desired.",
+   "aggregator": "mean over the 3 Criterion A domains (macro-average)"
+  },
+  "mechanism_axis": {
+   "name": "salience_dysregulation_endophenotype",
+   "reported": "separately from face validity; NOT in domains.strict and NOT in the discrimination composite",
+   "content": "aberrant-salience endophenotype substrate: prepulse inhibition, sensorimotor gating, latent inhibition, dopamine-mediated psychotomimetic hyper-response, amphetamine and NMDA-antagonist sensitivity",
+   "rationale": "endophenotype substrate of the positive-symptom pole; not a DSM-5 diagnostic criterion; the dimension SCZ mouse models actually capture and that the Phenodigm baseline rewards (endophenotype-attribution probe 2026-07-27: PPI + sensorimotor gating carry the majority of Phenodigm's SCZ best-matches)",
+   "measurement": "the Phenodigm-contrast / endophenotype-attribution probe, reported as the mechanism axis distinct from criterion face validity"
+  }
+ }
+}

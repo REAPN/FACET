@@ -1,0 +1,29 @@
+hpo_id	hpo_label	normalized_phenotype	category	centrality	temporality	mapping_relation	confidence	manual_review
+HP:0033055	Impaired ability to plan	impaired planning	cognitive_executive	supporting	unspecified	exact	0.99	False
+HP:0033051	Impaired executive functioning	executive dysfunction	cognitive_executive	core	unspecified	exact	0.98	False
+HP:0002463	Language impairment	language impairment	other	core	unspecified	exact	0.98	False
+HP:0002186	Apraxia	apraxia	motor_coordination	supporting	unspecified	exact	0.98	False
+HP:5200118	Difficulty recognizing another's emotions	impaired emotion recognition	social_cognition_empathy	supporting	unspecified	exact	0.97	False
+HP:0002354	Memory impairment	memory impairment	cognitive_executive	core	unspecified	exact	0.96	False
+HP:0001268	Mental deterioration	acquired cognitive decline from previous baseline	cognitive_executive	core	current	exact	0.95	False
+HP:0030784	Anomic aphasia	word-finding difficulty	other	supporting	unspecified	exact	0.95	False
+HP:0006977	Deficit in grammar	impaired grammar and syntax	other	supporting	unspecified	exact	0.95	False
+HP:0010794	Impaired visuospatial constructive cognition	visuoconstructional impairment	motor_coordination	supporting	unspecified	exact	0.95	False
+HP:0031058	Impairment of activities of daily living	reduced independence in everyday activities	adaptive_functioning	core	current	exact	0.94	False
+HP:0033071	Impaired task monitoring	impaired error correction	cognitive_executive	supporting	unspecified	exact	0.93	False
+HP:0010863	Receptive language delay	impaired receptive language	other	supporting	unspecified	broader_than_source	0.84	False
+HP:5200044	Reduced attention regulation	impaired sustained attention	cognitive_executive	supporting	unspecified	broader_than_source	0.79	False
+HP:0033692	Declarative memory loss	impaired semantic memory	cognitive_executive	supporting	unspecified	broader_than_source	0.79	False
+HP:0100543	Cognitive impairment	learning impairment	cognitive_executive	core	unspecified	broader_than_source	0.72	False
+HP:0010524	Disturbed sensory perception	agnosia	motor_coordination	supporting	unspecified	exact	0.72	False
+HP:5200021	Reduced social insight	social cognition impairment	social_cognition_empathy	core	unspecified	broader_than_source	0.62	False
+HP:0031059	Impaired ability to bathe oneself	impaired self-care, bathing	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0031060	Impaired ability to dress oneself	impaired self-care, dressing	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0031061	Impaired toileting ability	impaired self-care, toileting	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0031062	Impaired transferring ability	impaired self-care, transferring	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0031063	Impaired feeding ability	impaired self-care, feeding	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0031064	Impaired continence	loss of continence	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0000020	Urinary incontinence	loss of urinary continence	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0002607	Bowel incontinence	loss of bowel continence	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0040183	Encopresis	loss of bowel continence, encopresis	adaptive_functioning	supporting	current	narrower	1.00	True
+HP:0010992	Stress urinary incontinence	loss of urinary continence, stress type	adaptive_functioning	supporting	current	narrower	1.00	True

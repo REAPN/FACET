@@ -1,0 +1,38 @@
+hpo_id	hpo_label	normalized_phenotype	category	centrality	temporality	mapping_relation	confidence	manual_review
+HP:0000737	Irritability	irritable mood	depressed_mood	core	developmental	exact	0.99	False
+HP:0012154	Anhedonia	anhedonia	anhedonia	core	current	exact	0.99	False
+HP:0046504	Decreased libido	decreased libido	anhedonia	supporting	current	exact	0.99	False
+HP:0004396	Poor appetite	decreased appetite	weight_appetite_change	core	current	exact	0.99	False
+HP:0100785	Insomnia	insomnia	sleep_disturbance	core	current	exact	0.99	False
+HP:0031355	Maintenance insomnia	middle insomnia	sleep_disturbance	supporting	current	exact	0.99	False
+HP:0031356	Terminal insomnia	terminal insomnia	sleep_disturbance	supporting	current	exact	0.99	False
+HP:0025298	Extended nighttime sleep	prolonged nocturnal sleep	sleep_disturbance	supporting	current	exact	0.99	False
+HP:0000713	Agitation	psychomotor agitation	psychomotor_change	core	current	exact	0.99	False
+HP:0012378	Fatigue	tiredness	fatigue	supporting	current	exact	0.99	False
+HP:0031987	Diminished ability to concentrate	diminished concentration	concentration_indecisiveness	core	current	exact	0.99	False
+HP:0031589	Suicidal ideation	suicidal ideation	suicidality	core	current	exact	0.99	False
+HP:0004324	Increased body weight	significant weight gain	weight_appetite_change	core	current	exact	0.98	False
+HP:0031354	Sleep onset insomnia	initial insomnia	sleep_disturbance	supporting	current	exact	0.98	False
+HP:0002300	Mutism	mutism	psychomotor_change	supporting	current	exact	0.98	False
+HP:0031469	Low self-esteem	worthlessness	worthlessness_guilt	core	current	exact	0.98	False
+HP:0000736	Short attention span	distractibility	concentration_indecisiveness	supporting	current	exact	0.98	False
+HP:5200330	Suicide behaviors	suicide attempt	suicidality	core	current	exact	0.98	False
+HP:5200273	Pathological sadness	depressed mood	depressed_mood	core	current	exact	0.97	False
+HP:0033705	Tearfulness	tearfulness	depressed_mood	supporting	current	exact	0.97	False
+HP:0000741	Apathy	apathy	anhedonia	supporting	current	exact	0.97	False
+HP:0001824	Weight loss	significant weight loss	weight_appetite_change	core	current	exact	0.97	False
+HP:0025791	Delusion of guilt	delusional guilt	worthlessness_guilt	supporting	current	exact	0.97	False
+HP:6000011	Guilt	excessive responsibility guilt	worthlessness_guilt	supporting	current	exact	0.96	False
+HP:0002591	Polyphagia	increased appetite	weight_appetite_change	core	current	exact	0.95	False
+HP:0001508	Failure to thrive	failure to make expected weight gain	weight_appetite_change	supporting	developmental	exact	0.94	False
+HP:5200271	Hopelessness	hopeless mood	depressed_mood	supporting	current	exact	0.93	False
+HP:0012171	Stereotypical hand wringing	hand-wringing	psychomotor_change	supporting	current	exact	0.93	False
+HP:0025406	Asthenia	loss of energy	fatigue	core	current	exact	0.92	False
+HP:0031058	Impairment of activities of daily living	exhaustion with activities of daily living	fatigue	supporting	current	broader_than_source	0.88	False
+HP:0000711	Restlessness	inability to sit still	psychomotor_change	supporting	current	exact	0.83	False
+HP:0030221	Sweet craving	food craving	weight_appetite_change	supporting	current	narrower_than_source	0.82	False
+HP:0025288	Excessive sleep	hypersomnia	sleep_disturbance	core	current	exact	0.82	False
+HP:0000733	Motor stereotypy	repetitive rubbing or pulling behaviors	psychomotor_change	supporting	current	exact	0.79	False
+HP:4000068	Abnormal interest	diminished interest	anhedonia	supporting	current	broader_than_source	0.72	False
+HP:0002465	Poor speech	reduced speech output	psychomotor_change	supporting	current	broader_than_source	0.72	False
+HP:0031843	Abnormally slow thought process	psychomotor slowing	psychomotor_change	supporting	current	broader_than_source	0.62	True

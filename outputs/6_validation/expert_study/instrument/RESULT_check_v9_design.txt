@@ -1,0 +1,62 @@
+PASS every rater package carries the identical page  [11 packages: ABCDEFGHJKL]
+PASS page assignments for A to L equal runs_blinded.json  [extra page code(s) outside the design: X]
+NOTE X carries the same 42 pairs and anchors as A in another order: True
+PASS page assignments equal the sealed key's runs
+PASS 171 items: 168 pairs and 3 anchors  [171 items, 3 anchors]
+PASS A: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS A: blocks ['B00', 'B04', 'B08'], 14 pairs each
+PASS A: 21 accepted and 21 refuted  [21 accepted]
+PASS A: part one balanced  [11 of 22]
+PASS B: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS B: blocks ['B01', 'B05', 'B09'], 14 pairs each
+PASS B: 21 accepted and 21 refuted  [21 accepted]
+PASS B: part one balanced  [11 of 22]
+PASS C: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS C: blocks ['B02', 'B06', 'B10'], 14 pairs each
+PASS C: 21 accepted and 21 refuted  [21 accepted]
+PASS C: part one balanced  [11 of 22]
+PASS D: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS D: blocks ['B03', 'B07', 'B11'], 14 pairs each
+PASS D: 21 accepted and 21 refuted  [21 accepted]
+PASS D: part one balanced  [11 of 22]
+PASS E: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS E: blocks ['B00', 'B05', 'B10'], 14 pairs each
+PASS E: 21 accepted and 21 refuted  [21 accepted]
+PASS E: part one balanced  [11 of 22]
+PASS F: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS F: blocks ['B01', 'B06', 'B11'], 14 pairs each
+PASS F: 21 accepted and 21 refuted  [21 accepted]
+PASS F: part one balanced  [11 of 22]
+PASS G: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS G: blocks ['B02', 'B07', 'B08'], 14 pairs each
+PASS G: 21 accepted and 21 refuted  [21 accepted]
+PASS G: part one balanced  [11 of 22]
+PASS H: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS H: blocks ['B03', 'B04', 'B09'], 14 pairs each
+PASS H: 21 accepted and 21 refuted  [21 accepted]
+PASS H: part one balanced  [11 of 22]
+PASS I: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS I: blocks ['B00', 'B07', 'B09'], 14 pairs each
+PASS I: 21 accepted and 21 refuted  [21 accepted]
+PASS I: part one balanced  [11 of 22]
+PASS J: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS J: blocks ['B01', 'B04', 'B10'], 14 pairs each
+PASS J: 21 accepted and 21 refuted  [21 accepted]
+PASS J: part one balanced  [11 of 22]
+PASS K: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS K: blocks ['B02', 'B05', 'B11'], 14 pairs each
+PASS K: 21 accepted and 21 refuted  [21 accepted]
+PASS K: part one balanced  [11 of 22]
+PASS L: 45 screens, no duplicates, 3 anchors in part one, 42 pairs  [25+20 screens]
+PASS L: blocks ['B03', 'B06', 'B08'], 14 pairs each
+PASS L: 21 accepted and 21 refuted  [21 accepted]
+PASS L: part one balanced  [11 of 22]
+PASS all 168 pairs covered  [168 covered]
+PASS every pair rated by exactly three codes, one per partition  [168 of 168]
+PASS 12 blocks of 14, 7 accepted and 7 refuted
+PASS raters in different partitions share at most one block  [max shared 14]
+pairs by number of ratings, returned A B C D E G H: {1: 42, 2: 126}
+  plus J K L: {2: 84, 3: 84}
+  plus I J K L: {2: 42, 3: 126}
+  all twelve: {3: 168}
+OVERALL PASS

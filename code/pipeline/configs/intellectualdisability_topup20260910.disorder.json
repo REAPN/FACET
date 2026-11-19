@@ -1,0 +1,725 @@
+{
+ "$schema": "./disorder_config.schema.json",
+ "$config_version": "1.0",
+ "$generated": "2026-06-02 — IntellectualDisability primary-disorder config authored from scz.disorder.json structural template (ID + MDD Tier 0 executor instance). 3-domain strict enum signed off by the first author (intellectual_functioning Crit A / adaptive_functioning Crit B umbrella / developmental_onset Crit C). Stage 0 carved from DSM-5-TR master pages 133-141 -> DSM5_IntellectualDisability.pdf; Diagnostic Criteria trimmed at the (pypdf-garbled) severity Table 1, rich phenotype detail retained via Diagnostic Features. score_floor = universal 0.57 (RL §1, no per-disorder recalibration); lexical_factor_when_structural_missing=0.5 (RL §2); m_family explicit comparator_groups (RL §10); n_mp depth sweep [1,3,4,5,7,10] (RL §3). taxonomy_tsv points to mp_term_taxonomy_id_v1/ (to be built via rebuild_id_taxonomy.py with 15-MP anchor gate).",
+ "disorder": {
+  "id": "IntellectualDisability",
+  "name": "Intellectual Disability",
+  "dsm5_section": "DSM-5-TR Chapter 1 (NDD)",
+  "icd10_codes": [
+   "F70",
+   "F71",
+   "F72",
+   "F73",
+   "F78",
+   "F79"
+  ]
+ },
+ "stage0_dsm5_extraction": {
+  "pdf_input": "DSM5_IntellectualDisability.pdf",
+  "outdir": "DSM5_IntellectualDisability_preprocessed/",
+  "chapter_start_anchor": "(?m)^\\s*Diagnostic Criteria\\s*$",
+  "chapter_start_anchor_keep": true,
+  "chapter_end_anchor": "(?m)^\\s*Global Developmental Delay\\s*$",
+  "criteria_trim_anchors": [
+   "Note:",
+   "Specify current severity",
+   "Specify if:"
+  ],
+  "text_normalization": {
+   "hyphen_join_min_chars": 2,
+   "criterion_marker_rejoin": true,
+   "paren_note_rejoin": true
+  },
+  "headings_to_extract": [
+   {
+    "name": "Diagnostic Criteria",
+    "regex": "Diagnostic Criteria"
+   },
+   {
+    "name": "Specifiers",
+    "regex": "Specifiers"
+   },
+   {
+    "name": "Diagnostic Features",
+    "regex": "Diagnostic Features"
+   },
+   {
+    "name": "Associated Features Supporting Diagnosis",
+    "regex": "Associated Features Supporting Diagnosis|Associated Features"
+   },
+   {
+    "name": "Prevalence",
+    "regex": "Prevalence"
+   },
+   {
+    "name": "Development and Course",
+    "regex": "Development and Course"
+   },
+   {
+    "name": "Risk and Prognostic Factors",
+    "regex": "Risk and Prognostic Factors"
+   },
+   {
+    "name": "Culture-Related Diagnostic Issues",
+    "regex": "Culture-Related Diagnostic Issues"
+   },
+   {
+    "name": "Sex- and Gender-Related Diagnostic Issues",
+    "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
+   },
+   {
+    "name": "Differential Diagnosis",
+    "regex": "Differential Diagnosis"
+   },
+   {
+    "name": "Comorbidity",
+    "regex": "Comorbidity"
+   }
+  ],
+  "core_phenotype_headings": [
+   "Diagnostic Criteria",
+   "Diagnostic Features",
+   "Associated Features Supporting Diagnosis"
+  ],
+  "running_header_strip_patterns": [
+   "(?mi)^\\s*Intellectual Developmental Disorder\\s*$",
+   "(?mi)^\\s*Neurodevelopmental Disorders\\s*$",
+   "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
+   "(?mi)^\\s*\\d+\\s*$"
+  ],
+  "text_replacements": [
+   {
+    "mode": "literal",
+    "find": "\u0000",
+    "replace": "",
+    "comment": "strip pypdf NUL bytes (pitfall #10)"
+   },
+   {
+    "mode": "literal",
+    "find": "�",
+    "replace": "",
+    "comment": "strip pypdf replacement-char mojibake"
+   }
+  ]
+ },
+ "stage1_hpo_curation": {
+  "core_text_input": "DSM5_IntellectualDisability_preprocessed/IntellectualDisability_core_phenotype_only.txt",
+  "hpo_json_input": "hp.json",
+  "outdir": "pilot_hpo_run_intellectualdisability_v1/",
+  "extraction_schema": {
+   "categories_enum": [
+    "intellectual_functioning",
+    "adaptive_functioning",
+    "developmental_onset",
+    "other"
+   ],
+   "polarity_enum": [
+    "present",
+    "absent",
+    "negated",
+    "uncertain",
+    "bidirectional"
+   ],
+   "centrality_enum": [
+    "core",
+    "supporting",
+    "context_only"
+   ],
+   "temporality_enum": [
+    "current",
+    "history",
+    "developmental",
+    "unspecified"
+   ]
+  },
+  "extraction_prompt_addendum": "DSM-5-TR Intellectual Disability (Intellectual Developmental Disorder) requires ALL THREE criteria: A. Deficits in intellectual functions (<DSM-5-TR text redacted>, learning from experience) -> domain intellectual_functioning. B. Deficits in adaptive functioning across conceptual, social, and/or practical domains (communication, social participation, independent living, self-care, daily-living skills) -> domain adaptive_functioning (a single umbrella domain; do NOT split conceptual/social/practical into separate domains, tag them all as adaptive_functioning). C. Onset during the developmental period -> domain developmental_onset (a temporal criterion; tag onset/milestone/developmental-period features here, temporality='developmental'). There are NO bidirectional domains for ID (all domains are deficit/loss-direction). Severity specifiers (mild/moderate/severe/profound) GRADE the same A/B deficits — extract the described deficits into intellectual_functioning or adaptive_functioning, not as separate items. Extract phenotype FEATURES, not diagnoses or IQ cutoffs. Do NOT extract from Differential Diagnosis exclusions or from the ICD-11 terminology Note. Mouse models cannot directly have 'academic skills' — operationalized downstream via learning/memory and adaptive-behavior paradigms — but extraction here stays at the human-symptom level.",
+  "resolution_prompt_addendum": null,
+  "seed_terms_per_domain": {
+   "intellectual_functioning": [
+    "intellectual disability",
+    "cognitive impairment",
+    "impaired reasoning",
+    "impaired problem solving",
+    "abstract thinking deficit",
+    "impaired judgment",
+    "poor academic learning",
+    "impaired learning from experience",
+    "low IQ",
+    "abnormal spatial learning",
+    "working memory deficit",
+    "impaired novel object recognition",
+    "cognitive inflexibility",
+    "impaired set-shifting",
+    "memory impairment",
+    "learning impairment"
+   ],
+   "adaptive_functioning": [
+    "impaired adaptive behavior",
+    "deficit in daily living skills",
+    "impaired self-care",
+    "impaired social participation",
+    "communication deficit",
+    "social judgment deficit",
+    "impaired independent living",
+    "abnormal nest building",
+    "impaired grooming",
+    "reduced social investigation",
+    "practical skill deficit",
+    "conceptual skill deficit"
+   ],
+   "developmental_onset": [
+    "developmental delay",
+    "delayed developmental milestones",
+    "delayed motor milestones",
+    "delayed righting reflex",
+    "abnormal eye opening",
+    "delayed development",
+    "neonatal developmental abnormality",
+    "abnormal negative geotaxis"
+   ]
+  },
+  "llm_model": "gpt-5.4",
+  "embedding_model": "text-embedding-3-large",
+  "llm_seed": 1,
+  "final_filter": {
+   "allowed_centrality": [
+    "core",
+    "supporting"
+   ],
+   "allowed_polarity": [
+    "present",
+    "bidirectional"
+   ],
+   "allowed_relations": [
+    "exact",
+    "broader_than_source",
+    "narrower_than_source"
+   ]
+  }
+ },
+ "stage2_candidate_features": {
+  "hpo_targets_input": "pilot_hpo_run_intellectualdisability_v1/07_final_resolved_hpo_terms.tsv",
+  "mouse_mp_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv": "mp_term_taxonomy_criterion_v1_ID/03_mp_term_taxonomy.tsv",
+  "pairwise_similarity_tsv": "phenio-monarch-hp-mp.0.4.semsimian.tsv",
+  "outdir": "intellectualdisability_candidate_features_v1/",
+  "mouse_domain_routing": {
+   "mode": "single_bucket",
+   "single_bucket_label": "id_pool",
+   "mapping": null,
+   "v2_upgrade_note": "v2: re-label taxonomy with ID-specific mouse_domain values (learning_memory, working_memory, adaptive_behavior_self_care, social_adaptive, developmental_milestone). Deferred."
+  },
+  "tier_filter": {
+   "include": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "exclude": [
+    5
+   ],
+   "tier_5_caveat": null
+  },
+  "include_supporting_hpo": true,
+  "include_tier2_mouse": true,
+  "use_embedding_retrieval": true,
+  "use_lexical_retrieval": true,
+  "use_spillover_default": false,
+  "use_spillover_v2_target": true,
+  "top_k_embedding": 20,
+  "top_k_lexical": 20,
+  "mode": "union",
+  "hpo_domain_regex_fallback": {
+   "intellectual_functioning": "intellectual disab|intellectual function|cognit|reasoning|problem.solving|abstract thinking|impaired judgment|academic learning|learning from experience|low iq|\\biq\\b|working memory|spatial learning|novel object recognition|memory impair|impaired learning|learning impair|cognitive flexibilit|set.shift|executive function|intellectual developmental",
+   "adaptive_functioning": "adaptive (function|behavior|deficit)|daily living|activities of daily|self.care|self care|independent living|social participation|social judgment|communication deficit|nest build|impaired grooming|practical skill|conceptual skill|personal independence",
+   "developmental_onset": "developmental (delay|period|onset|abnormalit)|delayed (development|milestone|motor)|delayed milestone|righting reflex|eye opening|negative geotaxis|neonatal|postnatal develop"
+  },
+  "_hpo_domain_regex_fallback_note": "Triggers stage2a_candidate_features.py install_mdd_style_hpo_domain_inference monkey-patch: trusts Stage 1 ID `category` for already-tagged HPOs (direct passthrough) and applies these regex maps to 'other'-tagged HPOs matching ID clinical vocabulary. WORD-BOUNDARY AUDIT PENDING (PITFALL #17): audit 'learning' / 'cognit' / 'intellectual' patterns for over-match before relying on T0 label counts; flag in close-out.",
+  "inject_descendants": true,
+  "mp_obo": "MPheno_OBO.ontology",
+  "carriage_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv_previous": "mp_term_taxonomy_id_v1/03_mp_term_taxonomy.tsv",
+  "taxonomy_provenance_2026_07_28": "Repointed to the criterion-grounded taxonomy for ID, built by build_stage2a_taxonomy.py from that disorder's own run and from no other disorder. The previous file carried ASD's relevance_tier column verbatim for SCZ and NCD, 11485 of 11485 values identical, which made the candidate universe for those disorders ASD's universe."
+ },
+ "stage2_rerank": {
+  "outdir": "intellectualdisability_pair_rerank_v1/",
+  "developer_prompt_addendum": "The 3 DSM-5-TR Intellectual Disability criteria define the strict domains: intellectual_functioning (Criterion A — <DSM-5-TR text redacted>, learning from experience), adaptive_functioning (Criterion B umbrella — conceptual/social/practical adaptive skills: communication, social participation, independent living, self-care), developmental_onset (Criterion C — onset during the developmental period). Mouse-proxy guidance: (a) intellectual_functioning: impaired Morris water maze / spatial learning, impaired novel object recognition, working-memory deficits (radial-arm, T-maze delayed alternation), attentional set-shifting, reversal learning, puzzle-box problem-solving -> direct_analog / close_support; generic 'abnormal learning/memory/cognition' -> close_support. (b) adaptive_functioning: abnormal nest-building (Deacon ADL proxy), abnormal burrowing, impaired home-cage self-care/grooming competence, reduced social investigation/participation -> close_support; the social sub-component overlaps with ASD — disambiguation comes downstream via disorder-specific gene evidence, NOT by inflating ID strict-eligibility. (c) developmental_onset: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening), pup USV ontogeny delay -> close_support; BUT most MGI annotations are adult-mouse, so expect sparse strict-eligible coverage — judge on construct merit, do not force analogs. ID NOTE: many ID genes are also ASD/SCZ genes (TSC1, SHANK3, MECP2, FMR1); cross-disorder substrate overlap is expected and handled downstream, not by relaxing the construct-validity bar. There are NO bidirectional domains for ID. strict_eligible=true only for high-quality organism-level analogs suitable for strict ID-domain support.",
+  "behavioral_analog_enum": [
+   "direct_analog",
+   "close_support",
+   "weak_support",
+   "mechanistic_only",
+   "mismatch"
+  ],
+  "evidence_scope_enum": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "mechanistic",
+   "unclear",
+   "cellular_or_circuit_only"
+  ],
+  "score_floor": {
+   "value": 0.57,
+   "policy": "universal_across_disorders",
+   "provenance": "0.57 was derived for ASD broad_v3 (2026-05-09 lab notebook): balanced-accuracy maximization of transparent_score against the LLM's own broad_eligible verdicts on the 180 LLM-judged pairs inside ambiguous-target rerank bundles. At θ=0.57, BA=0.736, precision=0.83, recall=0.70. Note: the 180 pairs were LLM-judged, not hand-curated — θ is a score-self-consistency threshold, not an externally-validated behavioral-analog cutoff.",
+   "applies_to": "Stage 2c fill pass. Pairs with transparent_score >= 0.57 that Stage 2b did not bundle (because their target was non-ambiguous or they sat below top-N) are submitted to the LLM for a second-pass eligibility judgment with the identical prompt and schema. Does NOT filter Stage 2b LLM-strict-eligible pairs (those bypass the floor).",
+   "per_disorder_tuning_policy": "DISALLOWED. Per-disorder θ tuning would add 20 DOF that reviewers see as fishing (Mode C), and the per-disorder calibration set would be each disorder's LLM verdicts — circular (Mode D, since we are gating Stage 2c LLM calls against Stage 2b LLM labels). If a future contributor needs per-disorder floor behavior, switch from a tuned VALUE to a uniform RULE (e.g., 80th-percentile of pair scores per disorder), so the same logic applies automatically across all disorders without per-disorder choices.",
+   "sensitivity_sweep_plan": {
+    "floors": [
+     0.5,
+     0.55,
+     0.57,
+     0.6,
+     0.65
+    ],
+    "outputs": "rerun Stage 2c -> 3 -> 4 -> 5 once per floor; report AUROC across A2 (headline) and A1 (psychiatric pool); flag if any headline AUROC moves > 0.02 across the range.",
+    "status": "deferred_to_paper_prep",
+    "rationale": "Pre-register the sweep before observing T0 AUROC so the robustness claim is blinded to outcome, not post-hoc."
+   }
+  },
+  "weights": {
+   "embed": 0.45,
+   "lexical": 0.25,
+   "resnik": 0.2,
+   "jaccard": 0.1,
+   "owl": 0.0
+  },
+  "top_n_bundle": 5,
+  "ambiguity_margin": 0.08,
+  "gray_low": 0.35,
+  "gray_high": 0.7,
+  "promote_bonus": 0.1,
+  "demote_penalty": 0.1,
+  "llm_model": "gpt-5.4",
+  "llm_seed": 1,
+  "_top_n_bundle_rationale": "Reverted from 10 to 5 (2026-05-27) so the lexical-downweight sensitivity test isolates the effect of the new factor cleanly. If lexical-downweight alone surfaces the catatonia↔catalepsy match at top_n=5, the wider bundle was a workaround for the wrong underlying problem.",
+  "lexical_factor_when_structural_missing": 0.5,
+  "_lexical_downweight_rationale": "Lexical channel was originally introduced as a guard against LLM/semantic over-reach in ontology mapping (no established protocol for using LLMs in ontology research at design time). When both Resnik IC AND Jaccard channels are absent (structural_missing=True), the redistribution math inflates lexical's effective contribution from its 25%% baseline to ~35.7%% — exactly when lexical's guard role is also least defensible because there is no ontology channel left to validate either signal. Setting factor=0.5 halves lexical's weight in that case (effective ~22%% vs original 25%%), letting embed dominate (~78%%) for cross-jargon semantic matches like Catalepsy↔Catatonia where token overlap is zero but semantic similarity is high. Validated by parity test on ASD: if ASD headline AUROC is stable (most ASD pairs have IC/Jaccard present, factor doesn't fire), the change is defensible to apply across disorders. Test date 2026-05-27.",
+  "categories_enum": [
+   "intellectual_functioning",
+   "adaptive_functioning",
+   "developmental_onset",
+   "other"
+  ],
+  "seed_terms_per_domain": {
+   "intellectual_functioning": [
+    "intellectual disability",
+    "cognitive impairment",
+    "impaired reasoning",
+    "impaired problem solving",
+    "abstract thinking deficit",
+    "impaired judgment",
+    "poor academic learning",
+    "impaired learning from experience",
+    "low IQ",
+    "abnormal spatial learning",
+    "working memory deficit",
+    "impaired novel object recognition",
+    "cognitive inflexibility",
+    "impaired set-shifting",
+    "memory impairment",
+    "learning impairment"
+   ],
+   "adaptive_functioning": [
+    "impaired adaptive behavior",
+    "deficit in daily living skills",
+    "impaired self-care",
+    "impaired social participation",
+    "communication deficit",
+    "social judgment deficit",
+    "impaired independent living",
+    "abnormal nest building",
+    "impaired grooming",
+    "reduced social investigation",
+    "practical skill deficit",
+    "conceptual skill deficit"
+   ],
+   "developmental_onset": [
+    "developmental delay",
+    "delayed developmental milestones",
+    "delayed motor milestones",
+    "delayed righting reflex",
+    "abnormal eye opening",
+    "delayed development",
+    "neonatal developmental abnormality",
+    "abnormal negative geotaxis"
+   ]
+  }
+ },
+ "stage3_aggregation": {
+  "outdir_template": "intellectualdisability_support_aggregated_v1_topup20260910_pol{regime}/",
+  "polarity_regimes_to_run": [
+   "off"
+  ],
+  "polarity_regimes_deferred": [
+   "soft",
+   "strict",
+   "schema"
+  ],
+  "polarity_deferral_note": "ID has NO bidirectional domains — all three strict domains (intellectual_functioning, adaptive_functioning, developmental_onset) are deficit/loss-direction. Polarity-off is the canonical and appropriate regime; no catatonia-style bidirectional handling needed.",
+  "polarity_weight_maps": null,
+  "support_threshold": 0.3,
+  "lexical_cluster_threshold": 0.65,
+  "overall_aggregator": "mean",
+  "strict_analog_gate": "strong",
+  "eligibility_mode": "score_assisted_broad",
+  "broad_score_threshold": 0.57,
+  "strict_score_threshold": 0.62,
+  "allowed_evidence_scope_strict": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior"
+  ],
+  "allowed_evidence_scope_broad": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "unclear"
+  ],
+  "strong_behavioral_analog_types": [
+   "direct_analog",
+   "close_support"
+  ]
+ },
+ "stage4_permutation_null": {
+  "outdir_template": "intellectualdisability_pvalue_v1_topup20260910_pol{regime}/",
+  "n_permutations": 10000,
+  "seed": 1,
+  "max_depth_cap": 200,
+  "score_function_fix_version": "2026-05-14"
+ },
+ "stage5_benchmark": {
+  "outdir_template": "benchmark/run_2026-09-10_topup_intellectualdisability_pol{regime}_{mode}/",
+  "benchmark_group_table": "benchmark_tables_per_tier/IntellectualDisability_tier_0.csv",
+  "contrasts": [
+   {
+    "name": "A2",
+    "description": "Headline. ID-primary vs all non-ID.",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "__all_non_IntellectualDisability_primary__"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A2_headline"
+   },
+   {
+    "name": "A1",
+    "description": "ID vs psychiatric/NDD pool (MDD, Bipolar, Anxiety, SCZ, ADHD, NDD_other).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "SCZ_primary",
+     "ADHD_primary",
+     "NDD_other_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A1_psychiatric_pool"
+   },
+   {
+    "name": "A3",
+    "description": "ID vs ADHD (NDD attention/cognition confound).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "ADHD_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A3_ADHD"
+   },
+   {
+    "name": "A4",
+    "description": "ID vs Neurocognitive (developmental vs degenerative cognitive-deficit boundary).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "Neurocognitive_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A4_neurocognitive"
+   },
+   {
+    "name": "A5",
+    "description": "ID vs ASD (shared-gene overlap: TSC1, SHANK3, MECP2 — expect anti-discriminative pattern).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "ASD_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A5_ASD"
+   },
+   {
+    "name": "A6",
+    "description": "ID vs SCZ (cognitive overlap; mirror of SCZ A6).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "SCZ_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A6_SCZ"
+   },
+   {
+    "name": "A7",
+    "description": "ID vs MDD (low-n comparator).",
+    "positive_group": "IntellectualDisability_primary",
+    "negative_groups": [
+     "MDD_primary"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false,
+    "figure_panel": "panel_A7_MDD"
+   }
+  ],
+  "b_family": [
+   {
+    "name": "B1",
+    "type": "composite_mean",
+    "domains": "all_strict",
+    "label": "Strict 3-domain composite (ID Criteria A+B+C)",
+    "gated_by": null,
+    "multiplicity_correction": null,
+    "comparator_pool_ids": [
+     "A1",
+     "A5"
+    ],
+    "comparator_pool_note": "Union of A1 (psychiatric/NDD pool) and A5 (ASD_primary) — the powered non-ID comparator (~n 73+88). Avoids A2 dilution by ~75,700 broad_other genotypes."
+   },
+   {
+    "name": "B2_intellectual",
+    "type": "cluster_mean",
+    "domains": [
+     "intellectual_functioning"
+    ],
+    "label": "Intellectual functioning (Criterion A)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1",
+     "A5"
+    ],
+    "comparator_pool_note": "Union of A1 (psychiatric/NDD pool) and A5 (ASD_primary) — the powered non-ID comparator (~n 73+88). Avoids A2 dilution by ~75,700 broad_other genotypes."
+   },
+   {
+    "name": "B3_adaptive",
+    "type": "cluster_mean",
+    "domains": [
+     "adaptive_functioning"
+    ],
+    "label": "Adaptive functioning (Criterion B umbrella)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1",
+     "A5"
+    ],
+    "comparator_pool_note": "Union of A1 (psychiatric/NDD pool) and A5 (ASD_primary) — the powered non-ID comparator (~n 73+88). Avoids A2 dilution by ~75,700 broad_other genotypes."
+   },
+   {
+    "name": "B4_developmental",
+    "type": "cluster_mean",
+    "domains": [
+     "developmental_onset"
+    ],
+    "label": "Developmental onset (Criterion C; expect sparse)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_ids": [
+     "A1",
+     "A5"
+    ],
+    "comparator_pool_note": "Union of A1 (psychiatric/NDD pool) and A5 (ASD_primary) — the powered non-ID comparator (~n 73+88). Avoids A2 dilution by ~75,700 broad_other genotypes."
+   }
+  ],
+  "m_family": [
+   {
+    "name": "M1_psychiatric_non_ID",
+    "model_type": "binary_logit",
+    "positive_label": "IntellectualDisability_primary",
+    "comparator_pool_id": "psychiatric_non_ID",
+    "comparator_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "SCZ_primary",
+     "ADHD_primary",
+     "NDD_other_primary"
+    ],
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Mirrors A1; small-n on several arms (Bipolar 4, Anxiety 3, NDD_other 3) — interpret cautiously."
+   },
+   {
+    "name": "M2_all_non_ID",
+    "model_type": "binary_logit",
+    "positive_label": "IntellectualDisability_primary",
+    "comparator_pool_id": "all_non_ID",
+    "comparator_groups": [
+     "ADHD_primary",
+     "ASD_primary",
+     "Anxiety_primary",
+     "Bipolar_primary",
+     "EatingDisorders_primary",
+     "MDD_primary",
+     "NDD_other_primary",
+     "Neurocognitive_primary",
+     "SCZ_primary",
+     "Sleep_primary",
+     "SubstanceAbuse_primary",
+     "IntellectualDisability_mixed",
+     "broad_other",
+     "mixed_psychiatric_other"
+    ],
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Mirrors A2 headline — all non-ID_primary groups (includes IntellectualDisability_mixed as comparator, parallel to SCZ M2)."
+   },
+   {
+    "name": "M3_multinomial_psych_pool",
+    "model_type": "multinomial_logit",
+    "positive_label": "IntellectualDisability_primary",
+    "comparator_pool_id": "psychiatric_pool_multinomial_id",
+    "comparator_groups": [
+     "MDD_primary",
+     "Bipolar_primary",
+     "Anxiety_primary",
+     "SCZ_primary",
+     "ADHD_primary",
+     "NDD_other_primary"
+    ],
+    "multinomial_reference": "SCZ_primary",
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "_note": "Reference = SCZ_primary (largest cognitively-adjacent psychiatric anchor, n=51). EXPECT NON-CONVERGENCE per quasi-separation (Bipolar 4 / Anxiety 3 / NDD_other 3), same as SCZ M3; report 'did not converge'."
+   }
+  ],
+  "n_bootstrap": 1000,
+  "phenodigm_baseline_score_file_template": "benchmark/run_2026-06-02_v1_intellectualdisability_pol{regime}_{mode}/baseline_scores/01_baseline_genotype_scores__B1_phenodigm_plain.tsv",
+  "n_mp_thresholds": [
+   1,
+   3,
+   4,
+   5,
+   7,
+   10
+  ],
+  "n_mp_terms_file": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "outdir_template_previous": "benchmark/run_2026-06-02_v1_intellectualdisability_pol{regime}_{mode}/",
+  "outdir_template_change_2026_07_28": "The template was hardcoded to run_2026-06-02_v1, so stage 5 output run on 2026-07-28 landed in directories named for June 2 and collided with the naming of earlier runs. Nothing was lost, all files in the affected ID directories were written the same day, but the name misstated when the run happened and the next three disorders would have inherited it. The new stamp also records that these runs sit on the criterion-anchored taxonomy, which is the distinction that actually matters for whether two run directories are comparable.",
+  "outdir_template_previous_2026_07_28": "benchmark/run_2026-07-28_criterion_v1_intellectualdisability_pol{regime}_{mode}/"
+ },
+ "stage6_within_disorder": {
+  "diagnostic_ceiling": {
+   "k_of_n": [
+    3,
+    3
+   ],
+   "label": "3-of-3 DSM-5-TR criteria required (A intellectual + B adaptive + C developmental onset; all three mandatory)"
+  },
+  "cochran_q_over_strict_domains": true,
+  "pairwise_mcnemar_correction": "holm",
+  "cochran_armitage_trend": true,
+  "trend_levels": 10
+ },
+ "stage7_viz": {
+  "domain_order": [
+   "intellectual_functioning",
+   "adaptive_functioning",
+   "developmental_onset"
+  ],
+  "domain_short_labels": {
+   "intellectual_functioning": "Intellectual (A)",
+   "adaptive_functioning": "Adaptive (B)",
+   "developmental_onset": "Dev. onset (C)"
+  },
+  "domain_colors": null,
+  "palette_name": "RdBu",
+  "b_family_panel_labels": {
+   "B1": "Strict 3-domain composite",
+   "B2_intellectual": "Intellectual (Crit A)",
+   "B3_adaptive": "Adaptive (Crit B)",
+   "B4_developmental": "Dev. onset (Crit C)"
+  },
+  "headline_contrast": "A2"
+ },
+ "rescue": {
+  "enabled": true,
+  "outdir": "rescue_audit_intellectualdisability/",
+  "paradigms": [
+   {
+    "name": "ID_spatial_learning",
+    "include": "impaired spatial learning|abnormal Morris water maze|impaired spatial reference memory|abnormal spatial navigation",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high",
+    "citations": [
+     "Silverman et al. 2010",
+     "Crawley 2007"
+    ]
+   },
+   {
+    "name": "ID_working_memory",
+    "include": "abnormal spatial working memory|impaired working memory|abnormal radial arm maze|impaired delayed match",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high"
+   },
+   {
+    "name": "ID_associative_learning",
+    "include": "impaired contextual fear conditioning|abnormal associative learning|impaired novel object recognition|abnormal object recognition memory",
+    "exclude": "fear extinction|extinction learning",
+    "min_hits": 1,
+    "confidence": "moderate"
+   },
+   {
+    "name": "ID_synaptic_plasticity",
+    "include": "impaired long-term potentiation|abnormal LTP|impaired synaptic plasticity",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "moderate",
+    "note": "Mechanism-level paradigm; commonly co-reported with cognitive phenotypes."
+   }
+  ],
+  "phenotype_evidence_weights": {
+   "high": 2.0,
+   "moderate": 1.0,
+   "low": 0.5,
+   "none": 0.0
+  },
+  "min_phenotype_evidence_score": 1.0
+ },
+ "$role": "primary",
+ "domains": {
+  "strict": [
+   {
+    "name": "intellectual_functioning",
+    "description": "DSM-5-TR Intellectual Disability Criterion A — deficits in intellectual functions: <DSM-5-TR text redacted> clinical assessment and standardized intelligence testing. Folds the learning/memory cognitive sub-pole in (per the first author sign-off: plain 3-domain, not split). Mouse anchors: impaired spatial learning / Morris water maze incl. reversal (Morris 1984), impaired novel object recognition, working-memory deficits (radial-arm maze, T-maze delayed alternation), attentional set-shifting (Birrell & Brown 2000), reversal learning, puzzle-box problem-solving (Ben Abdallah 2011), impaired associative/operant discrimination learning. Literature anchors: Kaplanis 2020 (DDD de novo landscape), Vissers 2016 (ID genetics), Wieczorek 2024.",
+    "polarity": "negative"
+   },
+   {
+    "name": "adaptive_functioning",
+    "description": "DSM-5-TR Intellectual Disability Criterion B (UMBRELLA cluster — conceptual + social + practical adaptive sub-domains held together; deficit in >=1 sub-domain satisfies the criterion). Failure to meet developmental/<DSM-5-TR text redacted>: communication, social participation/judgment, independent living, self-care, daily-living skills, across multiple environments. Kept as an umbrella (not decomposed) to avoid a standalone social axis (ASD-overlap risk) and a near-empty conceptual/academic axis; sub-domain composition is reported descriptively in the close-out. Mouse anchors: nest-building score (Deacon 2006 ADL proxy), burrowing, home-cage self-care/grooming competence, three-chamber social approach (social sub-domain). Literature anchors: AAIDD/Schalock adaptive-behavior framework; Deacon 2006.",
+    "polarity": "negative"
+   },
+   {
+    "name": "developmental_onset",
+    "description": "DSM-5-TR Intellectual Disability Criterion <DSM-5-TR text redacted> (before age 18). Mouse anchors: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening; Fox 1965), pup USV ontogeny delay. EXPECTED NEAR-STRUCTURAL-ZERO domain: MGI annotations are overwhelmingly adult-mouse, so strict-eligible coverage is expected to be sparse (analogous to SCZ salience_dysregulation). Reported transparently as a coverage floor + flagged as an endophenotype-layer candidate, not dropped. Literature anchors: Fox 1965; Kaplanis 2020 (developmental-onset framing of DDD).",
+    "polarity": "negative"
+   }
+  ]
+ },
+ "$topup_2026_09_10": "Copy of intellectualdisability.disorder.json with only the three stage output templates changed, so that stages 3 to 5 rerun on the completed pair table (top-up of 2026-09-10, 452 pairs on TGT_023, TGT_024, TGT_025) land beside the July run of record instead of over it. The stage 2 rerank outdir is unchanged: intellectualdisability_pair_rerank_v1/03_reranked_pairs_filled.tsv was updated in place and its prior state is 03_reranked_pairs_filled.tsv.bak_pre_topup_<stamp>."
+}

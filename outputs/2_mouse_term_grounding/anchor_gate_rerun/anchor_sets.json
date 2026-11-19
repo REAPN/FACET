@@ -1,0 +1,395 @@
+{
+ "SCZ": [
+  {
+   "mp_id": "MP:0002822",
+   "label_hint": "catalepsy",
+   "expected_domain": "catatonic_disorganized_behavior",
+   "expected_strict": true,
+   "expected_direction": "bidirectional"
+  },
+  {
+   "mp_id": "MP:0001399",
+   "label_hint": "hyperactivity",
+   "expected_domain": "catatonic_disorganized_behavior",
+   "expected_strict": true,
+   "expected_direction": "bidirectional"
+  },
+  {
+   "mp_id": "MP:0001361",
+   "label_hint": "abnormal social investigation / withdrawal",
+   "expected_domain": "negative_symptoms",
+   "expected_strict": true,
+   "expected_direction": "negative"
+  },
+  {
+   "mp_id": "MP:0009710",
+   "label_hint": "anhedonia / decreased sucrose preference",
+   "expected_domain": "negative_symptoms",
+   "expected_strict": true,
+   "expected_direction": "positive"
+  },
+  {
+   "mp_id": "MP:0021111",
+   "label_hint": "decreased social investigation",
+   "expected_domain": "negative_symptoms",
+   "expected_strict": true,
+   "expected_direction": "negative"
+  },
+  {
+   "mp_id": "MP:0003088",
+   "label_hint": "abnormal prepulse inhibition",
+   "expected_domain": "mechanism_substrate",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0002634",
+   "label_hint": "abnormal sensorimotor gating",
+   "expected_domain": "mechanism_substrate",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0002635",
+   "label_hint": "reduced sensorimotor gating",
+   "expected_domain": "mechanism_substrate",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0008428",
+   "label_hint": "abnormal spatial working memory",
+   "expected_domain": "cognitive_associated",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0001463",
+   "label_hint": "abnormal spatial learning",
+   "expected_domain": "cognitive_associated",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0001900",
+   "label_hint": "impaired synaptic plasticity",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0001905",
+   "label_hint": "abnormal dopamine level",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  },
+  {
+   "mp_id": "MP:0002135",
+   "label_hint": "abnormal kidney morphology",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false,
+   "expected_direction": "n/a"
+  }
+ ],
+ "ID": [
+  {
+   "mp_id": "MP:0008428",
+   "label_hint": "abnormal spatial working memory",
+   "expected_domain": "intellectual_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0002062",
+   "label_hint": "abnormal associative learning",
+   "expected_domain": "intellectual_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001458",
+   "label_hint": "abnormal object recognition memory",
+   "expected_domain": "intellectual_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001463",
+   "label_hint": "abnormal spatial learning",
+   "expected_domain": "intellectual_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001469",
+   "label_hint": "abnormal contextual conditioning behavior",
+   "expected_domain": "intellectual_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001360",
+   "label_hint": "abnormal social investigation",
+   "expected_domain": "adaptive_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001447",
+   "label_hint": "abnormal nest building behavior",
+   "expected_domain": "adaptive_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001440",
+   "label_hint": "abnormal grooming behavior (self-care/ADL; soft)",
+   "expected_domain": "adaptive_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0021165",
+   "label_hint": "behavioral developmental delay",
+   "expected_domain": "developmental_onset",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001290",
+   "label_hint": "delayed eyelid opening (postnatal milestone)",
+   "expected_domain": "developmental_onset",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0000003",
+   "label_hint": "abnormal adipose tissue morphology",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0002135",
+   "label_hint": "abnormal kidney morphology",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0004859",
+   "label_hint": "abnormal synaptic plasticity",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0001905",
+   "label_hint": "abnormal dopamine level",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0003861",
+   "label_hint": "abnormal nervous system development",
+   "expected_domain": "generic_neurological_abnormality",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0000060",
+   "label_hint": "delayed bone ossification (embryonic morphology, NOT a milestone)",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0002174",
+   "label_hint": "abnormal gastrulation movements (embryonic, NOT a milestone)",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  }
+ ],
+ "NCD": [
+  {
+   "mp_id": "MP:0001463",
+   "label_hint": "abnormal spatial learning",
+   "expected_domain": "cognitive_executive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001458",
+   "label_hint": "abnormal object recognition memory",
+   "expected_domain": "cognitive_executive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0002062",
+   "label_hint": "abnormal associative learning",
+   "expected_domain": "cognitive_executive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001469",
+   "label_hint": "abnormal contextual conditioning behavior",
+   "expected_domain": "cognitive_executive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001516",
+   "label_hint": "abnormal motor coordination/balance",
+   "expected_domain": "motor_coordination",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001406",
+   "label_hint": "abnormal gait",
+   "expected_domain": "motor_coordination",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001393",
+   "label_hint": "ataxia",
+   "expected_domain": "motor_coordination",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0021112",
+   "label_hint": "impaired social recognition",
+   "expected_domain": "social_cognition_empathy",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0020396",
+   "label_hint": "abnormal social recognition",
+   "expected_domain": "social_cognition_empathy",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001447",
+   "label_hint": "abnormal nest building behavior (ADL proxy)",
+   "expected_domain": "adaptive_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001440",
+   "label_hint": "abnormal grooming behavior (self-care/ADL)",
+   "expected_domain": "adaptive_functioning",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0003329",
+   "label_hint": "amyloid beta deposits",
+   "expected_domain": "neuropathology_progressive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0004250",
+   "label_hint": "tau protein deposits",
+   "expected_domain": "neuropathology_progressive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0003214",
+   "label_hint": "neurofibrillary tangles",
+   "expected_domain": "neuropathology_progressive",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001900",
+   "label_hint": "impaired synaptic plasticity (mechanism, NOT etiology pathology)",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0001905",
+   "label_hint": "abnormal dopamine level (neurotransmitter, NOT progressive pathology)",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0002135",
+   "label_hint": "abnormal kidney morphology",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  }
+ ],
+ "MDD": [
+  {
+   "mp_id": "MP:0002573",
+   "label_hint": "behavioral despair",
+   "expected_domain": "depressed_mood",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0014414",
+   "label_hint": "increased depression-related behavior",
+   "expected_domain": "depressed_mood",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0020379",
+   "label_hint": "abnormal sucrose solution preference (anhedonia)",
+   "expected_domain": "anhedonia",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0005449",
+   "label_hint": "abnormal food intake (bidirectional)",
+   "expected_domain": "weight_appetite_change",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001259",
+   "label_hint": "abnormal body weight (bidirectional)",
+   "expected_domain": "weight_appetite_change",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001501",
+   "label_hint": "abnormal sleep pattern (bidirectional)",
+   "expected_domain": "sleep_disturbance",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0003194",
+   "label_hint": "abnormal frequency of paradoxical (REM) sleep",
+   "expected_domain": "sleep_disturbance",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001399",
+   "label_hint": "hyperactivity (agitation pole, bidirectional)",
+   "expected_domain": "psychomotor_change",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0001402",
+   "label_hint": "decreased locomotor activity (retardation pole, bidirectional)",
+   "expected_domain": "psychomotor_change",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0010053",
+   "label_hint": "decreased grip strength (fatigue proxy)",
+   "expected_domain": "fatigue",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0014370",
+   "label_hint": "impaired spatial working memory (concentration)",
+   "expected_domain": "concentration_indecisiveness",
+   "expected_strict": true
+  },
+  {
+   "mp_id": "MP:0000003",
+   "label_hint": "abnormal adipose tissue morphology",
+   "expected_domain": "non_neurological_or_other",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0004859",
+   "label_hint": "abnormal synaptic plasticity",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0001905",
+   "label_hint": "abnormal dopamine level",
+   "expected_domain": "mechanistic_neurobiology",
+   "expected_strict": false
+  },
+  {
+   "mp_id": "MP:0003861",
+   "label_hint": "abnormal nervous system development",
+   "expected_domain": "generic_neurological_abnormality",
+   "expected_strict": false
+  }
+ ]
+}

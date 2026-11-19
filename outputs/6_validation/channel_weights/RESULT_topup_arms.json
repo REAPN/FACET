@@ -1,0 +1,76 @@
+{
+ "SCZ": {
+  "topup": {
+   "disorder": "SCZ",
+   "arm": "wnolex",
+   "to_judge": 68,
+   "judged": 68,
+   "calls": 32,
+   "seconds": 138.1,
+   "strict_before": 190,
+   "strict_after": 201,
+   "strict_among_new": 11,
+   "model": "gpt-5.4",
+   "seed": 1
+  },
+  "headline": {
+   "record": 0.6823,
+   "arm": 0.6154,
+   "topup": 0.6232,
+   "diff": -0.0591,
+   "ci90": [
+    -0.1081,
+    -0.0107
+   ],
+   "verdict": "inconclusive"
+  },
+  "full pool": {
+   "record": 0.7094,
+   "arm": 0.6397,
+   "topup": 0.65,
+   "diff": -0.0593,
+   "ci90": [
+    -0.1096,
+    -0.0122
+   ],
+   "verdict": "inconclusive"
+  }
+ },
+ "NCD": {
+  "topup": {
+   "disorder": "NCD",
+   "arm": "wequal",
+   "to_judge": 219,
+   "judged": 219,
+   "calls": 56,
+   "seconds": 340.5,
+   "strict_before": 80,
+   "strict_after": 84,
+   "strict_among_new": 4,
+   "model": "gpt-5.4",
+   "seed": 1
+  },
+  "headline": {
+   "record": 0.6679,
+   "arm": 0.5117,
+   "topup": 0.5323,
+   "diff": -0.1356,
+   "ci90": [
+    -0.1806,
+    -0.0836
+   ],
+   "verdict": "not equivalent"
+  },
+  "full pool": {
+   "record": 0.7311,
+   "arm": 0.5614,
+   "topup": 0.5818,
+   "diff": -0.1493,
+   "ci90": [
+    -0.1973,
+    -0.098
+   ],
+   "verdict": "not equivalent"
+  }
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "ASD": {
+  "n_scored_record": 18439,
+  "n_scored_mirrored": 18439,
+  "n_common": 18439,
+  "genotypes_changed": 10,
+  "changed_up": 10,
+  "changed_down": 0,
+  "max_abs_change_neg_log10_p": 0.0038,
+  "ceiling_ties_record": 389,
+  "ceiling_ties_mirrored": 389,
+  "observed_scores_identical": true,
+  "headline": {
+   "n": 11961,
+   "n_pos": 85,
+   "dropped": 0,
+   "auroc_record": 0.9557,
+   "auroc_mirrored": 0.9557,
+   "diff": 0.0,
+   "ci90": [
+    0.0,
+    0.0
+   ],
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "full_pool": {
+   "n": 32535,
+   "n_pos": 85,
+   "dropped": 0,
+   "auroc_record": 0.9689,
+   "auroc_mirrored": 0.9689,
+   "diff": 0.0,
+   "ci90": [
+    0.0,
+    0.0
+   ],
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "null_mean_shift": {
+   "mean": -2e-06,
+   "min": -7e-06,
+   "max": 0.0,
+   "depths_with_any_shift": 60,
+   "depths": 92
+  }
+ },
+ "SCZ": {
+  "n_scored_record": 19432,
+  "n_scored_mirrored": 19432,
+  "n_common": 19432,
+  "genotypes_changed": 2,
+  "changed_up": 2,
+  "changed_down": 0,
+  "max_abs_change_neg_log10_p": 0.0047,
+  "ceiling_ties_record": 57,
+  "ceiling_ties_mirrored": 57,
+  "observed_scores_identical": true,
+  "headline": {
+   "n": 12486,
+   "n_pos": 42,
+   "dropped": 0,
+   "auroc_record": 0.6823,
+   "auroc_mirrored": 0.6823,
+   "diff": -0.0,
+   "ci90": [
+    -0.0,
+    0.0
+   ],
+   "ci95": [
+    -0.0,
+    0.0
+   ]
+  },
+  "full_pool": {
+   "n": 32535,
+   "n_pos": 42,
+   "dropped": 0,
+   "auroc_record": 0.7094,
+   "auroc_mirrored": 0.7094,
+   "diff": -0.0,
+   "ci90": [
+    -0.0,
+    0.0
+   ],
+   "ci95": [
+    -0.0,
+    0.0
+   ]
+  },
+  "null_mean_shift": {
+   "mean": -1e-06,
+   "min": -1.4e-05,
+   "max": 0.0,
+   "depths_with_any_shift": 29,
+   "depths": 92
+  }
+ },
+ "IDD": {
+  "n_scored_record": 18716,
+  "n_scored_mirrored": 18716,
+  "n_common": 18716,
+  "genotypes_changed": 11,
+  "changed_up": 11,
+  "changed_down": 0,
+  "max_abs_change_neg_log10_p": 0.0134,
+  "ceiling_ties_record": 478,
+  "ceiling_ties_mirrored": 478,
+  "observed_scores_identical": true,
+  "headline": {
+   "n": 12382,
+   "n_pos": 111,
+   "dropped": 0,
+   "auroc_record": 0.7511,
+   "auroc_mirrored": 0.7511,
+   "diff": -0.0,
+   "ci90": [
+    -0.0,
+    0.0
+   ],
+   "ci95": [
+    -0.0,
+    0.0
+   ]
+  },
+  "full_pool": {
+   "n": 32535,
+   "n_pos": 121,
+   "dropped": 0,
+   "auroc_record": 0.7591,
+   "auroc_mirrored": 0.7591,
+   "diff": -0.0,
+   "ci90": [
+    -0.0,
+    0.0
+   ],
+   "ci95": [
+    -0.0,
+    0.0
+   ]
+  },
+  "null_mean_shift": {
+   "mean": -5e-06,
+   "min": -2.4e-05,
+   "max": 0.0,
+   "depths_with_any_shift": 61,
+   "depths": 92
+  }
+ }
+}

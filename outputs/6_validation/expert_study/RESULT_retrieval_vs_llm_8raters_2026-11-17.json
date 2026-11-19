@@ -1,0 +1,77 @@
+{
+ "n": 140,
+ "k": 71,
+ "rules": {
+  "LLM admission of record": {
+   "agree": 0.7928571428571428,
+   "kappa": 0.6351132686084143,
+   "admits": 71,
+   "conf": 0.6619718309859155,
+   "rej": 0.9057971014492754,
+   "recall": 0.8785046728971962
+  },
+  "retrieval alone (transparent score), top k pooled": {
+   "agree": 0.7285714285714285,
+   "kappa": 0.47393744987971137,
+   "admits": 71,
+   "conf": 0.5915492957746479,
+   "rej": 0.8333333333333334,
+   "recall": 0.7850467289719626
+  },
+  "embedding alone, top k pooled": {
+   "agree": 0.7428571428571429,
+   "kappa": 0.5068163592622293,
+   "admits": 71,
+   "conf": 0.6056338028169014,
+   "rej": 0.8478260869565217,
+   "recall": 0.8037383177570093
+  },
+  "retrieval alone, top k within each disorder": {
+   "agree": 0.7214285714285714,
+   "kappa": 0.44594594594594594,
+   "admits": 71,
+   "conf": 0.5774647887323944,
+   "rej": 0.8188405797101449,
+   "recall": 0.7663551401869159
+  },
+  "embedding alone, top k within each disorder": {
+   "agree": 0.7464285714285714,
+   "kappa": 0.5211437776882804,
+   "admits": 71,
+   "conf": 0.6126760563380281,
+   "rej": 0.855072463768116,
+   "recall": 0.8130841121495327
+  }
+ },
+ "diffs": {
+  "retrieval alone (transparent score), top k pooled": [
+   0.06428571428571428,
+   -0.0035714285714285713,
+   0.1357142857142857
+  ],
+  "embedding alone, top k pooled": [
+   0.05,
+   -0.017857142857142856,
+   0.12142857142857143
+  ],
+  "retrieval alone, top k within each disorder": [
+   0.07142857142857142,
+   0.0,
+   0.1392857142857143
+  ],
+  "embedding alone, top k within each disorder": [
+   0.04642857142857143,
+   -0.02142857142857143,
+   0.11428571428571428
+  ]
+ },
+ "auroc": {
+  "LLM admission (binary)": 0.8354700854700855,
+  "retrieval transparent score": 0.8028490028490028,
+  "embedding cosine": 0.8111111111111111,
+  "final pair score (retrieval plus LLM adjustment)": 0.8601139601139601
+ },
+ "au_within_admitted": 0.5588235294117647,
+ "au_within_refused": 0.6557377049180327,
+ "sampling_sep": 0.8591549295774648
+}

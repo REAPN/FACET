@@ -1,0 +1,1711 @@
+{
+ "mp_class_definition": [
+  [
+   "motor behavior",
+   [
+    "MP:0002066"
+   ]
+  ],
+  [
+   "sensory behavior and reflexes",
+   [
+    "MP:0002067"
+   ]
+  ],
+  [
+   "seizures",
+   [
+    "MP:0002064"
+   ]
+  ],
+  [
+   "social and vocal",
+   [
+    "MP:0002557",
+    "MP:0001529"
+   ]
+  ],
+  [
+   "cognition",
+   [
+    "MP:0014114"
+   ]
+  ],
+  [
+   "emotion and affect",
+   [
+    "MP:0002572"
+   ]
+  ],
+  [
+   "other behavior",
+   [
+    "MP:0004924"
+   ]
+  ],
+  [
+   "nervous system morphology",
+   [
+    "MP:0003632"
+   ]
+  ],
+  [
+   "nervous system physiology",
+   [
+    "MP:0003633"
+   ]
+  ],
+  [
+   "ear and eye",
+   [
+    "MP:0005377",
+    "MP:0005391"
+   ]
+  ],
+  [
+   "mortality and growth",
+   [
+    "MP:0010768",
+    "MP:0005378"
+   ]
+  ],
+  [
+   "other physiology and morphology",
+   []
+  ]
+ ],
+ "annotation_by_curated_set": {
+  "ASD": {
+   "n": 85,
+   "median_terms": 11.0,
+   "median_behavior_terms": 6.0,
+   "any_behavior": 0.976,
+   "social_tested": 0.906,
+   "cognition_tested": 0.576,
+   "single_pmid": 0.871,
+   "term_share": {
+    "motor behavior": 0.146,
+    "sensory behavior and reflexes": 0.004,
+    "seizures": 0.014,
+    "social and vocal": 0.167,
+    "cognition": 0.095,
+    "emotion and affect": 0.07,
+    "other behavior": 0.061,
+    "nervous system morphology": 0.176,
+    "nervous system physiology": 0.143,
+    "ear and eye": 0.006,
+    "mortality and growth": 0.052,
+    "other physiology and morphology": 0.066
+   }
+  },
+  "SCZ": {
+   "n": 42,
+   "median_terms": 9.0,
+   "median_behavior_terms": 5.5,
+   "any_behavior": 1.0,
+   "social_tested": 0.429,
+   "cognition_tested": 0.738,
+   "single_pmid": 0.786,
+   "term_share": {
+    "motor behavior": 0.168,
+    "sensory behavior and reflexes": 0.005,
+    "seizures": 0.0,
+    "social and vocal": 0.061,
+    "cognition": 0.155,
+    "emotion and affect": 0.082,
+    "other behavior": 0.039,
+    "nervous system morphology": 0.195,
+    "nervous system physiology": 0.145,
+    "ear and eye": 0.005,
+    "mortality and growth": 0.043,
+    "other physiology and morphology": 0.102
+   }
+  },
+  "IDD": {
+   "n": 121,
+   "median_terms": 10.0,
+   "median_behavior_terms": 4.0,
+   "any_behavior": 0.835,
+   "social_tested": 0.298,
+   "cognition_tested": 0.496,
+   "single_pmid": 0.818,
+   "term_share": {
+    "motor behavior": 0.158,
+    "sensory behavior and reflexes": 0.005,
+    "seizures": 0.017,
+    "social and vocal": 0.042,
+    "cognition": 0.088,
+    "emotion and affect": 0.043,
+    "other behavior": 0.028,
+    "nervous system morphology": 0.218,
+    "nervous system physiology": 0.068,
+    "ear and eye": 0.01,
+    "mortality and growth": 0.144,
+    "other physiology and morphology": 0.18
+   }
+  },
+  "NCD": {
+   "n": 71,
+   "median_terms": 10.0,
+   "median_behavior_terms": 3.0,
+   "any_behavior": 0.873,
+   "social_tested": 0.028,
+   "cognition_tested": 0.31,
+   "single_pmid": 0.69,
+   "term_share": {
+    "motor behavior": 0.211,
+    "sensory behavior and reflexes": 0.005,
+    "seizures": 0.009,
+    "social and vocal": 0.002,
+    "cognition": 0.038,
+    "emotion and affect": 0.015,
+    "other behavior": 0.025,
+    "nervous system morphology": 0.278,
+    "nervous system physiology": 0.045,
+    "ear and eye": 0.02,
+    "mortality and growth": 0.079,
+    "other physiology and morphology": 0.273
+   }
+  },
+  "MDD": {
+   "n": 8,
+   "median_terms": 9.5,
+   "median_behavior_terms": 5.5,
+   "any_behavior": 1.0,
+   "social_tested": 0.625,
+   "cognition_tested": 0.5,
+   "single_pmid": 0.875,
+   "term_share": {
+    "motor behavior": 0.023,
+    "sensory behavior and reflexes": 0.0,
+    "seizures": 0.0,
+    "social and vocal": 0.163,
+    "cognition": 0.128,
+    "emotion and affect": 0.221,
+    "other behavior": 0.07,
+    "nervous system morphology": 0.174,
+    "nervous system physiology": 0.174,
+    "ear and eye": 0.0,
+    "mortality and growth": 0.0,
+    "other physiology and morphology": 0.047
+   }
+  }
+ },
+ "annotation_pool": {
+  "n": 32535,
+  "median_terms": 8.0,
+  "median_behavior_terms": 0.0,
+  "any_behavior": 0.262,
+  "social_tested": 0.026,
+  "cognition_tested": 0.049,
+  "single_pmid": 0.708,
+  "term_share": {
+   "motor behavior": 0.042,
+   "sensory behavior and reflexes": 0.001,
+   "seizures": 0.003,
+   "social and vocal": 0.004,
+   "cognition": 0.008,
+   "emotion and affect": 0.005,
+   "other behavior": 0.009,
+   "nervous system morphology": 0.081,
+   "nervous system physiology": 0.019,
+   "ear and eye": 0.053,
+   "mortality and growth": 0.134,
+   "other physiology and morphology": 0.64
+  }
+ },
+ "annotation_by_source": {
+  "IMPC allele with literature": {
+   "n": 1015,
+   "median_terms": 8.0,
+   "median_behavior_terms": 0.0,
+   "any_behavior": 0.198,
+   "social_tested": 0.025,
+   "cognition_tested": 0.035,
+   "single_pmid": 0.967,
+   "term_share": {
+    "motor behavior": 0.024,
+    "sensory behavior and reflexes": 0.001,
+    "seizures": 0.002,
+    "social and vocal": 0.004,
+    "cognition": 0.006,
+    "emotion and affect": 0.005,
+    "other behavior": 0.007,
+    "nervous system morphology": 0.098,
+    "nervous system physiology": 0.018,
+    "ear and eye": 0.044,
+    "mortality and growth": 0.143,
+    "other physiology and morphology": 0.65
+   }
+  },
+  "IMPC, no literature row": {
+   "n": 4111,
+   "median_terms": 6.0,
+   "median_behavior_terms": 0.0,
+   "any_behavior": 0.468,
+   "social_tested": 0.023,
+   "cognition_tested": 0.096,
+   "single_pmid": 0.0,
+   "term_share": {
+    "motor behavior": 0.078,
+    "sensory behavior and reflexes": 0.001,
+    "seizures": 0.0,
+    "social and vocal": 0.003,
+    "cognition": 0.012,
+    "emotion and affect": 0.016,
+    "other behavior": 0.01,
+    "nervous system morphology": 0.028,
+    "nervous system physiology": 0.01,
+    "ear and eye": 0.095,
+    "mortality and growth": 0.134,
+    "other physiology and morphology": 0.612
+   }
+  },
+  "literature": {
+   "n": 26181,
+   "median_terms": 8.0,
+   "median_behavior_terms": 0.0,
+   "any_behavior": 0.232,
+   "social_tested": 0.026,
+   "cognition_tested": 0.044,
+   "single_pmid": 0.843,
+   "term_share": {
+    "motor behavior": 0.038,
+    "sensory behavior and reflexes": 0.002,
+    "seizures": 0.004,
+    "social and vocal": 0.004,
+    "cognition": 0.008,
+    "emotion and affect": 0.004,
+    "other behavior": 0.009,
+    "nervous system morphology": 0.089,
+    "nervous system physiology": 0.021,
+    "ear and eye": 0.047,
+    "mortality and growth": 0.132,
+    "other physiology and morphology": 0.644
+   }
+  },
+  "other, no PubMed row": {
+   "n": 1228,
+   "median_terms": 6.0,
+   "median_behavior_terms": 0.0,
+   "any_behavior": 0.252,
+   "social_tested": 0.018,
+   "cognition_tested": 0.006,
+   "single_pmid": 0.0,
+   "term_share": {
+    "motor behavior": 0.078,
+    "sensory behavior and reflexes": 0.001,
+    "seizures": 0.005,
+    "social and vocal": 0.003,
+    "cognition": 0.001,
+    "emotion and affect": 0.001,
+    "other behavior": 0.002,
+    "nervous system morphology": 0.035,
+    "nervous system physiology": 0.004,
+    "ear and eye": 0.081,
+    "mortality and growth": 0.164,
+    "other physiology and morphology": 0.625
+   }
+  }
+ },
+ "curated_by_source": {
+  "ASD": {
+   "literature": 78,
+   "IMPC allele with literature": 6,
+   "other, no PubMed row": 1
+  },
+  "SCZ": {
+   "literature": 42
+  },
+  "IDD": {
+   "literature": 112,
+   "IMPC allele with literature": 8,
+   "other, no PubMed row": 1
+  },
+  "NCD": {
+   "literature": 69,
+   "IMPC allele with literature": 2
+  },
+  "MDD": {
+   "literature": 8
+  }
+ },
+ "performance_by_source": {
+  "ASD": {
+   "IMPC allele with literature": {
+    "curated": {
+     "n": 6,
+     "any_evidence": 0.833,
+     "mean_criteria": 3.667,
+     "support_nonzero": 0.833
+    },
+    "background": {
+     "n": 1009,
+     "any_evidence": 0.067,
+     "mean_criteria": 0.125,
+     "support_nonzero": 0.033
+    }
+   },
+   "IMPC, no literature row": {
+    "curated": null,
+    "background": {
+     "n": 4111,
+     "any_evidence": 0.205,
+     "mean_criteria": 0.301,
+     "support_nonzero": 0.112
+    }
+   },
+   "literature": {
+    "curated": {
+     "n": 78,
+     "any_evidence": 0.962,
+     "mean_criteria": 3.474,
+     "support_nonzero": 0.962
+    },
+    "background": {
+     "n": 26103,
+     "any_evidence": 0.086,
+     "mean_criteria": 0.158,
+     "support_nonzero": 0.051
+    }
+   },
+   "other, no PubMed row": {
+    "curated": {
+     "n": 1,
+     "any_evidence": 1.0,
+     "mean_criteria": 3.0,
+     "support_nonzero": 1.0
+    },
+    "background": {
+     "n": 1227,
+     "any_evidence": 0.124,
+     "mean_criteria": 0.215,
+     "support_nonzero": 0.086
+    }
+   }
+  },
+  "SCZ": {
+   "IMPC allele with literature": {
+    "curated": null,
+    "background": {
+     "n": 1015,
+     "any_evidence": 0.12,
+     "mean_criteria": 0.15,
+     "support_nonzero": 0.025
+    }
+   },
+   "IMPC, no literature row": {
+    "curated": null,
+    "background": {
+     "n": 4111,
+     "any_evidence": 0.317,
+     "mean_criteria": 0.418,
+     "support_nonzero": 0.06
+    }
+   },
+   "literature": {
+    "curated": {
+     "n": 42,
+     "any_evidence": 0.857,
+     "mean_criteria": 1.452,
+     "support_nonzero": 0.452
+    },
+    "background": {
+     "n": 26139,
+     "any_evidence": 0.152,
+     "mean_criteria": 0.181,
+     "support_nonzero": 0.028
+    }
+   },
+   "other, no PubMed row": {
+    "curated": null,
+    "background": {
+     "n": 1228,
+     "any_evidence": 0.2,
+     "mean_criteria": 0.213,
+     "support_nonzero": 0.033
+    }
+   }
+  },
+  "IDD": {
+   "IMPC allele with literature": {
+    "curated": {
+     "n": 8,
+     "any_evidence": 0.75,
+     "mean_criteria": 1.375,
+     "support_nonzero": 0.75
+    },
+    "background": {
+     "n": 1007,
+     "any_evidence": 0.052,
+     "mean_criteria": 0.057,
+     "support_nonzero": 0.042
+    }
+   },
+   "IMPC, no literature row": {
+    "curated": null,
+    "background": {
+     "n": 4111,
+     "any_evidence": 0.118,
+     "mean_criteria": 0.119,
+     "support_nonzero": 0.036
+    }
+   },
+   "literature": {
+    "curated": {
+     "n": 112,
+     "any_evidence": 0.598,
+     "mean_criteria": 0.786,
+     "support_nonzero": 0.545
+    },
+    "background": {
+     "n": 26069,
+     "any_evidence": 0.079,
+     "mean_criteria": 0.09,
+     "support_nonzero": 0.07
+    }
+   },
+   "other, no PubMed row": {
+    "curated": {
+     "n": 1,
+     "any_evidence": 1.0,
+     "mean_criteria": 1.0,
+     "support_nonzero": 1.0
+    },
+    "background": {
+     "n": 1227,
+     "any_evidence": 0.073,
+     "mean_criteria": 0.074,
+     "support_nonzero": 0.068
+    }
+   }
+  },
+  "NCD": {
+   "IMPC allele with literature": {
+    "curated": {
+     "n": 2,
+     "any_evidence": 1.0,
+     "mean_criteria": 1.0,
+     "support_nonzero": 1.0
+    },
+    "background": {
+     "n": 1013,
+     "any_evidence": 0.102,
+     "mean_criteria": 0.103,
+     "support_nonzero": 0.064
+    }
+   },
+   "IMPC, no literature row": {
+    "curated": null,
+    "background": {
+     "n": 4111,
+     "any_evidence": 0.21,
+     "mean_criteria": 0.21,
+     "support_nonzero": 0.015
+    }
+   },
+   "literature": {
+    "curated": {
+     "n": 69,
+     "any_evidence": 0.652,
+     "mean_criteria": 0.652,
+     "support_nonzero": 0.536
+    },
+    "background": {
+     "n": 26112,
+     "any_evidence": 0.129,
+     "mean_criteria": 0.132,
+     "support_nonzero": 0.09
+    }
+   },
+   "other, no PubMed row": {
+    "curated": null,
+    "background": {
+     "n": 1228,
+     "any_evidence": 0.113,
+     "mean_criteria": 0.113,
+     "support_nonzero": 0.073
+    }
+   }
+  },
+  "MDD": {
+   "IMPC allele with literature": {
+    "curated": null,
+    "background": {
+     "n": 1015,
+     "any_evidence": 0.106,
+     "mean_criteria": 0.121,
+     "support_nonzero": null
+    }
+   },
+   "IMPC, no literature row": {
+    "curated": null,
+    "background": {
+     "n": 4111,
+     "any_evidence": 0.15,
+     "mean_criteria": 0.156,
+     "support_nonzero": null
+    }
+   },
+   "literature": {
+    "curated": {
+     "n": 8,
+     "any_evidence": 1.0,
+     "mean_criteria": 2.25,
+     "support_nonzero": null
+    },
+    "background": {
+     "n": 26173,
+     "any_evidence": 0.099,
+     "mean_criteria": 0.111,
+     "support_nonzero": null
+    }
+   },
+   "other, no PubMed row": {
+    "curated": null,
+    "background": {
+     "n": 1228,
+     "any_evidence": 0.089,
+     "mean_criteria": 0.094,
+     "support_nonzero": null
+    }
+   }
+  }
+ },
+ "design": {
+  "chemically induced (ENU)": {
+   "pool_n": 1690,
+   "annotation": {
+    "n": 1690,
+    "median_terms": 7.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.202,
+    "social_tested": 0.014,
+    "cognition_tested": 0.015,
+    "single_pmid": 0.518,
+    "term_share": {
+     "motor behavior": 0.046,
+     "sensory behavior and reflexes": 0.001,
+     "seizures": 0.003,
+     "social and vocal": 0.002,
+     "cognition": 0.003,
+     "emotion and affect": 0.001,
+     "other behavior": 0.006,
+     "nervous system morphology": 0.071,
+     "nervous system physiology": 0.008,
+     "ear and eye": 0.09,
+     "mortality and growth": 0.145,
+     "other physiology and morphology": 0.624
+    }
+   },
+   "ASD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 5.0,
+    "pool_any": 0.112,
+    "pool_any_behavior_standardized": 0.143,
+    "pool_support_nonzero": 0.073
+   },
+   "SCZ": {
+    "curated": 4,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.25,
+    "pool_any": 0.146,
+    "pool_any_behavior_standardized": 0.185,
+    "pool_support_nonzero": 0.024
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.051,
+    "pool_any_behavior_standardized": 0.064,
+    "pool_support_nonzero": 0.044
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.108,
+    "pool_any_behavior_standardized": 0.137,
+    "pool_support_nonzero": 0.055
+   },
+   "MDD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0,
+    "pool_any": 0.084,
+    "pool_any_behavior_standardized": 0.103,
+    "pool_support_nonzero": null
+   }
+  },
+  "conditional (Cre plus floxed allele)": {
+   "pool_n": 4313,
+   "annotation": {
+    "n": 4313,
+    "median_terms": 8.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.177,
+    "social_tested": 0.014,
+    "cognition_tested": 0.03,
+    "single_pmid": 0.956,
+    "term_share": {
+     "motor behavior": 0.028,
+     "sensory behavior and reflexes": 0.001,
+     "seizures": 0.002,
+     "social and vocal": 0.002,
+     "cognition": 0.006,
+     "emotion and affect": 0.003,
+     "other behavior": 0.007,
+     "nervous system morphology": 0.087,
+     "nervous system physiology": 0.02,
+     "ear and eye": 0.035,
+     "mortality and growth": 0.133,
+     "other physiology and morphology": 0.676
+    }
+   },
+   "ASD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.05,
+    "pool_any_behavior_standardized": 0.079,
+    "pool_support_nonzero": 0.026
+   },
+   "SCZ": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.113,
+    "pool_any_behavior_standardized": 0.17,
+    "pool_support_nonzero": 0.023
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.056,
+    "pool_any_behavior_standardized": 0.087,
+    "pool_support_nonzero": 0.052
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.099,
+    "pool_any_behavior_standardized": 0.149,
+    "pool_support_nonzero": 0.072
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.077,
+    "pool_any_behavior_standardized": 0.109,
+    "pool_support_nonzero": null
+   }
+  },
+  "driver or reporter only": {
+   "pool_n": 79,
+   "annotation": {
+    "n": 79,
+    "median_terms": 7.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.203,
+    "social_tested": 0.0,
+    "cognition_tested": 0.051,
+    "single_pmid": 0.886,
+    "term_share": {
+     "motor behavior": 0.025,
+     "sensory behavior and reflexes": 0.004,
+     "seizures": 0.001,
+     "social and vocal": 0.0,
+     "cognition": 0.015,
+     "emotion and affect": 0.001,
+     "other behavior": 0.014,
+     "nervous system morphology": 0.132,
+     "nervous system physiology": 0.029,
+     "ear and eye": 0.044,
+     "mortality and growth": 0.154,
+     "other physiology and morphology": 0.581
+    }
+   },
+   "ASD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.051,
+    "pool_any_behavior_standardized": 0.061,
+    "pool_support_nonzero": 0.025
+   },
+   "SCZ": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.076,
+    "pool_any_behavior_standardized": 0.101,
+    "pool_support_nonzero": 0.0
+   },
+   "IDD": {
+    "curated": 1,
+    "curated_any": 0.0,
+    "curated_mean_criteria": 0.0,
+    "pool_any": 0.063,
+    "pool_any_behavior_standardized": 0.072,
+    "pool_support_nonzero": 0.051
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.127,
+    "pool_any_behavior_standardized": 0.153,
+    "pool_support_nonzero": 0.076
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.063,
+    "pool_any_behavior_standardized": 0.098,
+    "pool_support_nonzero": null
+   }
+  },
+  "gene trap": {
+   "pool_n": 42,
+   "annotation": {
+    "n": 42,
+    "median_terms": 9.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.19,
+    "social_tested": 0.0,
+    "cognition_tested": 0.024,
+    "single_pmid": 0.667,
+    "term_share": {
+     "motor behavior": 0.031,
+     "sensory behavior and reflexes": 0.0,
+     "seizures": 0.0,
+     "social and vocal": 0.0,
+     "cognition": 0.002,
+     "emotion and affect": 0.002,
+     "other behavior": 0.007,
+     "nervous system morphology": 0.185,
+     "nervous system physiology": 0.017,
+     "ear and eye": 0.019,
+     "mortality and growth": 0.202,
+     "other physiology and morphology": 0.535
+    }
+   },
+   "ASD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.0,
+    "pool_any_behavior_standardized": 0.0,
+    "pool_support_nonzero": 0.048
+   },
+   "SCZ": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.119,
+    "pool_any_behavior_standardized": 0.144,
+    "pool_support_nonzero": 0.024
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.048,
+    "pool_any_behavior_standardized": 0.065,
+    "pool_support_nonzero": 0.048
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.119,
+    "pool_any_behavior_standardized": 0.158,
+    "pool_support_nonzero": 0.071
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.048,
+    "pool_any_behavior_standardized": 0.061,
+    "pool_support_nonzero": null
+   }
+  },
+  "humanized sequence": {
+   "pool_n": 1848,
+   "annotation": {
+    "n": 1848,
+    "median_terms": 8.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.411,
+    "social_tested": 0.04,
+    "cognition_tested": 0.109,
+    "single_pmid": 0.871,
+    "term_share": {
+     "motor behavior": 0.09,
+     "sensory behavior and reflexes": 0.002,
+     "seizures": 0.006,
+     "social and vocal": 0.006,
+     "cognition": 0.019,
+     "emotion and affect": 0.01,
+     "other behavior": 0.01,
+     "nervous system morphology": 0.147,
+     "nervous system physiology": 0.032,
+     "ear and eye": 0.039,
+     "mortality and growth": 0.121,
+     "other physiology and morphology": 0.519
+    }
+   },
+   "ASD": {
+    "curated": 10,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 3.3,
+    "pool_any": 0.172,
+    "pool_any_behavior_standardized": 0.09,
+    "pool_support_nonzero": 0.076
+   },
+   "SCZ": {
+    "curated": 2,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.5,
+    "pool_any": 0.32,
+    "pool_any_behavior_standardized": 0.19,
+    "pool_support_nonzero": 0.054
+   },
+   "IDD": {
+    "curated": 31,
+    "curated_any": 0.677,
+    "curated_mean_criteria": 0.839,
+    "pool_any": 0.154,
+    "pool_any_behavior_standardized": 0.084,
+    "pool_support_nonzero": 0.146
+   },
+   "NCD": {
+    "curated": 26,
+    "curated_any": 0.692,
+    "curated_mean_criteria": 0.692,
+    "pool_any": 0.278,
+    "pool_any_behavior_standardized": 0.161,
+    "pool_support_nonzero": 0.211
+   },
+   "MDD": {
+    "curated": 3,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0,
+    "pool_any": 0.142,
+    "pool_any_behavior_standardized": 0.085,
+    "pool_support_nonzero": null
+   }
+  },
+  "hypomorph": {
+   "pool_n": 768,
+   "annotation": {
+    "n": 768,
+    "median_terms": 8.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.216,
+    "social_tested": 0.022,
+    "cognition_tested": 0.038,
+    "single_pmid": 0.837,
+    "term_share": {
+     "motor behavior": 0.04,
+     "sensory behavior and reflexes": 0.001,
+     "seizures": 0.004,
+     "social and vocal": 0.003,
+     "cognition": 0.007,
+     "emotion and affect": 0.002,
+     "other behavior": 0.006,
+     "nervous system morphology": 0.101,
+     "nervous system physiology": 0.017,
+     "ear and eye": 0.057,
+     "mortality and growth": 0.152,
+     "other physiology and morphology": 0.609
+    }
+   },
+   "ASD": {
+    "curated": 5,
+    "curated_any": 0.6,
+    "curated_mean_criteria": 2.2,
+    "pool_any": 0.089,
+    "pool_any_behavior_standardized": 0.096,
+    "pool_support_nonzero": 0.069
+   },
+   "SCZ": {
+    "curated": 3,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0,
+    "pool_any": 0.15,
+    "pool_any_behavior_standardized": 0.175,
+    "pool_support_nonzero": 0.033
+   },
+   "IDD": {
+    "curated": 6,
+    "curated_any": 0.833,
+    "curated_mean_criteria": 1.167,
+    "pool_any": 0.083,
+    "pool_any_behavior_standardized": 0.094,
+    "pool_support_nonzero": 0.077
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.118,
+    "pool_any_behavior_standardized": 0.135,
+    "pool_support_nonzero": 0.083
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.095,
+    "pool_any_behavior_standardized": 0.103,
+    "pool_support_nonzero": null
+   }
+  },
+  "null or knockout": {
+   "pool_n": 18707,
+   "annotation": {
+    "n": 18707,
+    "median_terms": 8.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.27,
+    "social_tested": 0.027,
+    "cognition_tested": 0.054,
+    "single_pmid": 0.64,
+    "term_share": {
+     "motor behavior": 0.038,
+     "sensory behavior and reflexes": 0.002,
+     "seizures": 0.003,
+     "social and vocal": 0.004,
+     "cognition": 0.008,
+     "emotion and affect": 0.006,
+     "other behavior": 0.009,
+     "nervous system morphology": 0.072,
+     "nervous system physiology": 0.019,
+     "ear and eye": 0.051,
+     "mortality and growth": 0.135,
+     "other physiology and morphology": 0.654
+    }
+   },
+   "ASD": {
+    "curated": 56,
+    "curated_any": 0.964,
+    "curated_mean_criteria": 3.679,
+    "pool_any": 0.109,
+    "pool_any_behavior_standardized": 0.11,
+    "pool_support_nonzero": 0.064
+   },
+   "SCZ": {
+    "curated": 29,
+    "curated_any": 0.793,
+    "curated_mean_criteria": 1.414,
+    "pool_any": 0.171,
+    "pool_any_behavior_standardized": 0.17,
+    "pool_support_nonzero": 0.032
+   },
+   "IDD": {
+    "curated": 63,
+    "curated_any": 0.619,
+    "curated_mean_criteria": 0.873,
+    "pool_any": 0.086,
+    "pool_any_behavior_standardized": 0.087,
+    "pool_support_nonzero": 0.06
+   },
+   "NCD": {
+    "curated": 29,
+    "curated_any": 0.517,
+    "curated_mean_criteria": 0.517,
+    "pool_any": 0.138,
+    "pool_any_behavior_standardized": 0.138,
+    "pool_support_nonzero": 0.065
+   },
+   "MDD": {
+    "curated": 3,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.667,
+    "pool_any": 0.108,
+    "pool_any_behavior_standardized": 0.107,
+    "pool_support_nonzero": null
+   }
+  },
+  "other or unresolved": {
+   "pool_n": 383,
+   "annotation": {
+    "n": 383,
+    "median_terms": 6.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.198,
+    "social_tested": 0.018,
+    "cognition_tested": 0.021,
+    "single_pmid": 0.627,
+    "term_share": {
+     "motor behavior": 0.035,
+     "sensory behavior and reflexes": 0.001,
+     "seizures": 0.001,
+     "social and vocal": 0.002,
+     "cognition": 0.005,
+     "emotion and affect": 0.003,
+     "other behavior": 0.004,
+     "nervous system morphology": 0.054,
+     "nervous system physiology": 0.009,
+     "ear and eye": 0.128,
+     "mortality and growth": 0.16,
+     "other physiology and morphology": 0.597
+    }
+   },
+   "ASD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.099,
+    "pool_any_behavior_standardized": 0.136,
+    "pool_support_nonzero": 0.068
+   },
+   "SCZ": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.123,
+    "pool_any_behavior_standardized": 0.173,
+    "pool_support_nonzero": 0.013
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.044,
+    "pool_any_behavior_standardized": 0.065,
+    "pool_support_nonzero": 0.034
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.073,
+    "pool_any_behavior_standardized": 0.105,
+    "pool_support_nonzero": 0.037
+   },
+   "MDD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0,
+    "pool_any": 0.097,
+    "pool_any_behavior_standardized": 0.127,
+    "pool_support_nonzero": null
+   }
+  },
+  "spontaneous": {
+   "pool_n": 1589,
+   "annotation": {
+    "n": 1589,
+    "median_terms": 8.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.363,
+    "social_tested": 0.04,
+    "cognition_tested": 0.014,
+    "single_pmid": 0.484,
+    "term_share": {
+     "motor behavior": 0.083,
+     "sensory behavior and reflexes": 0.0,
+     "seizures": 0.005,
+     "social and vocal": 0.005,
+     "cognition": 0.002,
+     "emotion and affect": 0.001,
+     "other behavior": 0.005,
+     "nervous system morphology": 0.103,
+     "nervous system physiology": 0.014,
+     "ear and eye": 0.117,
+     "mortality and growth": 0.12,
+     "other physiology and morphology": 0.545
+    }
+   },
+   "ASD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 3.0,
+    "pool_any": 0.162,
+    "pool_any_behavior_standardized": 0.113,
+    "pool_support_nonzero": 0.118
+   },
+   "SCZ": {
+    "curated": 2,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.5,
+    "pool_any": 0.284,
+    "pool_any_behavior_standardized": 0.198,
+    "pool_support_nonzero": 0.045
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.121,
+    "pool_any_behavior_standardized": 0.084,
+    "pool_support_nonzero": 0.107
+   },
+   "NCD": {
+    "curated": 4,
+    "curated_any": 0.75,
+    "curated_mean_criteria": 0.75,
+    "pool_any": 0.176,
+    "pool_any_behavior_standardized": 0.12,
+    "pool_support_nonzero": 0.125
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.141,
+    "pool_any_behavior_standardized": 0.104,
+    "pool_support_nonzero": null
+   }
+  },
+  "targeted, not null (knock-in, point, other)": {
+   "pool_n": 1682,
+   "annotation": {
+    "n": 1682,
+    "median_terms": 7.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.238,
+    "social_tested": 0.026,
+    "cognition_tested": 0.061,
+    "single_pmid": 0.898,
+    "term_share": {
+     "motor behavior": 0.039,
+     "sensory behavior and reflexes": 0.002,
+     "seizures": 0.006,
+     "social and vocal": 0.004,
+     "cognition": 0.011,
+     "emotion and affect": 0.007,
+     "other behavior": 0.011,
+     "nervous system morphology": 0.075,
+     "nervous system physiology": 0.025,
+     "ear and eye": 0.029,
+     "mortality and growth": 0.132,
+     "other physiology and morphology": 0.66
+    }
+   },
+   "ASD": {
+    "curated": 11,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 3.182,
+    "pool_any": 0.086,
+    "pool_any_behavior_standardized": 0.086,
+    "pool_support_nonzero": 0.054
+   },
+   "SCZ": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0,
+    "pool_any": 0.161,
+    "pool_any_behavior_standardized": 0.167,
+    "pool_support_nonzero": 0.038
+   },
+   "IDD": {
+    "curated": 20,
+    "curated_any": 0.45,
+    "curated_mean_criteria": 0.6,
+    "pool_any": 0.083,
+    "pool_any_behavior_standardized": 0.082,
+    "pool_support_nonzero": 0.074
+   },
+   "NCD": {
+    "curated": 11,
+    "curated_any": 0.909,
+    "curated_mean_criteria": 0.909,
+    "pool_any": 0.128,
+    "pool_any_behavior_standardized": 0.132,
+    "pool_support_nonzero": 0.092
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.104,
+    "pool_any_behavior_standardized": 0.112,
+    "pool_support_nonzero": null
+   }
+  },
+  "transgene (random insertion)": {
+   "pool_n": 1434,
+   "annotation": {
+    "n": 1434,
+    "median_terms": 7.0,
+    "median_behavior_terms": 0.0,
+    "any_behavior": 0.249,
+    "social_tested": 0.024,
+    "cognition_tested": 0.038,
+    "single_pmid": 0.843,
+    "term_share": {
+     "motor behavior": 0.044,
+     "sensory behavior and reflexes": 0.001,
+     "seizures": 0.005,
+     "social and vocal": 0.004,
+     "cognition": 0.007,
+     "emotion and affect": 0.004,
+     "other behavior": 0.01,
+     "nervous system morphology": 0.078,
+     "nervous system physiology": 0.019,
+     "ear and eye": 0.041,
+     "mortality and growth": 0.119,
+     "other physiology and morphology": 0.669
+    }
+   },
+   "ASD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 3.0,
+    "pool_any": 0.082,
+    "pool_any_behavior_standardized": 0.086,
+    "pool_support_nonzero": 0.05
+   },
+   "SCZ": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.0,
+    "pool_any": 0.177,
+    "pool_any_behavior_standardized": 0.187,
+    "pool_support_nonzero": 0.032
+   },
+   "IDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.079,
+    "pool_any_behavior_standardized": 0.083,
+    "pool_support_nonzero": 0.073
+   },
+   "NCD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.0,
+    "pool_any": 0.126,
+    "pool_any_behavior_standardized": 0.132,
+    "pool_support_nonzero": 0.103
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null,
+    "pool_any": 0.114,
+    "pool_any_behavior_standardized": 0.117,
+    "pool_support_nonzero": null
+   }
+  }
+ },
+ "zygosity": {
+  "compound or other": {
+   "ASD": {
+    "curated": 2,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 4.0
+   },
+   "SCZ": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.0
+   },
+   "IDD": {
+    "curated": 4,
+    "curated_any": 0.5,
+    "curated_mean_criteria": 0.5
+   },
+   "NCD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.0
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "pool_n": 1814
+  },
+  "hemizygous": {
+   "ASD": {
+    "curated": 5,
+    "curated_any": 0.8,
+    "curated_mean_criteria": 3.2
+   },
+   "SCZ": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.0
+   },
+   "IDD": {
+    "curated": 53,
+    "curated_any": 0.717,
+    "curated_mean_criteria": 0.925
+   },
+   "NCD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.0
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "pool_n": 2335
+  },
+  "heterozygous": {
+   "ASD": {
+    "curated": 25,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 3.64
+   },
+   "SCZ": {
+    "curated": 7,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 1.714
+   },
+   "IDD": {
+    "curated": 39,
+    "curated_any": 0.59,
+    "curated_mean_criteria": 0.872
+   },
+   "NCD": {
+    "curated": 19,
+    "curated_any": 0.789,
+    "curated_mean_criteria": 0.789
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "pool_n": 4380
+  },
+  "homozygous": {
+   "ASD": {
+    "curated": 52,
+    "curated_any": 0.942,
+    "curated_mean_criteria": 3.404
+   },
+   "SCZ": {
+    "curated": 33,
+    "curated_any": 0.818,
+    "curated_mean_criteria": 1.394
+   },
+   "IDD": {
+    "curated": 24,
+    "curated_any": 0.458,
+    "curated_mean_criteria": 0.625
+   },
+   "NCD": {
+    "curated": 50,
+    "curated_any": 0.6,
+    "curated_mean_criteria": 0.6
+   },
+   "MDD": {
+    "curated": 8,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 2.25
+   },
+   "pool_n": 23854
+  },
+  "unresolved": {
+   "ASD": {
+    "curated": 1,
+    "curated_any": 1.0,
+    "curated_mean_criteria": 4.0
+   },
+   "SCZ": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "IDD": {
+    "curated": 1,
+    "curated_any": 0.0,
+    "curated_mean_criteria": 0.0
+   },
+   "NCD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_any": null,
+    "curated_mean_criteria": null
+   },
+   "pool_n": 152
+  }
+ },
+ "conditional_vs_null_within_gene": {
+  "ASD": {
+   "genes": 1322,
+   "conditional_mean": 0.099,
+   "null_mean": 0.151,
+   "genes_conditional_higher": 98,
+   "genes_null_higher": 205,
+   "wilcoxon_p": 1.0039059681572185e-06
+  },
+  "SCZ": {
+   "genes": 1322,
+   "conditional_mean": 0.143,
+   "null_mean": 0.16,
+   "genes_conditional_higher": 203,
+   "genes_null_higher": 257,
+   "wilcoxon_p": 0.09140177964474722
+  },
+  "IDD": {
+   "genes": 1322,
+   "conditional_mean": 0.072,
+   "null_mean": 0.072,
+   "genes_conditional_higher": 122,
+   "genes_null_higher": 138,
+   "wilcoxon_p": 0.9063237280306581
+  },
+  "NCD": {
+   "genes": 1322,
+   "conditional_mean": 0.108,
+   "null_mean": 0.116,
+   "genes_conditional_higher": 178,
+   "genes_null_higher": 224,
+   "wilcoxon_p": 0.2475837390217458
+  },
+  "MDD": {
+   "genes": 1322,
+   "conditional_mean": 0.092,
+   "null_mean": 0.1,
+   "genes_conditional_higher": 168,
+   "genes_null_higher": 212,
+   "wilcoxon_p": 0.09258950872251696
+  }
+ },
+ "conditional_vs_null_within_gene_behavior_tested": {
+  "ASD": {
+   "genes": 203,
+   "conditional_mean": 0.562,
+   "null_mean": 0.822,
+   "genes_conditional_higher": 45,
+   "genes_null_higher": 81,
+   "wilcoxon_p": 0.00025716947108059875
+  },
+  "SCZ": {
+   "genes": 203,
+   "conditional_mean": 0.791,
+   "null_mean": 0.755,
+   "genes_conditional_higher": 76,
+   "genes_null_higher": 66,
+   "wilcoxon_p": 0.5048661865650939
+  },
+  "IDD": {
+   "genes": 203,
+   "conditional_mean": 0.347,
+   "null_mean": 0.4,
+   "genes_conditional_higher": 50,
+   "genes_null_higher": 56,
+   "wilcoxon_p": 0.16605806773691767
+  },
+  "NCD": {
+   "genes": 203,
+   "conditional_mean": 0.547,
+   "null_mean": 0.575,
+   "genes_conditional_higher": 56,
+   "genes_null_higher": 59,
+   "wilcoxon_p": 0.3858045437721569
+  },
+  "MDD": {
+   "genes": 203,
+   "conditional_mean": 0.42,
+   "null_mean": 0.432,
+   "genes_conditional_higher": 61,
+   "genes_null_higher": 62,
+   "wilcoxon_p": 0.7216973631380654
+  }
+ },
+ "classes_among_evidenced": {
+  "ASD": {
+   "curated": {
+    "n_with_evidence": 81,
+    "carries": {
+     "motor behavior": 0.802,
+     "sensory behavior and reflexes": 0.049,
+     "seizures": 0.111,
+     "social and vocal": 0.951,
+     "cognition": 0.605,
+     "emotion and affect": 0.58,
+     "other behavior": 0.642,
+     "nervous system morphology": 0.556,
+     "nervous system physiology": 0.679,
+     "ear and eye": 0.037,
+     "mortality and growth": 0.296,
+     "other physiology and morphology": 0.309
+    }
+   },
+   "background": {
+    "n_with_evidence": 3319,
+    "carries": {
+     "motor behavior": 0.827,
+     "sensory behavior and reflexes": 0.088,
+     "seizures": 0.066,
+     "social and vocal": 0.2,
+     "cognition": 0.293,
+     "emotion and affect": 0.201,
+     "other behavior": 0.187,
+     "nervous system morphology": 0.409,
+     "nervous system physiology": 0.278,
+     "ear and eye": 0.299,
+     "mortality and growth": 0.524,
+     "other physiology and morphology": 0.678
+    }
+   }
+  },
+  "SCZ": {
+   "curated": {
+    "n_with_evidence": 36,
+    "carries": {
+     "motor behavior": 0.889,
+     "sensory behavior and reflexes": 0.056,
+     "seizures": 0.0,
+     "social and vocal": 0.444,
+     "cognition": 0.75,
+     "emotion and affect": 0.639,
+     "other behavior": 0.361,
+     "nervous system morphology": 0.556,
+     "nervous system physiology": 0.722,
+     "ear and eye": 0.028,
+     "mortality and growth": 0.25,
+     "other physiology and morphology": 0.333
+    }
+   },
+   "background": {
+    "n_with_evidence": 5638,
+    "carries": {
+     "motor behavior": 0.904,
+     "sensory behavior and reflexes": 0.029,
+     "seizures": 0.078,
+     "social and vocal": 0.101,
+     "cognition": 0.226,
+     "emotion and affect": 0.227,
+     "other behavior": 0.197,
+     "nervous system morphology": 0.432,
+     "nervous system physiology": 0.28,
+     "ear and eye": 0.221,
+     "mortality and growth": 0.575,
+     "other physiology and morphology": 0.696
+    }
+   }
+  },
+  "IDD": {
+   "curated": {
+    "n_with_evidence": 74,
+    "carries": {
+     "motor behavior": 0.811,
+     "sensory behavior and reflexes": 0.068,
+     "seizures": 0.203,
+     "social and vocal": 0.486,
+     "cognition": 0.811,
+     "emotion and affect": 0.608,
+     "other behavior": 0.297,
+     "nervous system morphology": 0.703,
+     "nervous system physiology": 0.486,
+     "ear and eye": 0.054,
+     "mortality and growth": 0.689,
+     "other physiology and morphology": 0.568
+    }
+   },
+   "background": {
+    "n_with_evidence": 2676,
+    "carries": {
+     "motor behavior": 0.689,
+     "sensory behavior and reflexes": 0.036,
+     "seizures": 0.105,
+     "social and vocal": 0.299,
+     "cognition": 0.572,
+     "emotion and affect": 0.255,
+     "other behavior": 0.189,
+     "nervous system morphology": 0.478,
+     "nervous system physiology": 0.381,
+     "ear and eye": 0.157,
+     "mortality and growth": 0.507,
+     "other physiology and morphology": 0.601
+    }
+   }
+  },
+  "NCD": {
+   "curated": {
+    "n_with_evidence": 47,
+    "carries": {
+     "motor behavior": 0.851,
+     "sensory behavior and reflexes": 0.064,
+     "seizures": 0.106,
+     "social and vocal": 0.043,
+     "cognition": 0.468,
+     "emotion and affect": 0.213,
+     "other behavior": 0.213,
+     "nervous system morphology": 0.872,
+     "nervous system physiology": 0.277,
+     "ear and eye": 0.064,
+     "mortality and growth": 0.617,
+     "other physiology and morphology": 0.596
+    }
+   },
+   "background": {
+    "n_with_evidence": 4475,
+    "carries": {
+     "motor behavior": 0.814,
+     "sensory behavior and reflexes": 0.065,
+     "seizures": 0.082,
+     "social and vocal": 0.104,
+     "cognition": 0.351,
+     "emotion and affect": 0.182,
+     "other behavior": 0.205,
+     "nervous system morphology": 0.484,
+     "nervous system physiology": 0.35,
+     "ear and eye": 0.211,
+     "mortality and growth": 0.549,
+     "other physiology and morphology": 0.642
+    }
+   }
+  },
+  "MDD": {
+   "curated": {
+    "n_with_evidence": 8,
+    "carries": {
+     "motor behavior": 0.25,
+     "sensory behavior and reflexes": 0.0,
+     "seizures": 0.0,
+     "social and vocal": 0.625,
+     "cognition": 0.5,
+     "emotion and affect": 1.0,
+     "other behavior": 0.375,
+     "nervous system morphology": 0.5,
+     "nervous system physiology": 0.875,
+     "ear and eye": 0.0,
+     "mortality and growth": 0.0,
+     "other physiology and morphology": 0.375
+    }
+   },
+   "background": {
+    "n_with_evidence": 3429,
+    "carries": {
+     "motor behavior": 0.714,
+     "sensory behavior and reflexes": 0.025,
+     "seizures": 0.059,
+     "social and vocal": 0.114,
+     "cognition": 0.16,
+     "emotion and affect": 0.185,
+     "other behavior": 0.375,
+     "nervous system morphology": 0.287,
+     "nervous system physiology": 0.207,
+     "ear and eye": 0.225,
+     "mortality and growth": 0.657,
+     "other physiology and morphology": 0.766
+    }
+   }
+  }
+ }
+}

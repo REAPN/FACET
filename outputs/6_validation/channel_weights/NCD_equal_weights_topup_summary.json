@@ -1,0 +1,13 @@
+{
+ "disorder": "NCD",
+ "arm": "wequal",
+ "to_judge": 219,
+ "judged": 219,
+ "calls": 56,
+ "seconds": 340.5,
+ "strict_before": 80,
+ "strict_after": 84,
+ "strict_among_new": 4,
+ "model": "gpt-5.4",
+ "seed": 1
+}

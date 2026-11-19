@@ -1,0 +1,218 @@
+{
+ "ASD": {
+  "n_impc": 2460,
+  "n_pos": 36,
+  "pos_genes": 33,
+  "n_bg": 2424,
+  "auroc_facet": 0.4906,
+  "ci_facet": [
+   0.4279,
+   0.5625
+  ],
+  "auroc_coverage": 0.593,
+  "ci_coverage": [
+   0.4943,
+   0.6963
+  ],
+  "auroc_beh": 0.5771,
+  "ci_beh": [
+   0.4808,
+   0.6716
+  ],
+  "auroc_phenodigm": 0.4986,
+  "ci_phenodigm": [
+   0.4056,
+   0.5931
+  ],
+  "delta_phenodigm": -0.008,
+  "delta_phenodigm_ci": [
+   -0.0811,
+   0.0645
+  ],
+  "delta_phenodigm_p": 0.822,
+  "auroc_facet_depth_matched": 0.4887,
+  "auroc_beh_depth_matched": 0.5678,
+  "ci_facet_depth_matched": [
+   0.4298,
+   0.5548
+  ],
+  "pos_depth_bins": [
+   4,
+   23,
+   8,
+   1,
+   0
+  ],
+  "bg_depth_bins": [
+   334,
+   1506,
+   482,
+   96,
+   6
+  ],
+  "share_pos_behaviorally_annotated": 0.889,
+  "share_bg_behaviorally_annotated": 0.862
+ },
+ "SCZ": {
+  "n_impc": 2543,
+  "n_pos": 8,
+  "pos_genes": 7,
+  "n_bg": 2535,
+  "auroc_facet": 0.5142,
+  "ci_facet": [
+   0.4419,
+   0.7116
+  ],
+  "auroc_coverage": 0.5128,
+  "ci_coverage": [
+   0.3262,
+   0.7398
+  ],
+  "auroc_beh": 0.5173,
+  "ci_beh": [
+   0.342,
+   0.7407
+  ],
+  "auroc_phenodigm": 0.4829,
+  "ci_phenodigm": [
+   0.3208,
+   0.6668
+  ],
+  "delta_phenodigm": 0.0313,
+  "delta_phenodigm_ci": [
+   -0.1469,
+   0.2069
+  ],
+  "delta_phenodigm_p": 0.6781029263370333,
+  "auroc_facet_depth_matched": 0.5167,
+  "auroc_beh_depth_matched": 0.4986,
+  "ci_facet_depth_matched": [
+   0.4361,
+   0.6945
+  ],
+  "pos_depth_bins": [
+   1,
+   5,
+   2,
+   0,
+   0
+  ],
+  "bg_depth_bins": [
+   415,
+   1524,
+   488,
+   100,
+   8
+  ],
+  "share_pos_behaviorally_annotated": 0.875,
+  "share_bg_behaviorally_annotated": 0.836
+ },
+ "IDD": {
+  "n_impc": 2588,
+  "n_pos": 213,
+  "pos_genes": 190,
+  "n_bg": 2375,
+  "auroc_facet": 0.5212,
+  "ci_facet": [
+   0.4975,
+   0.546
+  ],
+  "auroc_coverage": 0.5238,
+  "ci_coverage": [
+   0.4919,
+   0.556
+  ],
+  "auroc_beh": 0.5654,
+  "ci_beh": [
+   0.5208,
+   0.6101
+  ],
+  "auroc_phenodigm": 0.5017,
+  "ci_phenodigm": [
+   0.4555,
+   0.5461
+  ],
+  "delta_phenodigm": 0.0195,
+  "delta_phenodigm_ci": [
+   -0.0272,
+   0.0704
+  ],
+  "delta_phenodigm_p": 0.412,
+  "auroc_facet_depth_matched": 0.5167,
+  "auroc_beh_depth_matched": 0.5156,
+  "ci_facet_depth_matched": [
+   0.4949,
+   0.5404
+  ],
+  "pos_depth_bins": [
+   34,
+   111,
+   54,
+   14,
+   0
+  ],
+  "bg_depth_bins": [
+   433,
+   1417,
+   434,
+   85,
+   6
+  ],
+  "share_pos_behaviorally_annotated": 0.84,
+  "share_bg_behaviorally_annotated": 0.818
+ },
+ "NCD": {
+  "n_impc": 2438,
+  "n_pos": 45,
+  "pos_genes": 44,
+  "n_bg": 2393,
+  "auroc_facet": 0.484,
+  "ci_facet": [
+   0.47,
+   0.5091
+  ],
+  "auroc_coverage": 0.5132,
+  "ci_coverage": [
+   0.4404,
+   0.5909
+  ],
+  "auroc_beh": 0.4751,
+  "ci_beh": [
+   0.394,
+   0.5629
+  ],
+  "auroc_phenodigm": 0.477,
+  "ci_phenodigm": [
+   0.3982,
+   0.5585
+  ],
+  "delta_phenodigm": 0.007,
+  "delta_phenodigm_ci": [
+   -0.0743,
+   0.0867
+  ],
+  "delta_phenodigm_p": 0.871,
+  "auroc_facet_depth_matched": 0.486,
+  "auroc_beh_depth_matched": 0.4973,
+  "ci_facet_depth_matched": [
+   0.4692,
+   0.5127
+  ],
+  "pos_depth_bins": [
+   8,
+   27,
+   8,
+   2,
+   0
+  ],
+  "bg_depth_bins": [
+   340,
+   1467,
+   481,
+   97,
+   8
+  ],
+  "share_pos_behaviorally_annotated": 0.822,
+  "share_bg_behaviorally_annotated": 0.858
+ }
+}

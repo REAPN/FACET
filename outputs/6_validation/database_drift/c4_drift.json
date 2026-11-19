@@ -1,0 +1,180 @@
+{
+ "gate": {
+  "ASD": 32535,
+  "SCZ": 32535,
+  "ID": 32535,
+  "MDD": 32535
+ },
+ "record_pool": 32535,
+ "current_pool": 32910,
+ "in_both": 32427,
+ "new_terms_in_current_behavioral_annotations": 4,
+ "uses": 65,
+ "new_terms_by_disorder": {
+  "ASD": {
+   "creditable_without_new_judgment": 0,
+   "not_creditable": 4,
+   "not_creditable_examples": [
+    [
+     "MP:0015113",
+     "increased gait width"
+    ],
+    [
+     "MP:0015112",
+     "abnormal gait width"
+    ],
+    [
+     "MP:0015114",
+     "decreased gait width"
+    ],
+    [
+     "MP:0015116",
+     "abnormal hopping gait"
+    ]
+   ]
+  },
+  "SCZ": {
+   "creditable_without_new_judgment": 4,
+   "not_creditable": 0,
+   "not_creditable_examples": []
+  },
+  "ID": {
+   "creditable_without_new_judgment": 0,
+   "not_creditable": 4,
+   "not_creditable_examples": [
+    [
+     "MP:0015113",
+     "increased gait width"
+    ],
+    [
+     "MP:0015112",
+     "abnormal gait width"
+    ],
+    [
+     "MP:0015114",
+     "decreased gait width"
+    ],
+    [
+     "MP:0015116",
+     "abnormal hopping gait"
+    ]
+   ]
+  },
+  "MDD": {
+   "creditable_without_new_judgment": 0,
+   "not_creditable": 4,
+   "not_creditable_examples": [
+    [
+     "MP:0015113",
+     "increased gait width"
+    ],
+    [
+     "MP:0015112",
+     "abnormal gait width"
+    ],
+    [
+     "MP:0015114",
+     "decreased gait width"
+    ],
+    [
+     "MP:0015116",
+     "abnormal hopping gait"
+    ]
+   ]
+  }
+ },
+ "convergent": {
+  "ASD": {
+   "genotypes_in_both_with_changed_criterion_count": 90,
+   "of_which_up": 31,
+   "of_which_down": 59,
+   "snapshot of record": {
+    "n": 32535,
+    "n_pos": 85,
+    "convergent_auroc": 0.9641,
+    "ci_gene": [
+     0.9282,
+     0.9898
+    ]
+   },
+   "current MGI": {
+    "n": 32910,
+    "n_pos": 85,
+    "convergent_auroc": 0.9641,
+    "ci_gene": [
+     0.9277,
+     0.9908
+    ]
+   }
+  },
+  "SCZ": {
+   "genotypes_in_both_with_changed_criterion_count": 98,
+   "of_which_up": 59,
+   "of_which_down": 39,
+   "snapshot of record": {
+    "n": 32535,
+    "n_pos": 42,
+    "convergent_auroc": 0.8772,
+    "ci_gene": [
+     0.8074,
+     0.9333
+    ]
+   },
+   "current MGI": {
+    "n": 32910,
+    "n_pos": 42,
+    "convergent_auroc": 0.8768,
+    "ci_gene": [
+     0.8069,
+     0.9287
+    ]
+   }
+  },
+  "IDD": {
+   "genotypes_in_both_with_changed_criterion_count": 35,
+   "of_which_up": 20,
+   "of_which_down": 15,
+   "snapshot of record": {
+    "n": 32535,
+    "n_pos": 121,
+    "convergent_auroc": 0.7705,
+    "ci_gene": [
+     0.7285,
+     0.836
+    ]
+   },
+   "current MGI": {
+    "n": 32910,
+    "n_pos": 121,
+    "convergent_auroc": 0.7704,
+    "ci_gene": [
+     0.7271,
+     0.8354
+    ]
+   }
+  },
+  "MDD": {
+   "genotypes_in_both_with_changed_criterion_count": 24,
+   "of_which_up": 19,
+   "of_which_down": 5,
+   "snapshot of record": {
+    "n": 32535,
+    "n_pos": 8,
+    "convergent_auroc": 0.9953,
+    "ci_gene": [
+     0.9941,
+     0.9969
+    ]
+   },
+   "current MGI": {
+    "n": 32910,
+    "n_pos": 8,
+    "convergent_auroc": 0.9952,
+    "ci_gene": [
+     0.9941,
+     0.9969
+    ]
+   }
+  }
+ }
+}

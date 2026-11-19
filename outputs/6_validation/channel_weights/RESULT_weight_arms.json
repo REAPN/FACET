@@ -1,0 +1,466 @@
+{
+ "ASD": {
+  "headline": {
+   "wequal": {
+    "auroc": 0.9545,
+    "diff": -0.0012,
+    "ci90": [
+     -0.0027,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.9556,
+    "diff": -0.0002,
+    "ci90": [
+     -0.0006,
+     0.0002
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.9537,
+    "diff": -0.002,
+    "ci90": [
+     -0.0039,
+     -0.0004
+    ],
+    "verdict": "equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.9557,
+    "diff": -0.0,
+    "ci90": [
+     -0.0004,
+     0.0003
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.9557,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.9557,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.9557
+  },
+  "full pool": {
+   "wequal": {
+    "auroc": 0.9684,
+    "diff": -0.0004,
+    "ci90": [
+     -0.001,
+     -0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.9688,
+    "diff": -0.0001,
+    "ci90": [
+     -0.0002,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.9682,
+    "diff": -0.0007,
+    "ci90": [
+     -0.0015,
+     -0.0002
+    ],
+    "verdict": "equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.9689,
+    "diff": -0.0,
+    "ci90": [
+     -0.0001,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.9689,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.9689,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.9689
+  }
+ },
+ "SCZ": {
+  "headline": {
+   "wequal": {
+    "auroc": 0.6859,
+    "diff": 0.0036,
+    "ci90": [
+     0.0026,
+     0.0048
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.685,
+    "diff": 0.0028,
+    "ci90": [
+     0.002,
+     0.0036
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.6628,
+    "diff": -0.0194,
+    "ci90": [
+     -0.0519,
+     0.0056
+    ],
+    "verdict": "inconclusive"
+   },
+   "wnolex": {
+    "auroc": 0.6154,
+    "diff": -0.0668,
+    "ci90": [
+     -0.1123,
+     -0.0253
+    ],
+    "verdict": "inconclusive"
+   },
+   "wnores": {
+    "auroc": 0.6822,
+    "diff": -0.0,
+    "ci90": [
+     -0.0001,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.6823,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.6823
+  },
+  "full pool": {
+   "wequal": {
+    "auroc": 0.7108,
+    "diff": 0.0014,
+    "ci90": [
+     0.001,
+     0.0019
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.7104,
+    "diff": 0.0011,
+    "ci90": [
+     0.0008,
+     0.0014
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.6872,
+    "diff": -0.0221,
+    "ci90": [
+     -0.054,
+     0.0021
+    ],
+    "verdict": "inconclusive"
+   },
+   "wnolex": {
+    "auroc": 0.6397,
+    "diff": -0.0697,
+    "ci90": [
+     -0.1152,
+     -0.0285
+    ],
+    "verdict": "inconclusive"
+   },
+   "wnores": {
+    "auroc": 0.7094,
+    "diff": -0.0,
+    "ci90": [
+     -0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.7094,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.7094
+  }
+ },
+ "IDD": {
+  "headline": {
+   "wequal": {
+    "auroc": 0.7512,
+    "diff": 0.0002,
+    "ci90": [
+     -0.0011,
+     0.0013
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.751,
+    "diff": -0.0,
+    "ci90": [
+     -0.0009,
+     0.0008
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.7292,
+    "diff": -0.0218,
+    "ci90": [
+     -0.0488,
+     -0.0035
+    ],
+    "verdict": "equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.7506,
+    "diff": -0.0004,
+    "ci90": [
+     -0.0008,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.7511,
+    "diff": 0.0,
+    "ci90": [
+     -0.0,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.7511,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.7511
+  },
+  "full pool": {
+   "wequal": {
+    "auroc": 0.7592,
+    "diff": 0.0001,
+    "ci90": [
+     -0.0004,
+     0.0005
+    ],
+    "verdict": "equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.7591,
+    "diff": -0.0,
+    "ci90": [
+     -0.0003,
+     0.0003
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.7365,
+    "diff": -0.0227,
+    "ci90": [
+     -0.0476,
+     -0.0054
+    ],
+    "verdict": "equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.759,
+    "diff": -0.0001,
+    "ci90": [
+     -0.0003,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.7591,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.7591,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.7591
+  }
+ },
+ "NCD": {
+  "headline": {
+   "wequal": {
+    "auroc": 0.5117,
+    "diff": -0.1561,
+    "ci90": [
+     -0.2046,
+     -0.1008
+    ],
+    "verdict": "not equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.6509,
+    "diff": -0.017,
+    "ci90": [
+     -0.0409,
+     0.004
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.5128,
+    "diff": -0.1551,
+    "ci90": [
+     -0.2034,
+     -0.0995
+    ],
+    "verdict": "not equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.6707,
+    "diff": 0.0028,
+    "ci90": [
+     0.0008,
+     0.0049
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.6678,
+    "diff": -0.0001,
+    "ci90": [
+     -0.0002,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.6679,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0001
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.6679
+  },
+  "full pool": {
+   "wequal": {
+    "auroc": 0.5614,
+    "diff": -0.1698,
+    "ci90": [
+     -0.2213,
+     -0.1177
+    ],
+    "verdict": "not equivalent"
+   },
+   "wlexf1": {
+    "auroc": 0.7119,
+    "diff": -0.0192,
+    "ci90": [
+     -0.0423,
+     -0.0039
+    ],
+    "verdict": "equivalent"
+   },
+   "wnoemb": {
+    "auroc": 0.5617,
+    "diff": -0.1694,
+    "ci90": [
+     -0.2209,
+     -0.1175
+    ],
+    "verdict": "not equivalent"
+   },
+   "wnolex": {
+    "auroc": 0.7321,
+    "diff": 0.001,
+    "ci90": [
+     0.0003,
+     0.0017
+    ],
+    "verdict": "equivalent"
+   },
+   "wnores": {
+    "auroc": 0.7311,
+    "diff": -0.0,
+    "ci90": [
+     -0.0001,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "wnojac": {
+    "auroc": 0.7311,
+    "diff": 0.0,
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "verdict": "equivalent"
+   },
+   "record": 0.7311
+  }
+ }
+}

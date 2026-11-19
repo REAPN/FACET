@@ -1,0 +1,389 @@
+disorder	genotype_id	label_as_run	label_corrected	reason	in_k4_pool
+ASD	MGI:2175037	1	1	as run	1
+ASD	MGI:3610950	1	1	as run	1
+ASD	MGI:3640114	1	1	as run	1
+ASD	MGI:3690093	1	1	as run	1
+ASD	MGI:3711235	1	1	as run	1
+ASD	MGI:3717173	1	1	as run	1
+ASD	MGI:3719798	1	1	as run	1
+ASD	MGI:3758961	1	1	as run	0
+ASD	MGI:3783593	1	1	as run	1
+ASD	MGI:4353654	1	1	as run	1
+ASD	MGI:4456472	1	1	as run	1
+ASD	MGI:4461155	1	1	as run	1
+ASD	MGI:4843917	1	1	as run	1
+ASD	MGI:4949761	1	1	as run	1
+ASD	MGI:5056404	1	1	as run	1
+ASD	MGI:5086221	1	1	as run	1
+ASD	MGI:5285395	1	1	as run	1
+ASD	MGI:5295223	1	1	as run	1
+ASD	MGI:5295268	1	1	as run	1
+ASD	MGI:5314147	1	1	as run	1
+ASD	MGI:5316396	1	1	as run	1
+ASD	MGI:5318689	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:5428133	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:5435702	1	1	as run	1
+ASD	MGI:5437480	1	1	as run	1
+ASD	MGI:5440731	1	1	as run	1
+ASD	MGI:5469320	1	1	as run	1
+ASD	MGI:5495922	1	1	as run	1
+ASD	MGI:5517482	1	1	as run	1
+ASD	MGI:5517484	1	1	as run	1
+ASD	MGI:5517485	1	1	as run	0
+ASD	MGI:5538574	1	1	as run	0
+ASD	MGI:5629811	1	1	as run	1
+ASD	MGI:5632308	1	1	as run	1
+ASD	MGI:5641392	1	1	as run	1
+ASD	MGI:5641393	1	1	as run	0
+ASD	MGI:5660857	1	1	as run	1
+ASD	MGI:5660859	1	1	as run	0
+ASD	MGI:5750066	1	1	as run	1
+ASD	MGI:5750217	1	1	as run	0
+ASD	MGI:5752313	1	1	as run	1
+ASD	MGI:5763612	1	1	as run	1
+ASD	MGI:5766814	1	1	as run	1
+ASD	MGI:5770244	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:5776354	1	1	as run	1
+ASD	MGI:5776377	1	1	as run	1
+ASD	MGI:5805821	1	1	as run	1
+ASD	MGI:5811989	1	1	as run	1
+ASD	MGI:5824119	1	1	as run	1
+ASD	MGI:5825287	1	1	as run	1
+ASD	MGI:5825304	1	1	as run	1
+ASD	MGI:5829468	1	1	as run	1
+ASD	MGI:5883282	1	1	as run	1
+ASD	MGI:5904009	1	1	as run	1
+ASD	MGI:5908397	1	1	as run	1
+ASD	MGI:6112031	1	1	as run	1
+ASD	MGI:6159715	1	1	as run	1
+ASD	MGI:6164125	1	1	as run	1
+ASD	MGI:6189103	1	1	as run	1
+ASD	MGI:6201596	1	1	as run	1
+ASD	MGI:6209392	1	1	as run	0
+ASD	MGI:6258771	1	1	as run	1
+ASD	MGI:6286096	1	1	as run	1
+ASD	MGI:6287207	1	1	as run	1
+ASD	MGI:6287871	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6294052	1	1	as run	1
+ASD	MGI:6316332	1	1	as run	1
+ASD	MGI:6324047	1	1	as run	0
+ASD	MGI:6324924	1	1	as run	1
+ASD	MGI:6358593	1	1	as run	1
+ASD	MGI:6364110	1	1	as run	1
+ASD	MGI:6388550	1	1	as run	1
+ASD	MGI:6390918	1	1	as run	1
+ASD	MGI:6393881	1	1	as run	1
+ASD	MGI:6400995	1	1	as run	0
+ASD	MGI:6400998	1	1	as run	0
+ASD	MGI:6430623	1	1	as run	1
+ASD	MGI:6437929	1	1	as run	1
+ASD	MGI:6437930	1	1	as run	1
+ASD	MGI:6438116	1	1	as run	1
+ASD	MGI:6438117	1	1	as run	1
+ASD	MGI:6468250	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6715314	1	1	as run	1
+ASD	MGI:6726265	1	1	as run	1
+ASD	MGI:6754173	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6754175	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6754183	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6783448	1	1	as run	1
+ASD	MGI:6790238	0	1	mixed: annotated to this disorder and another	1
+ASD	MGI:6790245	0	1	mixed: annotated to this disorder and another	0
+ASD	MGI:6890373	1	1	as run	0
+ASD	MGI:6890374	1	1	as run	1
+ASD	MGI:7413047	1	1	as run	1
+ASD	MGI:7531415	1	1	as run	1
+ASD	MGI:7611646	1	1	as run	1
+ASD	MGI:7616244	1	1	as run	1
+ASD	MGI:8237980	0	1	mixed: annotated to this disorder and another	1
+SCZ	MGI:2175046	1	1	as run	1
+SCZ	MGI:2654500	0	1	mixed: annotated to this disorder and another	1
+SCZ	MGI:2663269	1	1	as run	1
+SCZ	MGI:2674288	1	1	as run	0
+SCZ	MGI:3041140	1	1	as run	1
+SCZ	MGI:3530450	1	1	as run	0
+SCZ	MGI:3579532	1	1	as run	1
+SCZ	MGI:3606460	1	1	as run	0
+SCZ	MGI:3606580	1	1	as run	0
+SCZ	MGI:3606703	1	1	as run	0
+SCZ	MGI:3606731	1	1	as run	0
+SCZ	MGI:3623253	1	1	as run	0
+SCZ	MGI:3623286	1	1	as run	0
+SCZ	MGI:3707975	1	1	as run	1
+SCZ	MGI:3713111	1	1	as run	1
+SCZ	MGI:3720943	1	1	as run	1
+SCZ	MGI:3818698	1	1	as run	1
+SCZ	MGI:3819267	1	1	as run	1
+SCZ	MGI:3841583	1	1	as run	1
+SCZ	MGI:4353812	1	1	as run	1
+SCZ	MGI:4354165	1	1	as run	1
+SCZ	MGI:4358724	1	1	as run	1
+SCZ	MGI:4438921	1	1	as run	1
+SCZ	MGI:4888959	1	1	as run	0
+SCZ	MGI:4888960	1	1	as run	1
+SCZ	MGI:5085920	1	1	as run	1
+SCZ	MGI:5085985	1	1	as run	1
+SCZ	MGI:5285873	1	1	as run	1
+SCZ	MGI:5428133	0	1	mixed: annotated to this disorder and another	1
+SCZ	MGI:5428448	1	1	as run	1
+SCZ	MGI:5444462	1	1	as run	0
+SCZ	MGI:5465282	1	1	as run	1
+SCZ	MGI:5485349	1	1	as run	1
+SCZ	MGI:5559028	1	1	as run	1
+SCZ	MGI:5574284	1	1	as run	1
+SCZ	MGI:5660929	1	1	as run	1
+SCZ	MGI:5661067	1	1	as run	0
+SCZ	MGI:5689331	1	1	as run	1
+SCZ	MGI:5689835	1	1	as run	0
+SCZ	MGI:5694657	1	1	as run	1
+SCZ	MGI:5694660	1	1	as run	1
+SCZ	MGI:5699086	1	1	as run	1
+SCZ	MGI:5752786	1	1	as run	1
+SCZ	MGI:5762957	1	1	as run	1
+SCZ	MGI:5776380	1	1	as run	1
+SCZ	MGI:6189180	0	1	mixed: annotated to this disorder and another	1
+SCZ	MGI:6189202	1	1	as run	1
+SCZ	MGI:6283412	1	1	as run	1
+SCZ	MGI:6294898	1	1	as run	1
+SCZ	MGI:6315641	1	1	as run	1
+SCZ	MGI:6423106	1	1	as run	1
+SCZ	MGI:6810192	1	1	as run	1
+SCZ	MGI:6828730	1	1	as run	1
+SCZ	MGI:7378550	1	1	as run	1
+IDD	MGI:2653050	1	1	as run	1
+IDD	MGI:2653051	1	1	as run	0
+IDD	MGI:2653055	1	1	as run	1
+IDD	MGI:2654656	1	1	as run	1
+IDD	MGI:2665400	1	1	as run	0
+IDD	MGI:2665401	1	1	as run	1
+IDD	MGI:3607781	1	1	as run	0
+IDD	MGI:3618137	1	1	as run	1
+IDD	MGI:3618139	1	1	as run	1
+IDD	MGI:3624551	1	1	as run	1
+IDD	MGI:3624553	1	1	as run	0
+IDD	MGI:3624554	1	1	as run	1
+IDD	MGI:3624674	1	1	as run	1
+IDD	MGI:3624676	1	1	as run	1
+IDD	MGI:3624713	1	1	as run	1
+IDD	MGI:3624717	1	1	as run	1
+IDD	MGI:3624718	1	1	as run	0
+IDD	MGI:3694359	1	1	as run	1
+IDD	MGI:3712286	1	1	as run	1
+IDD	MGI:3719120	1	1	as run	0
+IDD	MGI:3723649	1	1	as run	0
+IDD	MGI:3758489	1	1	as run	1
+IDD	MGI:3773672	1	1	as run	1
+IDD	MGI:3774117	1	1	as run	1
+IDD	MGI:3801487	1	1	as run	1
+IDD	MGI:3801488	1	1	as run	0
+IDD	MGI:3815023	1	1	as run	1
+IDD	MGI:3817230	1	1	as run	1
+IDD	MGI:3817461	1	1	as run	1
+IDD	MGI:3817462	1	1	as run	1
+IDD	MGI:3833428	1	1	as run	1
+IDD	MGI:3834842	1	1	as run	1
+IDD	MGI:3852128	1	1	as run	1
+IDD	MGI:4366351	1	1	as run	1
+IDD	MGI:4366442	1	1	as run	1
+IDD	MGI:4415714	1	1	as run	1
+IDD	MGI:4830462	1	1	as run	1
+IDD	MGI:4949888	1	1	as run	1
+IDD	MGI:4950076	1	1	as run	1
+IDD	MGI:5292357	1	1	as run	1
+IDD	MGI:5302204	0	1	name: intellectual developmental disorder	1
+IDD	MGI:5306241	1	1	as run	1
+IDD	MGI:5310735	1	1	as run	1
+IDD	MGI:5318976	1	1	as run	1
+IDD	MGI:5461654	1	1	as run	0
+IDD	MGI:5491051	1	1	as run	1
+IDD	MGI:5529468	1	1	as run	1
+IDD	MGI:5538526	1	1	as run	1
+IDD	MGI:5568994	1	1	as run	1
+IDD	MGI:5568998	1	1	as run	1
+IDD	MGI:5576781	0	1	DO closure under DOID:1059	1
+IDD	MGI:5584025	1	1	as run	1
+IDD	MGI:5617140	1	1	as run	1
+IDD	MGI:5617468	0	1	name: intellectual developmental disorder	1
+IDD	MGI:5661462	1	1	as run	1
+IDD	MGI:5702941	1	1	as run	1
+IDD	MGI:5702951	1	1	as run	1
+IDD	MGI:5702952	1	1	as run	1
+IDD	MGI:5704111	1	1	as run	1
+IDD	MGI:5751707	1	1	as run	1
+IDD	MGI:5751716	1	1	as run	1
+IDD	MGI:5781308	1	1	as run	1
+IDD	MGI:5806112	1	1	as run	1
+IDD	MGI:5823987	1	1	as run	1
+IDD	MGI:5824730	1	1	as run	1
+IDD	MGI:5902071	0	1	DO closure under DOID:1059	1
+IDD	MGI:5902072	0	1	DO closure under DOID:1059	1
+IDD	MGI:5902076	0	1	DO closure under DOID:1059	1
+IDD	MGI:5902766	1	1	as run	0
+IDD	MGI:6098752	1	1	as run	1
+IDD	MGI:6098753	1	1	as run	1
+IDD	MGI:6098754	1	1	as run	1
+IDD	MGI:6156953	0	1	name: intellectual developmental disorder	1
+IDD	MGI:6157969	0	1	override: Pitt-Hopkins syndrome	1
+IDD	MGI:6157970	0	1	override: Pitt-Hopkins syndrome	1
+IDD	MGI:6159715	0	1	DO closure under DOID:1059	1
+IDD	MGI:6163736	1	1	as run	1
+IDD	MGI:6189180	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6195853	1	1	as run	1
+IDD	MGI:6287871	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6295127	0	1	DO closure under DOID:1059	1
+IDD	MGI:6295856	0	1	DO closure under DOID:1059	1
+IDD	MGI:6315636	1	1	as run	1
+IDD	MGI:6357214	1	1	as run	1
+IDD	MGI:6358832	0	1	DO closure under DOID:1059	1
+IDD	MGI:6370003	1	1	as run	1
+IDD	MGI:6392161	1	1	as run	0
+IDD	MGI:6392615	1	1	as run	1
+IDD	MGI:6451664	0	1	name: intellectual developmental disorder	1
+IDD	MGI:6466594	1	1	as run	1
+IDD	MGI:6468250	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6472629	1	1	as run	1
+IDD	MGI:6479882	0	1	override: Pitt-Hopkins syndrome	1
+IDD	MGI:6479897	0	1	override: Pitt-Hopkins syndrome	1
+IDD	MGI:6507205	0	1	DO closure under DOID:1059	1
+IDD	MGI:6695982	1	1	as run	1
+IDD	MGI:6715154	1	1	as run	1
+IDD	MGI:6715340	1	1	as run	1
+IDD	MGI:6717362	1	1	as run	1
+IDD	MGI:6729187	1	1	as run	1
+IDD	MGI:6754173	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6754175	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6754183	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:6887846	1	1	as run	1
+IDD	MGI:7264822	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7265077	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7266261	1	1	as run	1
+IDD	MGI:7266266	1	1	as run	1
+IDD	MGI:7266283	1	1	as run	1
+IDD	MGI:7266284	1	1	as run	1
+IDD	MGI:7277684	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7328859	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7341464	1	1	as run	1
+IDD	MGI:7469827	0	1	DO closure under DOID:1059	1
+IDD	MGI:7541226	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7541228	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7547388	1	1	as run	1
+IDD	MGI:7574259	0	1	DO closure under DOID:1059	1
+IDD	MGI:7579102	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7580988	0	1	DO closure under DOID:1059	1
+IDD	MGI:7595529	0	1	DO closure under DOID:1059	1
+IDD	MGI:7606740	0	1	name: intellectual developmental disorder	1
+IDD	MGI:7610011	0	1	DO closure under DOID:1059	1
+IDD	MGI:7711308	1	1	as run	1
+IDD	MGI:7867619	0	1	DO closure under DOID:1059	1
+IDD	MGI:7867699	0	1	DO closure under DOID:1059	1
+IDD	MGI:8175487	0	1	DO closure under DOID:1059	1
+IDD	MGI:8175639	0	1	DO closure under DOID:1059	1
+IDD	MGI:8220251	1	1	as run	1
+IDD	MGI:8237980	0	1	mixed: annotated to this disorder and another	1
+IDD	MGI:8248856	1	1	as run	1
+IDD	MGI:8250466	1	1	as run	1
+NCD	MGI:2174917	1	1	as run	1
+NCD	MGI:2174990	1	1	as run	1
+NCD	MGI:2174994	1	1	as run	0
+NCD	MGI:2174998	1	1	as run	1
+NCD	MGI:2652360	1	1	as run	0
+NCD	MGI:2652361	1	1	as run	0
+NCD	MGI:2652362	1	1	as run	0
+NCD	MGI:2652363	1	1	as run	0
+NCD	MGI:2652553	1	1	as run	1
+NCD	MGI:2662300	1	1	as run	1
+NCD	MGI:2662716	1	1	as run	1
+NCD	MGI:2675620	1	1	as run	1
+NCD	MGI:2675764	1	1	as run	1
+NCD	MGI:2678248	1	1	as run	1
+NCD	MGI:2681434	1	1	as run	0
+NCD	MGI:2681992	1	1	as run	0
+NCD	MGI:3038236	1	1	as run	1
+NCD	MGI:3043476	1	1	as run	1
+NCD	MGI:3044184	1	1	as run	1
+NCD	MGI:3050555	1	1	as run	0
+NCD	MGI:3573927	1	1	as run	1
+NCD	MGI:3573928	1	1	as run	0
+NCD	MGI:3576369	1	1	as run	1
+NCD	MGI:3577843	1	1	as run	1
+NCD	MGI:3579508	1	1	as run	1
+NCD	MGI:3586839	1	1	as run	1
+NCD	MGI:3589555	1	1	as run	0
+NCD	MGI:3604390	1	1	as run	1
+NCD	MGI:3619915	1	1	as run	1
+NCD	MGI:3639711	1	1	as run	1
+NCD	MGI:3698039	1	1	as run	1
+NCD	MGI:3698040	1	1	as run	0
+NCD	MGI:3698041	1	1	as run	0
+NCD	MGI:3698042	1	1	as run	1
+NCD	MGI:3698752	1	1	as run	0
+NCD	MGI:3698754	1	1	as run	0
+NCD	MGI:3698855	1	1	as run	1
+NCD	MGI:3699093	1	1	as run	0
+NCD	MGI:3699097	1	1	as run	0
+NCD	MGI:3702925	1	1	as run	0
+NCD	MGI:3712364	1	1	as run	1
+NCD	MGI:3716639	1	1	as run	1
+NCD	MGI:3720759	1	1	as run	0
+NCD	MGI:3757750	1	1	as run	1
+NCD	MGI:3765154	1	1	as run	1
+NCD	MGI:3774594	1	1	as run	1
+NCD	MGI:3833851	1	1	as run	1
+NCD	MGI:3848697	1	1	as run	1
+NCD	MGI:3850371	1	1	as run	1
+NCD	MGI:4429423	1	1	as run	1
+NCD	MGI:4849542	1	1	as run	1
+NCD	MGI:4936868	1	1	as run	1
+NCD	MGI:4939781	1	1	as run	0
+NCD	MGI:4941907	1	1	as run	1
+NCD	MGI:5014041	1	1	as run	1
+NCD	MGI:5292519	1	1	as run	1
+NCD	MGI:5294357	1	1	as run	1
+NCD	MGI:5297858	1	1	as run	1
+NCD	MGI:5432176	1	1	as run	1
+NCD	MGI:5432177	1	1	as run	1
+NCD	MGI:5432178	1	1	as run	0
+NCD	MGI:5432179	1	1	as run	0
+NCD	MGI:5433612	1	1	as run	0
+NCD	MGI:5436309	1	1	as run	1
+NCD	MGI:5444200	1	1	as run	1
+NCD	MGI:5466506	1	1	as run	1
+NCD	MGI:5471773	1	1	as run	1
+NCD	MGI:5500068	1	1	as run	1
+NCD	MGI:5517669	1	1	as run	1
+NCD	MGI:5546408	1	1	as run	1
+NCD	MGI:5638672	1	1	as run	1
+NCD	MGI:5638675	1	1	as run	1
+NCD	MGI:5695247	1	1	as run	1
+NCD	MGI:5698523	1	1	as run	1
+NCD	MGI:5756630	1	1	as run	1
+NCD	MGI:5790841	1	1	as run	1
+NCD	MGI:5795582	1	1	as run	0
+NCD	MGI:5904595	1	1	as run	1
+NCD	MGI:6187717	1	1	as run	1
+NCD	MGI:6199038	1	1	as run	1
+NCD	MGI:6278937	1	1	as run	1
+NCD	MGI:6278939	1	1	as run	1
+NCD	MGI:6314154	1	1	as run	1
+NCD	MGI:6400710	1	1	as run	1
+NCD	MGI:6489606	1	1	as run	1
+NCD	MGI:6849976	1	1	as run	1
+NCD	MGI:7284278	1	1	as run	1
+NCD	MGI:7284279	1	1	as run	1
+NCD	MGI:7284280	1	1	as run	1
+NCD	MGI:7378801	1	1	as run	1
+NCD	MGI:7466182	1	1	as run	1
+NCD	MGI:7860846	1	1	as run	1
+NCD	MGI:7860847	1	1	as run	1
+NCD	MGI:8187632	1	0	removed 2026-11-02: Wolff-Parkinson-White syndrome matched by the disease-name rule on Parkinson, not a neurocognitive disorder	1
+NCD	MGI:8187633	1	0	removed 2026-11-02: Wolff-Parkinson-White syndrome matched by the disease-name rule on Parkinson, not a neurocognitive disorder	1
+NCD	MGI:8219473	0	1	mixed: annotated to this disorder and another	1
+MDD	MGI:3707972	1	1	as run	1
+MDD	MGI:3713529	1	1	as run	1
+MDD	MGI:3801152	1	1	as run	1
+MDD	MGI:5766068	1	1	as run	0
+MDD	MGI:6098717	1	1	as run	1
+MDD	MGI:7260147	1	1	as run	1
+MDD	MGI:7718590	1	1	as run	1
+MDD	MGI:8219473	0	1	mixed: annotated to this disorder and another	1
+MDD	MGI:8256897	1	1	as run	1

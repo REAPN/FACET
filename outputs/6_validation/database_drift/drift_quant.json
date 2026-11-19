@@ -1,0 +1,22 @@
+{
+ "record_report": "2026-03-23",
+ "current_report": "2026-10-05 (server date)",
+ "record_ontology": "2026-05-19",
+ "current_ontology": "2026-09-23",
+ "mp_terms_record_ontology": 15205,
+ "mp_terms_current_ontology": 15357,
+ "new_terms": 152,
+ "terms_dropped": 0,
+ "genotypes_record_report": null,
+ "genotypes_current_report": 76719,
+ "k4_pool": 32535,
+ "k4_unchanged": 30599,
+ "k4_share_unchanged": 0.9405,
+ "k4_withdrawn": 22,
+ "k4_term_annotations_added": 2053,
+ "k4_term_annotations_removed": 1655,
+ "k4_uses_of_terms_newer_than_record_ontology": 563,
+ "k4_genotypes_with_behavioral_change_or_new_term": 1006,
+ "genotypes_with_4_or_more_terms_now": 32910,
+ "of_which_not_in_record_pool": 483
+}

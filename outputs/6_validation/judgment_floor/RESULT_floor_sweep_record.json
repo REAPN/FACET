@@ -1,0 +1,46 @@
+{
+ "ASD": {
+  "admitted": 145,
+  "fill": 44,
+  "unexplained_export": 0,
+  "unjudged_50_57": 333,
+  "unjudged_55_57": 80,
+  "lost_0.6": 6,
+  "export_lost_0.6": 2,
+  "lost_0.65": 20,
+  "export_lost_0.65": 8
+ },
+ "SCZ": {
+  "admitted": 196,
+  "fill": 47,
+  "unexplained_export": 0,
+  "unjudged_50_57": 257,
+  "unjudged_55_57": 57,
+  "lost_0.6": 6,
+  "export_lost_0.6": 0,
+  "lost_0.65": 26,
+  "export_lost_0.65": 6
+ },
+ "IDD": {
+  "admitted": 138,
+  "fill": 50,
+  "unexplained_export": 0,
+  "unjudged_50_57": 165,
+  "unjudged_55_57": 51,
+  "lost_0.6": 7,
+  "export_lost_0.6": 0,
+  "lost_0.65": 17,
+  "export_lost_0.65": 1
+ },
+ "NCD": {
+  "admitted": 95,
+  "fill": 20,
+  "unexplained_export": 0,
+  "unjudged_50_57": 234,
+  "unjudged_55_57": 40,
+  "lost_0.6": 14,
+  "export_lost_0.6": 4,
+  "lost_0.65": 17,
+  "export_lost_0.65": 6
+ }
+}

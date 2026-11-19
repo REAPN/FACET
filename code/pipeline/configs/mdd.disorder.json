@@ -1,0 +1,1005 @@
+{
+  "$schema": "./disorder_config.schema.json",
+  "$config_version": "1.0",
+  "$generated": "2026-05-16 — Phase A artifact, codifying decisions from 2026-05-15 MDD generalization work",
+  "disorder": {
+    "id": "MDD",
+    "name": "Major Depressive Disorder",
+    "dsm5_section": "DSM-5-TR / Depressive Disorders / Major Depressive Disorder",
+    "icd10_codes": [
+      "F32.0",
+      "F32.1",
+      "F32.2",
+      "F32.3",
+      "F32.4",
+      "F32.5",
+      "F32.9",
+      "F33.0",
+      "F33.1",
+      "F33.2",
+      "F33.3",
+      "F33.40",
+      "F33.41",
+      "F33.42",
+      "F33.9"
+    ]
+  },
+  "domains": {
+    "strict": [
+      {
+        "name": "depressed_mood",
+        "description": "Persistent sad, empty, or irritable mood; dysphoric affect; depressive affect. DSM-5-TR Criterion A1 (and children/adolescents: irritable mood). Mouse anchors: forced swim test (Porsolt 1977) — immobility as behavioral despair proxy, tail suspension test, chronic unpredictable stress (CUS/CUMS) depressive-like profile, social defeat stress (Krishnan & Nestler 2008).",
+        "polarity": "negative"
+      },
+      {
+        "name": "anhedonia",
+        "description": "Diminished pleasure / reduced reward responsiveness to natural reinforcers; loss of interest in previously rewarding stimuli. Mouse anchors: sucrose preference test (Willner 1987), ICSS threshold elevation, female urine sniff test, progressive ratio break point.",
+        "polarity": "negative"
+      },
+      {
+        "name": "weight_appetite_change",
+        "description": "Bidirectional dysregulation of food intake and body weight — restriction with weight loss (AN, MDE A3 weight loss) OR binge/excessive intake with weight gain (BN/BED, MDE A3 weight gain). Within-individual cycling allowed. Mouse anchors: 2-bottle palatable food choice, intake/weight monitoring, activity-based anorexia (Routtenberg 1968), DIO weight gain, intermittent binge access models.",
+        "polarity": "bidirectional"
+      },
+      {
+        "name": "sleep_disturbance",
+        "description": "Sleep architecture abnormality — disturbed sleep, insomnia, hypersomnia, REM fragmentation, decreased sleep need. Within-individual cycling allowed. Mouse anchors: polysomnography, sleep-deprivation paradigms, REM/NREM ratio, sleep onset latency.",
+        "polarity": "bidirectional"
+      },
+      {
+        "name": "psychomotor_change",
+        "description": "Bidirectional motor activity disturbance — agitation OR retardation, depending on disorder state. Within-individual cycling allowed. Mouse anchors: open field locomotion, home-cage activity, forced-swim immobility, novelty-induced activity.",
+        "polarity": "bidirectional"
+      },
+      {
+        "name": "fatigue",
+        "description": "Fatigue or loss of energy; decreased physical activity; lethargy. DSM-5-TR Criterion A6. Mechanistically linked to dopaminergic effort-evaluation circuits (Salamone et al. 2007) and vegetative cluster (Hasler 2004). Mouse anchors: home-cage wheel running reduction, grip strength, voluntary locomotion in chronic-stress models, operant effort tasks (progressive ratio for food).",
+        "polarity": "negative"
+      },
+      {
+        "name": "worthlessness_guilt",
+        "description": "Feelings of worthlessness or excessive/inappropriate guilt; negative self-schema; self-blame. DSM-5-TR Criterion A7. Beck cognitive triad — negative self-view component. Mouse anchors: stress-induced passive coping (contextual freezing in non-threat context), defeat-induced submissive posture, reduced social dominance post-defeat (Kim 2016 hierarchy shift).",
+        "polarity": "negative"
+      },
+      {
+        "name": "concentration_indecisiveness",
+        "description": "Diminished ability to think or concentrate; indecisiveness nearly every day. DSM-5-TR Criterion A8. Snyder 2013 meta-analytic framework on executive dysfunction in depression. Mouse anchors: 5-CSRTT attentional performance (Robbins 2002), reversal learning deficits, T-maze delayed alternation, cognitive flexibility assays in chronic-stress models.",
+        "polarity": "negative"
+      },
+      {
+        "name": "suicidality",
+        "description": "Recurrent thoughts of death, suicidal ideation, or suicide attempt. DSM-5-TR Criterion A9. Beck hopelessness triad — suicidal cognition component. Mouse anchors: passive coping in learned helplessness (LH) paradigm (Seligman 1972), escape-failure in shuttlebox after inescapable shock, deficit in escape learning. Note: direct suicidal ideation is non-modelable; the LH escape-failure proxy is used as a behavioral analog for motivational collapse.",
+        "polarity": "negative"
+      }
+    ],
+    "broad_extras": [],
+    "bidirectional": [
+      "weight_appetite_change",
+      "sleep_disturbance",
+      "psychomotor_change"
+    ],
+    "short_labels": {
+      "depressed_mood": "Depressed mood",
+      "anhedonia": "Anhedonia",
+      "weight_appetite_change": "Weight/appetite",
+      "sleep_disturbance": "Sleep",
+      "psychomotor_change": "Psychomotor",
+      "fatigue": "Fatigue",
+      "worthlessness_guilt": "Worthlessness/guilt",
+      "concentration_indecisiveness": "Concentration",
+      "suicidality": "Suicidality"
+    }
+  },
+  "adjacency": {
+    "depressed_mood": [
+      "anhedonia",
+      "worthlessness_guilt",
+      "suicidality"
+    ],
+    "anhedonia": [
+      "depressed_mood",
+      "fatigue",
+      "concentration_indecisiveness"
+    ],
+    "weight_appetite_change": [
+      "fatigue",
+      "sleep_disturbance",
+      "psychomotor_change"
+    ],
+    "sleep_disturbance": [
+      "fatigue",
+      "weight_appetite_change",
+      "psychomotor_change"
+    ],
+    "psychomotor_change": [
+      "fatigue",
+      "weight_appetite_change",
+      "sleep_disturbance"
+    ],
+    "fatigue": [
+      "anhedonia",
+      "weight_appetite_change",
+      "sleep_disturbance",
+      "psychomotor_change",
+      "concentration_indecisiveness"
+    ],
+    "worthlessness_guilt": [
+      "depressed_mood",
+      "suicidality"
+    ],
+    "concentration_indecisiveness": [
+      "anhedonia",
+      "fatigue"
+    ],
+    "suicidality": [
+      "depressed_mood",
+      "worthlessness_guilt"
+    ]
+  },
+  "adjacency_citations": {
+    "edges": [
+      {
+        "edge": [
+          "depressed_mood",
+          "anhedonia"
+        ],
+        "source": "APA (2022) DSM-5-TR Major Depressive Disorder Criterion A",
+        "note": "Gatekeeper edge: at least one of depressed_mood OR anhedonia is required for MDD diagnosis"
+      },
+      {
+        "edge": [
+          "depressed_mood",
+          "worthlessness_guilt"
+        ],
+        "source": "Beck AT (1967) 'Depression: Clinical, Experimental, and Theoretical Aspects'; Beck JS (2008) Am J Psychiatry 165(8):969-977",
+        "note": "Beck cognitive triad: negative self-view (worthlessness) within the depressive cognitive schema"
+      },
+      {
+        "edge": [
+          "depressed_mood",
+          "suicidality"
+        ],
+        "source": "Beck AT et al. (1985) Am J Psychiatry 142(5):559-563",
+        "note": "Hopelessness/futility component of the cognitive triad predicts suicidal ideation"
+      },
+      {
+        "edge": [
+          "worthlessness_guilt",
+          "suicidality"
+        ],
+        "source": "Wenzel & Beck (2008) Applied and Preventive Psychology 12(4):189-201",
+        "note": "Suicidal triad — worthlessness + hopelessness + suicidal cognition clusters together"
+      },
+      {
+        "edge": [
+          "anhedonia",
+          "fatigue"
+        ],
+        "source": "Treadway MT & Zald DH (2011) Neurosci Biobehav Rev 35(3):537-555; Salamone JD et al. (2007) Psychopharmacology 191(3):461-482",
+        "note": "Motivational/effort-based anhedonia overlaps mechanistically with fatigue (dopaminergic effort-evaluation circuits)"
+      },
+      {
+        "edge": [
+          "anhedonia",
+          "concentration_indecisiveness"
+        ],
+        "source": "Snyder HR (2013) Psychol Bull 139(1):81-132",
+        "note": "Meta-analytic evidence that depression-associated executive dysfunction shares dopaminergic/reward-circuit mechanisms with anhedonia"
+      },
+      {
+        "edge": [
+          "fatigue",
+          "sleep_disturbance"
+        ],
+        "source": "Hasler G et al. (2004) Neuropsychopharmacology 29(10):1765-1781 (Tables 2-3)",
+        "note": "Vegetative cluster — co-occurrence and shared hypothalamic substrate"
+      },
+      {
+        "edge": [
+          "fatigue",
+          "weight_appetite_change"
+        ],
+        "source": "Hasler G et al. (2004) Neuropsychopharmacology 29(10):1765-1781",
+        "note": "Vegetative cluster — autonomic/hypothalamic substrate"
+      },
+      {
+        "edge": [
+          "fatigue",
+          "psychomotor_change"
+        ],
+        "source": "Hasler G et al. (2004); Krueger RF (1999) Arch Gen Psychiatry 56(10):921-926",
+        "note": "Vegetative cluster — psychomotor retardation directly manifests as low energy"
+      },
+      {
+        "edge": [
+          "sleep_disturbance",
+          "weight_appetite_change"
+        ],
+        "source": "Hasler G et al. (2004); Krueger RF (1999)",
+        "note": "Vegetative cluster — shared HPA-axis dysregulation"
+      },
+      {
+        "edge": [
+          "sleep_disturbance",
+          "psychomotor_change"
+        ],
+        "source": "Hasler G et al. (2004)",
+        "note": "Vegetative cluster — sleep architecture changes accompany psychomotor change"
+      },
+      {
+        "edge": [
+          "weight_appetite_change",
+          "psychomotor_change"
+        ],
+        "source": "Hasler G et al. (2004); Krueger RF (1999)",
+        "note": "Vegetative cluster — neuroendocrine co-regulation"
+      },
+      {
+        "edge": [
+          "concentration_indecisiveness",
+          "fatigue"
+        ],
+        "source": "Hasler G et al. (2004)",
+        "note": "Cognitive-vegetative bridge; cognitive slowing from low energy is documented in depression-cognition meta-analyses"
+      }
+    ]
+  },
+  "stage0_dsm5_extraction": {
+    "pdf_input": "DSM5_MDD.pdf",
+    "outdir": "DSM5_MDD_preprocessed/",
+    "chapter_start_anchor": "(?m)^\\s*Major Depressive Disorder\\s*$",
+    "chapter_start_anchor_keep": false,
+    "chapter_end_anchor": "(?m)^\\s*Persistent Depressive Disorder\\s*$",
+    "criteria_trim_anchors": [
+      "\\bSpecify if:\\b"
+    ],
+    "text_normalization": {
+      "hyphen_join_min_chars": 2,
+      "criterion_marker_rejoin": true,
+      "paren_note_rejoin": true
+    },
+    "headings_to_extract": [
+      {
+        "name": "Diagnostic Criteria",
+        "regex": "Diagnostic Criteria(?:\\s+F3[23](?:\\.[0-9x]+)?)?"
+      },
+      {
+        "name": "Coding and Recording Procedures",
+        "regex": "Coding and Recording Procedures|Recording Procedures"
+      },
+      {
+        "name": "Specifiers",
+        "regex": "Specifiers"
+      },
+      {
+        "name": "Diagnostic Features",
+        "regex": "Diagnostic Features"
+      },
+      {
+        "name": "Associated Features Supporting Diagnosis",
+        "regex": "Associated Features Supporting Diagnosis|Associated Features"
+      },
+      {
+        "name": "Prevalence",
+        "regex": "Prevalence"
+      },
+      {
+        "name": "Development and Course",
+        "regex": "Development and Course"
+      },
+      {
+        "name": "Risk and Prognostic Factors",
+        "regex": "Risk and Prognostic Factors"
+      },
+      {
+        "name": "Culture-Related Diagnostic Issues",
+        "regex": "Culture-Related Diagnostic Issues"
+      },
+      {
+        "name": "Sex- and Gender-Related Diagnostic Issues",
+        "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
+      },
+      {
+        "name": "Association With Suicidal Thoughts or Behavior",
+        "regex": "Association With Suicidal Thoughts or Behavior|Suicide Risk"
+      },
+      {
+        "name": "Functional Consequences of Major Depressive Disorder",
+        "regex": "Functional Consequences of Major Depressive Disorder"
+      },
+      {
+        "name": "Differential Diagnosis",
+        "regex": "Differential Diagnosis"
+      },
+      {
+        "name": "Comorbidity",
+        "regex": "Comorbidity"
+      }
+    ],
+    "core_phenotype_headings": [
+      "Diagnostic Criteria",
+      "Diagnostic Features"
+    ],
+    "running_header_strip_patterns": [
+      "(?mi)^\\s*Major Depressive Disorder\\s*$",
+      "(?mi)^\\s*Depressive Disorders\\s*$",
+      "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
+      "(?mi)^\\s*\\d+\\s*$"
+    ]
+  },
+  "stage1_hpo_curation": {
+    "core_text_input": "DSM5_MDD_preprocessed/MDD_core_phenotype_only.txt",
+    "hpo_json_input": "hp.json",
+    "outdir": "pilot_hpo_run_mdd_v1/",
+    "extraction_schema": {
+      "categories_enum": [
+        "depressed_mood",
+        "anhedonia",
+        "weight_appetite_change",
+        "sleep_disturbance",
+        "psychomotor_change",
+        "fatigue",
+        "worthlessness_guilt",
+        "concentration_indecisiveness",
+        "suicidality",
+        "other"
+      ],
+      "polarity_enum": [
+        "present",
+        "absent",
+        "negated",
+        "uncertain",
+        "bidirectional"
+      ],
+      "centrality_enum": [
+        "core",
+        "supporting",
+        "context_only"
+      ],
+      "temporality_enum": [
+        "current",
+        "history",
+        "developmental",
+        "unspecified"
+      ]
+    },
+    "extraction_prompt_addendum": "Three MDD Criterion A symptoms are intrinsically BIDIRECTIONAL per DSM-5-TR: A.3 weight_appetite_change (gain OR loss), A.4 sleep_disturbance (insomnia OR hypersomnia), A.5 psychomotor_change (agitation OR retardation). When the DSM text gives both directions in one criterion, emit TWO separate items (one per direction) and set polarity = 'bidirectional' on each. Do NOT extract from 'Note:' blocks unless the Note directly qualifies a specific Criterion item (e.g., A.1 children/adolescents irritable mood). The A.1 children/adolescents 'irritable mood' Note must use temporality='developmental'.",
+    "resolution_prompt_addendum": null,
+    "seed_terms_per_domain": {
+      "depressed_mood": [
+        "depressed mood",
+        "persistent sadness",
+        "tearfulness",
+        "hopelessness",
+        "irritable mood"
+      ],
+      "anhedonia": [
+        "anhedonia",
+        "loss of interest",
+        "loss of pleasure",
+        "diminished hedonic response",
+        "reduced reward responsiveness"
+      ],
+      "weight_appetite_change": [
+        "weight loss",
+        "weight gain",
+        "decreased appetite",
+        "increased appetite",
+        "altered eating behavior"
+      ],
+      "sleep_disturbance": [
+        "insomnia",
+        "hypersomnia",
+        "early morning awakening",
+        "fragmented sleep",
+        "altered sleep architecture",
+        "decreased REM latency",
+        "abnormal circadian rhythm"
+      ],
+      "psychomotor_change": [
+        "psychomotor agitation",
+        "psychomotor retardation",
+        "slowed movement",
+        "restlessness",
+        "fidgeting"
+      ],
+      "fatigue": [
+        "fatigue",
+        "loss of energy",
+        "lethargy",
+        "decreased activity"
+      ],
+      "worthlessness_guilt": [
+        "feelings of worthlessness",
+        "excessive guilt",
+        "low self-esteem",
+        "self-reproach"
+      ],
+      "concentration_indecisiveness": [
+        "diminished concentration",
+        "indecisiveness",
+        "impaired cognition",
+        "memory complaints",
+        "executive dysfunction"
+      ],
+      "suicidality": [
+        "suicidal ideation",
+        "suicide attempt",
+        "death ideation",
+        "self-harm"
+      ]
+    },
+    "llm_model": "gpt-5.4",
+    "embedding_model": "text-embedding-3-large",
+    "llm_seed": 1,
+    "final_filter": {
+      "allowed_centrality": [
+        "core",
+        "supporting"
+      ],
+      "allowed_polarity": [
+        "present",
+        "bidirectional"
+      ],
+      "allowed_relations": [
+        "exact",
+        "broader_than_source",
+        "narrower_than_source"
+      ]
+    }
+  },
+  "stage2_candidate_features": {
+    "hpo_targets_input": "pilot_hpo_run_mdd_v1/07_final_resolved_hpo_terms.tsv",
+    "mouse_mp_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+    "taxonomy_tsv": "mp_term_taxonomy_mdd_v1/03_mp_term_taxonomy.tsv",
+    "pairwise_similarity_tsv": "phenio-monarch-hp-mp.0.4.semsimian.tsv",
+    "outdir": "mdd_candidate_features_v1/",
+    "mouse_domain_routing": {
+      "mode": "single_bucket",
+      "single_bucket_label": "mdd_pool",
+      "mapping": null,
+      "v2_upgrade_note": "v2: re-label mp_term_taxonomy_broad_v3 with MDD-specific mouse_domain values (sleep, weight, appetite, vegetative_other, mood_like, motor_activity, cognitive_other, etc.). Estimated cost ~$15-30 LLM re-classification + manual review."
+    },
+    "tier_filter": {
+      "include": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exclude": [
+        5
+      ],
+      "tier_5_caveat": "MAY exclude MDD-relevant vegetative phenotypes — sleep / weight / appetite MP terms tagged as off_target_or_uninformative from an ASD perspective. v2 re-tier needed; weight-side coverage weak as observed in 2026-05-16 Stage 2a audit."
+    },
+    "include_supporting_hpo": true,
+    "include_tier2_mouse": true,
+    "use_embedding_retrieval": true,
+    "use_lexical_retrieval": true,
+    "use_spillover_default": false,
+    "use_spillover_v2_target": true,
+    "top_k_embedding": 20,
+    "top_k_lexical": 20,
+    "mode": "union",
+    "hpo_domain_regex_fallback": {
+      "depressed_mood": "depress(ed|ion|ive)?|dysphori|\\bdespair\\b|behavioral despair|hopeless|tearful|low mood|sad(ness)?|irritable mood|melanchol",
+      "anhedonia": "anhedoni|loss of (interest|pleasure)|diminished (interest|pleasure)|reduced (reward|pleasure|hedonic)|reward responsiveness|reduced reward seeking",
+      "weight_appetite_change": "weight (loss|gain|change)|appetite|hyperphagi|hypophagi|food intake|eating behavior|aphagi|polyphagi|anorexi",
+      "sleep_disturbance": "insomni|hypersomni|sleep (disturb|pattern|architectur|fragment)|\\bREM\\b|paradoxical sleep|circadian|early.?morning awakening|sleep onset",
+      "psychomotor_change": "psychomotor|agitation|retardation|locomotor activ|hyperactiv|hypoactiv|restless|slowed movement|fidget",
+      "fatigue": "\\bfatigue\\b|loss of energy|letharg|low energy|reduced (activity|effort)|decreased activity|tired|grip strength",
+      "worthlessness_guilt": "worthless|\\bguilt\\b|self.?blame|self.?reproach|low self.?esteem|negative self|submissive|social subordinat",
+      "concentration_indecisiveness": "concentrat|indecisive|impaired (cognition|attention|concentration)|executive dysfunction|cognitive flexibility|memory complaint",
+      "suicidality": "suicid|death ideation|self.?harm|thoughts of death|learned helplessness|escape failure"
+    },
+    "_hpo_domain_regex_fallback_note": "Triggers install_mdd_style_hpo_domain_inference (PITFALL #6). WORD-BOUNDARY AUDIT PENDING (PITFALL #17): 'depress'/'sleep'/'fatigue' patterns may over-match (respiratory/cortical-spreading depression, etc.) — audit before relying on T0 label counts."
+  },
+  "stage2_rerank": {
+    "outdir": "mdd_pair_rerank_v1/",
+    "developer_prompt_addendum": "The 9 MDD Criterion A domains for context: depressed_mood, anhedonia, weight_appetite_change, sleep_disturbance, psychomotor_change, fatigue, worthlessness_guilt, concentration_indecisiveness, suicidality. BIDIRECTIONAL-DOMAIN RULE (MDD-specific): three MDD Criterion A symptoms are intrinsically bidirectional per DSM-5-TR (weight_appetite_change, sleep_disturbance, psychomotor_change). For HPO targets in these three domains, each target encodes ONE direction of the axis. When judging analog quality: same-direction mouse phenotype -> direct_analog or close_support; opposite-direction phenotype that maps to the SISTER directional target on the same axis -> NOT mismatch (the opposite-direction is the sister target's evidence). Use weak_support for loose support; use mismatch only if the mouse phenotype is genuinely incompatible with the MDD axis. strict_eligible=true only for high-quality organism-level analogs suitable for strict MDD-domain support.",
+    "behavioral_analog_enum": [
+      "direct_analog",
+      "close_support",
+      "weak_support",
+      "mechanistic_only",
+      "mismatch"
+    ],
+    "evidence_scope_enum": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior",
+      "mechanistic",
+      "unclear",
+      "cellular_or_circuit_only"
+    ],
+    "score_floor": {
+      "value": 0.57,
+      "policy": "universal_across_disorders",
+      "provenance": "0.57 was derived for ASD broad_v3 (2026-05-09 lab notebook): balanced-accuracy maximization of transparent_score against the LLM's own broad_eligible verdicts on the 180 LLM-judged pairs inside ambiguous-target rerank bundles. At θ=0.57, BA=0.736, precision=0.83, recall=0.70. Note: the 180 pairs were LLM-judged, not hand-curated — θ is a score-self-consistency threshold, not an externally-validated behavioral-analog cutoff.",
+      "applies_to": "Stage 2c fill pass. Pairs with transparent_score >= 0.57 that Stage 2b did not bundle (because their target was non-ambiguous or they sat below top-N) are submitted to the LLM for a second-pass eligibility judgment with the identical prompt and schema. Does NOT filter Stage 2b LLM-strict-eligible pairs (those bypass the floor).",
+      "per_disorder_tuning_policy": "DISALLOWED. Per-disorder θ tuning would add 20 DOF that reviewers see as fishing (Mode C), and the per-disorder calibration set would be each disorder's LLM verdicts — circular (Mode D, since we are gating Stage 2c LLM calls against Stage 2b LLM labels). If a future contributor needs per-disorder floor behavior, switch from a tuned VALUE to a uniform RULE (e.g., 80th-percentile of pair scores per disorder), so the same logic applies automatically across all disorders without per-disorder choices.",
+      "sensitivity_sweep_plan": {
+        "floors": [
+          0.5,
+          0.55,
+          0.57,
+          0.6,
+          0.65
+        ],
+        "outputs": "rerun Stage 2c -> 3 -> 4 -> 5 once per floor; report AUROC across A2 (headline) and A1 (psychiatric pool); flag if any headline AUROC moves > 0.02 across the range.",
+        "status": "deferred_to_paper_prep",
+        "rationale": "Pre-register the sweep before observing T0 AUROC so the robustness claim is blinded to outcome, not post-hoc."
+      }
+    },
+    "weights": {
+      "embed": 0.45,
+      "lexical": 0.25,
+      "resnik": 0.2,
+      "jaccard": 0.1,
+      "owl": 0.0
+    },
+    "top_n_bundle": 5,
+    "ambiguity_margin": 0.08,
+    "gray_low": 0.35,
+    "gray_high": 0.7,
+    "promote_bonus": 0.1,
+    "demote_penalty": 0.1,
+    "llm_model": "gpt-5.4",
+    "llm_seed": 1,
+    "lexical_factor_when_structural_missing": 0.5
+  },
+  "stage3_aggregation": {
+    "outdir_template": "mdd_support_aggregated_v1_pol{regime}/",
+    "polarity_regimes_to_run": [
+      "off"
+    ],
+    "polarity_regimes_deferred": [
+      "soft",
+      "strict",
+      "schema"
+    ],
+    "polarity_deferral_note": "Three of 9 MDD Criterion A domains are intrinsically bidirectional, so ASD-style direction-aligned polarity weights are inappropriate. v1 uses polarity-off only. v2 may add an MDD-specific polarity schema with bidirectional-aware weight maps.",
+    "polarity_weight_maps": null,
+    "support_threshold": 0.3,
+    "lexical_cluster_threshold": 0.65,
+    "overall_aggregator": "mean",
+    "strict_analog_gate": "strong",
+    "eligibility_mode": "score_assisted_broad",
+    "broad_score_threshold": 0.57,
+    "strict_score_threshold": 0.62,
+    "allowed_evidence_scope_strict": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior"
+    ],
+    "allowed_evidence_scope_broad": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior",
+      "unclear"
+    ],
+    "strong_behavioral_analog_types": [
+      "direct_analog",
+      "close_support"
+    ]
+  },
+  "stage4_permutation_null": {
+    "outdir_template": "mdd_pvalue_v1_pol{regime}/",
+    "n_permutations": 10000,
+    "seed": 1,
+    "max_depth_cap": 200,
+    "score_function_fix_version": "2026-05-14"
+  },
+  "stage5_benchmark": {
+    "outdir_template": "benchmark/run_2026-XX-XX_v1_mdd_pol{regime}_{mode}/",
+    "benchmark_group_table": "benchmark_tables_per_tier/MDD_tier_0.csv",
+    "contrasts": [
+      {
+        "name": "A2",
+        "old_name": "M_A1",
+        "description": "Headline. MDD-primary vs all non-MDD genotypes in MGI (broad). The defensible cross-disorder AUROC.",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "__all_non_MDD_primary__"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A2"
+      },
+      {
+        "name": "A1",
+        "old_name": "M_A2",
+        "description": "MDD-primary vs psychiatric pool (Bipolar + Anxiety + SCZ + NDD subgroups). The 'is this specifically depression or just psychiatry' test.",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "Bipolar_primary",
+          "Anxiety_primary",
+          "SCZ_primary",
+          "ADHD_primary",
+          "IntellectualDisability_primary",
+          "NDD_other_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A1"
+      },
+      {
+        "name": "A3",
+        "old_name": "M_A3",
+        "description": "MDD-primary vs bipolar (the hardest mood-disorder confound; many bipolar starts as MDD).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "Bipolar_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A3"
+      },
+      {
+        "name": "A4",
+        "old_name": "M_A4",
+        "description": "MDD-primary vs anxiety (most clinically comorbid).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "Anxiety_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A4"
+      },
+      {
+        "name": "A5",
+        "old_name": "M_A5",
+        "description": "MDD-primary vs psychotic spectrum (negative-symptom-overlap test).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "SCZ_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A5"
+      },
+      {
+        "name": "A6",
+        "old_name": "M_A6",
+        "description": "MDD-primary vs NDD (ADHD + IntellectualDisability + NDD_other; developmental confound test).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "ADHD_primary",
+          "IntellectualDisability_primary",
+          "NDD_other_primary",
+          "ASD_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A6"
+      },
+      {
+        "name": "A7",
+        "old_name": "M_A10",
+        "description": "MDD-primary vs Neurocognitive (boundary test: psychiatric vs neurodegenerative).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "Neurocognitive_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A7"
+      },
+      {
+        "name": "A8",
+        "old_name": "M_A9",
+        "description": "MDD-primary vs SubstanceAbuse (high MDD-SUD comorbidity but distinct core phenotypes).",
+        "positive_group": "MDD_primary",
+        "negative_groups": [
+          "SubstanceAbuse_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A8"
+      }
+    ],
+    "b_family": [
+      {
+        "name": "B1",
+        "type": "composite_mean",
+        "domains": "all_strict",
+        "label": "Strict 9-symptom composite",
+        "gated_by": null,
+        "multiplicity_correction": null,
+        "comparator_pool_id": "A1",
+        "_comparator_note": "psychiatric pool (A1, ~166: Bipolar+Anxiety+SCZ+ADHD+ID+NDD_other); avoids broad_other dilution (SCZ/ID lesson)."
+      },
+      {
+        "name": "B2_vegetative",
+        "type": "cluster_mean",
+        "domains": [
+          "fatigue",
+          "sleep_disturbance",
+          "weight_appetite_change",
+          "psychomotor_change"
+        ],
+        "label": "Vegetative cluster (Hasler 2004 / Krueger 1999)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_id": "A1",
+        "_comparator_note": "psychiatric pool (A1, ~166: Bipolar+Anxiety+SCZ+ADHD+ID+NDD_other); avoids broad_other dilution (SCZ/ID lesson)."
+      },
+      {
+        "name": "B3_cognitive",
+        "type": "cluster_mean",
+        "domains": [
+          "worthlessness_guilt",
+          "concentration_indecisiveness",
+          "suicidality"
+        ],
+        "label": "Cognitive triad (Beck 1967 / Wenzel & Beck 2008)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_id": "A1",
+        "_comparator_note": "psychiatric pool (A1, ~166: Bipolar+Anxiety+SCZ+ADHD+ID+NDD_other); avoids broad_other dilution (SCZ/ID lesson)."
+      },
+      {
+        "name": "B4_affective",
+        "type": "cluster_mean",
+        "domains": [
+          "depressed_mood",
+          "anhedonia"
+        ],
+        "label": "Affective gatekeepers (DSM-5-TR Criterion A required pair)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_id": "A1",
+        "_comparator_note": "psychiatric pool (A1, ~166: Bipolar+Anxiety+SCZ+ADHD+ID+NDD_other); avoids broad_other dilution (SCZ/ID lesson)."
+      }
+    ],
+    "m_family": [
+      {
+        "name": "M1",
+        "model_type": "binary_logit",
+        "positive_label": "MDD_primary",
+        "comparator_pool": "psychiatric_non_MDD",
+        "covariates": [
+          "log_n_mp_terms_z",
+          "assessable_fraction_z"
+        ],
+        "comparator_groups": [
+          "Bipolar_primary",
+          "Anxiety_primary",
+          "SCZ_primary",
+          "ADHD_primary",
+          "IntellectualDisability_primary",
+          "NDD_other_primary"
+        ],
+        "_note": "psychiatric_non_MDD; small-n on several arms (Bipolar 4, Anxiety 3, NDD_other 3) — interpret cautiously."
+      },
+      {
+        "name": "M2",
+        "model_type": "binary_logit",
+        "positive_label": "MDD_primary",
+        "comparator_pool": "all_non_MDD",
+        "covariates": [
+          "log_n_mp_terms_z",
+          "assessable_fraction_z"
+        ],
+        "comparator_groups": [
+          "ADHD_primary",
+          "ASD_primary",
+          "Anxiety_primary",
+          "Bipolar_primary",
+          "EatingDisorders_primary",
+          "IntellectualDisability_primary",
+          "NDD_other_primary",
+          "Neurocognitive_primary",
+          "SCZ_primary",
+          "Sleep_primary",
+          "SubstanceAbuse_primary",
+          "MDD_mixed",
+          "broad_other",
+          "mixed_psychiatric_other"
+        ],
+        "_note": "all non-MDD_primary groups (mirrors headline)."
+      },
+      {
+        "name": "M3",
+        "model_type": "multinomial_logit",
+        "positive_label": "MDD_primary",
+        "comparator_pool": "psychiatric_pool_multinomial_mdd",
+        "covariates": [
+          "log_n_mp_terms_z",
+          "assessable_fraction_z"
+        ],
+        "comparator_groups": [
+          "Bipolar_primary",
+          "Anxiety_primary",
+          "SCZ_primary",
+          "ADHD_primary",
+          "IntellectualDisability_primary",
+          "NDD_other_primary"
+        ],
+        "multinomial_reference": "SCZ_primary",
+        "_note": "reference=SCZ_primary (largest psychiatric comparator). EXPECT NON-CONVERGENCE (quasi-separation: Bipolar 4 / Anxiety 3 / NDD_other 3), like SCZ/ID M3."
+      }
+    ],
+    "n_bootstrap": 1000,
+    "phenodigm_baseline_score_file_template": "benchmark/run_2026-XX-XX_v1_mdd_pol{regime}_{mode}/baseline_scores/01_baseline_genotype_scores__B1_phenodigm_plain.tsv",
+    "_renamed_contrasts_2026-05-24": {
+      "rationale": "User instruction 2026-05-24: M_A1 should be the headline (was M_A1prime); previous M_A1-M_A5 shifted to M_A2-M_A6. Each contrast now gets its own figure panel.",
+      "rename_map": {
+        "M_A1prime → M_A1": "headline (MDD vs all-non-MDD)",
+        "M_A1 → M_A2": "psychiatric pool",
+        "M_A2 → M_A3": "vs bipolar",
+        "M_A3 → M_A4": "vs anxiety",
+        "M_A4 → M_A5": "vs SCZ (renamed from psychotic_primary)",
+        "M_A5 → M_A6": "vs NDD (decomposed into ADHD + IntellectualDisability + NDD_other + ASD)",
+        "NEW M_A7": "vs PTSD",
+        "NEW M_A8": "vs OCD",
+        "NEW M_A9": "vs SubstanceAbuse",
+        "NEW M_A10": "vs Neurocognitive"
+      },
+      "negative_group_naming": "All negative_groups now use PascalCase {Disorder}_primary matching disorders_rescue_config.json names."
+    },
+    "_known_limitations": {
+      "MDD_mixed_pending": "Specificity sanity checks M_S1/M_S2 reference MDD_mixed, which build_per_tier_benchmark_tables.py does not yet emit. Stage 5 will skip these contrasts until the builder is extended to split MDD positives into primary vs mixed (e.g., genotypes whose disease_terms contain MDD AND another psychiatric disorder)."
+    },
+    "n_mp_thresholds": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      10
+    ],
+    "n_mp_terms_file": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv"
+  },
+  "stage6_within_disorder": {
+    "diagnostic_ceiling": {
+      "k_of_n": [
+        5,
+        9
+      ],
+      "label": "5-of-9 DSM-5-TR Criterion A diagnostic threshold (exact binomial)"
+    },
+    "cochran_q_over_strict_domains": true,
+    "pairwise_mcnemar_correction": "holm",
+    "cochran_armitage_trend": true,
+    "trend_levels": 10
+  },
+  "stage7_viz": {
+    "domain_order": [
+      "depressed_mood",
+      "anhedonia",
+      "weight_appetite_change",
+      "sleep_disturbance",
+      "psychomotor_change",
+      "fatigue",
+      "worthlessness_guilt",
+      "concentration_indecisiveness",
+      "suicidality"
+    ],
+    "domain_short_labels": {
+      "depressed_mood": "Depressed mood",
+      "anhedonia": "Anhedonia",
+      "weight_appetite_change": "Weight/appetite",
+      "sleep_disturbance": "Sleep",
+      "psychomotor_change": "Psychomotor",
+      "fatigue": "Fatigue",
+      "worthlessness_guilt": "Worthlessness",
+      "concentration_indecisiveness": "Concentration",
+      "suicidality": "Suicidality"
+    },
+    "domain_colors": null,
+    "palette_name": "RdBu",
+    "b_family_panel_labels": {
+      "B1": "Strict 9-symptom composite",
+      "B2_vegetative": "Vegetative cluster",
+      "B3_cognitive": "Cognitive triad",
+      "B4_affective": "Affective gatekeepers"
+    },
+    "headline_contrast": "A2",
+    "per_contrast_figure_panels": true,
+    "_figure_design_note_2026_05_24": "Per user instruction 2026-05-24: each contrast outputs to its own figure panel (not lumped on a single graph). Reader comprehension > visual density."
+  },
+  "rescue": {
+    "enabled": true,
+    "outdir": "rescue_audit_mdd/",
+    "promote_from": "broad_other",
+    "paradigms": [
+      {
+        "name": "MDD_anhedonia_despair",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "A1+A2 depressed mood + anhedonia",
+        "include": "\\bbehavioral despair\\b|\\banhedonia\\b|abnormal sucrose solution preference|\\babnormal coping response\\b|\\bincreased coping response\\b|\\bdecreased coping response\\b|depression[- ]related behavior|decreased reward seeking|reduced motivation",
+        "exclude": "long[- ]term depression|synaptic depression|depressor anguli oris|nasal bridge|cortical spreading depression",
+        "confidence": "high",
+        "min_hits": 1,
+        "citation": "Cryan & Holmes 2005 Nat Rev Drug Discov; Treadway & Zald 2011 Neurosci Biobehav Rev",
+        "evidence_mode": "phenotype_llm_scored",
+        "phenotype_scoring_file": "paradigm_scoring/mdd/01_paradigm_mp_scoring.tsv"
+      },
+      {
+        "name": "MDD_sleep_disturbance",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "A4 sleep disturbance (bidirectional)",
+        "include": "abnormal sleep pattern|abnormal frequency of paradoxical sleep|abnormal sleep[- ]wake cycle|\\binsomnia\\b|\\bhypersomnia\\b|decreased REM (latency|sleep)|abnormal circadian rhythm",
+        "exclude": "premature|abnormal sleep[- ]wake cycle of fetus",
+        "confidence": "moderate",
+        "min_hits": 1,
+        "citation": "Hasler et al. 2004 Neuropsychopharmacology Tables 2-3 (vegetative cluster)",
+        "evidence_mode": "phenotype_llm_scored",
+        "phenotype_scoring_file": "paradigm_scoring/mdd/01_paradigm_mp_scoring.tsv"
+      },
+      {
+        "name": "MDD_appetite_weight_change",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "A3 appetite/weight change (bidirectional)",
+        "include": "\\bhyperphagia\\b|\\bhypophagia\\b|abnormal compensatory feeding|weight loss|increased body weight",
+        "exclude": "diet[- ]induced|high[- ]fat diet|sucrose[- ]induced",
+        "confidence": "low",
+        "min_hits": 1,
+        "low_confidence_caveat": "hyperphagia/hypophagia are often metabolic rather than psychiatric in mouse annotation; require gene-evidence cross-validation",
+        "citation": "Hasler 2004 vegetative cluster",
+        "evidence_mode": "gene_only",
+        "disgenet_disease_patterns": "depression|depressive|mood|melancholic|dysthymic|eating disorder|anorexia|bulimia|feeding disorder|binge eating|appetite",
+        "disgenet_rationale": "MGI MP ontology has no behavioral-domain appetite terms; rely on gene-disease associations in DisGeNET for MDD-with-appetite-axis or eating-disorder genes."
+      },
+      {
+        "name": "MDD_psychomotor_change",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "A5 psychomotor change (bidirectional)",
+        "include": "\\bpsychomotor agitation\\b|\\bpsychomotor retardation\\b|decreased locomotor activity|increased locomotor activity|\\bhypoactivity\\b|\\bhyperactivity\\b",
+        "exclude": "thermoregulat|circadian|environmental",
+        "confidence": "low",
+        "min_hits": 2,
+        "low_confidence_caveat": "locomotor terms are noisy; require multiple hits or co-occurring sleep/anhedonia paradigm",
+        "citation": "Sobin & Sackeim 1997 Am J Psychiatry psychomotor in MDD",
+        "evidence_mode": "phenotype_llm_scored",
+        "phenotype_scoring_file": "paradigm_scoring/mdd/01_paradigm_mp_scoring.tsv"
+      },
+      {
+        "name": "MDD_concentration_cognitive",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "A8 diminished concentration",
+        "include": "impaired (working memory|attention|concentration)|abnormal (working memory|attention)|impaired cognitive flexibility|impaired reversal learning|executive (dys)?function deficit",
+        "exclude": "spatial.*aging",
+        "confidence": "moderate",
+        "min_hits": 1,
+        "citation": "Snyder 2013 Psychol Bull cognitive deficits in MDD",
+        "evidence_mode": "phenotype_llm_scored",
+        "phenotype_scoring_file": "paradigm_scoring/mdd/01_paradigm_mp_scoring.tsv"
+      },
+      {
+        "name": "MDD_chronic_stress_social_defeat",
+        "disease": "major_depressive_disorder",
+        "criterion_a_axis": "MDD-adjacent: chronic-stress mouse paradigms",
+        "include": "social avoidance|social defeat|susceptibility to.*stress|reduced social investigation.*stress|abnormal response to chronic stress",
+        "exclude": "",
+        "confidence": "moderate",
+        "min_hits": 1,
+        "citation": "Krishnan & Nestler 2008 Nature; Berton & Nestler 2006 Nat Rev Neurosci",
+        "evidence_mode": "gene_only",
+        "disgenet_disease_patterns": "depression|depressive|mood|melancholic|dysthymic|post[- ]traumatic stress|stress[- ]related|adjustment disorder|chronic stress",
+        "disgenet_rationale": "MGI MP ontology has no chronic-stress/social-defeat terms; rely on gene-disease associations in DisGeNET for MDD or stress-related disorder genes."
+      }
+    ],
+    "v2_improvements_pending": [
+      "Expand matching to mp_term + mp_definition + parent_label + ancestor_label (currently mp_term-only)",
+      "Replace min_hits with weighted-evidence-score gate (high/moderate/low term weights)",
+      "Emit all-group rescue audit (currently only broad_other is relabeled)",
+      "Add gene-level cross-validation via DisGeNET (augment_rescue_with_disgenet.py)"
+    ],
+    "phenotype_evidence_weights": {
+      "high": 2.0,
+      "moderate": 1.0,
+      "low": 0.0,
+      "none": 0.0
+    },
+    "min_phenotype_evidence_score": 2.0,
+    "disgenet_min_kb_score": 0.3,
+    "disgenet_tsv_path": "disgenet_api_pull_mdd/all_gene_disease_associations_from_api.tsv",
+    "genotype_summary_path": "broad_benchmark_setup/01_all_genotype_summary.csv",
+    "tier1_exclusion_disabled_reason": "ASD Tier-1 strict-validity MP terms are NOT excluded from MDD rescue scoring. Per 2026-05-22 amendment: the Tier-1 set contains transdiagnostic phenotypes (e.g., MP:0001361 social withdrawal, MP:0014115 cognitive inflexibility, MP:0001488 increased startle reflex) that are legitimately MDD-relevant per DSM-5-TR. The real anti-circularity guard is the dual-evidence Tier-1 rescue criterion (phenotype + DisGeNET gene_only) downstream, which requires independent human-genetic evidence not derived from mouse phenotypes. See lab notebook 2026-05-22 amendment + REFACTOR_LOG.md for full rationale."
+  },
+  "$updated": " | 2026-05-24 normalized paradigm include/exclude to string format (was list) | 2026-06-02 rebuild_mdd_config_fixes.py: universal score_floor + lexical_factor 0.5 + taxonomy_tsv->mdd_v1 + hpo_domain_regex_fallback + m_family comparator_groups + n_mp_thresholds + $role primary. | 2026-06-02 contrasts harmonized to A2=headline/A1=psych-pool; dropped PTSD/OCD; B-family pool -> A1. | 2026-06-04 stage5fix: benchmark_group_table -> MDD_tier_0.csv; dropped S1/S2 (MDD_pooled not emitted, MDD_mixed n=1 degenerate).",
+  "$role": "primary"
+}

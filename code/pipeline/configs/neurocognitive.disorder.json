@@ -1,0 +1,599 @@
+{
+  "$schema": "./disorder_config.schema.json",
+  "$config_version": "1.0",
+  "$generated": "2026-07-27 - PROMOTED from evidence-symmetric comparator stub to live PRIMARY target (the first author sign-off: stage-and-run NCD). $role primary; rescue DISABLED (retired framework); stages 1-5 un-stubbed against intellectualdisability.disorder.json structural template. 5-domain strict set retained (cognitive_executive / motor_coordination / social_cognition_empathy / adaptive_functioning / neuropathology_progressive). Stage 0 PDF carve BYPASSED: core phenotype text hand-authored from DSM-5-TR Chapter 16 into DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only.txt (Major+Mild NCD Criterion A over the six neurocognitive domains + Criterion B + etiological subtype signatures). Purpose of the run: test whether the 95 Neurocognitive_primary positives (DOID-membership pool, well above the 30-positive power bar) are cognitively GRADABLE, given that chapter-16 lines are annotated by primary neurodegenerative disease rather than by documented cognitive trajectory, and that the language domain (A4) and the acquired-decline-from-baseline event have no mouse analog. | 2026-07-27 CRITERION-STRICT: removed neuropathology_progressive to the mechanism axis; reverted mechanistic-to-strict; NCD face-validity domains = the 4 cognitive/behavioral Chapter-16 criteria (cognitive_executive, motor_coordination, social_cognition_empathy, adaptive_functioning).",
+  "$role": "primary",
+  "$note": "Live primary target. Stage 0 bypassed (core text hand-authored). Run order: rebuild_neurocognitive_taxonomy.py (anchor gate) -> stage1_curate_hpo -> stage2a -> stage2b -> stage2c -> stage3 -> stage4 -> stage5. LLM/API-key stages (taxonomy relabel, stage1, stage2b) are run locally by the first author per the standing split.",
+  "disorder": {
+    "id": "Neurocognitive",
+    "name": "Neurocognitive Disorders",
+    "dsm5_section": "DSM-5-TR Chapter 16",
+    "icd10_codes": [
+      "F01",
+      "F02",
+      "F03",
+      "G30",
+      "G31"
+    ]
+  },
+  "rescue": {
+    "enabled": false,
+    "_retired": "Rescue framework retired project-wide (FACET_DECISIONS_20260726). Block kept disabled for provenance; NCD no longer emits rescue tiers and is not conditioned on rescue_tier anywhere downstream.",
+    "outdir": "rescue_audit_neurocognitive/"
+  },
+  "stage0_dsm5_extraction": {
+    "outdir": "DSM5_Neurocognitive_preprocessed/",
+    "pdf_input": null,
+    "_bypass": "No clean DSM-5-TR chapter-16 PDF carve. Core phenotype text hand-authored directly into Neurocognitive_core_phenotype_only.txt (Major+Mild NCD criteria over the six neurocognitive domains, Criterion B, and per-etiology subtype signatures). Stage 1 reads that file directly; stage 0 is not executed for NCD."
+  },
+  "stage1_hpo_curation": {
+    "core_text_input": "DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only_v2_2026-07-28.txt",
+    "hpo_json_input": "hp.json",
+    "outdir": "pilot_hpo_run_neurocognitive_v1/",
+    "extraction_schema": {
+      "categories_enum": [
+        "cognitive_executive",
+        "motor_coordination",
+        "social_cognition_empathy",
+        "adaptive_functioning",
+        "other"
+      ],
+      "polarity_enum": [
+        "present",
+        "absent",
+        "negated",
+        "uncertain",
+        "bidirectional"
+      ],
+      "centrality_enum": [
+        "core",
+        "supporting",
+        "context_only"
+      ],
+      "temporality_enum": [
+        "current",
+        "history",
+        "developmental",
+        "unspecified"
+      ]
+    },
+    "extraction_prompt_addendum": "DSM-5-TR Major/Mild Neurocognitive Disorder (Chapter 16) is defined by ACQUIRED cognitive decline from a previous baseline in one or more of six domains. Map extracted human symptoms to these strict domains: (1) cognitive_executive - complex attention, executive function (planning, working memory, set-shifting, response inhibition, mental flexibility), and learning and memory (free recall, recognition, recent memory). Consolidates the attention/executive/memory poles into one domain. (2) motor_coordination - perceptual-motor function: coordination, gait, praxis, visuospatial navigation, and etiology-specific motor signs (parkinsonism in Lewy body / Parkinson disease, chorea and motor disorganization in Huntington disease, gait disorder in vascular / TBI). (3) social_cognition_empathy - recognition of others' emotions, theory of mind, empathy, social judgment; loss of empathy and social disinhibition are the behavioral-variant frontotemporal signature. (4) adaptive_functioning - Criterion B: interference with independence in everyday activities (instrumental activities of daily living). (5) neuropathology_progressive - the etiology-defining PROGRESSIVE neuropathology named by the subtype: amyloid and tau (Alzheimer), TDP-43 / tau (frontotemporal), alpha-synuclein (Lewy body / Parkinson), white matter / vascular injury, CAG-expansion degeneration (Huntington), spongiform change (prion). Tag the LANGUAGE domain (word-finding, naming, fluency, grammar) as 'other': language is a chapter-16 neurocognitive domain but has NO organism-level analog in the mouse, so it is not a strict NCD domain here. Extract phenotype FEATURES at the human-symptom level, not diagnoses. Do NOT extract from Differential Diagnosis or the delirium exclusion. The disorder-defining feature is PROGRESSIVE ACQUIRED decline; where the text marks progression or age-relatedness, set temporality accordingly. [2026-07-27 CRITERION-STRICT UPDATE: neuropathology_progressive is REMOVED as a face-validity domain; it is the etiology/pathology (mechanism axis), not a DSM Criterion A cognitive-decline criterion. Do NOT extract amyloid/tau/synuclein/pathology terms as scored NCD criteria -> other.]",
+    "resolution_prompt_addendum": null,
+    "seed_terms_per_domain": {
+      "cognitive_executive": [
+        "progressive cognitive decline",
+        "age related memory impairment",
+        "impaired spatial learning",
+        "abnormal Morris water maze",
+        "impaired novel object recognition",
+        "working memory deficit",
+        "impaired set shifting",
+        "cognitive inflexibility",
+        "impaired response inhibition",
+        "impaired executive function",
+        "impaired recognition memory",
+        "abnormal contextual fear conditioning",
+        "impaired attention",
+        "reduced processing speed"
+      ],
+      "motor_coordination": [
+        "progressive motor impairment",
+        "abnormal gait",
+        "impaired motor coordination",
+        "abnormal rotarod performance",
+        "bradykinesia",
+        "postural instability",
+        "tremor",
+        "impaired balance",
+        "parkinsonian rigidity",
+        "chorea like movement"
+      ],
+      "social_cognition_empathy": [
+        "loss of empathy",
+        "impaired social cognition",
+        "reduced observational fear",
+        "impaired emotional recognition",
+        "social disinhibition",
+        "reduced social recognition",
+        "apathy"
+      ],
+      "adaptive_functioning": [
+        "impaired adaptive behavior",
+        "abnormal nest building",
+        "impaired burrowing",
+        "impaired self care",
+        "reduced home cage activity of daily living",
+        "loss of functional independence"
+      ]
+    },
+    "llm_model": "gpt-5.4",
+    "embedding_model": "text-embedding-3-large",
+    "llm_seed": 1,
+    "final_filter": {
+      "allowed_centrality": [
+        "core",
+        "supporting"
+      ],
+      "allowed_polarity": [
+        "present",
+        "bidirectional"
+      ],
+      "allowed_relations": [
+        "exact",
+        "broader_than_source",
+        "narrower_than_source"
+      ]
+    },
+    "core_text_input_previous": "DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only.txt",
+    "core_text_provenance_2026_07_28": "The previous input was quarantined on 2026-07-27 as not DSM: 0 of 52 sentences appeared in DSM 5 TR-APA 2022.pdf, and it interleaved project-authored sentences about mouse models with a paraphrase of the domain table, including a claim that Language has no organism-level behavioral analog in the mouse. Every NCD HPO target produced before 2026-07-28 descends from it, so NCD stage 1 must be re-run and any prior NCD language result is uninterpretable. The replacement is built by build_ncd_core_phenotype.py from Major NCD criteria A to D verbatim, fenced per D9, plus DSM-5-TR Table 1's six domain definitions, with traceability asserted before writing."
+  },
+  "stage2_candidate_features": {
+    "hpo_targets_input": "pilot_hpo_run_neurocognitive_v1/07_final_resolved_hpo_terms.tsv",
+    "mouse_mp_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+    "taxonomy_tsv": "mp_term_taxonomy_criterion_v1_NCD/03_mp_term_taxonomy.tsv",
+    "pairwise_similarity_tsv": "phenio-monarch-hp-mp.0.4.semsimian.tsv",
+    "outdir": "neurocognitive_candidate_features_v1/",
+    "mouse_domain_routing": {
+      "mode": "single_bucket",
+      "single_bucket_label": "ncd_pool",
+      "mapping": null,
+      "v2_upgrade_note": "v2: re-label taxonomy with NCD-specific mouse_domain values (cognitive_memory, executive_control, motor_perceptual, social_cognition, adaptive_adl, neuropathology). Deferred."
+    },
+    "tier_filter": {
+      "include": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "exclude": [
+        5
+      ],
+      "tier_5_caveat": null
+    },
+    "include_supporting_hpo": true,
+    "include_tier2_mouse": true,
+    "use_embedding_retrieval": true,
+    "use_lexical_retrieval": true,
+    "use_spillover_default": false,
+    "use_spillover_v2_target": true,
+    "top_k_embedding": 20,
+    "top_k_lexical": 20,
+    "mode": "union",
+    "hpo_domain_regex_fallback": {
+      "cognitive_executive": "cognit|memory|learning|spatial learning|water maze|novel object|working memory|set.shift|executive|attention|response inhibition|recognition memory|contextual fear|processing speed|dementia|amnes",
+      "motor_coordination": "motor coordinat|abnormal gait|rotarod|bradykines|postural|tremor|balance|rigidit|chorea|ataxia|parkinson|perceptual.motor|praxis|visuospatial",
+      "social_cognition_empathy": "social cognit|empath|observational fear|emotional recognition|social disinhibit|social recognition|apathy|theory of mind",
+      "adaptive_functioning": "adaptive (function|behavior|deficit)|nest build|burrow|self.care|daily living|activities of daily|functional independ"
+    },
+    "_hpo_domain_regex_fallback_note": "Triggers stage2a_candidate_features.py hpo_domain_inference monkey-patch: trusts Stage 1 NCD category for already-tagged HPOs (direct passthrough) and applies these regex maps to 'other'-tagged HPOs. WORD-BOUNDARY AUDIT PENDING (PITFALL #17): audit 'memory'/'learning'/'motor'/'tau ' patterns for over-match before relying on label counts; 'tau ' has trailing space to avoid matching 'status'/'plateau'.",
+    "inject_descendants": true,
+    "mp_obo": "MPheno_OBO.ontology",
+    "carriage_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+    "taxonomy_tsv_previous": "mp_term_taxonomy_neurocognitive_v1/03_mp_term_taxonomy.tsv",
+    "taxonomy_provenance_2026_07_28": "Repointed to the criterion-grounded taxonomy for NCD, built by build_stage2a_taxonomy.py from that disorder's own run and from no other disorder. The previous file carried ASD's relevance_tier column verbatim for SCZ and NCD, 11485 of 11485 values identical, which made the candidate universe for those disorders ASD's universe."
+  },
+  "stage2_rerank": {
+    "outdir": "neurocognitive_pair_rerank_v1_ncdB_cf/",
+    "developer_prompt_addendum": "The 5 NCD strict domains: cognitive_executive (complex attention + executive function + learning/memory), motor_coordination (perceptual-motor, gait, parkinsonism, chorea), social_cognition_empathy (emotion recognition, empathy, social disinhibition), adaptive_functioning (Criterion B independence), and neuropathology_progressive (etiology-defining amyloid/tau/synuclein/vascular/CAG pathology). Mouse-proxy guidance: (a) cognitive_executive: impaired Morris water maze incl reversal, impaired novel object recognition, working-memory deficits (radial-arm, T-maze delayed alternation), 5-CSRTT attention, attentional set-shifting, go/no-go inhibition -> direct_analog/close_support; generic 'abnormal learning/memory/cognition' -> close_support. (b) motor_coordination: rotarod, beam walk, gait analysis, pole test, tremor, parkinsonian slowing/rigidity, chorea-like dyskinesia -> direct_analog/close_support. (c) social_cognition_empathy: observational-fear (Jeon 2010), consolation-like behavior, reduced social recognition/novelty preference -> close_support; the social component overlaps ASD -> disambiguation is downstream via disorder-specific gene evidence, not by inflating NCD strict-eligibility. (d) adaptive_functioning: nest-building (Deacon 2006 ADL proxy), burrowing, home-cage self-care -> close_support. (e) neuropathology_progressive: amyloid/tau/plaque/tangle, alpha-synuclein aggregation, TDP-43, neuronal loss, white-matter rarefaction, spongiform change -> direct_analog (this is a MECHANISTIC/pathology domain, positive-polarity: presence of pathology is the NCD-consistent direction). NCD NOTE: chapter-16 lines are overwhelmingly annotated by their PRIMARY neurodegenerative disease (AD, PD, HD, prion) rather than by a documented cognitive trajectory, so expect the neuropathology domain to carry most of the signal and the behavioral cognitive domains to be SPARSE. The acquired-decline-from-baseline event and the LANGUAGE domain have no mouse analog. Judge on construct merit; do not force cognitive analogs where only pathology is annotated. strict_eligible=true only for high-quality organism-level analogs (or, for neuropathology_progressive, high-quality pathology annotation).",
+    "behavioral_analog_enum": [
+      "direct_analog",
+      "close_support",
+      "weak_support",
+      "mechanistic_only",
+      "mismatch"
+    ],
+    "evidence_scope_enum": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior",
+      "mechanistic",
+      "unclear",
+      "cellular_or_circuit_only"
+    ],
+    "score_floor": {
+      "value": 0.57,
+      "policy": "universal_across_disorders",
+      "provenance": "0.57 universal floor (ASD broad_v3 balanced-accuracy calibration; RL section 1). No per-disorder recalibration for NCD.",
+      "applies_to": "Stage 2c fill pass. Pairs with transparent_score >= 0.57 not bundled by Stage 2b are submitted for a second-pass eligibility judgment with the identical prompt and schema.",
+      "per_disorder_tuning_policy": "DISALLOWED (same rationale as ID/SCZ: per-disorder theta adds DOF reviewers read as fishing, and calibrating on the disorder's own LLM verdicts is circular).",
+      "sensitivity_sweep_plan": {
+        "floors": [
+          0.5,
+          0.55,
+          0.57,
+          0.6,
+          0.65
+        ],
+        "outputs": "rerun Stage 2c->3->4->5 per floor; flag if any headline AUROC moves > 0.02.",
+        "status": "deferred_to_paper_prep",
+        "rationale": "Pre-register before observing NCD AUROC."
+      }
+    },
+    "weights": {
+      "embed": 0.45,
+      "lexical": 0.25,
+      "resnik": 0.2,
+      "jaccard": 0.1,
+      "owl": 0.0
+    },
+    "top_n_bundle": 5,
+    "ambiguity_margin": 0.08,
+    "gray_low": 0.35,
+    "gray_high": 0.7,
+    "promote_bonus": 0.1,
+    "demote_penalty": 0.1,
+    "llm_model": "gpt-5.4",
+    "llm_seed": 1,
+    "lexical_factor_when_structural_missing": 0.5,
+    "_lexical_downweight_rationale": "Same as ID/SCZ: when both Resnik IC and Jaccard are absent, halve lexical so embed dominates for cross-jargon matches. Universal setting.",
+    "categories_enum": [
+      "cognitive_executive",
+      "motor_coordination",
+      "social_cognition_empathy",
+      "adaptive_functioning",
+      "other"
+    ],
+    "seed_terms_per_domain": {
+      "cognitive_executive": [
+        "progressive cognitive decline",
+        "age related memory impairment",
+        "impaired spatial learning",
+        "abnormal Morris water maze",
+        "impaired novel object recognition",
+        "working memory deficit",
+        "impaired set shifting",
+        "cognitive inflexibility",
+        "impaired response inhibition",
+        "impaired executive function",
+        "impaired recognition memory",
+        "abnormal contextual fear conditioning",
+        "impaired attention",
+        "reduced processing speed"
+      ],
+      "motor_coordination": [
+        "progressive motor impairment",
+        "abnormal gait",
+        "impaired motor coordination",
+        "abnormal rotarod performance",
+        "bradykinesia",
+        "postural instability",
+        "tremor",
+        "impaired balance",
+        "parkinsonian rigidity",
+        "chorea like movement"
+      ],
+      "social_cognition_empathy": [
+        "loss of empathy",
+        "impaired social cognition",
+        "reduced observational fear",
+        "impaired emotional recognition",
+        "social disinhibition",
+        "reduced social recognition",
+        "apathy"
+      ],
+      "adaptive_functioning": [
+        "impaired adaptive behavior",
+        "abnormal nest building",
+        "impaired burrowing",
+        "impaired self care",
+        "reduced home cage activity of daily living",
+        "loss of functional independence"
+      ]
+    },
+    "_outdir_change_2026_07_31": "Repointed to the 28-target Criterion B rerun. The 18-target directory is retained but retired; its numbers are not comparable because transparent_score is min-max normalised over the candidate table. See PREREG_AND_COMMANDS_ncd_stage4_5_2026-07-31.md section 0."
+  },
+  "stage3_aggregation": {
+    "outdir_template": "neurocognitive_support_aggregated_v1_cf_pol{regime}/",
+    "polarity_regimes_to_run": [
+      "off"
+    ],
+    "polarity_regimes_deferred": [
+      "soft",
+      "strict",
+      "schema"
+    ],
+    "polarity_deferral_note": "NCD has no bidirectional domain: four deficit/loss-direction behavioral domains plus one presence-direction pathology domain (neuropathology_progressive). All unidirectional, so polarity-off is the canonical regime (no catatonia-style bidirectional handling).",
+    "polarity_weight_maps": null,
+    "support_threshold": 0.3,
+    "lexical_cluster_threshold": 0.65,
+    "overall_aggregator": "mean",
+    "strict_analog_gate": "strong",
+    "eligibility_mode": "score_assisted_broad",
+    "broad_score_threshold": 0.57,
+    "strict_score_threshold": 0.62,
+    "allowed_evidence_scope_strict": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior"
+    ],
+    "allowed_evidence_scope_broad": [
+      "organism_behavior",
+      "organism_sensory",
+      "developmental_behavior",
+      "mechanistic",
+      "unclear"
+    ],
+    "strong_behavioral_analog_types": [
+      "direct_analog",
+      "close_support"
+    ],
+    "_criterion_strict_note": "2026-07-27: reverted the NCD-specific admission of 'mechanistic' evidence to strict; face-validity domains are now the DSM Chapter 16 cognitive/behavioral criteria only, and the progressive-pathology etiology moved to the mechanism axis."
+  },
+  "stage4_permutation_null": {
+    "outdir_template": "neurocognitive_pvalue_v1_cf_pol{regime}/",
+    "n_permutations": 10000,
+    "seed": 1,
+    "max_depth_cap": 200,
+    "score_function_fix_version": "2026-05-14"
+  },
+  "stage5_benchmark": {
+    "outdir_template": "benchmark/run_2026-07-28_criterion_v1_neurocognitive_cf_pol{regime}_{mode}/",
+    "benchmark_group_table": "benchmark_tables_per_tier/Neurocognitive_tier_0.csv",
+    "_benchmark_group_table_note": "95 Neurocognitive_primary positives at tier 0 (DOID-membership pool; above the 30-positive discrimination-power bar). Table may be regenerated under the finalized dual-arm (aetiology-agnostic / DSM-5-literal) pool before ratification; point estimate re-run is cheap.",
+    "contrasts": [
+      {
+        "name": "A2",
+        "description": "Headline. NCD-primary vs all non-NCD.",
+        "positive_group": "Neurocognitive_primary",
+        "negative_groups": [
+          "__all_non_Neurocognitive_primary__"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A2_headline"
+      },
+      {
+        "name": "A1",
+        "description": "NCD vs psychiatric/NDD pool.",
+        "positive_group": "Neurocognitive_primary",
+        "negative_groups": [
+          "MDD_primary",
+          "Bipolar_primary",
+          "Anxiety_primary",
+          "SCZ_primary",
+          "ADHD_primary",
+          "NDD_other_primary",
+          "IntellectualDisability_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A1_psychiatric_pool"
+      },
+      {
+        "name": "A4",
+        "description": "NCD vs ID (degenerative vs developmental cognitive-deficit boundary; mirror of ID A4).",
+        "positive_group": "Neurocognitive_primary",
+        "negative_groups": [
+          "IntellectualDisability_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A4_ID"
+      },
+      {
+        "name": "A5",
+        "description": "NCD vs ASD.",
+        "positive_group": "Neurocognitive_primary",
+        "negative_groups": [
+          "ASD_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A5_ASD"
+      },
+      {
+        "name": "A6",
+        "description": "NCD vs SCZ (cognitive-domain overlap).",
+        "positive_group": "Neurocognitive_primary",
+        "negative_groups": [
+          "SCZ_primary"
+        ],
+        "expected_direction": ">0.5",
+        "is_specificity_sanity_check": false,
+        "figure_panel": "panel_A6_SCZ"
+      }
+    ],
+    "b_family": [
+      {
+        "name": "B1",
+        "type": "composite_mean",
+        "domains": "all_strict",
+        "label": "Strict 5-domain composite (NCD)",
+        "gated_by": null,
+        "multiplicity_correction": null,
+        "comparator_pool_ids": [
+          "A1",
+          "A5"
+        ],
+        "comparator_pool_note": "Union of A1 (psychiatric/NDD pool) and A5 (ASD) - the powered non-NCD comparator. Avoids A2 dilution by ~75,700 broad_other genotypes."
+      },
+      {
+        "name": "B2_cognitive",
+        "type": "cluster_mean",
+        "domains": [
+          "cognitive_executive"
+        ],
+        "label": "Cognitive/executive (Criterion A cognitive core)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_ids": [
+          "A1",
+          "A5"
+        ]
+      },
+      {
+        "name": "B3_motor",
+        "type": "cluster_mean",
+        "domains": [
+          "motor_coordination"
+        ],
+        "label": "Perceptual-motor (Criterion A5)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_ids": [
+          "A1",
+          "A5"
+        ]
+      },
+      {
+        "name": "B4_social",
+        "type": "cluster_mean",
+        "domains": [
+          "social_cognition_empathy"
+        ],
+        "label": "Social cognition (Criterion A6)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_ids": [
+          "A1",
+          "A5"
+        ]
+      },
+      {
+        "name": "B5_adaptive",
+        "type": "cluster_mean",
+        "domains": [
+          "adaptive_functioning"
+        ],
+        "label": "Adaptive functioning (Criterion B)",
+        "gated_by": "B1",
+        "multiplicity_correction": "holm",
+        "comparator_pool_ids": [
+          "A1",
+          "A5"
+        ]
+      }
+    ],
+    "m_family": [
+      {
+        "name": "M1_psychiatric_non_NCD",
+        "model_type": "binary_logit",
+        "positive_label": "Neurocognitive_primary",
+        "comparator_pool_id": "psychiatric_non_NCD",
+        "comparator_groups": [
+          "MDD_primary",
+          "Bipolar_primary",
+          "Anxiety_primary",
+          "SCZ_primary",
+          "ADHD_primary",
+          "NDD_other_primary",
+          "IntellectualDisability_primary"
+        ],
+        "covariates": [
+          "log_n_mp_terms_z",
+          "assessable_fraction_z"
+        ],
+        "_note": "Mirrors A1; small-n on several arms - interpret cautiously."
+      },
+      {
+        "name": "M2_all_non_NCD",
+        "model_type": "binary_logit",
+        "positive_label": "Neurocognitive_primary",
+        "comparator_pool_id": "all_non_NCD",
+        "comparator_groups": [
+          "ADHD_primary",
+          "ASD_primary",
+          "Anxiety_primary",
+          "Bipolar_primary",
+          "EatingDisorders_primary",
+          "MDD_primary",
+          "NDD_other_primary",
+          "SCZ_primary",
+          "Sleep_primary",
+          "SubstanceAbuse_primary",
+          "IntellectualDisability_primary",
+          "Neurocognitive_mixed",
+          "broad_other",
+          "mixed_psychiatric_other"
+        ],
+        "covariates": [
+          "log_n_mp_terms_z",
+          "assessable_fraction_z"
+        ],
+        "_note": "Mirrors A2 headline."
+      }
+    ],
+    "n_bootstrap": 1000,
+    "phenodigm_baseline_score_file_template": "benchmark/run_2026-07-27_v1_neurocognitive_pol{regime}_{mode}/baseline_scores/01_baseline_genotype_scores__B1_phenodigm_plain.tsv",
+    "n_mp_thresholds": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      10
+    ],
+    "n_mp_terms_file": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+    "outdir_template_previous": "benchmark/run_2026-07-27_v1_neurocognitive_pol{regime}_{mode}/",
+    "outdir_template_change_2026_07_28": "Each disorder carried its own stale dated stamp: ASD 2026-05-11, SCZ 2026-05-28, ID 2026-06-02, NCD 2026-07-27. ASD's contained no disorder name at all, so its benchmark directories were generically named and could collide. All four now carry one stamp that also records the substrate, which is the distinction that decides whether two run directories are comparable."
+  },
+  "stage6_within_disorder": {
+    "diagnostic_ceiling": {
+      "k_of_n": [
+        1,
+        6
+      ],
+      "label": "Major/Mild NCD requires decline in >=1 of six neurocognitive domains (A1-A6); modelled as 1-of-N over the strict domains present in mouse."
+    },
+    "cochran_q_over_strict_domains": true,
+    "pairwise_mcnemar_correction": "holm",
+    "cochran_armitage_trend": true,
+    "trend_levels": 10
+  },
+  "stage7_viz": {
+    "domain_order": [
+      "cognitive_executive",
+      "motor_coordination",
+      "social_cognition_empathy",
+      "adaptive_functioning"
+    ],
+    "domain_short_labels": {
+      "cognitive_executive": "Cognitive/exec (A1-A3)",
+      "motor_coordination": "Motor (A5)",
+      "social_cognition_empathy": "Social cog (A6)",
+      "adaptive_functioning": "Adaptive (B)"
+    },
+    "domain_colors": null,
+    "palette_name": "RdBu",
+    "b_family_panel_labels": {
+      "B1": "Strict 5-domain composite",
+      "B2_cognitive": "Cognitive/exec",
+      "B3_motor": "Motor",
+      "B4_social": "Social cognition",
+      "B5_adaptive": "Adaptive"
+    },
+    "headline_contrast": "A2"
+  },
+  "domains": {
+    "strict": [
+      {
+        "name": "cognitive_executive",
+        "description": "Cognitive deficits spanning learning, memory, attention, working memory, planning, set-shifting, response inhibition, reasoning, problem-solving, and cognitive flexibility. Consolidates cognitive_dysfunction (learning/memory pole) + executive_dysfunction (response-control pole). Mouse anchors: Morris water maze (Morris 1984), novel object recognition, 5-CSRTT (Robbins 2002), attentional set-shifting (Birrell & Brown 2000), reversal learning (Bissonette 2008), T-maze delayed alternation, puzzle box (Ben Abdallah 2011), go/no-go inhibition. NCD-specific anchor: Criterion A cognitive decline across complex attention, executive function, learning/memory.",
+        "polarity": "negative"
+      },
+      {
+        "name": "motor_coordination",
+        "description": "Perceptual-motor function — coordination, gait, postural control; etiology-specific motor symptoms (DLB parkinsonism, TBI gait deficits, vascular gait disorder). DSM-5-TR NCD Criterion A5. Mouse anchors: rotarod, beam walk, gait analysis (Brooks & Dunnett 2009), pole test.",
+        "polarity": "negative"
+      },
+      {
+        "name": "social_cognition_empathy",
+        "description": "Perspective-taking, recognition of others' emotional states, vicarious distress response, empathy-like behavior. Distinct from social_interaction (which is engagement/affiliation): this is the cognitive-social-processing dimension. Mouse anchors: observational fear (Jeon 2010 ACC-dependent), consolation-like behaviors, BTBR reduced empathy (Keum 2016), reduced reciprocal social novelty preference. NCD-specific anchor: Criterion A6 social cognition — recognition of others' emotions, social judgment, ToM proxies. Loss of empathy is bvFTD signature (Rascovsky 2011).",
+        "polarity": "negative"
+      },
+      {
+        "name": "adaptive_functioning",
+        "description": "Practical daily-living skills; self-care; functional independence in everyday activities. Maps to DSM-5-TR ID Criterion B and NCD Criterion B (interferes with independence). Mouse anchors: nest building scoring (Deacon 2006 as ADL proxy), burrowing, home-cage feeding-and-drinking competence. NCD-specific anchor: Criterion B interferes with independence in everyday activities (Major) or requires greater effort (Mild).",
+        "polarity": "negative"
+      }
+    ],
+    "mechanism_axis": {
+      "name": "neuropathology_progressive_etiology",
+      "reported": "separately from face validity; NOT in domains.strict and NOT in the discrimination composite",
+      "content": "etiology-defining progressive neuropathology: amyloid/tau plaques and tangles (AD), TDP-43/tau (FTD), alpha-synuclein (DLB/PD), white-matter rarefaction (vascular), CAG-expansion degeneration (HD), spongiform change (prion), focal neuronal loss (TBI)",
+      "rationale": "the etiology / 'due to X' pathology, NOT the DSM-5 Chapter 16 Criterion A cognitive-decline diagnostic criterion; the exact analog of SCZ's salience substrate (a mechanism domain that would prop up a disorder whose criteria are hard to model). Reversed the earlier decision that admitted mechanistic evidence to strict for NCD.",
+      "measurement": "reported on the mechanism axis alongside the SCZ endophenotype substrate; the Phenodigm-contrast probe quantifies the pathology signal Phenodigm rewards"
+    }
+  }
+}

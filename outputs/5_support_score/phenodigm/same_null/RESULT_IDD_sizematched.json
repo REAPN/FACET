@@ -1,0 +1,41 @@
+{
+ "disorder": "IDD",
+ "null": "sizematched",
+ "n": 12382,
+ "n_pos": 111,
+ "auroc_facet": 0.7511,
+ "ci_facet": [
+  0.7051,
+  0.8201
+ ],
+ "auroc_pheno_raw": 0.7062,
+ "ci_pheno_raw": [
+  0.6225,
+  0.7569
+ ],
+ "auroc_pheno_null": 0.7141,
+ "ci_pheno_null": [
+  0.6258,
+  0.7669
+ ],
+ "delta_facet_minus_pheno_raw": 0.0449,
+ "ci_facet_minus_pheno_raw": [
+  -0.0284,
+  0.1575
+ ],
+ "p_facet_minus_pheno_raw": 0.277,
+ "delta_facet_minus_pheno_null": 0.037,
+ "ci_facet_minus_pheno_null": [
+  -0.0404,
+  0.157
+ ],
+ "p_facet_minus_pheno_null": 0.381,
+ "delta_pheno_null_minus_pheno_raw": 0.0079,
+ "ci_pheno_null_minus_pheno_raw": [
+  -0.0059,
+  0.0192
+ ],
+ "p_pheno_null_minus_pheno_raw": 0.227,
+ "ceiling_pos_pheno_null": 26,
+ "ceiling_pos_facet": 43
+}

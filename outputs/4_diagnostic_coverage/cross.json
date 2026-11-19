@@ -1,0 +1,314 @@
+{
+ "Efna2": {
+  "ASD": {
+   "breadth": "4",
+   "crit": "ASD.A1;ASD.A3;ASD.B2;ASD.B4",
+   "leaf": "ASD.A1;ASD.A3;ASD.B2;ASD.B4",
+   "support": 2.194,
+   "support_pct": 98.4,
+   "breadth_pct": 99.8
+  },
+  "SCZ": {
+   "breadth": "2",
+   "crit": "SCZ.A4;SCZ.A5",
+   "leaf": "",
+   "support": 1.672,
+   "support_pct": 97.1,
+   "breadth_pct": 100.0
+  },
+  "IDD": {
+   "breadth": "2",
+   "crit": "ID.A;ID.B",
+   "leaf": "ID.B",
+   "support": 2.004,
+   "support_pct": 97.3,
+   "breadth_pct": 100.0
+  },
+  "NCD": {
+   "breadth": "1",
+   "crit": "NCD.A",
+   "leaf": "",
+   "support": 1.439,
+   "support_pct": 94.4,
+   "breadth_pct": 99.8
+  },
+  "MDD": {
+   "breadth": "0",
+   "crit": "",
+   "leaf": "",
+   "support": null,
+   "support_pct": null,
+   "breadth_pct": 89.44
+  }
+ },
+ "coverage_top_tier_uncurated": {
+  "ASD-SCZ": {
+   "top_a": 192,
+   "top_b": 1181,
+   "overlap": 130,
+   "expected_independent": 7.0,
+   "ratio_independent": 18.58,
+   "expected_behavior_stratified": 82.9,
+   "ratio_stratified": 1.57
+  },
+  "ASD-IDD": {
+   "top_a": 186,
+   "top_b": 264,
+   "overlap": 118,
+   "expected_independent": 1.5,
+   "ratio_independent": 77.71,
+   "expected_behavior_stratified": 29.7,
+   "ratio_stratified": 3.97
+  },
+  "ASD-NCD": {
+   "top_a": 203,
+   "top_b": 63,
+   "overlap": 7,
+   "expected_independent": 0.4,
+   "ratio_independent": 17.72,
+   "expected_behavior_stratified": 5.9,
+   "ratio_stratified": 1.2
+  },
+  "ASD-MDD": {
+   "top_a": 202,
+   "top_b": 46,
+   "overlap": 9,
+   "expected_independent": 0.3,
+   "ratio_independent": 31.42,
+   "expected_behavior_stratified": 5.5,
+   "ratio_stratified": 1.62
+  },
+  "SCZ-IDD": {
+   "top_a": 1191,
+   "top_b": 292,
+   "overlap": 186,
+   "expected_independent": 10.7,
+   "ratio_independent": 17.31,
+   "expected_behavior_stratified": 127.0,
+   "ratio_stratified": 1.47
+  },
+  "SCZ-NCD": {
+   "top_a": 1215,
+   "top_b": 66,
+   "overlap": 21,
+   "expected_independent": 2.5,
+   "ratio_independent": 8.49,
+   "expected_behavior_stratified": 23.8,
+   "ratio_stratified": 0.88
+  },
+  "SCZ-MDD": {
+   "top_a": 1228,
+   "top_b": 43,
+   "overlap": 35,
+   "expected_independent": 1.6,
+   "ratio_independent": 21.53,
+   "expected_behavior_stratified": 18.7,
+   "ratio_stratified": 1.87
+  },
+  "IDD-NCD": {
+   "top_a": 306,
+   "top_b": 66,
+   "overlap": 8,
+   "expected_independent": 0.6,
+   "ratio_independent": 12.81,
+   "expected_behavior_stratified": 9.8,
+   "ratio_stratified": 0.82
+  },
+  "IDD-MDD": {
+   "top_a": 304,
+   "top_b": 46,
+   "overlap": 8,
+   "expected_independent": 0.4,
+   "ratio_independent": 18.54,
+   "expected_behavior_stratified": 8.1,
+   "ratio_stratified": 0.99
+  },
+  "NCD-MDD": {
+   "top_a": 65,
+   "top_b": 46,
+   "overlap": 3,
+   "expected_independent": 0.1,
+   "ratio_independent": 32.57,
+   "expected_behavior_stratified": 1.3,
+   "ratio_stratified": 2.36
+  }
+ },
+ "support_top2pct_uncurated": {
+  "ASD-SCZ": {
+   "top_a": 560,
+   "top_b": 578,
+   "overlap": 173,
+   "expected_independent": 10.0,
+   "ratio_independent": 17.32,
+   "expected_behavior_stratified": 58.9,
+   "ratio_stratified": 2.94
+  },
+  "ASD-IDD": {
+   "top_a": 546,
+   "top_b": 548,
+   "overlap": 172,
+   "expected_independent": 9.3,
+   "ratio_independent": 18.59,
+   "expected_behavior_stratified": 58.7,
+   "ratio_stratified": 2.93
+  },
+  "ASD-NCD": {
+   "top_a": 573,
+   "top_b": 652,
+   "overlap": 143,
+   "expected_independent": 11.5,
+   "ratio_independent": 12.39,
+   "expected_behavior_stratified": 58.8,
+   "ratio_stratified": 2.43
+  },
+  "SCZ-IDD": {
+   "top_a": 604,
+   "top_b": 592,
+   "overlap": 152,
+   "expected_independent": 11.0,
+   "ratio_independent": 13.76,
+   "expected_behavior_stratified": 71.4,
+   "ratio_stratified": 2.13
+  },
+  "SCZ-NCD": {
+   "top_a": 638,
+   "top_b": 681,
+   "overlap": 129,
+   "expected_independent": 13.4,
+   "ratio_independent": 9.63,
+   "expected_behavior_stratified": 70.8,
+   "ratio_stratified": 1.82
+  },
+  "IDD-NCD": {
+   "top_a": 600,
+   "top_b": 644,
+   "overlap": 312,
+   "expected_independent": 11.9,
+   "ratio_independent": 26.12,
+   "expected_behavior_stratified": 63.6,
+   "ratio_stratified": 4.91
+  }
+ },
+ "curated_cross": {
+  "curated ASD in top tier of SCZ": {
+   "n": 84,
+   "observed": 50,
+   "expected_stratified": 35.0,
+   "ratio": 1.43
+  },
+  "curated ASD in top tier of IDD": {
+   "n": 78,
+   "observed": 43,
+   "expected_stratified": 12.0,
+   "ratio": 3.59
+  },
+  "curated ASD in top tier of NCD": {
+   "n": 85,
+   "observed": 3,
+   "expected_stratified": 2.4,
+   "ratio": 1.23
+  },
+  "curated ASD in top tier of MDD": {
+   "n": 85,
+   "observed": 0,
+   "expected_stratified": 2.3,
+   "ratio": 0.0
+  },
+  "curated SCZ in top tier of ASD": {
+   "n": 41,
+   "observed": 12,
+   "expected_stratified": 3.0,
+   "ratio": 4.03
+  },
+  "curated SCZ in top tier of IDD": {
+   "n": 41,
+   "observed": 15,
+   "expected_stratified": 4.5,
+   "ratio": 3.31
+  },
+  "curated SCZ in top tier of NCD": {
+   "n": 42,
+   "observed": 0,
+   "expected_stratified": 0.8,
+   "ratio": 0.0
+  },
+  "curated SCZ in top tier of MDD": {
+   "n": 42,
+   "observed": 3,
+   "expected_stratified": 0.7,
+   "ratio": 4.5
+  },
+  "curated IDD in top tier of ASD": {
+   "n": 114,
+   "observed": 18,
+   "expected_stratified": 7.4,
+   "ratio": 2.43
+  },
+  "curated IDD in top tier of SCZ": {
+   "n": 120,
+   "observed": 40,
+   "expected_stratified": 34.2,
+   "ratio": 1.17
+  },
+  "curated IDD in top tier of NCD": {
+   "n": 121,
+   "observed": 0,
+   "expected_stratified": 2.4,
+   "ratio": 0.0
+  },
+  "curated IDD in top tier of MDD": {
+   "n": 121,
+   "observed": 0,
+   "expected_stratified": 1.9,
+   "ratio": 0.0
+  },
+  "curated NCD in top tier of ASD": {
+   "n": 71,
+   "observed": 1,
+   "expected_stratified": 3.3,
+   "ratio": 0.3
+  },
+  "curated NCD in top tier of SCZ": {
+   "n": 71,
+   "observed": 16,
+   "expected_stratified": 15.4,
+   "ratio": 1.04
+  },
+  "curated NCD in top tier of IDD": {
+   "n": 71,
+   "observed": 1,
+   "expected_stratified": 4.9,
+   "ratio": 0.2
+  },
+  "curated NCD in top tier of MDD": {
+   "n": 70,
+   "observed": 0,
+   "expected_stratified": 0.7,
+   "ratio": 0.0
+  },
+  "curated MDD in top tier of ASD": {
+   "n": 8,
+   "observed": 2,
+   "expected_stratified": 1.1,
+   "ratio": 1.88
+  },
+  "curated MDD in top tier of SCZ": {
+   "n": 8,
+   "observed": 3,
+   "expected_stratified": 3.3,
+   "ratio": 0.91
+  },
+  "curated MDD in top tier of IDD": {
+   "n": 8,
+   "observed": 3,
+   "expected_stratified": 1.5,
+   "ratio": 1.96
+  },
+  "curated MDD in top tier of NCD": {
+   "n": 7,
+   "observed": 1,
+   "expected_stratified": 0.2,
+   "ratio": 4.44
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "disorder": "ASD",
+ "null": "sizematched",
+ "n": 11961,
+ "n_pos": 85,
+ "auroc_facet": 0.9557,
+ "ci_facet": [
+  0.9201,
+  0.9826
+ ],
+ "auroc_pheno_raw": 0.7721,
+ "ci_pheno_raw": [
+  0.7066,
+  0.8306
+ ],
+ "auroc_pheno_null": 0.7925,
+ "ci_pheno_null": [
+  0.7299,
+  0.8481
+ ],
+ "delta_facet_minus_pheno_raw": 0.1836,
+ "ci_facet_minus_pheno_raw": [
+  0.126,
+  0.248
+ ],
+ "p_facet_minus_pheno_raw": 0.0,
+ "delta_facet_minus_pheno_null": 0.1632,
+ "ci_facet_minus_pheno_null": [
+  0.1123,
+  0.2219
+ ],
+ "p_facet_minus_pheno_null": 0.0,
+ "delta_pheno_null_minus_pheno_raw": 0.0204,
+ "ci_pheno_null_minus_pheno_raw": [
+  0.0096,
+  0.0331
+ ],
+ "p_pheno_null_minus_pheno_raw": 0.001,
+ "ceiling_pos_pheno_null": 29,
+ "ceiling_pos_facet": 62
+}

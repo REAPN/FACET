@@ -1,0 +1,24 @@
+{
+ "positives": 71,
+ "claim_refs_equal_all_refs": 52,
+ "wpw_in_prior_count": [
+  "MGI:8187632",
+  "MGI:8187633"
+ ],
+ "convergent_after_claim_paper_removal_symmetric": {
+  "auroc": 0.521,
+  "ci_gene": [
+   0.4947,
+   0.5484
+  ],
+  "positives_with_any_criterion": 6
+ },
+ "discrimination_after_claim_paper_removal": {
+  "n_pos": 67,
+  "auroc": 0.5053,
+  "ci_gene": [
+   0.483,
+   0.532
+  ]
+ }
+}

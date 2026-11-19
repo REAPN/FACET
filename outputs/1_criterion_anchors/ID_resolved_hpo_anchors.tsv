@@ -1,0 +1,26 @@
+hpo_id	hpo_label	normalized_phenotype	category	centrality	temporality	mapping_relation	confidence	manual_review
+HP:0033055	Impaired ability to plan	impaired planning	intellectual_functioning	core	current	exact	0.98	False
+HP:0031058	Impairment of activities of daily living	limited activities of daily living	adaptive_functioning	core	current	exact	0.96	False
+HP:0001249	Intellectual disability	developmental onset of intellectual and adaptive deficits	developmental_onset	core	developmental	exact	0.95	False
+HP:0033056	Impaired ability to organize	impaired task organization	adaptive_functioning	supporting	current	exact	0.95	False
+HP:0000745	Abnormal diminished volition	reduced motivation in school or work settings	adaptive_functioning	supporting	current	exact	0.93	False
+HP:0002354	Memory impairment	impaired memory	adaptive_functioning	supporting	current	exact	0.92	False
+HP:5200037	Lack of expressed empathy	reduced empathy	adaptive_functioning	supporting	current	exact	0.9	False
+HP:0002463	Language impairment	impaired language skills	adaptive_functioning	supporting	current	exact	0.89	False
+HP:0010522	Dyslexia	impaired reading skills	adaptive_functioning	supporting	current	exact	0.88	False
+HP:0100543	Cognitive impairment	impaired reasoning	intellectual_functioning	core	current	broader_than_source	0.84	False
+HP:0020007	Abnormal affect regulation	impaired emotional self-regulation	adaptive_functioning	supporting	current	exact	0.84	False
+HP:0034434	Abnormal communication	impaired communication	adaptive_functioning	core	current	exact	0.82	False
+HP:0002442	Dyscalculia	impaired mathematical reasoning	adaptive_functioning	supporting	current	broader_than_source	0.82	False
+HP:5200316	Diminishment of interpersonal communication	impaired interpersonal communication	adaptive_functioning	supporting	current	exact	0.82	False
+HP:0000728	Reduced ability to form peer relationships	impaired friendship skills	adaptive_functioning	supporting	current	exact	0.82	False
+HP:5200021	Reduced social insight	social naivety	adaptive_functioning	supporting	current	exact	0.82	False
+HP:0001328	Specific learning disability	impaired academic learning	intellectual_functioning	core	current	broader_than_source	0.79	False
+HP:0033051	Impaired executive functioning	impaired problem solving	intellectual_functioning	core	current	broader_than_source	0.74	False
+HP:5200401	Abnormal judgment	impaired judgment	intellectual_functioning	core	current	exact	0.72	False
+HP:5200310	Diminishment of social interactions	reduced social participation	adaptive_functioning	core	current	broader_than_source	0.72	False
+HP:0010526	Dysgraphia	impaired writing skills	adaptive_functioning	supporting	current	broader_than_source	0.72	False
+HP:0007086	Social and occupational deterioration	impaired management of job responsibilities	adaptive_functioning	supporting	current	broader_than_source	0.72	False
+HP:0410280	Pediatric onset	childhood or adolescent onset	developmental_onset	core	developmental	broader_than_source	0.72	False
+HP:5200024	Abnormal relationship	impaired management of interpersonal relationships	adaptive_functioning	supporting	current	broader_than_source	0.72	False
+HP:5200118	Difficulty recognizing another's emotions	reduced awareness of others' thoughts and feelings	adaptive_functioning	supporting	current	broader_than_source	0.63	False

@@ -1,0 +1,786 @@
+{
+ "population": "K4 pool, corrected labels 2026-10-08, behaviorally annotated = at least one MP:0004924 descendant",
+ "n_behaviorally_annotated": 8521,
+ "terms_without_ic": {},
+ "D1_tertile_cuts": [
+  6.968,
+  8.46
+ ],
+ "A_who_gets_detail": {
+  "D1_by_source": {
+   "literature": {
+    "n": 6084,
+    "mean": 7.964,
+    "median": 7.91
+   },
+   "other, no PubMed row": {
+    "n": 310,
+    "mean": 7.642,
+    "median": 7.541
+   },
+   "IMPC allele with literature": {
+    "n": 201,
+    "mean": 8.047,
+    "median": 8.02
+   },
+   "IMPC, no literature row": {
+    "n": 1926,
+    "mean": 6.983,
+    "median": 6.98
+   }
+  },
+  "ASD": {
+   "curated": {
+    "D1": 8.455,
+    "D2": 0.711,
+    "D3": 10.948,
+    "D4": 2.924,
+    "n": 6.819,
+    "N": 83
+   },
+   "H_lines": {
+    "D1": 7.875,
+    "D2": 0.373,
+    "D3": 9.424,
+    "D4": 3.313,
+    "n": 3.728,
+    "N": 276
+   },
+   "other_uncurated": {
+    "D1": 7.723,
+    "D2": 0.204,
+    "D3": 8.783,
+    "D4": 3.426,
+    "n": 2.651,
+    "N": 8005
+   },
+   "curated_by_source": {
+    "literature": 77,
+    "other, no PubMed row": 1,
+    "IMPC allele with literature": 5
+   },
+   "AUROC_D1_curated_vs_other": {
+    "auroc": 0.6776,
+    "ci_gene": [
+     0.633,
+     0.718
+    ]
+   },
+   "OR_curated_per_SD_D1_adj_log_count": [
+    1.76,
+    1.35,
+    2.29
+   ],
+   "OR_curated_log_count_adj_D1": [
+    13.87,
+    9.16,
+    21.02
+   ]
+  },
+  "SCZ": {
+   "curated": {
+    "D1": 8.607,
+    "D2": 0.762,
+    "D3": 10.845,
+    "D4": 3.488,
+    "n": 5.333,
+    "N": 42
+   },
+   "H_lines": {
+    "D1": 8.036,
+    "D2": 0.393,
+    "D3": 9.373,
+    "D4": 3.539,
+    "n": 2.607,
+    "N": 28
+   },
+   "other_uncurated": {
+    "D1": 7.724,
+    "D2": 0.207,
+    "D3": 8.802,
+    "D4": 3.419,
+    "n": 2.702,
+    "N": 8167
+   },
+   "curated_by_source": {
+    "literature": 42
+   },
+   "AUROC_D1_curated_vs_other": {
+    "auroc": 0.6914,
+    "ci_gene": [
+     0.622,
+     0.747
+    ]
+   },
+   "OR_curated_per_SD_D1_adj_log_count": [
+    1.85,
+    1.35,
+    2.54
+   ],
+   "OR_curated_log_count_adj_D1": [
+    6.26,
+    3.72,
+    10.54
+   ]
+  },
+  "IDD": {
+   "curated": {
+    "D1": 7.741,
+    "D2": 0.347,
+    "D3": 9.794,
+    "D4": 3.316,
+    "n": 5.446,
+    "N": 101
+   },
+   "H_lines": {
+    "D1": 7.786,
+    "D2": 0.268,
+    "D3": 9.053,
+    "D4": 3.32,
+    "n": 3.118,
+    "N": 1475
+   },
+   "other_uncurated": {
+    "D1": 7.727,
+    "D2": 0.205,
+    "D3": 8.78,
+    "D4": 3.435,
+    "n": 2.632,
+    "N": 6812
+   },
+   "curated_by_source": {
+    "literature": 94,
+    "IMPC allele with literature": 6,
+    "other, no PubMed row": 1
+   },
+   "AUROC_D1_curated_vs_other": {
+    "auroc": 0.5282,
+    "ci_gene": [
+     0.417,
+     0.665
+    ]
+   },
+   "OR_curated_per_SD_D1_adj_log_count": [
+    0.91,
+    0.71,
+    1.17
+   ],
+   "OR_curated_log_count_adj_D1": [
+    6.62,
+    4.64,
+    9.46
+   ]
+  },
+  "MDD": {
+   "curated": {
+    "D1": 9.551,
+    "D2": 1.875,
+    "D3": 12.182,
+    "D4": 3.746,
+    "n": 6.5,
+    "N": 8
+   },
+   "H_lines": {
+    "D1": 7.848,
+    "D2": 0.355,
+    "D3": 9.118,
+    "D4": 3.398,
+    "n": 3.041,
+    "N": 169
+   },
+   "other_uncurated": {
+    "D1": 7.723,
+    "D2": 0.207,
+    "D3": 8.815,
+    "D4": 3.415,
+    "n": 2.734,
+    "N": 8243
+   },
+   "curated_by_source": {
+    "literature": 8
+   },
+   "AUROC_D1_curated_vs_other": {
+    "auroc": 0.8642,
+    "ci_gene": [
+     0.785,
+     0.925
+    ]
+   },
+   "OR_curated_per_SD_D1_adj_log_count": [
+    3.6,
+    1.81,
+    7.17
+   ],
+   "OR_curated_log_count_adj_D1": [
+    13.34,
+    4.0,
+    44.54
+   ]
+  }
+ },
+ "B_C_reward_and_restriction": {
+  "ASD": {
+   "support, discrimination AUROC, full pool :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 83,
+    "n_neg": 8438,
+    "unweighted": 0.9608,
+    "weighted": 0.962,
+    "weighted_ci_gene": [
+     0.941,
+     0.977
+    ],
+    "difference": 0.0012,
+    "difference_ci_gene": [
+     -0.0024,
+     0.0082
+    ]
+   },
+   "support, discrimination AUROC, full pool :: both classes with D2 at least 1": {
+    "n_pos": 41,
+    "n_neg": 1312,
+    "restricted": 0.9405,
+    "restricted_ci_gene": [
+     0.923,
+     0.954
+    ],
+    "difference_vs_all_behaviorally_annotated": -0.0203,
+    "difference_ci_gene": [
+     -0.0435,
+     0.0078
+    ]
+   },
+   "coverage, convergent AUROC :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 83,
+    "n_neg": 8438,
+    "unweighted": 0.9439,
+    "weighted": 0.9439,
+    "weighted_ci_gene": [
+     0.92,
+     0.967
+    ],
+    "difference": -0.0,
+    "difference_ci_gene": [
+     -0.0046,
+     0.0084
+    ]
+   },
+   "coverage, convergent AUROC :: both classes with D2 at least 1": {
+    "n_pos": 41,
+    "n_neg": 1312,
+    "restricted": 0.9148,
+    "restricted_ci_gene": [
+     0.876,
+     0.951
+    ],
+    "difference_vs_all_behaviorally_annotated": -0.0291,
+    "difference_ci_gene": [
+     -0.06,
+     0.0076
+    ]
+   }
+  },
+  "SCZ": {
+   "support, discrimination AUROC, full pool :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 42,
+    "n_neg": 8479,
+    "unweighted": 0.6617,
+    "weighted": 0.6628,
+    "weighted_ci_gene": [
+     0.58,
+     0.74
+    ],
+    "difference": 0.0011,
+    "difference_ci_gene": [
+     -0.0085,
+     0.0104
+    ]
+   },
+   "support, discrimination AUROC, full pool :: both classes with D2 at least 1": {
+    "n_pos": 19,
+    "n_neg": 1334,
+    "restricted": 0.6714,
+    "restricted_ci_gene": [
+     0.528,
+     0.817
+    ],
+    "difference_vs_all_behaviorally_annotated": 0.0097,
+    "difference_ci_gene": [
+     -0.0989,
+     0.1207
+    ]
+   },
+   "coverage, convergent AUROC :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 42,
+    "n_neg": 8479,
+    "unweighted": 0.7318,
+    "weighted": 0.7264,
+    "weighted_ci_gene": [
+     0.628,
+     0.813
+    ],
+    "difference": -0.0054,
+    "difference_ci_gene": [
+     -0.0177,
+     0.0051
+    ]
+   },
+   "coverage, convergent AUROC :: both classes with D2 at least 1": {
+    "n_pos": 19,
+    "n_neg": 1334,
+    "restricted": 0.6977,
+    "restricted_ci_gene": [
+     0.55,
+     0.816
+    ],
+    "difference_vs_all_behaviorally_annotated": -0.0341,
+    "difference_ci_gene": [
+     -0.144,
+     0.0666
+    ]
+   }
+  },
+  "IDD": {
+   "support, discrimination AUROC, full pool :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 101,
+    "n_neg": 8420,
+    "unweighted": 0.7605,
+    "weighted": 0.7741,
+    "weighted_ci_gene": [
+     0.721,
+     0.848
+    ],
+    "difference": 0.0137,
+    "difference_ci_gene": [
+     -0.0033,
+     0.0244
+    ]
+   },
+   "support, discrimination AUROC, full pool :: both classes with D2 at least 1": {
+    "n_pos": 26,
+    "n_neg": 1327,
+    "restricted": 0.7724,
+    "restricted_ci_gene": [
+     0.658,
+     0.861
+    ],
+    "difference_vs_all_behaviorally_annotated": 0.012,
+    "difference_ci_gene": [
+     -0.1031,
+     0.0919
+    ]
+   },
+   "coverage, convergent AUROC :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 101,
+    "n_neg": 8420,
+    "unweighted": 0.735,
+    "weighted": 0.7482,
+    "weighted_ci_gene": [
+     0.695,
+     0.828
+    ],
+    "difference": 0.0132,
+    "difference_ci_gene": [
+     -0.0004,
+     0.0205
+    ]
+   },
+   "coverage, convergent AUROC :: both classes with D2 at least 1": {
+    "n_pos": 26,
+    "n_neg": 1327,
+    "restricted": 0.7454,
+    "restricted_ci_gene": [
+     0.64,
+     0.861
+    ],
+    "difference_vs_all_behaviorally_annotated": 0.0105,
+    "difference_ci_gene": [
+     -0.0882,
+     0.0868
+    ]
+   }
+  },
+  "MDD": {
+   "coverage, convergent AUROC :: both classes behaviorally annotated, D1-weighted": {
+    "n_pos": 8,
+    "n_neg": 8513,
+    "unweighted": 0.9819,
+    "weighted": 0.98,
+    "weighted_ci_gene": [
+     0.975,
+     0.987
+    ],
+    "difference": -0.0019,
+    "difference_ci_gene": [
+     -0.0025,
+     -0.0012
+    ]
+   },
+   "coverage, convergent AUROC :: both classes with D2 at least 1": {
+    "n_pos": 7,
+    "n_neg": 1346,
+    "restricted": 0.9486,
+    "restricted_ci_gene": [
+     0.932,
+     0.969
+    ],
+    "difference_vs_all_behaviorally_annotated": -0.0333,
+    "difference_ci_gene": [
+     -0.0457,
+     -0.0189
+    ]
+   }
+  }
+ },
+ "D_count_and_detail_matched": {
+  "ASD": {
+   "coverage: curated vs H lines": {
+    "n_pos": 83,
+    "n_neg": 276,
+    "count_matched": 0.7309,
+    "count_and_detail_matched": 0.7198,
+    "ci_gene": [
+     0.648,
+     0.787
+    ],
+    "difference": -0.0111,
+    "difference_ci_gene": [
+     -0.0363,
+     0.0189
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: curated vs other uncurated": {
+    "n_pos": 83,
+    "n_neg": 8005,
+    "count_matched": 0.857,
+    "count_and_detail_matched": 0.831,
+    "ci_gene": [
+     0.791,
+     0.872
+    ],
+    "difference": -0.0259,
+    "difference_ci_gene": [
+     -0.0408,
+     -0.0152
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: H lines without curated gene vs other uncurated": {
+    "n_pos": 213,
+    "n_neg": 8005,
+    "count_matched": 0.5291,
+    "count_and_detail_matched": 0.5222,
+    "ci_gene": [
+     0.47,
+     0.581
+    ],
+    "difference": -0.0069,
+    "difference_ci_gene": [
+     -0.0128,
+     0.0001
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: curated vs H lines": {
+    "n_pos": 83,
+    "n_neg": 276,
+    "count_matched": 0.663,
+    "count_and_detail_matched": 0.6416,
+    "ci_gene": [
+     0.563,
+     0.71
+    ],
+    "difference": -0.0214,
+    "difference_ci_gene": [
+     -0.0518,
+     0.0052
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: curated vs other uncurated": {
+    "n_pos": 83,
+    "n_neg": 8005,
+    "count_matched": 0.9373,
+    "count_and_detail_matched": 0.924,
+    "ci_gene": [
+     0.885,
+     0.954
+    ],
+    "difference": -0.0134,
+    "difference_ci_gene": [
+     -0.0223,
+     -0.0066
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: H lines without curated gene vs other uncurated": {
+    "n_pos": 213,
+    "n_neg": 8005,
+    "count_matched": 0.5481,
+    "count_and_detail_matched": 0.5422,
+    "ci_gene": [
+     0.495,
+     0.591
+    ],
+    "difference": -0.0058,
+    "difference_ci_gene": [
+     -0.0106,
+     -0.0007
+    ],
+    "positive_cells_without_negatives": []
+   }
+  },
+  "SCZ": {
+   "coverage: curated vs H lines": {
+    "n_pos": 42,
+    "n_neg": 28,
+    "count_matched": 0.5059,
+    "count_and_detail_matched": 0.5326,
+    "ci_gene": [
+     0.417,
+     0.754
+    ],
+    "difference": 0.0267,
+    "difference_ci_gene": [
+     -0.1646,
+     0.0843
+    ],
+    "positive_cells_without_negatives": [
+     7,
+     10
+    ]
+   },
+   "coverage: curated vs other uncurated": {
+    "n_pos": 42,
+    "n_neg": 8167,
+    "count_matched": 0.6092,
+    "count_and_detail_matched": 0.6288,
+    "ci_gene": [
+     0.559,
+     0.687
+    ],
+    "difference": 0.0196,
+    "difference_ci_gene": [
+     0.0044,
+     0.0347
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: H lines without curated gene vs other uncurated": {
+    "n_pos": 27,
+    "n_neg": 8167,
+    "count_matched": 0.5357,
+    "count_and_detail_matched": 0.543,
+    "ci_gene": [
+     0.466,
+     0.63
+    ],
+    "difference": 0.0073,
+    "difference_ci_gene": [
+     -0.0255,
+     0.0352
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: curated vs H lines": {
+    "n_pos": 42,
+    "n_neg": 28,
+    "count_matched": 0.5114,
+    "count_and_detail_matched": 0.555,
+    "ci_gene": [
+     0.417,
+     0.736
+    ],
+    "difference": 0.0436,
+    "difference_ci_gene": [
+     -0.0804,
+     0.1073
+    ],
+    "positive_cells_without_negatives": [
+     7,
+     10
+    ]
+   },
+   "support: curated vs other uncurated": {
+    "n_pos": 42,
+    "n_neg": 8167,
+    "count_matched": 0.6009,
+    "count_and_detail_matched": 0.6031,
+    "ci_gene": [
+     0.531,
+     0.679
+    ],
+    "difference": 0.0022,
+    "difference_ci_gene": [
+     -0.0101,
+     0.0118
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: H lines without curated gene vs other uncurated": {
+    "n_pos": 27,
+    "n_neg": 8167,
+    "count_matched": 0.5242,
+    "count_and_detail_matched": 0.5242,
+    "ci_gene": [
+     0.459,
+     0.608
+    ],
+    "difference": -0.0,
+    "difference_ci_gene": [
+     -0.0101,
+     0.0132
+    ],
+    "positive_cells_without_negatives": []
+   }
+  },
+  "IDD": {
+   "coverage: curated vs H lines": {
+    "n_pos": 101,
+    "n_neg": 1475,
+    "count_matched": 0.577,
+    "count_and_detail_matched": 0.5769,
+    "ci_gene": [
+     0.53,
+     0.649
+    ],
+    "difference": -0.0001,
+    "difference_ci_gene": [
+     -0.0223,
+     0.0247
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: curated vs other uncurated": {
+    "n_pos": 101,
+    "n_neg": 6812,
+    "count_matched": 0.6376,
+    "count_and_detail_matched": 0.6325,
+    "ci_gene": [
+     0.58,
+     0.708
+    ],
+    "difference": -0.0051,
+    "difference_ci_gene": [
+     -0.0266,
+     0.009
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: H lines without curated gene vs other uncurated": {
+    "n_pos": 1398,
+    "n_neg": 6812,
+    "count_matched": 0.5176,
+    "count_and_detail_matched": 0.5168,
+    "ci_gene": [
+     0.499,
+     0.536
+    ],
+    "difference": -0.0008,
+    "difference_ci_gene": [
+     -0.0032,
+     0.0015
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: curated vs H lines": {
+    "n_pos": 101,
+    "n_neg": 1475,
+    "count_matched": 0.5974,
+    "count_and_detail_matched": 0.5997,
+    "ci_gene": [
+     0.542,
+     0.648
+    ],
+    "difference": 0.0022,
+    "difference_ci_gene": [
+     -0.0369,
+     0.0262
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: curated vs other uncurated": {
+    "n_pos": 101,
+    "n_neg": 6812,
+    "count_matched": 0.7193,
+    "count_and_detail_matched": 0.7155,
+    "ci_gene": [
+     0.666,
+     0.791
+    ],
+    "difference": -0.0038,
+    "difference_ci_gene": [
+     -0.0232,
+     0.0067
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "support: H lines without curated gene vs other uncurated": {
+    "n_pos": 1398,
+    "n_neg": 6812,
+    "count_matched": 0.5436,
+    "count_and_detail_matched": 0.5421,
+    "ci_gene": [
+     0.521,
+     0.563
+    ],
+    "difference": -0.0015,
+    "difference_ci_gene": [
+     -0.0037,
+     0.0006
+    ],
+    "positive_cells_without_negatives": []
+   }
+  },
+  "MDD": {
+   "coverage: curated vs H lines": {
+    "n_pos": 8,
+    "n_neg": 169,
+    "count_matched": 0.9534,
+    "count_and_detail_matched": 0.9417,
+    "ci_gene": [
+     0.866,
+     1.0
+    ],
+    "difference": -0.0118,
+    "difference_ci_gene": [
+     -0.0669,
+     0.048
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: curated vs other uncurated": {
+    "n_pos": 8,
+    "n_neg": 8243,
+    "count_matched": 0.9339,
+    "count_and_detail_matched": 0.8959,
+    "ci_gene": [
+     0.816,
+     0.955
+    ],
+    "difference": -0.038,
+    "difference_ci_gene": [
+     -0.0745,
+     -0.0112
+    ],
+    "positive_cells_without_negatives": []
+   },
+   "coverage: H lines without curated gene vs other uncurated": {
+    "n_pos": 169,
+    "n_neg": 8243,
+    "count_matched": 0.5318,
+    "count_and_detail_matched": 0.5301,
+    "ci_gene": [
+     0.478,
+     0.576
+    ],
+    "difference": -0.0017,
+    "difference_ci_gene": [
+     -0.0079,
+     0.0042
+    ],
+    "positive_cells_without_negatives": []
+   }
+  }
+ }
+}

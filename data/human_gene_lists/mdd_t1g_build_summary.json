@@ -1,0 +1,28 @@
+{
+  "disorder": "MDD",
+  "fuma_dir": "FUMA_job738723",
+  "fuma_title": "MDD_2025",
+  "gwas_file": "MDD_PGCmdd2025_no23andMe_eur_FUMA_ready.txt.gz",
+  "genome_build": "GRCh37/hg19",
+  "refpanel": "1KG/Phase3",
+  "pop": "EUR",
+  "magma_window_kb": "35,10",
+  "n_genes_tested": 19941,
+  "bonferroni_threshold": 2.5073968206208318e-06,
+  "n_loci_in_GenomicRiskLoci": 243,
+  "mhc_region": "chr6:25000000-34000000 (hg19)",
+  "l2g_layer_applied": false,
+  "l2g_floor": null,
+  "counts": {
+    "magma_bonf_sig": 474,
+    "magma_bonf_sig_post_mhc": 419,
+    "locus_proximity_assigned": 186,
+    "t1g_REAL_gene_count": 186,
+    "t1g_PERMISSIVE_gene_count": 418
+  },
+  "real_set_definition": "MAGMA-Bonf \u2229 MHC-excluded \u2229 proximity-window (FUMA-only)",
+  "permissive_set_definition": "MAGMA-Bonf \u2229 MHC-excluded (no proximity gate, no L2G gate)",
+  "build_date": "2026-05-28",
+  "build_script": "build_t1g_multi_disorder.py",
+  "anticircularity": "PGC GWAS is human-derived only; no MGD/RGD/textmining-models contamination at this stage (DUAL_ROUTE_RESCUE_DESIGN.md \u00a73.2)."
+}

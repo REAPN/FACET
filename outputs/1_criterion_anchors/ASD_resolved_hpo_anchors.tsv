@@ -1,0 +1,47 @@
+hpo_id	hpo_label	normalized_phenotype	category	centrality	temporality	mapping_relation	confidence	manual_review
+HP:4000092	Poor conversational reciprocity	impaired reciprocal conversation	social_communication	core	current	exact	0.99	False
+HP:4000084	Reduced sharing of interests	reduced sharing of interests	social_communication	core	current	exact	0.99	False
+HP:5200030	Diminished integration of verbal and non-verbal communicative behavior	poor integration of verbal and nonverbal communication	social_communication	core	current	exact	0.99	False
+HP:0010529	Echolalia	echolalia	language	core	current	exact	0.99	False
+HP:5200130	Insistence on sameness	insistence on sameness	restricted_repetitive_behavior	core	current	exact	0.99	False
+HP:0000732	Inflexible adherence to routines	inflexible adherence to routines	restricted_repetitive_behavior	core	current	exact	0.99	False
+HP:4000070	Fixated interests	restricted interests	restricted_repetitive_behavior	core	current	exact	0.99	False
+HP:4000079	Sensory seeking	unusual sensory interest	sensory	core	current	exact	0.99	False
+HP:4000083	Lack of interest in peers	reduced interest in peers	social_communication	core	current	exact	0.98	False
+HP:0000733	Motor stereotypy	motor stereotypies	restricted_repetitive_behavior	core	current	exact	0.98	False
+HP:5200052	Resistance to trivial environmental changes	distress with small changes	restricted_repetitive_behavior	core	current	exact	0.97	False
+HP:5200027	Infrequent social initiations	very limited social initiation	social_communication	supporting	current	exact	0.97	False
+HP:0001344	Absent speech	absence of intelligible speech	language	supporting	current	exact	0.97	False
+HP:0034435	Abnormal eye contact	abnormal eye contact	social_communication	core	current	exact	0.96	False
+HP:0000758	Abnormal nonverbal communicative behavior	abnormal body language	social_communication	core	current	exact	0.96	False
+HP:0000728	Reduced ability to form peer relationships	difficulty making friends	social_communication	core	current	exact	0.95	False
+HP:5200108	Nonfunctional or atypical use of objects in play	lining up objects	restricted_repetitive_behavior	core	current	exact	0.95	False
+HP:5200059	Sensory hyposensitivity unexplained by sensory deficit	sensory hyporeactivity	sensory	core	current	exact	0.95	False
+HP:5200028	Reduced responsiveness to social cues	reduced response to social overtures	social_communication	supporting	current	exact	0.95	False
+HP:0010829	Impaired temperature sensation	reduced temperature sensitivity	sensory	core	current	broader_than_source	0.93	False
+HP:0033360	Impaired ability to shift attention	difficulty changing focus	restricted_repetitive_behavior	supporting	current	exact	0.93	False
+HP:0010863	Receptive language delay	receptive language delay relative to expressive language	language	supporting	developmental	exact	0.93	False
+HP:5200067	Visual sensory seeking	visual fascination with movement	sensory	core	current	exact	0.92	False
+HP:0004673	Decreased facial expression	reduced facial expression	social_communication	core	current	exact	0.9	False
+HP:5200058	Sensory hypersensitivity	sensory hyperreactivity	sensory	core	current	exact	0.9	False
+HP:4000081	Reduced production of gestures	reduced use of gestures	social_communication	core	current	exact	0.89	False
+HP:5200310	Diminishment of social interactions	decreased interest in social interactions	social_communication	supporting	current	exact	0.89	False
+HP:0025774	Idiosyncratic use of words	idiosyncratic phrases	language	core	current	exact	0.88	False
+HP:5200064	Olfactory sensory seeking	excessive smelling of objects	sensory	core	current	exact	0.88	False
+HP:0033056	Impaired ability to organize	organizational difficulties	other	supporting	current	exact	0.88	False
+HP:0033055	Impaired ability to plan	planning difficulties	other	supporting	current	exact	0.88	False
+HP:0012760	Reduced social responsiveness	reduced response to social interaction	social_communication	core	current	exact	0.84	False
+HP:5200035	Reduced cooperative imaginative play	reduced imaginative play sharing	social_communication	core	current	exact	0.84	False
+HP:0007328	Impaired pain sensation	reduced pain sensitivity	sensory	core	current	broader_than_source	0.84	False
+HP:5200061	Tactile hypersensitivity	texture hypersensitivity	sensory	core	current	exact	0.84	False
+HP:5200132	Atypical sensory examination of objects	excessive touching of objects	sensory	core	current	broader_than_source	0.84	False
+HP:0002465	Poor speech	limited intelligible speech	language	supporting	current	broader_than_source	0.84	False
+HP:5200136	Reduced social reciprocity	difficulty adjusting behavior to social context	social_communication	core	current	exact	0.82	False
+HP:5200129	Abnormal rituals	ritualized behavior	restricted_repetitive_behavior	core	current	exact	0.82	False
+HP:0034434	Abnormal communication	marked verbal social communication deficits	social_communication	supporting	current	broader_than_source	0.79	False
+HP:0012433	Abnormal social behavior	abnormal social approach	social_communication	core	current	broader_than_source	0.76	False
+HP:5200316	Diminishment of interpersonal communication	reduced sharing of emotions	social_communication	core	current	broader_than_source	0.72	False
+HP:4000090	Abnormal gesture use	impaired understanding of gestures	social_communication	core	current	broader_than_source	0.72	False
+HP:0410280	Pediatric onset	early developmental onset	developmental_course	core	developmental	broader_than_source	0.72	False
+HP:5200016	Abnormal peer relationships	odd attempts to make friends	social_communication	supporting	current	broader_than_source	0.72	False
+HP:5200123	Abnormal response to social norms	unusual social approaches	social_communication	supporting	current	broader_than_source	0.67	False

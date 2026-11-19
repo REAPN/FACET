@@ -1,0 +1,323 @@
+[
+ {
+  "analysis": "headline",
+  "disorder": "ASD",
+  "n_pos": 75,
+  "n_neg": 11886,
+  "pos_genes": 53,
+  "kish_pos": 24.14,
+  "dropped_replicates": 0,
+  "auroc": 0.9552403387739077,
+  "ci_genotype": [
+   0.9246,
+   0.9792
+  ],
+  "ci_gene": [
+   0.9144,
+   0.9857
+  ],
+  "width_ratio": 1.31,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.7726389589993831,
+  "delta_arm3": 0.18260137977452462,
+  "delta_arm3_ci_genotype": [
+   0.1277,
+   0.2389
+  ],
+  "delta_arm3_ci_gene": [
+   0.1203,
+   0.2555
+  ],
+  "delta_arm3_p_gene": 0.0,
+  "auroc_published": 0.6627752537999888,
+  "delta_published": 0.2924650849739189,
+  "delta_published_ci_genotype": [
+   0.2241,
+   0.3626
+  ],
+  "delta_published_ci_gene": [
+   0.2179,
+   0.3829
+  ],
+  "delta_published_p_gene": 0.0
+ },
+ {
+  "n_pos": 53,
+  "facet": [
+   0.9682,
+   0.957,
+   0.9691
+  ],
+  "arm3": [
+   0.769,
+   0.7486,
+   0.7876
+  ],
+  "published": [
+   0.6312,
+   0.6064,
+   0.6534
+  ],
+  "delta_arm3": [
+   0.1964
+  ],
+  "analysis": "one_allele_per_gene",
+  "disorder": "ASD"
+ },
+ {
+  "analysis": "fullpool",
+  "disorder": "ASD",
+  "n_pos": 75,
+  "n_neg": 32460,
+  "pos_genes": 53,
+  "kish_pos": 24.14,
+  "dropped_replicates": 0,
+  "auroc": 0.9667081536249743,
+  "ci_genotype": [
+   0.9382,
+   0.9883
+  ],
+  "ci_gene": [
+   0.9276,
+   0.9944
+  ],
+  "width_ratio": 1.33,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.8743524337646333,
+  "delta_arm3": 0.09235571986034097,
+  "delta_arm3_ci_genotype": [
+   0.0482,
+   0.1363
+  ],
+  "delta_arm3_ci_gene": [
+   0.0508,
+   0.1435
+  ],
+  "delta_arm3_p_gene": 0.0,
+  "auroc_published": 0.7187075374820292,
+  "delta_published": 0.2480006161429451,
+  "delta_published_ci_genotype": [
+   0.1774,
+   0.315
+  ],
+  "delta_published_ci_gene": [
+   0.1773,
+   0.3457
+  ],
+  "delta_published_p_gene": 0.0
+ },
+ {
+  "analysis": "headline",
+  "disorder": "SCZ",
+  "n_pos": 39,
+  "n_neg": 12447,
+  "pos_genes": 33,
+  "kish_pos": 27.65,
+  "dropped_replicates": 0,
+  "auroc": 0.6994992099836641,
+  "ci_genotype": [
+   0.6222,
+   0.7765
+  ],
+  "ci_gene": [
+   0.6143,
+   0.7796
+  ],
+  "width_ratio": 1.07,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.7834510632775274,
+  "delta_arm3": -0.08395185329386334,
+  "delta_arm3_ci_genotype": [
+   -0.1856,
+   0.0182
+  ],
+  "delta_arm3_ci_gene": [
+   -0.1893,
+   0.0089
+  ],
+  "delta_arm3_p_gene": 0.079,
+  "auroc_published": 0.7423300434869488,
+  "delta_published": -0.04283083350328465,
+  "delta_published_ci_genotype": [
+   -0.1381,
+   0.0583
+  ],
+  "delta_published_ci_gene": [
+   -0.1414,
+   0.051
+  ],
+  "delta_published_p_gene": 0.368
+ },
+ {
+  "n_pos": 33,
+  "facet": [
+   0.7026,
+   0.6869,
+   0.7193
+  ],
+  "arm3": [
+   0.7989,
+   0.7807,
+   0.8165
+  ],
+  "published": [
+   0.7554,
+   0.7389,
+   0.7624
+  ],
+  "delta_arm3": [
+   -0.1013
+  ],
+  "analysis": "one_allele_per_gene",
+  "disorder": "SCZ"
+ },
+ {
+  "analysis": "fullpool",
+  "disorder": "SCZ",
+  "n_pos": 39,
+  "n_neg": 32496,
+  "pos_genes": 33,
+  "kish_pos": 27.65,
+  "dropped_replicates": 0,
+  "auroc": 0.7267016690022599,
+  "ci_genotype": [
+   0.65,
+   0.8028
+  ],
+  "ci_gene": [
+   0.6444,
+   0.8101
+  ],
+  "width_ratio": 1.08,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.873012378643841,
+  "delta_arm3": -0.1463107096415811,
+  "delta_arm3_ci_genotype": [
+   -0.2358,
+   -0.0557
+  ],
+  "delta_arm3_ci_gene": [
+   -0.2376,
+   -0.0572
+  ],
+  "delta_arm3_p_gene": 0.004,
+  "auroc_published": 0.8108173471448952,
+  "delta_published": -0.08411567814263532,
+  "delta_published_ci_genotype": [
+   -0.1733,
+   0.0068
+  ],
+  "delta_published_ci_gene": [
+   -0.1802,
+   0.0162
+  ],
+  "delta_published_p_gene": 0.098
+ },
+ {
+  "analysis": "headline",
+  "disorder": "IDD",
+  "n_pos": 73,
+  "n_neg": 12309,
+  "pos_genes": 29,
+  "kish_pos": 5.24,
+  "dropped_replicates": 0,
+  "auroc": 0.7331710731762148,
+  "ci_genotype": [
+   0.6697,
+   0.797
+  ],
+  "ci_gene": [
+   0.6792,
+   0.8315
+  ],
+  "width_ratio": 1.2,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.7474523040831021,
+  "delta_arm3": -0.014281230906887377,
+  "delta_arm3_ci_genotype": [
+   -0.0853,
+   0.0562
+  ],
+  "delta_arm3_ci_gene": [
+   -0.0798,
+   0.1331
+  ],
+  "delta_arm3_p_gene": 0.858,
+  "auroc_published": 0.6428545990961063,
+  "delta_published": 0.09031647408010846,
+  "delta_published_ci_genotype": [
+   0.0032,
+   0.1745
+  ],
+  "delta_published_ci_gene": [
+   0.0185,
+   0.2259
+  ],
+  "delta_published_p_gene": 0.013
+ },
+ {
+  "n_pos": 29,
+  "facet": [
+   0.7811,
+   0.7593,
+   0.8016
+  ],
+  "arm3": [
+   0.7538,
+   0.7214,
+   0.7847
+  ],
+  "published": [
+   0.6558,
+   0.62,
+   0.6882
+  ],
+  "delta_arm3": [
+   0.0288
+  ],
+  "analysis": "one_allele_per_gene",
+  "disorder": "IDD"
+ },
+ {
+  "analysis": "fullpool",
+  "disorder": "IDD",
+  "n_pos": 80,
+  "n_neg": 32455,
+  "pos_genes": 29,
+  "kish_pos": 5.17,
+  "dropped_replicates": 0,
+  "auroc": 0.7407768448621168,
+  "ci_genotype": [
+   0.6818,
+   0.7941
+  ],
+  "ci_gene": [
+   0.6869,
+   0.8563
+  ],
+  "width_ratio": 1.51,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_arm3": 0.8428377753812972,
+  "delta_arm3": -0.10206093051918042,
+  "delta_arm3_ci_genotype": [
+   -0.162,
+   -0.0402
+  ],
+  "delta_arm3_ci_gene": [
+   -0.16,
+   0.0385
+  ],
+  "delta_arm3_p_gene": 0.164,
+  "auroc_published": 0.716488214450778,
+  "delta_published": 0.024288630411338774,
+  "delta_published_ci_genotype": [
+   -0.0608,
+   0.1108
+  ],
+  "delta_published_ci_gene": [
+   -0.0661,
+   0.1925
+  ],
+  "delta_published_p_gene": 0.55
+ }
+]

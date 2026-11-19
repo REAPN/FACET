@@ -1,0 +1,407 @@
+{
+ "classes": [
+  [
+   "social and vocal",
+   [
+    "MP:0002557",
+    "MP:0001529"
+   ]
+  ],
+  [
+   "cognition",
+   [
+    "MP:0014114"
+   ]
+  ],
+  [
+   "emotion and affect",
+   [
+    "MP:0002572"
+   ]
+  ],
+  [
+   "motor behavior",
+   [
+    "MP:0002066"
+   ]
+  ],
+  [
+   "other behavior",
+   [
+    "MP:0004924",
+    "MP:0002067",
+    "MP:0002064"
+   ]
+  ],
+  [
+   "nervous system morphology",
+   [
+    "MP:0003632"
+   ]
+  ],
+  [
+   "nervous system physiology",
+   [
+    "MP:0003633"
+   ]
+  ],
+  [
+   "mortality and growth",
+   [
+    "MP:0010768",
+    "MP:0005378"
+   ]
+  ],
+  [
+   "other physiology and morphology",
+   []
+  ]
+ ],
+ "curated": {
+  "ASD": {
+   "n": 85,
+   "n_terms": 1016,
+   "share": {
+    "social and vocal": 0.1673,
+    "cognition": 0.0955,
+    "emotion and affect": 0.0699,
+    "motor behavior": 0.1457,
+    "other behavior": 0.0787,
+    "nervous system morphology": 0.1762,
+    "nervous system physiology": 0.1427,
+    "mortality and growth": 0.0522,
+    "other physiology and morphology": 0.0719
+   },
+   "carries": {
+    "social and vocal": 0.9059,
+    "cognition": 0.5765,
+    "emotion and affect": 0.5529,
+    "motor behavior": 0.7765,
+    "other behavior": 0.6941,
+    "nervous system morphology": 0.5765,
+    "nervous system physiology": 0.6824,
+    "mortality and growth": 0.3176,
+    "other physiology and morphology": 0.3176
+   }
+  },
+  "SCZ": {
+   "n": 42,
+   "n_terms": 440,
+   "share": {
+    "social and vocal": 0.0614,
+    "cognition": 0.1545,
+    "emotion and affect": 0.0818,
+    "motor behavior": 0.1682,
+    "other behavior": 0.0432,
+    "nervous system morphology": 0.1955,
+    "nervous system physiology": 0.1455,
+    "mortality and growth": 0.0432,
+    "other physiology and morphology": 0.1068
+   },
+   "carries": {
+    "social and vocal": 0.4286,
+    "cognition": 0.7381,
+    "emotion and affect": 0.5476,
+    "motor behavior": 0.7619,
+    "other behavior": 0.381,
+    "nervous system morphology": 0.5238,
+    "nervous system physiology": 0.7381,
+    "mortality and growth": 0.2143,
+    "other physiology and morphology": 0.3571
+   }
+  },
+  "IDD": {
+   "n": 121,
+   "n_terms": 1447,
+   "share": {
+    "social and vocal": 0.0422,
+    "cognition": 0.0885,
+    "emotion and affect": 0.0428,
+    "motor behavior": 0.1576,
+    "other behavior": 0.0491,
+    "nervous system morphology": 0.2177,
+    "nervous system physiology": 0.0684,
+    "mortality and growth": 0.1437,
+    "other physiology and morphology": 0.19
+   },
+   "carries": {
+    "social and vocal": 0.2975,
+    "cognition": 0.4959,
+    "emotion and affect": 0.405,
+    "motor behavior": 0.7025,
+    "other behavior": 0.438,
+    "nervous system morphology": 0.6529,
+    "nervous system physiology": 0.405,
+    "mortality and growth": 0.686,
+    "other physiology and morphology": 0.595
+   }
+  },
+  "NCD": {
+   "n": 71,
+   "n_terms": 868,
+   "share": {
+    "social and vocal": 0.0023,
+    "cognition": 0.038,
+    "emotion and affect": 0.015,
+    "motor behavior": 0.2108,
+    "other behavior": 0.0392,
+    "nervous system morphology": 0.2776,
+    "nervous system physiology": 0.0449,
+    "mortality and growth": 0.0806,
+    "other physiology and morphology": 0.2915
+   },
+   "carries": {
+    "social and vocal": 0.0282,
+    "cognition": 0.3099,
+    "emotion and affect": 0.1408,
+    "motor behavior": 0.7606,
+    "other behavior": 0.2817,
+    "nervous system morphology": 0.8028,
+    "nervous system physiology": 0.2958,
+    "mortality and growth": 0.5634,
+    "other physiology and morphology": 0.7042
+   }
+  },
+  "MDD": {
+   "n": 8,
+   "n_terms": 86,
+   "share": {
+    "social and vocal": 0.1628,
+    "cognition": 0.1279,
+    "emotion and affect": 0.2209,
+    "motor behavior": 0.0233,
+    "other behavior": 0.0698,
+    "nervous system morphology": 0.1744,
+    "nervous system physiology": 0.1744,
+    "mortality and growth": 0.0,
+    "other physiology and morphology": 0.0465
+   },
+   "carries": {
+    "social and vocal": 0.625,
+    "cognition": 0.5,
+    "emotion and affect": 1.0,
+    "motor behavior": 0.25,
+    "other behavior": 0.375,
+    "nervous system morphology": 0.5,
+    "nervous system physiology": 0.875,
+    "mortality and growth": 0.0,
+    "other physiology and morphology": 0.375
+   }
+  }
+ },
+ "background": {
+  "ASD": {
+   "n": 32450,
+   "n_terms": 320501,
+   "share": {
+    "social and vocal": 0.0032,
+    "cognition": 0.0078,
+    "emotion and affect": 0.0052,
+    "motor behavior": 0.0421,
+    "other behavior": 0.013,
+    "nervous system morphology": 0.0809,
+    "nervous system physiology": 0.0186,
+    "mortality and growth": 0.1352,
+    "other physiology and morphology": 0.694
+   },
+   "carries": {
+    "social and vocal": 0.0234,
+    "cognition": 0.0477,
+    "emotion and affect": 0.0386,
+    "motor behavior": 0.1947,
+    "other behavior": 0.0891,
+    "nervous system morphology": 0.2311,
+    "nervous system physiology": 0.1064,
+    "mortality and growth": 0.579,
+    "other physiology and morphology": 0.9183
+   }
+  },
+  "SCZ": {
+   "n": 32493,
+   "n_terms": 321077,
+   "share": {
+    "social and vocal": 0.0037,
+    "cognition": 0.0079,
+    "emotion and affect": 0.0053,
+    "motor behavior": 0.0423,
+    "other behavior": 0.0131,
+    "nervous system morphology": 0.081,
+    "nervous system physiology": 0.0189,
+    "mortality and growth": 0.135,
+    "other physiology and morphology": 0.6928
+   },
+   "carries": {
+    "social and vocal": 0.0252,
+    "cognition": 0.0482,
+    "emotion and affect": 0.0393,
+    "motor behavior": 0.1955,
+    "other behavior": 0.0903,
+    "nervous system morphology": 0.2316,
+    "nervous system physiology": 0.1071,
+    "mortality and growth": 0.5788,
+    "other physiology and morphology": 0.9175
+   }
+  },
+  "IDD": {
+   "n": 32414,
+   "n_terms": 320070,
+   "share": {
+    "social and vocal": 0.0036,
+    "cognition": 0.0077,
+    "emotion and affect": 0.0053,
+    "motor behavior": 0.0419,
+    "other behavior": 0.013,
+    "nervous system morphology": 0.0806,
+    "nervous system physiology": 0.0188,
+    "mortality and growth": 0.1349,
+    "other physiology and morphology": 0.6943
+   },
+   "carries": {
+    "social and vocal": 0.0247,
+    "cognition": 0.0474,
+    "emotion and affect": 0.0386,
+    "motor behavior": 0.1943,
+    "other behavior": 0.0893,
+    "nervous system morphology": 0.2304,
+    "nervous system physiology": 0.1068,
+    "mortality and growth": 0.5779,
+    "other physiology and morphology": 0.918
+   }
+  },
+  "NCD": {
+   "n": 32464,
+   "n_terms": 320649,
+   "share": {
+    "social and vocal": 0.0038,
+    "cognition": 0.008,
+    "emotion and affect": 0.0054,
+    "motor behavior": 0.042,
+    "other behavior": 0.0131,
+    "nervous system morphology": 0.0806,
+    "nervous system physiology": 0.019,
+    "mortality and growth": 0.135,
+    "other physiology and morphology": 0.6931
+   },
+   "carries": {
+    "social and vocal": 0.0257,
+    "cognition": 0.0485,
+    "emotion and affect": 0.0398,
+    "motor behavior": 0.195,
+    "other behavior": 0.0902,
+    "nervous system morphology": 0.2307,
+    "nervous system physiology": 0.1075,
+    "mortality and growth": 0.5783,
+    "other physiology and morphology": 0.9172
+   }
+  },
+  "MDD": {
+   "n": 32527,
+   "n_terms": 321431,
+   "share": {
+    "social and vocal": 0.0037,
+    "cognition": 0.008,
+    "emotion and affect": 0.0054,
+    "motor behavior": 0.0424,
+    "other behavior": 0.0132,
+    "nervous system morphology": 0.0811,
+    "nervous system physiology": 0.019,
+    "mortality and growth": 0.1349,
+    "other physiology and morphology": 0.6922
+   },
+   "carries": {
+    "social and vocal": 0.0255,
+    "cognition": 0.0489,
+    "emotion and affect": 0.0398,
+    "motor behavior": 0.1962,
+    "other behavior": 0.0906,
+    "nervous system morphology": 0.2319,
+    "nervous system physiology": 0.1078,
+    "mortality and growth": 0.5784,
+    "other physiology and morphology": 0.9169
+   }
+  }
+ },
+ "pool": {
+  "n": 32535,
+  "n_terms": 321517,
+  "share": {
+   "social and vocal": 0.0038,
+   "cognition": 0.0081,
+   "emotion and affect": 0.0054,
+   "motor behavior": 0.0424,
+   "other behavior": 0.0132,
+   "nervous system morphology": 0.0812,
+   "nervous system physiology": 0.019,
+   "mortality and growth": 0.1349,
+   "other physiology and morphology": 0.692
+  },
+  "carries": {
+   "social and vocal": 0.0257,
+   "cognition": 0.0491,
+   "emotion and affect": 0.04,
+   "motor behavior": 0.1962,
+   "other behavior": 0.0906,
+   "nervous system morphology": 0.232,
+   "nervous system physiology": 0.1079,
+   "mortality and growth": 0.5783,
+   "other physiology and morphology": 0.9168
+  }
+ },
+ "admitted_terms_by_class": {
+  "ASD": {
+   "social and vocal": 17,
+   "cognition": 3,
+   "emotion and affect": 2,
+   "motor behavior": 21,
+   "other behavior": 18,
+   "nervous system morphology": 0,
+   "nervous system physiology": 0,
+   "mortality and growth": 0,
+   "other physiology and morphology": 0
+  },
+  "SCZ": {
+   "social and vocal": 4,
+   "cognition": 1,
+   "emotion and affect": 5,
+   "motor behavior": 30,
+   "other behavior": 3,
+   "nervous system morphology": 0,
+   "nervous system physiology": 0,
+   "mortality and growth": 0,
+   "other physiology and morphology": 0
+  },
+  "IDD": {
+   "social and vocal": 13,
+   "cognition": 36,
+   "emotion and affect": 1,
+   "motor behavior": 2,
+   "other behavior": 1,
+   "nervous system morphology": 0,
+   "nervous system physiology": 0,
+   "mortality and growth": 0,
+   "other physiology and morphology": 0
+  },
+  "NCD": {
+   "social and vocal": 3,
+   "cognition": 32,
+   "emotion and affect": 0,
+   "motor behavior": 7,
+   "other behavior": 6,
+   "nervous system morphology": 1,
+   "nervous system physiology": 1,
+   "mortality and growth": 0,
+   "other physiology and morphology": 0
+  },
+  "MDD": {
+   "social and vocal": 2,
+   "cognition": 0,
+   "emotion and affect": 3,
+   "motor behavior": 9,
+   "other behavior": 12,
+   "nervous system morphology": 0,
+   "nervous system physiology": 0,
+   "mortality and growth": 5,
+   "other physiology and morphology": 0
+  }
+ }
+}

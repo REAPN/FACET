@@ -1,0 +1,1712 @@
+[
+ {
+  "pid": "P5b67b4",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0007328",
+  "hpo_label": "Impaired pain sensation",
+  "mp_id": "MP:0020955",
+  "mp_label": "increased mechanical nociceptive threshold",
+  "mp_def": "a higher than average point at which mechanical pain sensation is first detectable"
+ },
+ {
+  "pid": "P3bb9f7",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0010829",
+  "hpo_label": "Impaired temperature sensation",
+  "mp_id": "MP:0001973",
+  "mp_label": "increased thermal nociceptive threshold",
+  "mp_def": "a greater than average point at which thermal pain sensation is first detectable"
+ },
+ {
+  "pid": "P4cbae1",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0001525",
+  "mp_label": "impaired balance",
+  "mp_def": "reduced ability of an animal to maintain equilibrium"
+ },
+ {
+  "pid": "P28e9f4",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0010323",
+  "mp_label": "retropulsion",
+  "mp_def": "a tendency to step or walk backwards"
+ },
+ {
+  "pid": "Pb8c390",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200310",
+  "hpo_label": "Diminishment of social interactions",
+  "mp_id": "MP:0020395",
+  "mp_label": "abnormal response to social novelty",
+  "mp_def": "any anomaly in the interaction of an individual with a familiar versus a novel individual of the same species; in mouse the typical behavior is for increased interaction with the novel individual"
+ },
+ {
+  "pid": "Pd224fd",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0001468",
+  "mp_label": "abnormal temporal memory",
+  "mp_def": "anomaly in the ability to recall temporal events and stimuli"
+ },
+ {
+  "pid": "Pde4aa9",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0002799",
+  "mp_label": "abnormal passive avoidance behavior",
+  "mp_def": "anomaly in the ability of an animal to enter an hostile environment where it receives a unpleasant or punishing stimuli applied previously with prolonged latency"
+ },
+ {
+  "pid": "Pb3db5f",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0010829",
+  "hpo_label": "Impaired temperature sensation",
+  "mp_id": "MP:0009753",
+  "mp_label": "enhanced behavioral response to morphine",
+  "mp_def": "increased sensitivity to morphine resulting in a behavioral response, such as induced hyperactivity or stereotypic behavior, or decreased dosage threshold for the appearance of the behavioral response"
+ },
+ {
+  "pid": "P9f1710",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0010829",
+  "hpo_label": "Impaired temperature sensation",
+  "mp_id": "MP:0011040",
+  "mp_label": "abnormal vestibuloocular light reflex",
+  "mp_def": "any anomaly in the nystagmus or deviation of the eyes in response to stimulation of the vestibular system when the test is run with light"
+ },
+ {
+  "pid": "Pd2bbf2",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0020157",
+  "mp_label": "abnormal behavioral response to alcohol",
+  "mp_def": "any anomaly in the behavioral response induced by alcohol, such as induced hyperactivity or stereotypic behavior"
+ },
+ {
+  "pid": "Pf72ac8",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized speech. Speech that is incoherent or repeatedly derails.",
+  "hpo_id": "HP:0025769",
+  "hpo_label": "Disordered formal thought process",
+  "mp_id": "MP:0004081",
+  "mp_label": "abnormal globus pallidus morphology",
+  "mp_def": "any structural anomaly of one of the basal ganglia involved with control of voluntary movement in the brain; consists of an external and an internal segment"
+ },
+ {
+  "pid": "Pd2152d",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0010522",
+  "hpo_label": "Dyslexia",
+  "mp_id": "MP:0012296",
+  "mp_label": "impaired discrimination learning",
+  "mp_def": "impaired ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus"
+ },
+ {
+  "pid": "P9bb718",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002186",
+  "hpo_label": "Apraxia",
+  "mp_id": "MP:0001388",
+  "mp_label": "abnormal stationary movement",
+  "mp_def": "altered ability or inability to change body posture or shift a body part"
+ },
+ {
+  "pid": "P074e65",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002186",
+  "hpo_label": "Apraxia",
+  "mp_id": "MP:0012690",
+  "mp_label": "abnormal stride length",
+  "mp_def": "abnormal average distance between steps"
+ },
+ {
+  "pid": "Pb1d1f8",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0001408",
+  "mp_label": "stereotypic behavior",
+  "mp_def": "repetitive, invariant, perseverative motor patterns that do not appear to be purposeful"
+ },
+ {
+  "pid": "P6d07e0",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200059",
+  "hpo_label": "Sensory hyposensitivity unexplained by sensory deficit",
+  "mp_id": "MP:0003663",
+  "mp_label": "abnormal thermosensation",
+  "mp_def": "defect in the ability to sense or display a preference for a given temperature"
+ },
+ {
+  "pid": "Pf8d219",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001409",
+  "mp_label": "increased stereotypic behavior",
+  "mp_def": "more frequent incidence of repetitive, invariant, perseverative motor patterns that do not appear to be purposeful"
+ },
+ {
+  "pid": "P0c6797",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0001522",
+  "mp_label": "impaired swimming",
+  "mp_def": "reduced ability or inability to swim"
+ },
+ {
+  "pid": "Pdec823",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200310",
+  "hpo_label": "Diminishment of social interactions",
+  "mp_id": "MP:0020437",
+  "mp_label": "abnormal social play behavior",
+  "mp_def": "behavior performed in the absence of normal stimuli or behavior elicited by normal stimuli but not followed to the completion of the ritualized behavior pattern that is associated with the socialization of an individual into the group"
+ },
+ {
+  "pid": "Pd10d6b",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0033051",
+  "hpo_label": "Impaired executive functioning",
+  "mp_id": "MP:0014370",
+  "mp_label": "impaired spatial working memory",
+  "mp_def": "impaired ability to spontaneously process spatial location information in order to navigate or perform other behavior using such location cues, without previous encounters or training at that location"
+ },
+ {
+  "pid": "Pa8439a",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0001268",
+  "hpo_label": "Mental deterioration",
+  "mp_id": "MP:0021008",
+  "mp_label": "temporal lobe atrophy",
+  "mp_def": "acquired diminution of the size of the lower lateral part of the cerebral hemisphere"
+ },
+ {
+  "pid": "P2cbcea",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:0033360",
+  "hpo_label": "Impaired ability to shift attention",
+  "mp_id": "MP:0001458",
+  "mp_label": "abnormal object recognition memory",
+  "mp_def": "anomaly in the ability to recognize objects that the animal has previously encountered; recognition is measured by relative amount of time exploring objects, which should decrease upon subsequent or multiple presentations of the same object when presented with novel objects at the same time"
+ },
+ {
+  "pid": "P22d1ea",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200059",
+  "hpo_label": "Sensory hyposensitivity unexplained by sensory deficit",
+  "mp_id": "MP:0013173",
+  "mp_label": "trigeminal ganglion degeneration",
+  "mp_def": "retrogressive pathological change of the group of sensory neuron cell bodies associated with the trigeminal nerve (fifth cranial nerve)"
+ },
+ {
+  "pid": "Pc5e0c1",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized speech. Speech that is incoherent or repeatedly derails.",
+  "hpo_id": "HP:0025769",
+  "hpo_label": "Disordered formal thought process",
+  "mp_id": "MP:0009976",
+  "mp_label": "abnormal cerebellar peduncle morphology",
+  "mp_def": "any structural anomaly of any of the three large paired bundles of nerve fibers that connect the cerebellum to the brain stem"
+ },
+ {
+  "pid": "P504fbc",
+  "disorder": "Schizophrenia",
+  "criterion": "Delusions. Firmly held false beliefs maintained despite clear counterevidence.",
+  "hpo_id": "HP:0000746",
+  "hpo_label": "Delusion",
+  "mp_id": "MP:0012805",
+  "mp_label": "decreased rhombomere 6 size",
+  "mp_def": "reduced size of the sixth transiently divided segment of the developing rhombencephalon; rhombomeres are lineage restricted, express different genes from one another, and adopt different developmental fates; rhombomeres are numbered in caudal to rostral order"
+ },
+ {
+  "pid": "P7f4544",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0010526",
+  "hpo_label": "Dysgraphia",
+  "mp_id": "MP:0000756",
+  "mp_label": "forelimb paralysis",
+  "mp_def": "severe or complete loss of power of voluntary movement in muscles of the forelimb through injury or disease of it or its nerve supply"
+ },
+ {
+  "pid": "P09a74e",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:5200118",
+  "hpo_label": "Difficulty recognizing another's emotions",
+  "mp_id": "MP:0002573",
+  "mp_label": "behavioral despair",
+  "mp_def": "depression assayed by reduced escape attempts and/or immobility when placed in a stressful situation such as a forced swim test or a suspension test; or failure to seek pleasurable stimuli"
+ },
+ {
+  "pid": "Pebb177",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Everyday independence. Decline large enough that help is needed with everyday tasks.",
+  "hpo_id": "HP:0031062",
+  "hpo_label": "Impaired transferring ability",
+  "mp_id": "MP:0012296",
+  "mp_label": "impaired discrimination learning",
+  "mp_def": "impaired ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus"
+ },
+ {
+  "pid": "P731b81",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:0012433",
+  "hpo_label": "Abnormal social behavior",
+  "mp_id": "MP:0021115",
+  "mp_label": "abnormal aggression towards conspecific",
+  "mp_def": "any anomaly in the level of domineering, assaultive posture and/or hostile physical action displayed toward another individual(s) of the same species"
+ },
+ {
+  "pid": "P69495d",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Nonverbal communicative behavior. Reduced communicative use of gaze, gesture, and facial expression.",
+  "hpo_id": "HP:0000758",
+  "hpo_label": "Abnormal nonverbal communicative behavior",
+  "mp_id": "MP:0020351",
+  "mp_label": "decreased vocalization",
+  "mp_def": "decrease in the production of vocal sound"
+ },
+ {
+  "pid": "Pdd76da",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001408",
+  "mp_label": "stereotypic behavior",
+  "mp_def": "repetitive, invariant, perseverative motor patterns that do not appear to be purposeful"
+ },
+ {
+  "pid": "P0a48e2",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001396",
+  "mp_label": "unidirectional circling",
+  "mp_def": "circling behavior in one direction only, either clockwise or counterclockwise"
+ },
+ {
+  "pid": "P7a26b5",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0001328",
+  "hpo_label": "Specific learning disability",
+  "mp_id": "MP:0009454",
+  "mp_label": "impaired contextual conditioning behavior",
+  "mp_def": "decrease in the ability of an animal to learn and remember an association between an aversive experience (the unconditioned stimulus (US), usually a shock) and the neutral, unchanging environment (the conditioned stimulus (CS), or the environmental context in this case)"
+ },
+ {
+  "pid": "Pa45929",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0002805",
+  "mp_label": "abnormal conditioned taste aversion behavior",
+  "mp_def": "anomaly in the ability of an animal to learn to avoid food sources that were previously associated with aversive internal stimuli or sickness such as a drug that induces sickness"
+ },
+ {
+  "pid": "P41a48c",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0014367",
+  "mp_label": "impaired long-term object recognition memory",
+  "mp_def": "impairment of the long-term memory for objects that is consolidated over hours and days after training"
+ },
+ {
+  "pid": "P15d8ec",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200132",
+  "hpo_label": "Atypical sensory examination of objects",
+  "mp_id": "MP:0020863",
+  "mp_label": "abnormal suckling reflex",
+  "mp_def": "any anomaly in the ability to orient and open/close mouth in sucking pattern in response to external light touching or stroking of the chin"
+ },
+ {
+  "pid": "P162eff",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200129",
+  "hpo_label": "Abnormal rituals",
+  "mp_id": "MP:0008414",
+  "mp_label": "abnormal spatial reference memory",
+  "mp_def": "anomaly in the ability to recall spatial location information from previous encounters or training sessions in order to navigate or perform other behavior using such location cues"
+ },
+ {
+  "pid": "P6fab94",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized speech. Speech that is incoherent or repeatedly derails.",
+  "hpo_id": "HP:0025769",
+  "hpo_label": "Disordered formal thought process",
+  "mp_id": "MP:0009468",
+  "mp_label": "absent magnocellular neurosecretory cells",
+  "mp_def": "absence of the cells residing mainly in the hypothalamic supraoptic and paraventricular nuclei and in a number of smaller accessory cell groups between these two nuclei, and secrete the hormones oxytocin and vasopressin"
+ },
+ {
+  "pid": "Pda6427",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0009988",
+  "mp_label": "abnormal cerebellum vermis lobule I morphology",
+  "mp_def": "any structural anomaly of the rostral most of the vermis lobules"
+ },
+ {
+  "pid": "P440fcf",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0007086",
+  "hpo_label": "Social and occupational deterioration",
+  "mp_id": "MP:0008779",
+  "mp_label": "abnormal maternal behavior",
+  "mp_def": "any anomaly in any response from the mother or attending female related to the ability of young to thrive"
+ },
+ {
+  "pid": "P34d945",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0010863",
+  "hpo_label": "Receptive language delay",
+  "mp_id": "MP:0014365",
+  "mp_label": "impaired short-term object recognition memory",
+  "mp_def": "impaired ability of short-term memory to recognize objects during the first few minutes after training"
+ },
+ {
+  "pid": "P1b219f",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0030784",
+  "hpo_label": "Anomic aphasia",
+  "mp_id": "MP:0002806",
+  "mp_label": "abnormal conditioned emotional response",
+  "mp_def": "anomaly in an emotional response that has been acquired by conditioning"
+ },
+ {
+  "pid": "P42e9a1",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Peer relationships. Difficulty forming and keeping social relationships.",
+  "hpo_id": "HP:0000728",
+  "hpo_label": "Reduced ability to form peer relationships",
+  "mp_id": "MP:0021111",
+  "mp_label": "decreased social investigation",
+  "mp_def": "decrease in the tendency for animals to approach and examine conspecifics"
+ },
+ {
+  "pid": "Pb4ef21",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200129",
+  "hpo_label": "Abnormal rituals",
+  "mp_id": "MP:0001409",
+  "mp_label": "increased stereotypic behavior",
+  "mp_def": "more frequent incidence of repetitive, invariant, perseverative motor patterns that do not appear to be purposeful"
+ },
+ {
+  "pid": "P30e642",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:5200045",
+  "hpo_label": "Reduced impulse control",
+  "mp_id": "MP:0020340",
+  "mp_label": "abnormal inhibitory learning",
+  "mp_def": "anomaly in the process by which a subject learns to suppress a prior learned response"
+ },
+ {
+  "pid": "P1f61e7",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0002690",
+  "mp_label": "akinesia",
+  "mp_def": "acquired absence of voluntary movement or loss of the ability to move such as temporary or prolonged paralysis or freezing in place"
+ },
+ {
+  "pid": "Pe72916",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200024",
+  "hpo_label": "Abnormal relationship",
+  "mp_id": "MP:0014416",
+  "mp_label": "decreased social novelty preference",
+  "mp_def": "reduction in the time spent with or preference for interactions with a novel individual of the same species versus with a familiar individual of the same species"
+ },
+ {
+  "pid": "Pec65c7",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0033692",
+  "hpo_label": "Declarative memory loss",
+  "mp_id": "MP:0001463",
+  "mp_label": "abnormal spatial learning",
+  "mp_def": "anomaly in the ability to ascertain or acquire spatial location information in order to improve navigation or other behavior using such location cues"
+ },
+ {
+  "pid": "P5aff31",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0008432",
+  "mp_label": "abnormal long-term spatial reference memory",
+  "mp_def": "anomaly in long-term memory for spatial location information that is consolidated over hours and days after training or an encounter at that location"
+ },
+ {
+  "pid": "Pfdde42",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:0012433",
+  "hpo_label": "Abnormal social behavior",
+  "mp_id": "MP:0009748",
+  "mp_label": "abnormal behavioral response to addictive substance",
+  "mp_def": "any anomaly in the behavioral response induced by an addictive substance, such as induced hyperactivity or stereotypic behavior"
+ },
+ {
+  "pid": "P6ca164",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Nonverbal communicative behavior. Reduced communicative use of gaze, gesture, and facial expression.",
+  "hpo_id": "HP:0000758",
+  "hpo_label": "Abnormal nonverbal communicative behavior",
+  "mp_id": "MP:0009751",
+  "mp_label": "enhanced behavioral response to alcohol",
+  "mp_def": "increased sensitivity to alcohol resulting in a behavioral response, such as induced hyperactivity or stereotypic behavior, or decreased dosage threshold for the appearance of the behavioral response"
+ },
+ {
+  "pid": "Pdf3352",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0009754",
+  "mp_label": "enhanced behavioral response to cocaine",
+  "mp_def": "increased sensitivity to cocaine resulting in a behavioral response, such as induced hyperactivity or stereotypic behavior, or decreased dosage threshold for the appearance of the behavioral response"
+ },
+ {
+  "pid": "Pb13223",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0013219",
+  "mp_label": "abnormal substantia nigra pars compacta morphology",
+  "mp_def": "any structural anomaly of the posterior (dorsal) part of grey matter of the substantia nigra which contains large, polygonal, and densely packed dopamine-producing cells; pars compacta neurons are pigmented in many species"
+ },
+ {
+  "pid": "P282dfc",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:5200401",
+  "hpo_label": "Abnormal judgment",
+  "mp_id": "MP:0012317",
+  "mp_label": "impaired conditioning behavior",
+  "mp_def": "impaired ability to change behavior in response to a reward or punishment each time an action is performed"
+ },
+ {
+  "pid": "P934440",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0030784",
+  "hpo_label": "Anomic aphasia",
+  "mp_id": "MP:0010654",
+  "mp_label": "slow Wallerian degeneration",
+  "mp_def": "an increase in the length of time for the process of progressive degeneration of axons distal to an injury to occur"
+ },
+ {
+  "pid": "Pa180e0",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0010794",
+  "hpo_label": "Impaired visuospatial constructive cognition",
+  "mp_id": "MP:0008431",
+  "mp_label": "abnormal short-term spatial reference memory",
+  "mp_def": "anomaly in the short-term memory for spatial location information that is established during the first few minutes after training or an encounter at that location"
+ },
+ {
+  "pid": "P2f3d39",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:0012433",
+  "hpo_label": "Abnormal social behavior",
+  "mp_id": "MP:0001361",
+  "mp_label": "social withdrawal",
+  "mp_def": "reclusive behavior; the tendency to refrain from participating in social situations and to seek isolation"
+ },
+ {
+  "pid": "Pf8e0ca",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:5200028",
+  "hpo_label": "Reduced responsiveness to social cues",
+  "mp_id": "MP:0021111",
+  "mp_label": "decreased social investigation",
+  "mp_def": "decrease in the tendency for animals to approach and examine conspecifics"
+ },
+ {
+  "pid": "P96e58c",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:5200045",
+  "hpo_label": "Reduced impulse control",
+  "mp_id": "MP:0004000",
+  "mp_label": "impaired passive avoidance behavior",
+  "mp_def": "decrease in or absence of the latency of an animal to enter an hostile environment where it receives a unpleasant or punishing stimuli applied previously"
+ },
+ {
+  "pid": "P9e800d",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001527",
+  "mp_label": "athetotic walking movements",
+  "mp_def": "characterized by slow, writhing involuntary movements of flexion, extension, pronation and supination of the paws and toes"
+ },
+ {
+  "pid": "P3599a6",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0012296",
+  "mp_label": "impaired discrimination learning",
+  "mp_def": "impaired ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus"
+ },
+ {
+  "pid": "Pe1b4ee",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:5200118",
+  "hpo_label": "Difficulty recognizing another's emotions",
+  "mp_id": "MP:0021112",
+  "mp_label": "impaired social recognition",
+  "mp_def": "reduction in the ability of an individual to recognize another individual of the same species during repeated encounters"
+ },
+ {
+  "pid": "P350f2a",
+  "disorder": "Major depressive disorder",
+  "criterion": "Sleep disturbance. Sleeping far less or far more than usual.",
+  "hpo_id": "HP:0100785",
+  "hpo_label": "Insomnia",
+  "mp_id": "MP:0001501",
+  "mp_label": "abnormal sleep pattern",
+  "mp_def": "deviation from the normal wake/sleep cycle"
+ },
+ {
+  "pid": "P609f12",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200129",
+  "hpo_label": "Abnormal rituals",
+  "mp_id": "MP:0031122",
+  "mp_label": "areflexia",
+  "mp_def": "complete absence or loss of neurological reflexes"
+ },
+ {
+  "pid": "P9d180c",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200129",
+  "hpo_label": "Abnormal rituals",
+  "mp_id": "MP:0001650",
+  "mp_label": "abnormal seizure response to electrical stimulation",
+  "mp_def": "anomaly in the seizure activity response that is brought about by high or low frequency electrical stimulation"
+ },
+ {
+  "pid": "P5ad91c",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0030141",
+  "mp_label": "facial paralysis",
+  "mp_def": "severe or complete loss of power of voluntary movement in muscles of the face through injury or disease of it or its nerve supply; facial muscles are innervated by the facial nerve (i.e., the seventh cranial nerve)"
+ },
+ {
+  "pid": "P13ea3b",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized speech. Speech that is incoherent or repeatedly derails.",
+  "hpo_id": "HP:0025769",
+  "hpo_label": "Disordered formal thought process",
+  "mp_id": "MP:0012803",
+  "mp_label": "absent rhombomere 5",
+  "mp_def": "absence of the fifth transiently divided segment of the developing rhombencephalon; rhombomeres are lineage restricted, express different genes from one another, and adopt different developmental fates; rhombomeres are numbered in caudal to rostral order"
+ },
+ {
+  "pid": "P14db41",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0010526",
+  "hpo_label": "Dysgraphia",
+  "mp_id": "MP:0000754",
+  "mp_label": "paresis",
+  "mp_def": "mild or partial loss of power of voluntary movement in a muscle through injury or disease of it or its nerve supply"
+ },
+ {
+  "pid": "Pf2165b",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:5200044",
+  "hpo_label": "Reduced attention regulation",
+  "mp_id": "MP:0014561",
+  "mp_label": "decreased cortical ventricular zone cell density",
+  "mp_def": "reduction in the density of cells in the cortical ventricular zone"
+ },
+ {
+  "pid": "P83b02e",
+  "disorder": "Major depressive disorder",
+  "criterion": "Loss of interest or pleasure. Strongly reduced interest or enjoyment in nearly all activities.",
+  "hpo_id": "HP:0046504",
+  "hpo_label": "Decreased libido",
+  "mp_id": "MP:0002780",
+  "mp_label": "decreased circulating testosterone level",
+  "mp_def": "reduction in the blood concentration of a potent androgen that promotes development of male secondary sex characteristics and the development of spermatozoa and may regulate sexual desire and help maintain bone and muscle health in both males and females"
+ },
+ {
+  "pid": "P320584",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0008913",
+  "mp_label": "weaving",
+  "mp_def": "momentary, slow motions of the whole body from side to side sometimes followed by a sudden drop from an erect position"
+ },
+ {
+  "pid": "Pabaaa3",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0001394",
+  "mp_label": "circling",
+  "mp_def": "repeated movement in a circle; often associated with inner ear defects"
+ },
+ {
+  "pid": "P007c42",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0001527",
+  "mp_label": "athetotic walking movements",
+  "mp_def": "characterized by slow, writhing involuntary movements of flexion, extension, pronation and supination of the paws and toes"
+ },
+ {
+  "pid": "P8ddc4b",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0001353",
+  "mp_label": "increased aggression towards mice",
+  "mp_def": "when compared to controls, subjects exhibit greater than the normal level of domineering, assaultive posture and/or hostile physical action toward other mice"
+ },
+ {
+  "pid": "P800ad3",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0001328",
+  "hpo_label": "Specific learning disability",
+  "mp_id": "MP:0012315",
+  "mp_label": "impaired learning",
+  "mp_def": "impaired ability to aquire lasting change in behavior that is the result of experience"
+ },
+ {
+  "pid": "P9551fc",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0001268",
+  "hpo_label": "Mental deterioration",
+  "mp_id": "MP:0008431",
+  "mp_label": "abnormal short-term spatial reference memory",
+  "mp_def": "anomaly in the short-term memory for spatial location information that is established during the first few minutes after training or an encounter at that location"
+ },
+ {
+  "pid": "Pd5ee32",
+  "disorder": "Major depressive disorder",
+  "criterion": "Loss of interest or pleasure. Strongly reduced interest or enjoyment in nearly all activities.",
+  "hpo_id": "HP:0046504",
+  "hpo_label": "Decreased libido",
+  "mp_id": "MP:0014602",
+  "mp_label": "decreased female mating frequency",
+  "mp_def": "females do not as frequently engage in sexual behavior"
+ },
+ {
+  "pid": "P45b6e2",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200064",
+  "hpo_label": "Olfactory sensory seeking",
+  "mp_id": "MP:0013214",
+  "mp_label": "decreased embryonic neuroepithelium primary cilium number",
+  "mp_def": "reduced number of the primary non-motile microtubule-based structures of the embryonic neuroepithelium which are typically short and straight, project apically into the neural tube lumen, and play an essential role in Sonic hedgehog (Shh) signalling and neural tube patterning"
+ },
+ {
+  "pid": "P0b93f5",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Peer relationships. Difficulty forming and keeping social relationships.",
+  "hpo_id": "HP:0000728",
+  "hpo_label": "Reduced ability to form peer relationships",
+  "mp_id": "MP:0020871",
+  "mp_label": "abnormal locomotor response to cocaine",
+  "mp_def": "any anomaly in locomotor activity following an acute or repeated exposure to the psychostimulant cocaine"
+ },
+ {
+  "pid": "Pb3797b",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized speech. Speech that is incoherent or repeatedly derails.",
+  "hpo_id": "HP:0025769",
+  "hpo_label": "Disordered formal thought process",
+  "mp_id": "MP:0003241",
+  "mp_label": "loss of cortex neurons",
+  "mp_def": "loss of neurons in the cortex region of the brain, commonly due to an apoptotic event"
+ },
+ {
+  "pid": "Pc27d7a",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:5200045",
+  "hpo_label": "Reduced impulse control",
+  "mp_id": "MP:0031334",
+  "mp_label": "increased inhibitory postsynaptic current amplitude",
+  "mp_def": "increase in the size (height or maximum displacement) of the evoked inhibitory postsynaptic current wave"
+ },
+ {
+  "pid": "P5656a1",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200310",
+  "hpo_label": "Diminishment of social interactions",
+  "mp_id": "MP:0009731",
+  "mp_label": "abnormal offspring retrieval",
+  "mp_def": "any anomaly in the ability of a female to collect stray offspring and return them to a defined location, such as a nest or den"
+ },
+ {
+  "pid": "Pbc95dc",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0010794",
+  "hpo_label": "Impaired visuospatial constructive cognition",
+  "mp_id": "MP:0002803",
+  "mp_label": "abnormal operant conditioning behavior",
+  "mp_def": "anomaly in the operant conditioning system refers to abnormalities in scheduled controlled behavior; behavioral assessment occurs in an automated chamber where responses are reinforced with food"
+ },
+ {
+  "pid": "P8fc395",
+  "disorder": "Major depressive disorder",
+  "criterion": "Sleep disturbance. Sleeping far less or far more than usual.",
+  "hpo_id": "HP:0031354",
+  "hpo_label": "Sleep onset insomnia",
+  "mp_id": "MP:0012292",
+  "mp_label": "decreased slow-wave sleep duration",
+  "mp_def": "reduced length of time of the third, or deep sleep stage of NREM sleep"
+ },
+ {
+  "pid": "Pee8549",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Peer relationships. Difficulty forming and keeping social relationships.",
+  "hpo_id": "HP:5200035",
+  "hpo_label": "Reduced cooperative imaginative play",
+  "mp_id": "MP:0020437",
+  "mp_label": "abnormal social play behavior",
+  "mp_def": "behavior performed in the absence of normal stimuli or behavior elicited by normal stimuli but not followed to the completion of the ritualized behavior pattern that is associated with the socialization of an individual into the group"
+ },
+ {
+  "pid": "Pec82ab",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0001396",
+  "mp_label": "unidirectional circling",
+  "mp_def": "circling behavior in one direction only, either clockwise or counterclockwise"
+ },
+ {
+  "pid": "P89470d",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0001524",
+  "mp_label": "impaired limb coordination",
+  "mp_def": "reduced ability to organize limb movements to execute complex maneuvers, such as walking"
+ },
+ {
+  "pid": "Pc59228",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0001328",
+  "hpo_label": "Specific learning disability",
+  "mp_id": "MP:0002062",
+  "mp_label": "abnormal associative learning",
+  "mp_def": "anomaly in the ability to change the frequency or form of a behavior as a result of the influence of the environment"
+ },
+ {
+  "pid": "P77759c",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200316",
+  "hpo_label": "Diminishment of interpersonal communication",
+  "mp_id": "MP:0021111",
+  "mp_label": "decreased social investigation",
+  "mp_def": "decrease in the tendency for animals to approach and examine conspecifics"
+ },
+ {
+  "pid": "P8a70b4",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0002802",
+  "mp_label": "abnormal discrimination learning",
+  "mp_def": "anomaly in the ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus"
+ },
+ {
+  "pid": "Pa70da3",
+  "disorder": "Major depressive disorder",
+  "criterion": "Fatigue or loss of energy. Persistent tiredness or depleted energy.",
+  "hpo_id": "HP:0031058",
+  "hpo_label": "Impairment of activities of daily living",
+  "mp_id": "MP:0012106",
+  "mp_label": "impaired exercise endurance",
+  "mp_def": "impaired performance during controlled physical activity"
+ },
+ {
+  "pid": "Pe9132a",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200052",
+  "hpo_label": "Resistance to trivial environmental changes",
+  "mp_id": "MP:0009710",
+  "mp_label": "anhedonia",
+  "mp_def": "inability to experience pleasure in response to normally pleasurable stimuli"
+ },
+ {
+  "pid": "P6b4eb4",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Peer relationships. Difficulty forming and keeping social relationships.",
+  "hpo_id": "HP:5200016",
+  "hpo_label": "Abnormal peer relationships",
+  "mp_id": "MP:0011958",
+  "mp_label": "increased compensatory feeding amount",
+  "mp_def": "increased amount of food consumed after a period of fasting"
+ },
+ {
+  "pid": "P37c779",
+  "disorder": "Schizophrenia",
+  "criterion": "Negative symptoms. Reduced emotional expression or reduced self-initiated activity.",
+  "hpo_id": "HP:0025766",
+  "hpo_label": "Abnormal affect",
+  "mp_id": "MP:0031304",
+  "mp_label": "impaired behavioral response to methamphetamine",
+  "mp_def": "decreased sensitivity to methamphetamine resulting in a behavioral response, such as induced hyperactivity or stereotypic behavior, or increased dosage threshold for the appearance of the behavioral response"
+ },
+ {
+  "pid": "P31872a",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0007086",
+  "hpo_label": "Social and occupational deterioration",
+  "mp_id": "MP:0001437",
+  "mp_label": "no swallowing reflex",
+  "mp_def": "inability to pull food through the esophagus to the stomach in response to feeding"
+ },
+ {
+  "pid": "Pe53f88",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0007086",
+  "hpo_label": "Social and occupational deterioration",
+  "mp_id": "MP:0009776",
+  "mp_label": "decreased behavioral withdrawal response",
+  "mp_def": "decrease in the intensity or duration of behaviors displayed after discontinuation of an addictive substance"
+ },
+ {
+  "pid": "P91f507",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0010524",
+  "hpo_label": "Disturbed sensory perception",
+  "mp_id": "MP:0014369",
+  "mp_label": "enhanced spatial working memory",
+  "mp_def": "enhamced ability to spontaneously process spatial location information in order to navigate or perform other behavior using such location cues, without previous encounters or training at that location"
+ },
+ {
+  "pid": "Pbb971c",
+  "disorder": "Major depressive disorder",
+  "criterion": "Loss of interest or pleasure. Strongly reduced interest or enjoyment in nearly all activities.",
+  "hpo_id": "HP:0046504",
+  "hpo_label": "Decreased libido",
+  "mp_id": "MP:0003363",
+  "mp_label": "decreased circulating gonadotropin level",
+  "mp_def": "less than the normal blood concentration of the peptide hormones that stimulate gonadal functions such as gametogenesis and sex steroid hormone production in the ovary and the testis"
+ },
+ {
+  "pid": "Pb8fda5",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200059",
+  "hpo_label": "Sensory hyposensitivity unexplained by sensory deficit",
+  "mp_id": "MP:0001490",
+  "mp_label": "abnormal vibrissae reflex",
+  "mp_def": "animals do not change position in response to stimulation of the whiskers"
+ },
+ {
+  "pid": "Pde75c7",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:4000084",
+  "hpo_label": "Reduced sharing of interests",
+  "mp_id": "MP:0014416",
+  "mp_label": "decreased social novelty preference",
+  "mp_def": "reduction in the time spent with or preference for interactions with a novel individual of the same species versus with a familiar individual of the same species"
+ },
+ {
+  "pid": "P8e817b",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0021115",
+  "mp_label": "abnormal aggression towards conspecific",
+  "mp_def": "any anomaly in the level of domineering, assaultive posture and/or hostile physical action displayed toward another individual(s) of the same species"
+ },
+ {
+  "pid": "P260cdc",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0011621",
+  "mp_label": "abnormal habituation to a novel object",
+  "mp_def": "anomaly in the process in which there is a progressive decline of behavioral response probability with an exposure to a novel object"
+ },
+ {
+  "pid": "P219962",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0001463",
+  "mp_label": "abnormal spatial learning",
+  "mp_def": "anomaly in the ability to ascertain or acquire spatial location information in order to improve navigation or other behavior using such location cues"
+ },
+ {
+  "pid": "P34a4eb",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0021010",
+  "mp_label": "impaired synaptic physiology",
+  "mp_def": "any functional impairment of a synapse"
+ },
+ {
+  "pid": "P2f3435",
+  "disorder": "Major depressive disorder",
+  "criterion": "Psychomotor change. Observable slowing or agitation of movement.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0001411",
+  "mp_label": "spinning",
+  "mp_def": "repetitive rolling of the body"
+ },
+ {
+  "pid": "P89643b",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200064",
+  "hpo_label": "Olfactory sensory seeking",
+  "mp_id": "MP:0012540",
+  "mp_label": "abnormal lamina terminalis morphology",
+  "mp_def": "any structural anomaly of the anterior-most (rostral) portion of the wall of the neural tube, formed by closure of the anterior neuropore; the median strip of the anterior wall of the prosencephalon, which persists in a relatively unchanged state as the cerebral hemispheres grow out forward beyond the original anterior end of the prosencephalon; in the developed brain, the lamina terminalis remains as the thin rostral wall of the third ventricle, stretching from the bases of the major cerebral commissures (the anterior commissure, the commissure of the fornix, and the rostrum of the corpus callosum) to the dorsal surface of the optic chiasm"
+ },
+ {
+  "pid": "P5592c7",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0008840",
+  "mp_label": "abnormal spike wave discharge",
+  "mp_def": "anomaly in the characteristic epileptiformic electroencephalographic (EEG) activity detected in generalized absence epilepsy"
+ },
+ {
+  "pid": "P66bae2",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0002311",
+  "hpo_label": "Incoordination",
+  "mp_id": "MP:0000904",
+  "mp_label": "abnormal superior colliculus morphology",
+  "mp_def": "any structural anomaly of the paired superior eminence of the mesencephalic tectum that is involved in auditory processing"
+ },
+ {
+  "pid": "P07c8b5",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:5200401",
+  "hpo_label": "Abnormal judgment",
+  "mp_id": "MP:0002570",
+  "mp_label": "alcohol aversion",
+  "mp_def": "purposeful avoidance of alcohol due to dislike"
+ },
+ {
+  "pid": "P21c8e7",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0002442",
+  "hpo_label": "Dyscalculia",
+  "mp_id": "MP:0003191",
+  "mp_label": "abnormal cellular cholesterol metabolism",
+  "mp_def": "impaired regulation of cellular cholesterol levels"
+ },
+ {
+  "pid": "P2d200a",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:5200118",
+  "hpo_label": "Difficulty recognizing another's emotions",
+  "mp_id": "MP:0011622",
+  "mp_label": "abnormal habituation to a novel odor",
+  "mp_def": "anomaly in the process in which there is a progressive decline of behavioral response probability with an exposure to a novel odor"
+ },
+ {
+  "pid": "P5fc1db",
+  "disorder": "Major depressive disorder",
+  "criterion": "Psychomotor change. Observable slowing or agitation of movement.",
+  "hpo_id": "HP:0000711",
+  "hpo_label": "Restlessness",
+  "mp_id": "MP:0001392",
+  "mp_label": "abnormal locomotor behavior",
+  "mp_def": "altered ability or inability to move from place to place in response to stimuli"
+ },
+ {
+  "pid": "P4350d4",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Social-emotional reciprocity. Weak social give and take, with little spontaneous sharing of interest or emotion.",
+  "hpo_id": "HP:5200027",
+  "hpo_label": "Infrequent social initiations",
+  "mp_id": "MP:0020437",
+  "mp_label": "abnormal social play behavior",
+  "mp_def": "behavior performed in the absence of normal stimuli or behavior elicited by normal stimuli but not followed to the completion of the ritualized behavior pattern that is associated with the socialization of an individual into the group"
+ },
+ {
+  "pid": "P2459ae",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Restricted fixated interests. Unusually intense and narrow interests.",
+  "hpo_id": "HP:4000070",
+  "hpo_label": "Fixated interests",
+  "mp_id": "MP:0009849",
+  "mp_label": "increased vertical stereotypic behavior",
+  "mp_def": "increase in the frequency of bursts of vertical crossings (greater than one per second) in a time period"
+ },
+ {
+  "pid": "P8434ab",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0005656",
+  "mp_label": "decreased aggression",
+  "mp_def": "when compared to controls, subjects exhibit less than the normal level of domineering, assault posture and/or hostile physical action"
+ },
+ {
+  "pid": "Pd4f8f3",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:5200021",
+  "hpo_label": "Reduced social insight",
+  "mp_id": "MP:0020395",
+  "mp_label": "abnormal response to social novelty",
+  "mp_def": "any anomaly in the interaction of an individual with a familiar versus a novel individual of the same species; in mouse the typical behavior is for increased interaction with the novel individual"
+ },
+ {
+  "pid": "Pe5097c",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0001462",
+  "mp_label": "abnormal avoidance learning behavior",
+  "mp_def": "anomaly in the ability to associate a previously neutral stimulus with an unpleasant or punishing stimuli so that the animal learns to avoid the previously neutral stimulus"
+ },
+ {
+  "pid": "P150319",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0001268",
+  "hpo_label": "Mental deterioration",
+  "mp_id": "MP:0014365",
+  "mp_label": "impaired short-term object recognition memory",
+  "mp_def": "impaired ability of short-term memory to recognize objects during the first few minutes after training"
+ },
+ {
+  "pid": "P8e82dc",
+  "disorder": "Major depressive disorder",
+  "criterion": "Appetite or weight change. Marked change in appetite or body weight.",
+  "hpo_id": "HP:0004324",
+  "hpo_label": "Increased body weight",
+  "mp_id": "MP:0005658",
+  "mp_label": "increased susceptibility to diet-induced obesity",
+  "mp_def": "more likely to become excessively overweight or to increase fat in the subcutaneous connective tissue as a result of consuming a diet geared to increase body fat"
+ },
+ {
+  "pid": "P5f43f0",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200059",
+  "hpo_label": "Sensory hyposensitivity unexplained by sensory deficit",
+  "mp_id": "MP:0001513",
+  "mp_label": "limb grasping",
+  "mp_def": "mice clasp front and/or hind feet almost immediately upon being lifted by tail"
+ },
+ {
+  "pid": "Pa3b3cd",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0025774",
+  "hpo_label": "Idiosyncratic use of words",
+  "mp_id": "MP:0002804",
+  "mp_label": "abnormal motor learning",
+  "mp_def": "anomaly in the ability to repeat a motor task requiring well coordinated movements and balance; measures cerebellar dependent learning"
+ },
+ {
+  "pid": "P74d9a1",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000718",
+  "hpo_label": "Aggressive behavior",
+  "mp_id": "MP:0002730",
+  "mp_label": "head shaking",
+  "mp_def": "repetitive movement of the head in the horizontal plane"
+ },
+ {
+  "pid": "P5520c7",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0000728",
+  "hpo_label": "Reduced ability to form peer relationships",
+  "mp_id": "MP:0014647",
+  "mp_label": "decreased horizontal optokinetic reflex",
+  "mp_def": "decrease in the nystagmus or deviation of the eyes in response to stimulation of the visual system by movement in the horizontal (left-right) plane"
+ },
+ {
+  "pid": "Pb7019a",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:5200401",
+  "hpo_label": "Abnormal judgment",
+  "mp_id": "MP:0008779",
+  "mp_label": "abnormal maternal behavior",
+  "mp_def": "any anomaly in any response from the mother or attending female related to the ability of young to thrive"
+ },
+ {
+  "pid": "P021a7e",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0001268",
+  "hpo_label": "Mental deterioration",
+  "mp_id": "MP:0011617",
+  "mp_label": "abnormal habituation",
+  "mp_def": "anomaly in the process in which there is a progressive decline of behavioral response probability with a repetitive stimulus"
+ },
+ {
+  "pid": "Pe08bc4",
+  "disorder": "Major depressive disorder",
+  "criterion": "Concentration difficulty. Trouble thinking clearly, concentrating, or making decisions.",
+  "hpo_id": "HP:0000736",
+  "hpo_label": "Short attention span",
+  "mp_id": "MP:0014115",
+  "mp_label": "cognitive inflexibility",
+  "mp_def": "inability to change attention or a cognitive behavior as an adaptation to the demands of external stimuli"
+ },
+ {
+  "pid": "Pf4bbfa",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200132",
+  "hpo_label": "Atypical sensory examination of objects",
+  "mp_id": "MP:0011621",
+  "mp_label": "abnormal habituation to a novel object",
+  "mp_def": "anomaly in the process in which there is a progressive decline of behavioral response probability with an exposure to a novel object"
+ },
+ {
+  "pid": "Pe5da79",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0007328",
+  "hpo_label": "Impaired pain sensation",
+  "mp_id": "MP:0005316",
+  "mp_label": "abnormal response to tactile stimuli",
+  "mp_def": "anomaly in the reflex action normally induced by touch or pain"
+ },
+ {
+  "pid": "P8ed7fc",
+  "disorder": "Schizophrenia",
+  "criterion": "Negative symptoms. Reduced emotional expression or reduced self-initiated activity.",
+  "hpo_id": "HP:5200328",
+  "hpo_label": "Diminishment of emotional expression",
+  "mp_id": "MP:0002572",
+  "mp_label": "abnormal emotion/affect behavior",
+  "mp_def": "altered response in tests for emotional related behaviors"
+ },
+ {
+  "pid": "Pd8880c",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0012307",
+  "mp_label": "impaired spatial learning",
+  "mp_def": "impaired ability to ascertain or acquire spatial location information in order to improve navigation or other behavior using such location cues"
+ },
+ {
+  "pid": "P5fef1f",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0014370",
+  "mp_label": "impaired spatial working memory",
+  "mp_def": "impaired ability to spontaneously process spatial location information in order to navigate or perform other behavior using such location cues, without previous encounters or training at that location"
+ },
+ {
+  "pid": "P32073a",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Everyday independence. Decline large enough that help is needed with everyday tasks.",
+  "hpo_id": "HP:0031060",
+  "hpo_label": "Impaired ability to dress oneself",
+  "mp_id": "MP:0001442",
+  "mp_label": "decreased grooming behavior",
+  "mp_def": "reduced amount of time spent cleaning and/or keeping outward appearance tidy (self, mate or offspring)"
+ },
+ {
+  "pid": "P07ac10",
+  "disorder": "Major depressive disorder",
+  "criterion": "Appetite or weight change. Marked change in appetite or body weight.",
+  "hpo_id": "HP:0001508",
+  "hpo_label": "Failure to thrive",
+  "mp_id": "MP:0008489",
+  "mp_label": "slow postnatal weight gain",
+  "mp_def": "the weight gain over a span of postnatal developmental time is slower than controls, with or without ever attaining a similar weight to controls as adults"
+ },
+ {
+  "pid": "P8901a0",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:0000732",
+  "hpo_label": "Inflexible adherence to routines",
+  "mp_id": "MP:0010540",
+  "mp_label": "long stride length",
+  "mp_def": "increased average distance between steps"
+ },
+ {
+  "pid": "P9efbf0",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Repetitive motor patterns. Repetitive movement, repetitive speech, or repetitive use of objects.",
+  "hpo_id": "HP:0025774",
+  "hpo_label": "Idiosyncratic use of words",
+  "mp_id": "MP:0003546",
+  "mp_label": "decreased alcohol consumption",
+  "mp_def": "less than normal consumption of alcohol"
+ },
+ {
+  "pid": "P89ac02",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001454",
+  "mp_label": "abnormal cued conditioning behavior",
+  "mp_def": "anomaly in the ability of an animal to learn and remember an association between an aversive experience (the unconditioned stimulus (US), usually a shock) and a neutral stimulus (the conditioned stimulus (CS), usually an auditory cue or light flash)"
+ },
+ {
+  "pid": "P39c191",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0010526",
+  "hpo_label": "Dysgraphia",
+  "mp_id": "MP:0010540",
+  "mp_label": "long stride length",
+  "mp_def": "increased average distance between steps"
+ },
+ {
+  "pid": "P3f1199",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0034434",
+  "hpo_label": "Abnormal communication",
+  "mp_id": "MP:0001431",
+  "mp_label": "abnormal eating behavior",
+  "mp_def": "altered ability to consume foods or atypical consumption pattern"
+ },
+ {
+  "pid": "Pa5f5cd",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0010524",
+  "hpo_label": "Disturbed sensory perception",
+  "mp_id": "MP:0011620",
+  "mp_label": "abnormal habituation to a new environment",
+  "mp_def": "anomaly in the process in which there is a progressive decline of behavioral response probability with an exposure to a new environment"
+ },
+ {
+  "pid": "P11cf0d",
+  "disorder": "Major depressive disorder",
+  "criterion": "Worthlessness or guilt. A sense of being worthless, or guilt out of proportion to circumstances.",
+  "hpo_id": "HP:0031469",
+  "hpo_label": "Low self-esteem",
+  "mp_id": "MP:0000747",
+  "mp_label": "muscle weakness",
+  "mp_def": "loss of muscle strength"
+ },
+ {
+  "pid": "Pff04b1",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200052",
+  "hpo_label": "Resistance to trivial environmental changes",
+  "mp_id": "MP:0014115",
+  "mp_label": "cognitive inflexibility",
+  "mp_def": "inability to change attention or a cognitive behavior as an adaptation to the demands of external stimuli"
+ },
+ {
+  "pid": "Pfce23b",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Insistence on sameness. Rigid routines and marked distress when they change.",
+  "hpo_id": "HP:5200129",
+  "hpo_label": "Abnormal rituals",
+  "mp_id": "MP:0005307",
+  "mp_label": "head tossing",
+  "mp_def": "repetitive flailing of the head in multiple directions"
+ },
+ {
+  "pid": "Pfe6517",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0009848",
+  "mp_label": "increased horizontal stereotypic behavior",
+  "mp_def": "increase in the frequency of bursts of horizontal crossings (greater than one per second) in a time period"
+ },
+ {
+  "pid": "P837501",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0014114",
+  "mp_label": "abnormal cognition",
+  "mp_def": "any anomaly in the operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory"
+ },
+ {
+  "pid": "P069ad1",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0012318",
+  "mp_label": "slow extinction of fear memory",
+  "mp_def": "impaired ability or inability to extinguish aversive memories associated with a traumatic incident"
+ },
+ {
+  "pid": "Pabd072",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:5200044",
+  "hpo_label": "Reduced attention regulation",
+  "mp_id": "MP:0014587",
+  "mp_label": "impaired fine motor coordination",
+  "mp_def": "reduced ability to coordinate movement of small muscle groups"
+ },
+ {
+  "pid": "Pca1b23",
+  "disorder": "Major depressive disorder",
+  "criterion": "Psychomotor change. Observable slowing or agitation of movement.",
+  "hpo_id": "HP:0000711",
+  "hpo_label": "Restlessness",
+  "mp_id": "MP:0031391",
+  "mp_label": "increased locomotor activity",
+  "mp_def": "general increase in locomotor activity; increased movement from one place to another"
+ },
+ {
+  "pid": "P8cc4fd",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200132",
+  "hpo_label": "Atypical sensory examination of objects",
+  "mp_id": "MP:0009942",
+  "mp_label": "abnormal olfactory bulb granule cell morphology",
+  "mp_def": "any structural anomaly of the main intrinsic GABAergic neuron in the granule cell layer of the main olfactory bulb; dendrites of these cells receive synaptic input from mitral and tufted cell lateral dendrites in the external plexiform layer, and have synaptic outputs on those dendrites through reciprocal dendrodendritic synapses"
+ },
+ {
+  "pid": "P6e6d35",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Nonverbal communicative behavior. Reduced communicative use of gaze, gesture, and facial expression.",
+  "hpo_id": "HP:5200030",
+  "hpo_label": "Diminished integration of verbal and non-verbal communicative behavior",
+  "mp_id": "MP:0001402",
+  "mp_label": "decreased locomotor activity",
+  "mp_def": "general reduction in locomotor activity; reduced movement from one place to another"
+ },
+ {
+  "pid": "P7527fa",
+  "disorder": "Schizophrenia",
+  "criterion": "Negative symptoms. Reduced emotional expression or reduced self-initiated activity.",
+  "hpo_id": "HP:0025766",
+  "hpo_label": "Abnormal affect",
+  "mp_id": "MP:0008264",
+  "mp_label": "absent hippocampus CA1 region",
+  "mp_def": "missing the CA1 region of the hippocampus"
+ },
+ {
+  "pid": "P0e4e02",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0007086",
+  "hpo_label": "Social and occupational deterioration",
+  "mp_id": "MP:0020955",
+  "mp_label": "increased mechanical nociceptive threshold",
+  "mp_def": "a higher than average point at which mechanical pain sensation is first detectable"
+ },
+ {
+  "pid": "P55f48e",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0034434",
+  "hpo_label": "Abnormal communication",
+  "mp_id": "MP:0021118",
+  "mp_label": "abnormal paternal behavior",
+  "mp_def": "any anomaly in any response from the father or attending male related to the ability of young to thrive"
+ },
+ {
+  "pid": "P1fe1a8",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0006977",
+  "hpo_label": "Deficit in grammar",
+  "mp_id": "MP:0008921",
+  "mp_label": "increased neurotransmitter release",
+  "mp_def": "increased production or release of endogenous signaling molecules normally secreted by neurons that alter the behavior of neurons or effector cells"
+ },
+ {
+  "pid": "Pe5af04",
+  "disorder": "Major depressive disorder",
+  "criterion": "Loss of interest or pleasure. Strongly reduced interest or enjoyment in nearly all activities.",
+  "hpo_id": "HP:0000741",
+  "hpo_label": "Apathy",
+  "mp_id": "MP:0001428",
+  "mp_label": "adipsia",
+  "mp_def": "failure to drink"
+ },
+ {
+  "pid": "P5e82c3",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:0007328",
+  "hpo_label": "Impaired pain sensation",
+  "mp_id": "MP:0004270",
+  "mp_label": "analgesia",
+  "mp_def": "inability to sense pain"
+ },
+ {
+  "pid": "Pce7fec",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200058",
+  "hpo_label": "Sensory hypersensitivity",
+  "mp_id": "MP:0020954",
+  "mp_label": "decreased mechanical nociceptive threshold",
+  "mp_def": "a lower than average point at which mechanical pain sensation is first detectable"
+ },
+ {
+  "pid": "Pd77430",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0001395",
+  "mp_label": "bidirectional circling",
+  "mp_def": "circling behavior exhibited in both clockwise and counterclockwise directions"
+ },
+ {
+  "pid": "Pcd6d05",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0031058",
+  "hpo_label": "Impairment of activities of daily living",
+  "mp_id": "MP:0020289",
+  "mp_label": "astasia",
+  "mp_def": "the inability to stand due to muscular incoordination"
+ },
+ {
+  "pid": "P8c1886",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0002802",
+  "mp_label": "abnormal discrimination learning",
+  "mp_def": "anomaly in the ability to exhibit a differential response to different stimuli that is achieved by the reinforcement of the desired response for each particular stimulus"
+ },
+ {
+  "pid": "Pa1af73",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0008432",
+  "mp_label": "abnormal long-term spatial reference memory",
+  "mp_def": "anomaly in long-term memory for spatial location information that is consolidated over hours and days after training or an encounter at that location"
+ },
+ {
+  "pid": "Pd6d641",
+  "disorder": "Major depressive disorder",
+  "criterion": "Loss of interest or pleasure. Strongly reduced interest or enjoyment in nearly all activities.",
+  "hpo_id": "HP:0012154",
+  "hpo_label": "Anhedonia",
+  "mp_id": "MP:0009710",
+  "mp_label": "anhedonia",
+  "mp_def": "inability to experience pleasure in response to normally pleasurable stimuli"
+ },
+ {
+  "pid": "P731f62",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200059",
+  "hpo_label": "Sensory hyposensitivity unexplained by sensory deficit",
+  "mp_id": "MP:0011679",
+  "mp_label": "abnormal vomeronasal sensory neuron morphology",
+  "mp_def": "any structural anomaly of chemosensitive cells that innervate the vomernasal organ epithelium and are responsible for receiving and transmitting pheromone signals"
+ },
+ {
+  "pid": "P56c6f7",
+  "disorder": "Autism spectrum disorder",
+  "criterion": "Sensory reactivity. Over- or under-response to sensory stimuli, or unusual sensory fascination.",
+  "hpo_id": "HP:5200064",
+  "hpo_label": "Olfactory sensory seeking",
+  "mp_id": "MP:0012802",
+  "mp_label": "increased rhombomere 5 size",
+  "mp_def": "increased size of the fifth transiently divided segment of the developing rhombencephalon; rhombomeres are lineage restricted, express different genes from one another, and adopt different developmental fates; rhombomeres are numbered in caudal to rostral order"
+ },
+ {
+  "pid": "P85e4b2",
+  "disorder": "Schizophrenia",
+  "criterion": "Disorganized or catatonic behavior. Markedly disorganized motor behaviour, including catatonic features.",
+  "hpo_id": "HP:0000708",
+  "hpo_label": "Atypical behavior",
+  "mp_id": "MP:0012314",
+  "mp_label": "enhanced learning",
+  "mp_def": "enhanced ability to aquire lasting change in behavior that is the result of experience"
+ },
+ {
+  "pid": "P387ad3",
+  "disorder": "Intellectual disability",
+  "criterion": "Intellectual functions. Impaired reasoning, problem solving, planning, abstract thought, and learning.",
+  "hpo_id": "HP:5200401",
+  "hpo_label": "Abnormal judgment",
+  "mp_id": "MP:0002826",
+  "mp_label": "tonic seizures",
+  "mp_def": "increased number or decreased threshold for the induction of a seizure characterized by muscle rigidity"
+ },
+ {
+  "pid": "P156989",
+  "disorder": "Intellectual disability",
+  "criterion": "Adaptive functioning. Adaptive behaviour falling short of age expectations for independent daily living.",
+  "hpo_id": "HP:0031058",
+  "hpo_label": "Impairment of activities of daily living",
+  "mp_id": "MP:0002805",
+  "mp_label": "abnormal conditioned taste aversion behavior",
+  "mp_def": "anomaly in the ability of an animal to learn to avoid food sources that were previously associated with aversive internal stimuli or sickness such as a drug that induces sickness"
+ },
+ {
+  "pid": "Pd239e0",
+  "disorder": "Major neurocognitive disorder",
+  "criterion": "Cognitive decline. A measurable drop in cognitive performance relative to the individual's own baseline, in one or more domains.",
+  "hpo_id": "HP:0002354",
+  "hpo_label": "Memory impairment",
+  "mp_id": "MP:0001417",
+  "mp_label": "decreased exploration in new environment",
+  "mp_def": "less amount of time spent investigating a new location"
+ },
+ {
+  "pid": "Paa4660",
+  "disorder": "Major depressive disorder",
+  "criterion": "Appetite or weight change. Marked change in appetite or body weight.",
+  "hpo_id": "HP:0001508",
+  "hpo_label": "Failure to thrive",
+  "mp_id": "MP:0010180",
+  "mp_label": "increased susceptibility to weight loss",
+  "mp_def": "greater decrease in body weight over time when compared to the average decrease in weight in response to dietary modification, fasting or caloric restriction, infection or xenobiotic treatment"
+ },
+ {
+  "pid": "P51bdd3",
+  "disorder": "",
+  "criterion": "Repetitive motor movements, repetitive use of objects, or repetitive speech.",
+  "hpo_id": "HP:0000733",
+  "hpo_label": "Motor stereotypy",
+  "mp_id": "MP:0001409",
+  "mp_label": "increased stereotypic behavior",
+  "mp_def": "increased frequency of repetitive, invariant motor patterns with no obvious goal or function"
+ },
+ {
+  "pid": "Pf36663",
+  "disorder": "",
+  "criterion": "Insomnia or hypersomnia nearly every day.",
+  "hpo_id": "HP:0002360",
+  "hpo_label": "Sleep abnormality",
+  "mp_id": "MP:0002574",
+  "mp_label": "increased circulating iron level",
+  "mp_def": "greater than normal concentration of iron in the blood"
+ },
+ {
+  "pid": "P8d77a3",
+  "disorder": "",
+  "criterion": "<DSM-5-TR text redacted>.",
+  "hpo_id": "HP:0100543",
+  "hpo_label": "Cognitive impairment",
+  "mp_id": "MP:0002062",
+  "mp_label": "impaired learning",
+  "mp_def": "reduced ability to acquire new information or skills through experience or instruction"
+ }
+]

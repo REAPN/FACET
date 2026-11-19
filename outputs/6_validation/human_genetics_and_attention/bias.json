@@ -1,0 +1,372 @@
+{
+ "gene_prior_sizes": {
+  "ASD": 125,
+  "SCZ": 49,
+  "IDD": 934,
+  "MDD": 186
+ },
+ "assay_family": {
+  "ASD": "social",
+  "SCZ": "cognition or sensorimotor gating",
+  "IDD": "cognition",
+  "MDD": "emotion and affect"
+ },
+ "ASD": {
+  "curated_tested": 0.871,
+  "bg_prior_tested": 0.053,
+  "bg_nonprior_tested": 0.018,
+  "bg_prior_n": 779,
+  "curated_carrying_prior_gene": 0.4,
+  "OR_prior::prior": [
+   4.84,
+   3.53,
+   6.65
+  ],
+  "OR_prior::prior+log_mp+log_beh": [
+   2.47,
+   1.64,
+   3.73
+  ],
+  "OR_prior::prior+log_mp+log_beh+tested": [
+   2.38,
+   1.38,
+   4.12
+  ],
+  "convergent_full": 0.9641,
+  "convergent_behavior_tested": 0.9439,
+  "convergent_assay_tested": 0.7265,
+  "curated_in_assay_tested": 74,
+  "disc::headline::all": {
+   "n_pos": 85,
+   "n_bg": 11876,
+   "auroc": 0.9557,
+   "ci_gene": [
+    0.92,
+    0.981
+   ]
+  },
+  "disc::headline::bg behaviorally tested": {
+   "n_pos": 85,
+   "n_bg": 8438,
+   "auroc": 0.9473,
+   "ci_gene": [
+    0.907,
+    0.975
+   ]
+  },
+  "disc::headline::bg social tested": {
+   "n_pos": 85,
+   "n_bg": 607,
+   "auroc": 0.8365,
+   "ci_gene": [
+    0.782,
+    0.88
+   ]
+  },
+  "disc::headline::bg carries gene-prior gene": {
+   "n_pos": 85,
+   "n_bg": 368,
+   "auroc": 0.8388,
+   "ci_gene": [
+    0.792,
+    0.888
+   ]
+  },
+  "disc::headline::bg gene-prior and assay tested": {
+   "n_pos": 85,
+   "n_bg": 41,
+   "auroc": 0.4316,
+   "ci_gene": [
+    0.361,
+    0.509
+   ]
+  },
+  "disc::fullpool::all": {
+   "n_pos": 85,
+   "n_bg": 32450,
+   "auroc": 0.9689,
+   "ci_gene": [
+    0.935,
+    0.993
+   ]
+  },
+  "disc::fullpool::bg behaviorally tested": {
+   "n_pos": 85,
+   "n_bg": 8438,
+   "auroc": 0.9473,
+   "ci_gene": [
+    0.907,
+    0.975
+   ]
+  },
+  "disc::fullpool::bg social tested": {
+   "n_pos": 85,
+   "n_bg": 607,
+   "auroc": 0.8365,
+   "ci_gene": [
+    0.782,
+    0.88
+   ]
+  },
+  "disc::fullpool::bg carries gene-prior gene": {
+   "n_pos": 85,
+   "n_bg": 779,
+   "auroc": 0.9115,
+   "ci_gene": [
+    0.873,
+    0.946
+   ]
+  },
+  "disc::fullpool::bg gene-prior and assay tested": {
+   "n_pos": 85,
+   "n_bg": 41,
+   "auroc": 0.4316,
+   "ci_gene": [
+    0.361,
+    0.509
+   ]
+  }
+ },
+ "SCZ": {
+  "curated_tested": 0.762,
+  "bg_prior_tested": 0.09,
+  "bg_nonprior_tested": 0.048,
+  "bg_prior_n": 100,
+  "curated_carrying_prior_gene": 0.048,
+  "OR_prior::prior": [
+   1.34,
+   0.54,
+   3.29
+  ],
+  "OR_prior::prior+log_mp+log_beh": [
+   1.51,
+   0.53,
+   4.33
+  ],
+  "OR_prior::prior+log_mp+log_beh+tested": [
+   1.3,
+   0.43,
+   3.91
+  ],
+  "convergent_full": 0.8772,
+  "convergent_behavior_tested": 0.7318,
+  "convergent_assay_tested": 0.6249,
+  "curated_in_assay_tested": 32,
+  "disc::headline::all": {
+   "n_pos": 42,
+   "n_bg": 12444,
+   "auroc": 0.6823,
+   "ci_gene": [
+    0.606,
+    0.763
+   ]
+  },
+  "disc::headline::bg behaviorally tested": {
+   "n_pos": 42,
+   "n_bg": 8479,
+   "auroc": 0.6617,
+   "ci_gene": [
+    0.583,
+    0.737
+   ]
+  },
+  "disc::headline::bg cognition or sensorimotor gating tested": {
+   "n_pos": 42,
+   "n_bg": 1577,
+   "auroc": 0.6234,
+   "ci_gene": [
+    0.546,
+    0.701
+   ]
+  },
+  "disc::headline::bg carries gene-prior gene": {
+   "n_pos": 42,
+   "n_bg": 38,
+   "auroc": 0.6685,
+   "ci_gene": [
+    0.568,
+    0.766
+   ]
+  },
+  "disc::headline::bg gene-prior and assay tested": "background under 10",
+  "disc::fullpool::all": {
+   "n_pos": 42,
+   "n_bg": 32493,
+   "auroc": 0.7094,
+   "ci_gene": [
+    0.636,
+    0.789
+   ]
+  },
+  "disc::fullpool::bg behaviorally tested": {
+   "n_pos": 42,
+   "n_bg": 8479,
+   "auroc": 0.6617,
+   "ci_gene": [
+    0.583,
+    0.737
+   ]
+  },
+  "disc::fullpool::bg cognition or sensorimotor gating tested": {
+   "n_pos": 42,
+   "n_bg": 1577,
+   "auroc": 0.6234,
+   "ci_gene": [
+    0.546,
+    0.701
+   ]
+  },
+  "disc::fullpool::bg carries gene-prior gene": {
+   "n_pos": 42,
+   "n_bg": 100,
+   "auroc": 0.7043,
+   "ci_gene": [
+    0.621,
+    0.786
+   ]
+  },
+  "disc::fullpool::bg gene-prior and assay tested": "background under 10"
+ },
+ "IDD": {
+  "curated_tested": 0.496,
+  "bg_prior_tested": 0.055,
+  "bg_nonprior_tested": 0.046,
+  "bg_prior_n": 5797,
+  "curated_carrying_prior_gene": 0.777,
+  "OR_prior::prior": [
+   2.45,
+   1.93,
+   3.1
+  ],
+  "OR_prior::prior+log_mp+log_beh": [
+   1.74,
+   1.32,
+   2.3
+  ],
+  "OR_prior::prior+log_mp+log_beh+tested": [
+   1.69,
+   1.23,
+   2.32
+  ],
+  "convergent_full": 0.7705,
+  "convergent_behavior_tested": 0.735,
+  "convergent_assay_tested": 0.6177,
+  "curated_in_assay_tested": 60,
+  "disc::headline::all": {
+   "n_pos": 111,
+   "n_bg": 12271,
+   "auroc": 0.7511,
+   "ci_gene": [
+    0.704,
+    0.82
+   ]
+  },
+  "disc::headline::bg behaviorally tested": {
+   "n_pos": 111,
+   "n_bg": 8420,
+   "auroc": 0.7258,
+   "ci_gene": [
+    0.677,
+    0.798
+   ]
+  },
+  "disc::headline::bg cognition tested": {
+   "n_pos": 111,
+   "n_bg": 1536,
+   "auroc": 0.5664,
+   "ci_gene": [
+    0.503,
+    0.646
+   ]
+  },
+  "disc::headline::bg carries gene-prior gene": {
+   "n_pos": 111,
+   "n_bg": 2078,
+   "auroc": 0.7069,
+   "ci_gene": [
+    0.66,
+    0.775
+   ]
+  },
+  "disc::headline::bg gene-prior and assay tested": {
+   "n_pos": 111,
+   "n_bg": 318,
+   "auroc": 0.4322,
+   "ci_gene": [
+    0.366,
+    0.498
+   ]
+  },
+  "disc::fullpool::all": {
+   "n_pos": 121,
+   "n_bg": 32414,
+   "auroc": 0.7591,
+   "ci_gene": [
+    0.715,
+    0.833
+   ]
+  },
+  "disc::fullpool::bg behaviorally tested": {
+   "n_pos": 121,
+   "n_bg": 8420,
+   "auroc": 0.6968,
+   "ci_gene": [
+    0.646,
+    0.771
+   ]
+  },
+  "disc::fullpool::bg cognition tested": {
+   "n_pos": 121,
+   "n_bg": 1536,
+   "auroc": 0.534,
+   "ci_gene": [
+    0.478,
+    0.614
+   ]
+  },
+  "disc::fullpool::bg carries gene-prior gene": {
+   "n_pos": 121,
+   "n_bg": 5797,
+   "auroc": 0.7449,
+   "ci_gene": [
+    0.701,
+    0.819
+   ]
+  },
+  "disc::fullpool::bg gene-prior and assay tested": {
+   "n_pos": 121,
+   "n_bg": 318,
+   "auroc": 0.4053,
+   "ci_gene": [
+    0.342,
+    0.474
+   ]
+  }
+ },
+ "MDD": {
+  "curated_tested": 1.0,
+  "bg_prior_tested": 0.11,
+  "bg_nonprior_tested": 0.054,
+  "bg_prior_n": 481,
+  "curated_carrying_prior_gene": 0.0,
+  "OR_prior::prior": [
+   1.48,
+   0.2,
+   10.77
+  ],
+  "OR_prior::prior+log_mp+log_beh": [
+   0.83,
+   0.11,
+   6.21
+  ],
+  "OR_prior::prior+log_mp+log_beh+tested": [
+   0.77,
+   0.1,
+   5.76
+  ],
+  "convergent_full": 0.9953,
+  "convergent_behavior_tested": 0.9819,
+  "convergent_assay_tested": 0.9512,
+  "curated_in_assay_tested": 8
+ }
+}

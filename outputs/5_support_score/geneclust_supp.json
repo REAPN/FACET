@@ -1,0 +1,281 @@
+[
+ {
+  "analysis": "bg_any_behavior",
+  "disorder": "ASD",
+  "n_pos": 75,
+  "n_neg": 8448,
+  "pos_genes": 53,
+  "kish_pos": 24.14,
+  "dropped_replicates": 0,
+  "auroc": 0.9478772095959596,
+  "ci_genotype": [
+   0.9151,
+   0.9737
+  ],
+  "ci_gene": [
+   0.9038,
+   0.9789
+  ],
+  "width_ratio": 1.28,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6549518623737374,
+  "delta_published": 0.2929253472222222,
+  "delta_published_ci_genotype": [
+   0.2246,
+   0.3615
+  ],
+  "delta_published_ci_gene": [
+   0.2213,
+   0.3826
+  ],
+  "delta_published_p_gene": 0.0
+ },
+ {
+  "analysis": "bg_behavior_ge_curated_p10",
+  "disorder": "ASD",
+  "n_pos": 75,
+  "n_neg": 3353,
+  "pos_genes": 53,
+  "kish_pos": 24.14,
+  "dropped_replicates": 0,
+  "auroc": 0.9260343970573616,
+  "ci_genotype": [
+   0.8888,
+   0.9565
+  ],
+  "ci_gene": [
+   0.8756,
+   0.9594
+  ],
+  "width_ratio": 1.24,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6100029824038175,
+  "delta_published": 0.3160314146535441,
+  "delta_published_ci_genotype": [
+   0.2433,
+   0.3846
+  ],
+  "delta_published_ci_gene": [
+   0.2423,
+   0.4042
+  ],
+  "delta_published_p_gene": 0.0
+ },
+ {
+  "analysis": "audit_R1R2",
+  "disorder": "ASD",
+  "n_pos": 75,
+  "n_neg": 11886,
+  "pos_genes": 53,
+  "kish_pos": 24.14,
+  "dropped_replicates": 0,
+  "auroc": 0.9444938022323182,
+  "ci_genotype": [
+   0.909,
+   0.9742
+  ],
+  "ci_gene": [
+   0.9016,
+   0.9782
+  ],
+  "width_ratio": 1.17,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6627752537999888,
+  "delta_published": 0.28171854843232935,
+  "delta_published_ci_genotype": [
+   0.2159,
+   0.35
+  ],
+  "delta_published_ci_gene": [
+   0.2121,
+   0.3671
+  ],
+  "delta_published_p_gene": 0.0
+ },
+ {
+  "analysis": "bg_any_behavior",
+  "disorder": "SCZ",
+  "n_pos": 39,
+  "n_neg": 8482,
+  "pos_genes": 33,
+  "kish_pos": 27.65,
+  "dropped_replicates": 0,
+  "auroc": 0.6788886268961722,
+  "ci_genotype": [
+   0.6023,
+   0.7559
+  ],
+  "ci_gene": [
+   0.5946,
+   0.7628
+  ],
+  "width_ratio": 1.1,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.7168468370425456,
+  "delta_published": -0.03795821014637335,
+  "delta_published_ci_genotype": [
+   -0.1394,
+   0.0611
+  ],
+  "delta_published_ci_gene": [
+   -0.1372,
+   0.0611
+  ],
+  "delta_published_p_gene": 0.446
+ },
+ {
+  "analysis": "bg_behavior_ge_curated_p10",
+  "disorder": "SCZ",
+  "n_pos": 39,
+  "n_neg": 5262,
+  "pos_genes": 33,
+  "kish_pos": 27.65,
+  "dropped_replicates": 0,
+  "auroc": 0.6495458488046858,
+  "ci_genotype": [
+   0.574,
+   0.7327
+  ],
+  "ci_gene": [
+   0.5654,
+   0.7273
+  ],
+  "width_ratio": 1.02,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6759080587472833,
+  "delta_published": -0.026362209942597525,
+  "delta_published_ci_genotype": [
+   -0.1221,
+   0.0725
+  ],
+  "delta_published_ci_gene": [
+   -0.1261,
+   0.0728
+  ],
+  "delta_published_p_gene": 0.601
+ },
+ {
+  "analysis": "audit_R1R2",
+  "disorder": "SCZ",
+  "n_pos": 39,
+  "n_neg": 12447,
+  "pos_genes": 33,
+  "kish_pos": 27.65,
+  "dropped_replicates": 0,
+  "auroc": 0.6589127644803712,
+  "ci_genotype": [
+   0.5835,
+   0.7351
+  ],
+  "ci_gene": [
+   0.5781,
+   0.7374
+  ],
+  "width_ratio": 1.05,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.7423300434869488,
+  "delta_published": -0.08341727900657758,
+  "delta_published_ci_genotype": [
+   -0.1758,
+   0.0131
+  ],
+  "delta_published_ci_gene": [
+   -0.1842,
+   0.0079
+  ],
+  "delta_published_p_gene": 0.079
+ },
+ {
+  "analysis": "bg_any_behavior",
+  "disorder": "IDD",
+  "n_pos": 73,
+  "n_neg": 8452,
+  "pos_genes": 29,
+  "kish_pos": 5.24,
+  "dropped_replicates": 0,
+  "auroc": 0.708300377960311,
+  "ci_genotype": [
+   0.6414,
+   0.7745
+  ],
+  "ci_gene": [
+   0.6494,
+   0.8132
+  ],
+  "width_ratio": 1.23,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6336767175151865,
+  "delta_published": 0.07462366044512447,
+  "delta_published_ci_genotype": [
+   -0.015,
+   0.1582
+  ],
+  "delta_published_ci_gene": [
+   0.0055,
+   0.2297
+  ],
+  "delta_published_p_gene": 0.034
+ },
+ {
+  "analysis": "bg_behavior_ge_curated_p10",
+  "disorder": "IDD",
+  "n_pos": 73,
+  "n_neg": 5232,
+  "pos_genes": 29,
+  "kish_pos": 5.24,
+  "dropped_replicates": 0,
+  "auroc": 0.6737411503497969,
+  "ci_genotype": [
+   0.6022,
+   0.7468
+  ],
+  "ci_gene": [
+   0.6117,
+   0.7744
+  ],
+  "width_ratio": 1.13,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.5984287943529806,
+  "delta_published": 0.0753123559968163,
+  "delta_published_ci_genotype": [
+   -0.0123,
+   0.1638
+  ],
+  "delta_published_ci_gene": [
+   -0.003,
+   0.2133
+  ],
+  "delta_published_p_gene": 0.057
+ },
+ {
+  "analysis": "audit_R1R2",
+  "disorder": "IDD",
+  "n_pos": 73,
+  "n_neg": 12309,
+  "pos_genes": 29,
+  "kish_pos": 5.24,
+  "dropped_replicates": 0,
+  "auroc": 0.7252439188610182,
+  "ci_genotype": [
+   0.6629,
+   0.7861
+  ],
+  "ci_gene": [
+   0.6795,
+   0.8176
+  ],
+  "width_ratio": 1.12,
+  "gene_ci_clear_of_0.5": true,
+  "auroc_published": 0.6428545990961063,
+  "delta_published": 0.08238931976491193,
+  "delta_published_ci_genotype": [
+   -0.0019,
+   0.1655
+  ],
+  "delta_published_ci_gene": [
+   0.0138,
+   0.2214
+  ],
+  "delta_published_p_gene": 0.021
+ }
+]

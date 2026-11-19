@@ -1,0 +1,13 @@
+{
+ "disorder": "SCZ",
+ "arm": "wnolex",
+ "to_judge": 68,
+ "judged": 68,
+ "calls": 32,
+ "seconds": 138.1,
+ "strict_before": 190,
+ "strict_after": 201,
+ "strict_among_new": 11,
+ "model": "gpt-5.4",
+ "seed": 1
+}

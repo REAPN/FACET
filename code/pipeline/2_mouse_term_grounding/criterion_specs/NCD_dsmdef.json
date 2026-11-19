@@ -1,0 +1,77 @@
+{
+  "disorder": "NCD",
+  "disorder_long": "Major Neurocognitive Disorder",
+  "criteria_txt": "DSM5_Neurocognitive_preprocessed/01_diagnostic_criteria.txt",
+  "spec_version": "2026-07-28_criterion_plus_dsmdef",
+  "section": {
+    "start": "Major Neurocognitive Disorder",
+    "end": "Mild Neurocognitive Disorder"
+  },
+  "section_provenance": "The file carries Major NCD, Mild NCD and Delirium, each with its own A, B, C, D. Extraction is fenced to the MAJOR block only, per D9 (target MAJOR NCD only). Without the fence the parser would silently mix Mild and Delirium criteria into the same letters.",
+  "counting_rule": "DSM-5-TR requires criteria A through D. Criterion A is met by decline in ONE OR MORE cognitive domains, a threshold of one, which sets no counting gate over the domain list. Criterion A's numbered sub-items 1 and 2 are EVIDENCE REQUIREMENTS (informant or clinician concern; documented neuropsychological impairment), not symptom domains, and are not scoreable in a mouse under any vocabulary.",
+  "scored_grain": "criterion",
+  "scored_grain_note": "Two scored criteria, A and B, per D10. The six cognitive domains below are description text: DSM-5-TR treats them as a defined closed set, but a threshold of one sets no counting gate, so they are components rather than counted items. Recorded per term in the `component` field so the roll-up is auditable, since NCD's current strict universe is dominated by a single motor_coordination bucket of 146 terms and that needs to be visible as perceptual-motor rather than hidden as coverage of Criterion A generally.",
+  "items": [
+    {
+      "item_id": "A",
+      "letter": "A",
+      "number": null,
+      "extract": "lettered_criterion",
+      "direction": "deficit",
+      "components": [
+        "complex attention",
+        "executive function",
+        "learning and memory",
+        "language",
+        "perceptual-motor",
+        "social cognition"
+      ],
+      "components_provenance": "Verbatim from Criterion A: \"<DSM-5-TR text redacted>)\".",
+      "dsm_definition": "<DSM-5-TR text redacted>)",
+      "dsm_definition_citation": {
+        "pdf_page": 905,
+        "printed_page": 668,
+        "line": 38032
+      },
+      "dsm_definition_source": "DSM-5-TR, Table 1, Neurocognitive Domains"
+    },
+    {
+      "item_id": "B",
+      "letter": "B",
+      "number": null,
+      "extract": "lettered_criterion",
+      "direction": "deficit",
+      "components": [
+        "complex instrumental activities of daily living"
+      ],
+      "components_provenance": "Verbatim from Criterion B: \"<DSM-5-TR text redacted>)\". The named examples are human financial and medical self-management and have no mouse instantiation; the component is retained so that fact is measured rather than assumed.",
+      "note": "THIS CRITERION IS THE MAJOR VERSUS MILD DISCRIMINATOR, NOT A SEVERITY THRESHOLD. Major and Mild neurocognitive disorder share Criterion A word for word apart from significant versus modest: both require acquired cognitive decline in at least one of the six domains. What separates them is THIS criterion. For Major, the <DSM-5-TR text redacted>. For Mild, those same activities are PRESERVED, though greater effort or compensatory strategies may be needed. This spec is fenced to Major per register item D9, so a term admitted here is part of what makes the diagnosis Major rather than Mild. Judge it on interference with independent activity, not on the severity of the cognitive deficit itself, which belongs to Criterion A."
+    }
+  ],
+  "excluded_criteria": {
+    "C": "Not exclusively during delirium. Exclusion criterion, not a symptom.",
+    "D": "Not better explained by another mental disorder. Exclusion criterion, not a symptom."
+  },
+  "worked_examples": [],
+  "worked_examples_provenance": "Deliberately empty. See the note in ASD.json.",
+  "extra_rules": [
+    "decline_versus_deficit",
+    "language_floor"
+  ],
+  "known_defect_being_fixed": "The current NCD taxonomy has no DSM domain structure. Its strict buckets are motor_coordination 146, cognitive_executive 87, neuropathology_progressive 60, social_cognition_empathy 43 and adaptive_functioning 34. Two problems follow. First, neuropathology_progressive is not a DSM Criterion A cognitive domain; it is neuropathology, which under a criterion-anchored design belongs on the mechanism axis and should not be strict-admissible, and it is 60 of the 386 strict terms. Second, cognitive_executive lumps complex attention, executive function, learning and memory, and language into one bucket, so which DSM domain is actually carrying NCD's Criterion A cannot currently be read off the taxonomy at all.",
+  "disclosure_required": "D12. DSM Criterion A says DECLINE from a previous level of performance, a within-individual longitudinal comparison. MGI genotype-phenotype annotation is a between-genotype DEFICIT relative to wild type. We score DEFICIT where DSM says DECLINE. This substitution must be disclosed prominently wherever an NCD number appears, and it is the single largest construct concession in the project. D11 additionally holds that language is a floor for NCD.",
+  "satisfaction_rule": "ILLUSTRATIVE. DSM requires decline in ONE OR MORE cognitive domains, a threshold of one, so Criterion A is MET as soon as ANY ONE of the six domains has a strict match. No partial credit denominator across domains. Criterion A's numbered sub-items 1 and 2 are EVIDENCE REQUIREMENTS, never items. Diagnostic gate: A AND B (C and D are exclusions). Breadth denominator is 2 units; see the ID note on non-comparability.",
+  "breadth_denominator": 2,
+  "unit_kind": "criterion",
+  "comparability_note": "Breadth denominators differ across disorders (ASD 7, SCZ 5, ID 2, NCD 2) AND the units differ in difficulty, because DSM counts enumerated items in ASD and SCZ but accepts a single example in ID and NCD. Report fraction of scored units met alongside the raw count, and never rank disorders on raw breadth.",
+  "source_provenance": {
+    "status": "VERIFIED_BUT_UNTRACEABLE",
+    "checked": "2026-07-27",
+    "finding": "DSM5_Neurocognitive_preprocessed has NO source PDF, unlike ASD, ID and SCZ. Its 01_diagnostic_criteria.txt was hand-authored 2026-07-27 02:16.",
+    "verification": "Major NCD criteria A through D were diffed against pdftotext output of 'DSM 5 TR-APA 2022.pdf' and match EXACTLY after whitespace and curly-quote normalisation. The criteria text is therefore correct DSM-5-TR and is safe to quote.",
+    "contamination": "03_diagnostic_features.txt and Neurocognitive_core_phenotype_only.txt contain PROJECT-AUTHORED mouse-mapping sentences interleaved with genuine DSM domain descriptions, including a per-domain answer key ('complex attention, executive function, and perceptual-motor have established behavioral assays in the mouse. Language has no organism-level analog. Social cognition has partial analogs'). NOTHING may quote those files to any classifier. This classifier reads 01_diagnostic_criteria.txt only, and the section fence excludes the editorial preamble.",
+    "owed": "Rebuild the folder from DSM 5 TR-APA 2022.pdf with a real extractor, and re-derive any stage 1 NCD targets that read the features file."
+  },
+  "variant_note": "PRODUCTION VARIANT. Identical to NCD.json except that scored units carry DSM-5-TR's own definitional text, extracted from DSM 5 TR-APA 2022.pdf with page citations by extract_dsm_definitions.py. Source: DSM-5-TR, Table 1, Neurocognitive Domains (definitional). Contiguous verbatim: False.",
+  "reconstruction_note": "Three-column table; definitions reconstructed from the left column and verified token by token, NOT contiguous prose."
+}

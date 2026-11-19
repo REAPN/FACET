@@ -1,0 +1,16 @@
+mp_id	mp_label	mp_definition	parent_label	ancestor_label	expected	expected_item	expected_direction	expect_review	pilot_note
+MP:0001360	abnormal social investigation	altered behavior of animals to approach and examine conspecifics			EXPECT_ADMIT	A1			social investigation
+MP:0001361	social withdrawal	reclusive behavior; the tendency to refrain from participating in social situations and to seek isolation			EXPECT_ADMIT	A1			social withdrawal
+MP:0021111	decreased social investigation	decrease in the tendency for animals to approach and examine conspecifics			EXPECT_ADMIT	A1			decreased social investigation
+MP:0001529	abnormal vocalization	an inability, decreased ability or altered ability to produce sound from the vocal organs; or a general increase or decrease in the production of vocal sound			EXPECT_ADMIT	A1			vocalization routes to A1 not A2 (A2 construct floor)
+MP:0020396	abnormal social recognition	any anomaly in the ability of an individual to recognize another individual of the same species during repeated encounters			EXPECT_ADMIT	A3			social recognition
+MP:0021112	impaired social recognition	reduction in the ability of an individual to recognize another individual of the same species during repeated encounters			EXPECT_ADMIT	A3			impaired social recognition
+MP:0001400	hyperresponsive	increased reaction to touch			EXPECT_ADMIT	B1			increased stereotypic behavior
+MP:0001441	increased grooming behavior	increased amount of time spent cleaning and/or keeping outward appearance tidy (self, mate or offspring)			EXPECT_ADMIT	B1			increased grooming (grooming rule)
+MP:0001440	abnormal grooming behavior	defects in the standard of behavior of cleaning and/or keeping outward appearance tidy (self, mate or offspring)			EXPECT_ADMIT	B2		yes	abnormal grooming behavior, review flag expected
+MP:0002733	abnormal thermal nociception	abnormal capability to sense pain elicited by thermal stimulation			EXPECT_ADMIT	B4			thermal nociception
+MP:0003998	decreased thermal nociceptive threshold	a lower than average point at which thermal pain sensation is first detectable			EXPECT_ADMIT	B4			decreased thermal nociceptive threshold
+MP:0001486	abnormal startle reflex	aberrant threshold or reflex response to variable stimuli, often auditory; usually measured by amplitude of whole body flinch			EXPECT_ADMIT	B4			abnormal startle reflex, sensory reactivity
+MP:0002064	seizures	sudden and often acute manifestation of epileptic attack, sometimes convulsive			EXPECT_BLOCK	none			seizures, involuntary motor sign
+MP:0000745	tremors	repetitive, cyclical movements of the body or a body part; usually involuntary, but can also manifest in response to an attempt at movement			EXPECT_BLOCK	none			tremors, involuntary motor sign
+MP:0002135	abnormal kidney morphology	any structural anomaly of either of the two excretory organs that filter wastes (especially urea) from the blood and excrete them and water in urine			EXPECT_BLOCK	none			kidney morphology, non-neurological control

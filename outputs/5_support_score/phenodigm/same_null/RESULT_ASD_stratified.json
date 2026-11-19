@@ -1,0 +1,41 @@
+{
+ "disorder": "ASD",
+ "null": "stratified",
+ "n": 11961,
+ "n_pos": 85,
+ "auroc_facet": 0.9557,
+ "ci_facet": [
+  0.9201,
+  0.9826
+ ],
+ "auroc_pheno_raw": 0.7721,
+ "ci_pheno_raw": [
+  0.7066,
+  0.8306
+ ],
+ "auroc_pheno_null": 0.6575,
+ "ci_pheno_null": [
+  0.5735,
+  0.7341
+ ],
+ "delta_facet_minus_pheno_raw": 0.1836,
+ "ci_facet_minus_pheno_raw": [
+  0.126,
+  0.248
+ ],
+ "p_facet_minus_pheno_raw": 0.0,
+ "delta_facet_minus_pheno_null": 0.2982,
+ "ci_facet_minus_pheno_null": [
+  0.2196,
+  0.3832
+ ],
+ "p_facet_minus_pheno_null": 0.0,
+ "delta_pheno_null_minus_pheno_raw": -0.1146,
+ "ci_pheno_null_minus_pheno_raw": [
+  -0.1484,
+  -0.0861
+ ],
+ "p_pheno_null_minus_pheno_raw": 0.0,
+ "ceiling_pos_pheno_null": 7,
+ "ceiling_pos_facet": 62
+}

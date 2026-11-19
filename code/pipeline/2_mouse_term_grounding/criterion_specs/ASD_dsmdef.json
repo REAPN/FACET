@@ -1,0 +1,108 @@
+{
+  "disorder": "ASD",
+  "disorder_long": "Autism Spectrum Disorder",
+  "criteria_txt": "DSM5_ASD_preprocessed/01_diagnostic_criteria.txt",
+  "spec_version": "2026-07-28_dsmdef_pilot",
+  "section": null,
+  "counting_rule": "DSM-5-TR requires ALL THREE Criterion A items and AT LEAST TWO of the four Criterion B items. Criterion A and Criterion B are each enumerated with a counting threshold, so each numbered item is a separately scored unit.",
+  "scored_grain": "item",
+  "scored_grain_note": "Seven scored items. This is a COUNTED enumeration: the diagnosis turns on how many numbered items are met, so the numbered item is the unit DSM itself counts.",
+  "items": [
+    {
+      "item_id": "A1",
+      "letter": "A",
+      "number": "1",
+      "extract": "lettered_item",
+      "direction": "deficit",
+      "components": [],
+      "dsm_definition": "<DSM-5-TR text redacted>.",
+      "dsm_definition_citation": {
+        "pdf_page": 158,
+        "printed_page": 60,
+        "line": 6260
+      },
+      "dsm_definition_source": "DSM-5-TR, Autism Spectrum Disorder, Diagnostic Features"
+    },
+    {
+      "item_id": "A2",
+      "letter": "A",
+      "number": "2",
+      "extract": "lettered_item",
+      "direction": "deficit",
+      "components": [],
+      "floor_disclosure": true,
+      "floor_disclosure_evidence": "POST-HOC, EVIDENCE-BASED, AND DELIBERATELY NOT SHOWN TO THE CLASSIFIER. The prompt design experiment of 2026-07-27 asked four independent arms whether mouse vocalization terms instantiate A2. All four refused, at confidence 0.93, 0.93, 0.95 and 0.93, with the same reasoning: A2 names the NONVERBAL channel and its examples are eye contact, body language, gestures and facial expressions, while mouse ultrasonic vocalization is a VOCAL channel and belongs to A1's '<DSM-5-TR text redacted>'. MP contains no analog of gesture, gaze or facial expression, so A2 has no mouse instantiation under any vocabulary. A2 therefore scores a MEASURED ZERO, which is reported as such, and that zero is additionally disclosed as a construct floor of the same kind as SCZ A1 to A3. The breadth denominator stays 7. Removing A2 from the denominator would flatter the score, and telling the classifier A2 is a floor would make the zero circular. Neither is done."
+    },
+    {
+      "item_id": "A3",
+      "letter": "A",
+      "number": "3",
+      "extract": "lettered_item",
+      "direction": "deficit",
+      "components": []
+    },
+    {
+      "item_id": "B1",
+      "letter": "B",
+      "number": "1",
+      "extract": "lettered_item",
+      "direction": "increase",
+      "components": [],
+      "dsm_definition": "<DSM-5-TR text redacted>.",
+      "dsm_definition_citation": {
+        "pdf_page": 158,
+        "printed_page": 60,
+        "line": 6260
+      },
+      "dsm_definition_source": "DSM-5-TR, Autism Spectrum Disorder, Diagnostic Features"
+    },
+    {
+      "item_id": "B2",
+      "letter": "B",
+      "number": "2",
+      "extract": "lettered_item",
+      "direction": "increase",
+      "components": []
+    },
+    {
+      "item_id": "B3",
+      "letter": "B",
+      "number": "3",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": []
+    },
+    {
+      "item_id": "B4",
+      "letter": "B",
+      "number": "4",
+      "extract": "lettered_item",
+      "direction": "either",
+      "components": []
+    }
+  ],
+  "excluded_criteria": {
+    "C": "onset. Reported in methods, not scored, per D8.",
+    "D": "impairment. Not scored per D3, because mouse models have no premorbid baseline.",
+    "E": "exclusion criterion. Not a symptom."
+  },
+  "worked_examples": [
+    "DSM B4 names \"apparent indifference to pain/temperature\". MP expresses pain and temperature response only as nociception and thresholds (abnormal thermal nociception, abnormal pain threshold). Those ARE the mouse instantiation of that example. Admit them to B4 with qualifier_absent=true. Do NOT refuse them as \"capacity rather than reactivity\"; MP offers no reactivity-framed alternative.",
+    "DSM B4 names \"excessive smelling or touching of objects\". Object-directed exploration terms (abnormal response to novel object, abnormal habituation to a novel object) ARE that instantiation. Admit.",
+    "DSM B1 names \"use of objects\". Object manipulation and use terms serve B1.",
+    "DSM B2 names \"ritualized patterns\" and B3 \"fixated interests\". Grooming, nest building and stereotypy terms may serve these regardless of whether the label says \"rigid\", since MP cannot say it."
+  ],
+  "worked_examples_provenance": "ASD is the ONLY disorder carrying mouse-side worked examples, and this asymmetry is deliberate and must be disclosed. They exist to reverse a DOCUMENTED failure: the previous ASD taxonomy prompt explicitly excluded, four times, the exact vocabulary answering B4's own first parenthetical, so nine pain and temperature terms and eight object terms were unreachable. The examples name the terms that prior instruction wrongly removed. They are corrective, not generative. ID, NCD and SCZ have no such documented exclusion, so supplying them mouse-side examples would lead the classifier rather than unblock it, and their worked_examples lists are deliberately empty.",
+  "extra_rules": [
+    "grooming_routing",
+    "involuntary_motor_sign",
+    "asd_construct_refusals"
+  ],
+  "satisfaction_rule": "COUNTED. A scored item is met only by a match to THAT item. Diagnostic gate: all three of A1, A2, A3 AND at least two of B1, B2, B3, B4 (D5). Breadth denominator is 7 individually-matched units.",
+  "breadth_denominator": 7,
+  "unit_kind": "enumerated_item",
+  "comparability_note": "Breadth denominators differ across disorders (ASD 7, SCZ 5, ID 2, NCD 2) AND the units differ in difficulty, because DSM counts enumerated items in ASD and SCZ but accepts a single example in ID and NCD. Report fraction of scored units met alongside the raw count, and never rank disorders on raw breadth.",
+  "a2_floor_note": "ASD A2 is reported as a measured zero AND disclosed as a construct floor. breadth_denominator remains 7. See items[A2].floor_disclosure_evidence.",
+  "variant_note": "PILOT VARIANT, not production. Identical to ASD.json except that scored units carry DSM-5-TR's own definitional text, extracted from DSM 5 TR-APA 2022.pdf with page citations by extract_dsm_definitions.py. Source: DSM-5-TR, Autism Spectrum Disorder, Diagnostic Features (ELABORATION, NOT DEFINITIONAL). Contiguous verbatim: True.",
+  "control_note": "ASD has no definitional section. Included ONLY as a negative control: the prediction is that adding elaboration changes little, because ASD's items already carry their definitions inline. If it moves as much as NCD's Table 1, the effect is prose volume rather than DSM definition and the design rationale fails."
+}

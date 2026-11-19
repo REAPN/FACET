@@ -1,0 +1,914 @@
+{
+ "population": "K4 pool (32,535), corrected labels 2026-10-08, behaviorally annotated = at least one MP:0004924 descendant",
+ "P1_explicit_negatives": {
+  "ASD": {
+   "explicit_negatives_in_pool": 1,
+   "explicit_negatives_any": 1,
+   "unmatched_NOT_rows": 0,
+   "conflicts_positive_and_negative": [],
+   "negatives": [
+    [
+     "MGI:5617753",
+     "Tg(Camk2a-Bdnf)A9Stl/0"
+    ]
+   ]
+  },
+  "SCZ": {
+   "explicit_negatives_in_pool": 1,
+   "explicit_negatives_any": 3,
+   "unmatched_NOT_rows": 2,
+   "conflicts_positive_and_negative": [
+    "MGI:5574284"
+   ],
+   "negatives": [
+    [
+     "MGI:5574284",
+     "Csmd1<tm1Lex>/Csmd1<tm1Lex>"
+    ]
+   ]
+  },
+  "IDD": {
+   "explicit_negatives_in_pool": 0,
+   "explicit_negatives_any": 3,
+   "unmatched_NOT_rows": 7,
+   "conflicts_positive_and_negative": [],
+   "negatives": []
+  },
+  "MDD": {
+   "explicit_negatives_in_pool": 1,
+   "explicit_negatives_any": 1,
+   "unmatched_NOT_rows": 0,
+   "conflicts_positive_and_negative": [],
+   "negatives": [
+    [
+     "MGI:5819105",
+     "Pclo<tm1.1Mver>/Pclo<tm1.1Mver>"
+    ]
+   ]
+  }
+ },
+ "P2_recorded_normal_behavior": {
+  "genotypes_with_normal_behavior_any": 203,
+  "in_pool": 109,
+  "in_pool_behaviorally_annotated": 73,
+  "in_pool_not_behaviorally_annotated": 36,
+  "pool_not_behaviorally_annotated": 24014,
+  "terms": [
+   [
+    "MP:0005386",
+    109
+   ]
+  ],
+  "share_of_not_behaviorally_annotated_with_recorded_normal": 0.0015,
+  "by_curated": {
+   "ASD": {
+    "curated": 4,
+    "curated_n": 85
+   },
+   "SCZ": {
+    "curated": 1,
+    "curated_n": 42
+   },
+   "IDD": {
+    "curated": 8,
+    "curated_n": 121
+   },
+   "MDD": {
+    "curated": 0,
+    "curated_n": 8
+   }
+  }
+ },
+ "P3_attention": {
+  "genotypes_with_attention": 31587,
+  "genotypes_without": 948,
+  "ASD": {
+   "P3a_behaviorally_annotated_on_prior": {
+    "unadjusted": [
+     1.6,
+     1.38,
+     1.86
+    ],
+    "adj_attention": [
+     1.83,
+     1.57,
+     2.13
+    ],
+    "adj_attention_and_imsr": [
+     1.73,
+     1.49,
+     2.02
+    ]
+   },
+   "P3b_tier_3": {
+    "n_tier": 421,
+    "gene prior H": {
+     "as_reported": [
+      2.51,
+      1.66,
+      3.79
+     ],
+     "adj_attention": [
+      2.67,
+      1.76,
+      4.07
+     ],
+     "adj_attention_and_imsr": [
+      2.99,
+      1.95,
+      4.56
+     ]
+    },
+    "SFARI": {
+     "as_reported": [
+      1.92,
+      1.45,
+      2.55
+     ],
+     "adj_attention": [
+      2.15,
+      1.6,
+      2.88
+     ],
+     "adj_attention_and_imsr": [
+      2.21,
+      1.64,
+      2.98
+     ]
+    }
+   },
+   "P3b_tier_4": {
+    "n_tier": 195,
+    "gene prior H": {
+     "as_reported": [
+      2.98,
+      1.82,
+      4.88
+     ],
+     "adj_attention": [
+      3.41,
+      2.06,
+      5.65
+     ],
+     "adj_attention_and_imsr": [
+      3.74,
+      2.24,
+      6.24
+     ]
+    },
+    "SFARI": {
+     "as_reported": [
+      2.52,
+      1.77,
+      3.58
+     ],
+     "adj_attention": [
+      3.21,
+      2.2,
+      4.68
+     ],
+     "adj_attention_and_imsr": [
+      3.26,
+      2.23,
+      4.76
+     ]
+    }
+   },
+   "P3b_tier_5": {
+    "n_tier": 43,
+    "gene prior H": {
+     "as_reported": [
+      3.35,
+      1.41,
+      7.99
+     ],
+     "adj_attention": [
+      3.48,
+      1.44,
+      8.38
+     ],
+     "adj_attention_and_imsr": [
+      4.16,
+      1.67,
+      10.34
+     ]
+    },
+    "SFARI": {
+     "as_reported": [
+      3.22,
+      1.61,
+      6.45
+     ],
+     "adj_attention": [
+      3.49,
+      1.7,
+      7.16
+     ],
+     "adj_attention_and_imsr": [
+      3.64,
+      1.75,
+      7.55
+     ]
+    }
+   },
+   "P3c_curated_OR_per_SD_log_attention_adj_log_beh": [
+    0.97,
+    0.77,
+    1.23
+   ],
+   "P3c_mean_log_attention": {
+    "curated": 4.571,
+    "H_lines": 5.334,
+    "other": 4.359
+   },
+   "P3d": {
+    "coverage: curated vs H lines": {
+     "n_pos": 83,
+     "n_neg": 276,
+     "count_matched": 0.7309,
+     "count_and_attention_matched": 0.6686,
+     "ci_gene": [
+      0.572,
+      0.782
+     ],
+     "difference": -0.0623,
+     "difference_ci_gene": [
+      -0.1551,
+      0.0278
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "coverage: curated vs other uncurated": {
+     "n_pos": 83,
+     "n_neg": 7691,
+     "count_matched": 0.8575,
+     "count_and_attention_matched": 0.851,
+     "ci_gene": [
+      0.813,
+      0.895
+     ],
+     "difference": -0.0065,
+     "difference_ci_gene": [
+      -0.0226,
+      0.0059
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "coverage: H lines without curated gene vs other uncurated": {
+     "n_pos": 213,
+     "n_neg": 7691,
+     "count_matched": 0.5297,
+     "count_and_attention_matched": 0.5386,
+     "ci_gene": [
+      0.489,
+      0.592
+     ],
+     "difference": 0.0089,
+     "difference_ci_gene": [
+      0.0044,
+      0.0136
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: curated vs H lines": {
+     "n_pos": 83,
+     "n_neg": 276,
+     "count_matched": 0.663,
+     "count_and_attention_matched": 0.6656,
+     "ci_gene": [
+      0.568,
+      0.761
+     ],
+     "difference": 0.0026,
+     "difference_ci_gene": [
+      -0.0742,
+      0.0826
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: curated vs other uncurated": {
+     "n_pos": 83,
+     "n_neg": 7691,
+     "count_matched": 0.9366,
+     "count_and_attention_matched": 0.9369,
+     "ci_gene": [
+      0.899,
+      0.963
+     ],
+     "difference": 0.0004,
+     "difference_ci_gene": [
+      -0.008,
+      0.0099
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: H lines without curated gene vs other uncurated": {
+     "n_pos": 213,
+     "n_neg": 7691,
+     "count_matched": 0.5489,
+     "count_and_attention_matched": 0.5558,
+     "ci_gene": [
+      0.509,
+      0.608
+     ],
+     "difference": 0.0069,
+     "difference_ci_gene": [
+      0.0027,
+      0.0111
+     ],
+     "positive_cells_without_negatives": []
+    }
+   }
+  },
+  "SCZ": {
+   "P3a_behaviorally_annotated_on_prior": {
+    "unadjusted": [
+     1.11,
+     0.72,
+     1.72
+    ],
+    "adj_attention": [
+     1.08,
+     0.69,
+     1.67
+    ],
+    "adj_attention_and_imsr": [
+     0.96,
+     0.62,
+     1.48
+    ]
+   },
+   "P3b_tier_2": {
+    "n_tier": 1193,
+    "gene prior H": {
+     "as_reported": [
+      1.48,
+      0.52,
+      4.23
+     ],
+     "adj_attention": [
+      1.53,
+      0.54,
+      4.39
+     ],
+     "adj_attention_and_imsr": [
+      1.46,
+      0.51,
+      4.17
+     ]
+    }
+   },
+   "P3c_curated_OR_per_SD_log_attention_adj_log_beh": [
+    1.01,
+    0.73,
+    1.38
+   ],
+   "P3c_mean_log_attention": {
+    "curated": 4.553,
+    "H_lines": 4.308,
+    "other": 4.375
+   },
+   "P3d": {
+    "coverage: curated vs H lines": {
+     "n_pos": 42,
+     "n_neg": 28,
+     "count_matched": 0.5059,
+     "count_and_attention_matched": 0.5898,
+     "ci_gene": [
+      0.517,
+      0.811
+     ],
+     "difference": 0.084,
+     "difference_ci_gene": [
+      -0.0095,
+      0.1312
+     ],
+     "positive_cells_without_negatives": [
+      6,
+      8,
+      10
+     ]
+    },
+    "coverage: curated vs other uncurated": {
+     "n_pos": 42,
+     "n_neg": 7853,
+     "count_matched": 0.609,
+     "count_and_attention_matched": 0.6179,
+     "ci_gene": [
+      0.555,
+      0.687
+     ],
+     "difference": 0.0089,
+     "difference_ci_gene": [
+      0.0003,
+      0.0186
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "coverage: H lines without curated gene vs other uncurated": {
+     "n_pos": 27,
+     "n_neg": 7853,
+     "count_matched": 0.5351,
+     "count_and_attention_matched": 0.5396,
+     "ci_gene": [
+      0.465,
+      0.626
+     ],
+     "difference": 0.0045,
+     "difference_ci_gene": [
+      -0.0093,
+      0.0165
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: curated vs H lines": {
+     "n_pos": 42,
+     "n_neg": 28,
+     "count_matched": 0.5114,
+     "count_and_attention_matched": 0.5491,
+     "ci_gene": [
+      0.393,
+      0.716
+     ],
+     "difference": 0.0377,
+     "difference_ci_gene": [
+      -0.1327,
+      0.0859
+     ],
+     "positive_cells_without_negatives": [
+      6,
+      8,
+      10
+     ]
+    },
+    "support: curated vs other uncurated": {
+     "n_pos": 42,
+     "n_neg": 7853,
+     "count_matched": 0.6001,
+     "count_and_attention_matched": 0.6058,
+     "ci_gene": [
+      0.532,
+      0.688
+     ],
+     "difference": 0.0057,
+     "difference_ci_gene": [
+      -0.0017,
+      0.0138
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: H lines without curated gene vs other uncurated": {
+     "n_pos": 27,
+     "n_neg": 7853,
+     "count_matched": 0.5235,
+     "count_and_attention_matched": 0.5266,
+     "ci_gene": [
+      0.465,
+      0.623
+     ],
+     "difference": 0.0031,
+     "difference_ci_gene": [
+      -0.0045,
+      0.0104
+     ],
+     "positive_cells_without_negatives": []
+    }
+   }
+  },
+  "IDD": {
+   "P3a_behaviorally_annotated_on_prior": {
+    "unadjusted": [
+     0.98,
+     0.92,
+     1.04
+    ],
+    "adj_attention": [
+     1.13,
+     1.06,
+     1.21
+    ],
+    "adj_attention_and_imsr": [
+     1.12,
+     1.05,
+     1.21
+    ]
+   },
+   "P3b_tier_2": {
+    "n_tier": 293,
+    "gene prior H": {
+     "as_reported": [
+      1.77,
+      1.33,
+      2.35
+     ],
+     "adj_attention": [
+      1.81,
+      1.35,
+      2.44
+     ],
+     "adj_attention_and_imsr": [
+      1.82,
+      1.35,
+      2.44
+     ]
+    }
+   },
+   "P3c_curated_OR_per_SD_log_attention_adj_log_beh": [
+    1.23,
+    1.01,
+    1.51
+   ],
+   "P3c_mean_log_attention": {
+    "curated": 4.843,
+    "H_lines": 5.361,
+    "other": 4.186
+   },
+   "P3d": {
+    "coverage: curated vs H lines": {
+     "n_pos": 101,
+     "n_neg": 1472,
+     "count_matched": 0.5762,
+     "count_and_attention_matched": 0.5736,
+     "ci_gene": [
+      0.51,
+      0.672
+     ],
+     "difference": -0.0026,
+     "difference_ci_gene": [
+      -0.023,
+      0.0251
+     ],
+     "positive_cells_without_negatives": [
+      9
+     ]
+    },
+    "coverage: curated vs other uncurated": {
+     "n_pos": 101,
+     "n_neg": 6501,
+     "count_matched": 0.6386,
+     "count_and_attention_matched": 0.639,
+     "ci_gene": [
+      0.579,
+      0.734
+     ],
+     "difference": 0.0004,
+     "difference_ci_gene": [
+      -0.0097,
+      0.0127
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "coverage: H lines without curated gene vs other uncurated": {
+     "n_pos": 1395,
+     "n_neg": 6501,
+     "count_matched": 0.5187,
+     "count_and_attention_matched": 0.5203,
+     "ci_gene": [
+      0.498,
+      0.542
+     ],
+     "difference": 0.0016,
+     "difference_ci_gene": [
+      -0.004,
+      0.0077
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: curated vs H lines": {
+     "n_pos": 101,
+     "n_neg": 1472,
+     "count_matched": 0.5968,
+     "count_and_attention_matched": 0.5992,
+     "ci_gene": [
+      0.546,
+      0.68
+     ],
+     "difference": 0.0024,
+     "difference_ci_gene": [
+      -0.0193,
+      0.0446
+     ],
+     "positive_cells_without_negatives": [
+      9
+     ]
+    },
+    "support: curated vs other uncurated": {
+     "n_pos": 101,
+     "n_neg": 6501,
+     "count_matched": 0.7205,
+     "count_and_attention_matched": 0.7199,
+     "ci_gene": [
+      0.659,
+      0.811
+     ],
+     "difference": -0.0006,
+     "difference_ci_gene": [
+      -0.0078,
+      0.0068
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "support: H lines without curated gene vs other uncurated": {
+     "n_pos": 1395,
+     "n_neg": 6501,
+     "count_matched": 0.5452,
+     "count_and_attention_matched": 0.5382,
+     "ci_gene": [
+      0.516,
+      0.56
+     ],
+     "difference": -0.007,
+     "difference_ci_gene": [
+      -0.012,
+      -0.0018
+     ],
+     "positive_cells_without_negatives": []
+    }
+   }
+  },
+  "MDD": {
+   "P3a_behaviorally_annotated_on_prior": {
+    "unadjusted": [
+     1.55,
+     1.28,
+     1.87
+    ],
+    "adj_attention": [
+     1.68,
+     1.39,
+     2.04
+    ],
+    "adj_attention_and_imsr": [
+     1.61,
+     1.33,
+     1.95
+    ]
+   },
+   "P3b_tier_2": {
+    "n_tier": 299,
+    "gene prior H": {
+     "as_reported": [
+      0.83,
+      0.34,
+      2.01
+     ],
+     "adj_attention": [
+      0.86,
+      0.36,
+      2.08
+     ],
+     "adj_attention_and_imsr": [
+      0.87,
+      0.36,
+      2.1
+     ]
+    }
+   },
+   "P3b_tier_3": {
+    "n_tier": 45,
+    "gene prior H": {
+     "as_reported": [
+      0.81,
+      0.11,
+      6.09
+     ],
+     "adj_attention": [
+      0.84,
+      0.11,
+      6.32
+     ],
+     "adj_attention_and_imsr": [
+      0.85,
+      0.11,
+      6.35
+     ]
+    }
+   },
+   "P3c_curated_OR_per_SD_log_attention_adj_log_beh": [
+    0.76,
+    0.34,
+    1.72
+   ],
+   "P3c_mean_log_attention": {
+    "curated": 4.255,
+    "H_lines": 4.958,
+    "other": 4.395
+   },
+   "P3d": {
+    "coverage: curated vs H lines": {
+     "n_pos": 7,
+     "n_neg": 168,
+     "count_matched": 0.9484,
+     "count_and_attention_matched": 0.9208,
+     "ci_gene": [
+      0.709,
+      1.0
+     ],
+     "difference": -0.0276,
+     "difference_ci_gene": [
+      -0.2166,
+      0.0735
+     ],
+     "positive_cells_without_negatives": [
+      10
+     ]
+    },
+    "coverage: curated vs other uncurated": {
+     "n_pos": 7,
+     "n_neg": 7931,
+     "count_matched": 0.9266,
+     "count_and_attention_matched": 0.9144,
+     "ci_gene": [
+      0.845,
+      0.969
+     ],
+     "difference": -0.0122,
+     "difference_ci_gene": [
+      -0.0469,
+      0.0097
+     ],
+     "positive_cells_without_negatives": []
+    },
+    "coverage: H lines without curated gene vs other uncurated": {
+     "n_pos": 168,
+     "n_neg": 7931,
+     "count_matched": 0.5335,
+     "count_and_attention_matched": 0.5392,
+     "ci_gene": [
+      0.487,
+      0.589
+     ],
+     "difference": 0.0057,
+     "difference_ci_gene": [
+      -0.0015,
+      0.0141
+     ],
+     "positive_cells_without_negatives": []
+    }
+   }
+  },
+  "attention_tertile_cuts_log1p": [
+   3.526,
+   5.147
+  ]
+ },
+ "P4_recombinase": {
+  "conditional_lines_in_pool": 4313,
+  "class_mix_pool": {
+   "nervous system plus other systems": 1889,
+   "no assay data": 444,
+   "assayed, nervous system not detected": 1732,
+   "nervous-system restricted": 248
+  },
+  "class_mix_behaviorally_annotated": {
+   "no assay data": 78,
+   "nervous system plus other systems": 423,
+   "nervous-system restricted": 133,
+   "assayed, nervous system not detected": 129
+  },
+  "class_mix_uncurated_ASD_ceiling_5_or_6": {
+   "nervous system plus other systems": 5,
+   "no assay data": 2,
+   "nervous-system restricted": 2
+  },
+  "driver_alleles_in_report": 5938,
+  "driver_alleles_in_pool_conditionals_matched": 4324,
+  "driver_alleles_in_pool_conditionals": 4324,
+  "ASD": {
+   "nervous system plus other systems": {
+    "genes": 128,
+    "conditional_mean": 0.528,
+    "null_mean": 0.842,
+    "genes_conditional_higher": 24,
+    "genes_null_higher": 52,
+    "wilcoxon_p": 0.00159
+   },
+   "nervous-system restricted": {
+    "genes": 54,
+    "conditional_mean": 0.639,
+    "null_mean": 0.872,
+    "genes_conditional_higher": 14,
+    "genes_null_higher": 27,
+    "wilcoxon_p": 0.10101
+   },
+   "assayed, nervous system not detected": {
+    "genes": 49,
+    "conditional_mean": 0.473,
+    "null_mean": 0.718,
+    "genes_conditional_higher": 9,
+    "genes_null_higher": 21,
+    "wilcoxon_p": 0.07599
+   },
+   "no assay data": {
+    "genes": 25,
+    "conditional_mean": 0.667,
+    "null_mean": 0.734,
+    "genes_conditional_higher": 7,
+    "genes_null_higher": 11,
+    "wilcoxon_p": 0.67741
+   }
+  },
+  "SCZ": {
+   "nervous system plus other systems": {
+    "genes": 128,
+    "conditional_mean": 0.776,
+    "null_mean": 0.764,
+    "genes_conditional_higher": 47,
+    "genes_null_higher": 39,
+    "wilcoxon_p": 0.96011
+   },
+   "nervous-system restricted": {
+    "genes": 54,
+    "conditional_mean": 0.914,
+    "null_mean": 0.791,
+    "genes_conditional_higher": 21,
+    "genes_null_higher": 16,
+    "wilcoxon_p": 0.32951
+   },
+   "assayed, nervous system not detected": {
+    "genes": 49,
+    "conditional_mean": 0.643,
+    "null_mean": 0.712,
+    "genes_conditional_higher": 14,
+    "genes_null_higher": 17,
+    "wilcoxon_p": 0.51034
+   },
+   "no assay data": {
+    "genes": 25,
+    "conditional_mean": 0.86,
+    "null_mean": 0.529,
+    "genes_conditional_higher": 12,
+    "genes_null_higher": 5,
+    "wilcoxon_p": 0.01117
+   }
+  },
+  "IDD": {
+   "nervous system plus other systems": {
+    "genes": 128,
+    "conditional_mean": 0.374,
+    "null_mean": 0.382,
+    "genes_conditional_higher": 28,
+    "genes_null_higher": 31,
+    "wilcoxon_p": 0.96064
+   },
+   "nervous-system restricted": {
+    "genes": 54,
+    "conditional_mean": 0.506,
+    "null_mean": 0.449,
+    "genes_conditional_higher": 19,
+    "genes_null_higher": 18,
+    "wilcoxon_p": 0.57956
+   },
+   "assayed, nervous system not detected": {
+    "genes": 49,
+    "conditional_mean": 0.212,
+    "null_mean": 0.369,
+    "genes_conditional_higher": 7,
+    "genes_null_higher": 18,
+    "wilcoxon_p": 0.06544
+   },
+   "no assay data": {
+    "genes": 25,
+    "conditional_mean": 0.253,
+    "null_mean": 0.263,
+    "genes_conditional_higher": 4,
+    "genes_null_higher": 8,
+    "wilcoxon_p": 1.0
+   }
+  },
+  "MDD": {
+   "nervous system plus other systems": {
+    "genes": 128,
+    "conditional_mean": 0.412,
+    "null_mean": 0.452,
+    "genes_conditional_higher": 34,
+    "genes_null_higher": 40,
+    "wilcoxon_p": 0.51187
+   },
+   "nervous-system restricted": {
+    "genes": 54,
+    "conditional_mean": 0.381,
+    "null_mean": 0.379,
+    "genes_conditional_higher": 16,
+    "genes_null_higher": 19,
+    "wilcoxon_p": 0.94755
+   },
+   "assayed, nervous system not detected": {
+    "genes": 49,
+    "conditional_mean": 0.473,
+    "null_mean": 0.425,
+    "genes_conditional_higher": 16,
+    "genes_null_higher": 18,
+    "wilcoxon_p": 0.63533
+   },
+   "no assay data": {
+    "genes": 25,
+    "conditional_mean": 0.68,
+    "null_mean": 0.46,
+    "genes_conditional_higher": 12,
+    "genes_null_higher": 6,
+    "wilcoxon_p": 0.14353
+   }
+  }
+ }
+}

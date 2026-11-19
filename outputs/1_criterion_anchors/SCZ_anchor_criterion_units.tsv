@@ -1,0 +1,42 @@
+disorder	hpo_id	hpo_label	category	centrality	item_id	second_item_id	attributable	confidence	needs_manual_review	prompt_sha	spec_version	model
+SCZ	HP:0000746	Delusion	delusions	core	A1	none	True	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000738	Hallucinations	hallucinations	core	A2	none	True	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000748	Inappropriate laughter	other	supporting	none	none	False	0.97	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000739	Anxiety	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200217	Depersonalization	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200218	Derealization	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0033692	Declarative memory loss	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000757	Lack of insight	other	supporting	none	none	False	0.97	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:6000000	Left-right disorientation	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0025769	Disordered formal thought process	disorganized_speech	core	A3	none	True	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200328	Diminishment of emotional expression	negative_symptoms	core	A5	none	True	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0033838	Dysphoria	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0031473	Anger	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0031849	Sleep-wake inversion	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0100543	Cognitive impairment	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200232	Phobia	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0002463	Language impairment	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200273	Pathological sadness	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000745	Abnormal diminished volition	negative_symptoms	core	A5	B	True	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0033051	Impaired executive functioning	other	supporting	none	none	False	0.96	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000718	Aggressive behavior	other	supporting	A4	none	True	0.71	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0002311	Incoordination	other	supporting	A4	none	True	0.67	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200310	Diminishment of social interactions	negative_symptoms	supporting	B	A5	True	0.91	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0006979	Sleep-wake cycle disturbance	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0040064	Abnormality of limbs	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0033695	Occupational disability	other	supporting	B	none	True	0.96	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0001262	Excessive daytime somnolence	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0004396	Poor appetite	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200401	Abnormal judgment	delusions	supporting	none	none	False	0.94	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0025766	Abnormal affect	other	supporting	A5	none	True	0.69	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200045	Reduced impulse control	other	supporting	A4	none	True	0.58	True	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0007086	Social and occupational deterioration	other	supporting	B	none	True	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0000708	Atypical behavior	catatonic_disorganized_behavior	supporting	A4	none	True	0.82	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0025785	Abnormal preoccupation	other	supporting	none	none	False	0.94	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0031058	Impairment of activities of daily living	other	supporting	B	none	True	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200216	Abnormal perceptual state	hallucinations	supporting	none	none	False	0.97	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:0012523	Oral aversion	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200046	Sensory behavioral abnormality	other	supporting	none	none	False	0.98	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200044	Reduced attention regulation	other	supporting	none	none	False	0.97	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200424	Delusional perception	other	supporting	none	none	False	0.99	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05
+SCZ	HP:5200024	Abnormal relationship	other	supporting	B	A5	True	0.94	False	cae0c0c7af4bf18082f90d80db668be97992cc38df3b7df76c1f498ec6ef861c	2026-07-27	gpt-5.4-2026-03-05

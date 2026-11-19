@@ -1,0 +1,41 @@
+{
+ "disorder": "NCD",
+ "null": "stratified",
+ "n": 11603,
+ "n_pos": 67,
+ "auroc_facet": 0.6679,
+ "ci_facet": [
+  0.5949,
+  0.7374
+ ],
+ "auroc_pheno_raw": 0.5926,
+ "ci_pheno_raw": [
+  0.5426,
+  0.6373
+ ],
+ "auroc_pheno_null": 0.5407,
+ "ci_pheno_null": [
+  0.4876,
+  0.5856
+ ],
+ "delta_facet_minus_pheno_raw": 0.0753,
+ "ci_facet_minus_pheno_raw": [
+  0.0073,
+  0.1498
+ ],
+ "p_facet_minus_pheno_raw": 0.031,
+ "delta_facet_minus_pheno_null": 0.1272,
+ "ci_facet_minus_pheno_null": [
+  0.057,
+  0.2017
+ ],
+ "p_facet_minus_pheno_null": 0.0,
+ "delta_pheno_null_minus_pheno_raw": -0.0519,
+ "ci_pheno_null_minus_pheno_raw": [
+  -0.0787,
+  -0.0305
+ ],
+ "p_pheno_null_minus_pheno_raw": 0.0,
+ "ceiling_pos_pheno_null": 0,
+ "ceiling_pos_facet": 0
+}

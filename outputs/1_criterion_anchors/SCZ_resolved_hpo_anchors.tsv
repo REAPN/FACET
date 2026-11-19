@@ -1,0 +1,42 @@
+hpo_id	hpo_label	normalized_phenotype	category	centrality	temporality	mapping_relation	confidence	manual_review
+HP:0000746	Delusion	delusions	delusions	core	current	exact	0.99	False
+HP:0000738	Hallucinations	hallucinations	hallucinations	core	current	exact	0.99	False
+HP:0000748	Inappropriate laughter	inappropriate laughter	other	supporting	unspecified	exact	0.99	False
+HP:0000739	Anxiety	anxiety	other	supporting	unspecified	exact	0.99	False
+HP:5200217	Depersonalization	depersonalization	other	supporting	unspecified	exact	0.99	False
+HP:5200218	Derealization	derealization	other	supporting	unspecified	exact	0.99	False
+HP:0033692	Declarative memory loss	impaired declarative memory	other	supporting	unspecified	exact	0.99	False
+HP:0000757	Lack of insight	impaired insight	other	supporting	unspecified	exact	0.99	False
+HP:6000000	Left-right disorientation	left-right confusion	other	supporting	unspecified	exact	0.99	False
+HP:0025769	Disordered formal thought process	disorganized speech	disorganized_speech	core	current	exact	0.98	False
+HP:5200328	Diminishment of emotional expression	diminished emotional expression	negative_symptoms	core	current	exact	0.98	False
+HP:0033838	Dysphoria	dysphoric mood	other	supporting	unspecified	exact	0.98	False
+HP:0031473	Anger	anger	other	supporting	unspecified	exact	0.98	False
+HP:0031849	Sleep-wake inversion	nocturnal wakefulness	other	supporting	unspecified	exact	0.98	False
+HP:0100543	Cognitive impairment	cognitive impairment	other	supporting	unspecified	exact	0.98	False
+HP:5200232	Phobia	phobias	other	supporting	unspecified	exact	0.97	False
+HP:0002463	Language impairment	language impairment	other	supporting	unspecified	exact	0.97	False
+HP:5200273	Pathological sadness	depressed mood	other	supporting	unspecified	exact	0.96	False
+HP:0000745	Abnormal diminished volition	avolition	negative_symptoms	core	current	exact	0.95	False
+HP:0033051	Impaired executive functioning	executive dysfunction	other	supporting	unspecified	exact	0.95	False
+HP:0000718	Aggressive behavior	aggression	other	supporting	unspecified	exact	0.95	False
+HP:0002311	Incoordination	impaired motor coordination	other	supporting	unspecified	exact	0.95	False
+HP:5200310	Diminishment of social interactions	social withdrawal	negative_symptoms	supporting	history	exact	0.89	False
+HP:0006979	Sleep-wake cycle disturbance	disturbed sleep pattern	other	supporting	unspecified	exact	0.88	False
+HP:0040064	Abnormality of limbs	minor limb anomalies	other	supporting	unspecified	broader_than_source	0.88	False
+HP:0033695	Occupational disability	occupational impairment	other	supporting	current	broader_than_source	0.84	False
+HP:0001262	Excessive daytime somnolence	daytime hypersomnolence	other	supporting	unspecified	exact	0.84	False
+HP:0004396	Poor appetite	reduced interest in eating	other	supporting	unspecified	exact	0.84	False
+HP:5200401	Abnormal judgment	odd beliefs	delusions	supporting	history	exact	0.82	False
+HP:0025766	Abnormal affect	inappropriate affect	other	supporting	unspecified	broader_than_source	0.82	False
+HP:5200045	Reduced impulse control	reduced inhibitory control	other	supporting	unspecified	exact	0.82	False
+HP:0007086	Social and occupational deterioration	functional decline	other	supporting	current	broader_than_source	0.79	False
+HP:0000708	Atypical behavior	unusual behavior	catatonic_disorganized_behavior	supporting	history	broader_than_source	0.79	False
+HP:0025785	Abnormal preoccupation	somatic preoccupation	other	supporting	unspecified	broader_than_source	0.79	False
+HP:0031058	Impairment of activities of daily living	impaired self-care	other	supporting	current	broader_than_source	0.76	False
+HP:5200216	Abnormal perceptual state	unusual perceptual experiences	hallucinations	supporting	history	broader_than_source	0.72	False
+HP:0012523	Oral aversion	food refusal	other	supporting	unspecified	broader_than_source	0.72	False
+HP:5200046	Sensory behavioral abnormality	abnormal sensory processing	other	supporting	unspecified	broader_than_source	0.72	False
+HP:5200044	Reduced attention regulation	impaired attention	other	supporting	unspecified	broader_than_source	0.72	False
+HP:5200424	Delusional perception	aberrant attribution of meaning to irrelevant stimuli	other	supporting	unspecified	broader_than_source	0.72	False
+HP:5200024	Abnormal relationship	impaired interpersonal functioning	other	supporting	current	broader_than_source	0.67	False

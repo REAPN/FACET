@@ -1,0 +1,146 @@
+{
+ "ASD_claude": {
+  "headline": {
+   "auroc_record": 0.9557,
+   "auroc_judge": 0.9499,
+   "diff": -0.0058,
+   "ci90": [
+    -0.0095,
+    -0.0024
+   ],
+   "ci95": [
+    -0.0104,
+    -0.0021
+   ],
+   "equivalent": true,
+   "dropped": 0,
+   "n_pos": 85,
+   "n": 11961
+  },
+  "full_pool": {
+   "auroc_record": 0.9689,
+   "auroc_judge": 0.9667,
+   "diff": -0.0021,
+   "ci90": [
+    -0.0036,
+    -0.001
+   ],
+   "ci95": [
+    -0.004,
+    -0.0008
+   ],
+   "equivalent": true,
+   "dropped": 0,
+   "n_pos": 85,
+   "n": 32535
+  },
+  "pairs": {
+   "judged": 6988,
+   "strict_record": 145,
+   "strict_judge": 370,
+   "strict_both": 134,
+   "strict_record_only": 11,
+   "strict_judge_only": 236,
+   "agree_strict": 0.965,
+   "kappa_strict": 0.506,
+   "agree_type": 0.758,
+   "kappa_type": 0.572
+  }
+ },
+ "SCZ_claude": {
+  "headline": {
+   "auroc_record": 0.6823,
+   "auroc_judge": 0.8641,
+   "diff": 0.1818,
+   "ci90": [
+    0.1235,
+    0.2419
+   ],
+   "ci95": [
+    0.1125,
+    0.2537
+   ],
+   "equivalent": false,
+   "dropped": 0,
+   "n_pos": 42,
+   "n": 12486
+  },
+  "full_pool": {
+   "auroc_record": 0.7094,
+   "auroc_judge": 0.9259,
+   "diff": 0.2165,
+   "ci90": [
+    0.1521,
+    0.2832
+   ],
+   "ci95": [
+    0.1397,
+    0.2955
+   ],
+   "equivalent": false,
+   "dropped": 0,
+   "n_pos": 42,
+   "n": 32535
+  },
+  "pairs": {
+   "judged": 6882,
+   "strict_record": 196,
+   "strict_judge": 425,
+   "strict_both": 170,
+   "strict_record_only": 26,
+   "strict_judge_only": 255,
+   "agree_strict": 0.959,
+   "kappa_strict": 0.529,
+   "agree_type": 0.666,
+   "kappa_type": 0.495
+  }
+ },
+ "IDD_claude": {
+  "headline": {
+   "auroc_record": 0.7511,
+   "auroc_judge": 0.7787,
+   "diff": 0.0276,
+   "ci90": [
+    0.0026,
+    0.0448
+   ],
+   "ci95": [
+    -0.0015,
+    0.0484
+   ],
+   "equivalent": true,
+   "dropped": 0,
+   "n_pos": 111,
+   "n": 12382
+  },
+  "full_pool": {
+   "auroc_record": 0.7591,
+   "auroc_judge": 0.7905,
+   "diff": 0.0314,
+   "ci90": [
+    0.0089,
+    0.0458
+   ],
+   "ci95": [
+    0.0054,
+    0.0496
+   ],
+   "equivalent": true,
+   "dropped": 0,
+   "n_pos": 121,
+   "n": 32535
+  },
+  "pairs": {
+   "judged": 4398,
+   "strict_record": 138,
+   "strict_judge": 363,
+   "strict_both": 131,
+   "strict_record_only": 7,
+   "strict_judge_only": 232,
+   "agree_strict": 0.946,
+   "kappa_strict": 0.5,
+   "agree_type": 0.708,
+   "kappa_type": 0.501
+  }
+ }
+}

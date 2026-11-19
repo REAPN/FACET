@@ -1,0 +1,44 @@
+disorder	hpo_id	hpo_label	category	centrality	item_id	second_item_id	attributable	confidence	needs_manual_review	prompt_sha	spec_version	model
+ASD	HP:4000092	Poor conversational reciprocity	social_communication	core	A1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:4000084	Reduced sharing of interests	social_communication	core	A1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200030	Diminished integration of verbal and non-verbal communicative behavior	social_communication	core	A2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0010529	Echolalia	language	core	B1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200130	Insistence on sameness	restricted_repetitive_behavior	core	B2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0000732	Inflexible adherence to routines	restricted_repetitive_behavior	core	B2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:4000070	Fixated interests	restricted_repetitive_behavior	core	B3	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:4000079	Sensory seeking	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:4000083	Lack of interest in peers	social_communication	core	A3	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0000733	Motor stereotypy	restricted_repetitive_behavior	core	B1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0001344	Absent speech	language	supporting	none	none	False	0.96	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0000758	Abnormal nonverbal communicative behavior	social_communication	core	A2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200052	Resistance to trivial environmental changes	restricted_repetitive_behavior	core	B2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200027	Infrequent social initiations	social_communication	supporting	A1	none	True	0.98	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200108	Nonfunctional or atypical use of objects in play	restricted_repetitive_behavior	core	B1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0034435	Abnormal eye contact	social_communication	core	A2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0000728	Reduced ability to form peer relationships	social_communication	core	A3	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200059	Sensory hyposensitivity unexplained by sensory deficit	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0010829	Impaired temperature sensation	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200028	Reduced responsiveness to social cues	social_communication	supporting	A1	none	True	0.97	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0033056	Impaired ability to organize	other	supporting	none	none	False	0.95	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0033055	Impaired ability to plan	other	supporting	none	none	False	0.94	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200067	Visual sensory seeking	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0033360	Impaired ability to shift attention	restricted_repetitive_behavior	supporting	B2	none	True	0.94	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200064	Olfactory sensory seeking	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0007328	Impaired pain sensation	sensory	core	B4	none	True	0.98	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200132	Atypical sensory examination of objects	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200035	Reduced cooperative imaginative play	social_communication	core	A3	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0025774	Idiosyncratic use of words	language	core	B1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200310	Diminishment of social interactions	social_communication	supporting	A1	A3	True	0.71	True	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0010863	Receptive language delay	language	supporting	none	none	False	0.97	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0012760	Reduced social responsiveness	social_communication	core	A1	none	True	0.97	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:4000081	Reduced production of gestures	social_communication	core	A2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0002465	Poor speech	language	supporting	none	none	False	0.95	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0004673	Decreased facial expression	social_communication	core	A2	none	True	0.98	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200136	Reduced social reciprocity	social_communication	core	A3	A1	True	0.91	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200129	Abnormal rituals	restricted_repetitive_behavior	core	B2	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200058	Sensory hypersensitivity	sensory	core	B4	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200121	Objectification of others	social_communication	supporting	A1	A3	True	0.88	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0012433	Abnormal social behavior	social_communication	core	A1	none	True	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200316	Diminishment of interpersonal communication	social_communication	core	A1	none	True	0.98	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:0410280	Pediatric onset	developmental_course	core	none	none	False	0.99	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05
+ASD	HP:5200016	Abnormal peer relationships	social_communication	supporting	A3	none	True	0.94	False	2fe472d16fced7b1b7cf62af274ee2dae57a21a37cc5e8d2c803456485c770af	2026-07-27	gpt-5.4-2026-03-05

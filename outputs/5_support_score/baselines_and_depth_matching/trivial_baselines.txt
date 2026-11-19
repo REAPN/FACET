@@ -1,0 +1,13 @@
+| Disorder | support score | behavioral annotation count | any behavioral annotation | MP term count |
+|---|---|---|---|---|
+| ASD | 0.956 | 0.895 | 0.633 | 0.564 |
+| SCZ | 0.682 | 0.849 | 0.659 | 0.497 |
+| IDD | 0.751 | 0.787 | 0.612 | 0.560 |
+| NCD | 0.668 | 0.714 | 0.604 | 0.534 |
+
+| Disorder | support score, depth matched | behavioral count, depth matched |
+|---|---|---|
+| ASD | 0.895 | 0.524 |
+| SCZ | 0.596 | 0.527 |
+| IDD | 0.667 | 0.511 |
+| NCD | 0.582 | 0.508 |

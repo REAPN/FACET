@@ -1,0 +1,110 @@
+{
+ "ASD": {
+  "n": 11961,
+  "n_pos": 85,
+  "dropped": 0,
+  "auroc_record": 0.9557,
+  "auroc_stratified": 0.9566,
+  "auroc_beh": 0.8946,
+  "diff": 0.0009,
+  "ci90": [
+   0.0001,
+   0.0017
+  ],
+  "ci95": [
+   0.0001,
+   0.0019
+  ],
+  "ci_stratified": [
+   0.921,
+   0.9834
+  ],
+  "dm_record": 0.8954,
+  "dm_stratified": 0.8978,
+  "ceiling_record": 62,
+  "ceiling_stratified": 61,
+  "n_strata": 546,
+  "draws": 10000
+ },
+ "SCZ": {
+  "n": 12486,
+  "n_pos": 42,
+  "dropped": 0,
+  "auroc_record": 0.6823,
+  "auroc_stratified": 0.6822,
+  "auroc_beh": 0.8486,
+  "diff": -0.0,
+  "ci90": [
+   -0.0023,
+   0.0023
+  ],
+  "ci95": [
+   -0.0027,
+   0.0027
+  ],
+  "ci_stratified": [
+   0.6036,
+   0.7597
+  ],
+  "dm_record": 0.5961,
+  "dm_stratified": 0.5926,
+  "ceiling_record": 0,
+  "ceiling_stratified": 6,
+  "n_strata": 548,
+  "draws": 10000
+ },
+ "IDD": {
+  "n": 12382,
+  "n_pos": 111,
+  "dropped": 0,
+  "auroc_record": 0.7511,
+  "auroc_stratified": 0.7518,
+  "auroc_beh": 0.7868,
+  "diff": 0.0008,
+  "ci90": [
+   -0.0004,
+   0.0022
+  ],
+  "ci95": [
+   -0.0007,
+   0.0026
+  ],
+  "ci_stratified": [
+   0.7058,
+   0.8214
+  ],
+  "dm_record": 0.6667,
+  "dm_stratified": 0.6717,
+  "ceiling_record": 43,
+  "ceiling_stratified": 42,
+  "n_strata": 542,
+  "draws": 10000
+ },
+ "NCD": {
+  "n": 11603,
+  "n_pos": 67,
+  "dropped": 0,
+  "auroc_record": 0.6679,
+  "auroc_stratified": 0.6648,
+  "auroc_beh": 0.7145,
+  "diff": -0.003,
+  "ci90": [
+   -0.0104,
+   0.0052
+  ],
+  "ci95": [
+   -0.0118,
+   0.0073
+  ],
+  "ci_stratified": [
+   0.5931,
+   0.7354
+  ],
+  "dm_record": 0.5818,
+  "dm_stratified": 0.5806,
+  "ceiling_record": 0,
+  "ceiling_stratified": 0,
+  "n_strata": 546,
+  "draws": 10000
+ }
+}

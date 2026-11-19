@@ -1,0 +1,83 @@
+{
+ "note": "binary sampling frame for the v9 instrument (judged pairs on scored criteria), 168 pairs in 12 blocks of 14, every pair rated by three raters from three orthogonal partitions. positive = strict-gate analog; negative = everything else. population-weighted agreement reweights each disorder and class by its population count over its drawn count.",
+ "build": "v9_k3_168pairs_n12_judged",
+ "seed": 20260913,
+ "positive_population": 420,
+ "negative_population": 13785,
+ "rateable": 14205,
+ "positive_prevalence": 0.0296,
+ "core_positive": 84,
+ "core_negative": 84,
+ "per_disorder": {
+  "ASD": {
+   "positive": 125,
+   "negative": 4800,
+   "rateable": 4925,
+   "strata": {
+    "S1": 125,
+    "S2": 761,
+    "S3": 504,
+    "S4": 3535,
+    "S5": 0
+   },
+   "drawn_positive": 24,
+   "drawn_negative": 24
+  },
+  "SCZ": {
+   "positive": 50,
+   "negative": 3159,
+   "rateable": 3209,
+   "strata": {
+    "S1": 50,
+    "S2": 392,
+    "S3": 320,
+    "S4": 2447,
+    "S5": 0
+   },
+   "drawn_positive": 18,
+   "drawn_negative": 18
+  },
+  "ID": {
+   "positive": 108,
+   "negative": 3093,
+   "rateable": 3201,
+   "strata": {
+    "S1": 108,
+    "S2": 677,
+    "S3": 311,
+    "S4": 2105,
+    "S5": 0
+   },
+   "drawn_positive": 18,
+   "drawn_negative": 18
+  },
+  "NCD": {
+   "positive": 95,
+   "negative": 2512,
+   "rateable": 2607,
+   "strata": {
+    "S1": 95,
+    "S2": 411,
+    "S3": 259,
+    "S4": 1842,
+    "S5": 0
+   },
+   "drawn_positive": 16,
+   "drawn_negative": 16
+  },
+  "MDD": {
+   "positive": 42,
+   "negative": 221,
+   "rateable": 263,
+   "strata": {
+    "S1": 42,
+    "S2": 104,
+    "S3": 49,
+    "S4": 68,
+    "S5": 0
+   },
+   "drawn_positive": 8,
+   "drawn_negative": 8
+  }
+ }
+}

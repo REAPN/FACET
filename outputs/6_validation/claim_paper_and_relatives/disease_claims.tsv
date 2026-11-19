@@ -1,0 +1,349 @@
+genotype_id	doid	disease	not_model	j_refs
+MGI:2174917	DOID:10652	Alzheimer's disease	0	J:53824
+MGI:2174990	DOID:10652	Alzheimer's disease	0	J:71037
+MGI:2174998	DOID:10652	Alzheimer's disease	0	J:40365
+MGI:2174998	DOID:0110042	Alzheimer's disease 3	0	J:40365
+MGI:2175037	DOID:0060041	autism spectrum disorder	0	J:130259
+MGI:2175046	DOID:5419	schizophrenia	0	J:57125
+MGI:2652553	DOID:10652	Alzheimer's disease	0	J:43077
+MGI:2653050	DOID:11983	Prader-Willi syndrome	0	J:57890
+MGI:2653055	DOID:11983	Prader-Willi syndrome	0	J:82266
+MGI:2654500	DOID:1094	attention deficit hyperactivity disorder	0	J:79011
+MGI:2654500	DOID:5419	schizophrenia	0	J:31328
+MGI:2654656	DOID:11983	Prader-Willi syndrome	0	J:57890
+MGI:2662300	DOID:14330	Parkinson's disease	0	J:83301
+MGI:2662716	DOID:10652	Alzheimer's disease	0	J:104962
+MGI:2663269	DOID:5419	schizophrenia	0	J:87399
+MGI:2665401	DOID:14261	fragile X syndrome	0	J:101021
+MGI:2675620	DOID:12858	Huntington's disease	0	J:141673|J:85298
+MGI:2675764	DOID:14330	Parkinson's disease	0	J:29045
+MGI:2675764	DOID:446	primary hyperaldosteronism	0	J:110599
+MGI:2678248	DOID:0060368	Parkinson's disease 2	0	J:85561
+MGI:3038236	DOID:14330	Parkinson's disease	0	J:88298
+MGI:3041140	DOID:5419	schizophrenia	0	J:79099
+MGI:3043476	DOID:12858	Huntington's disease	0	J:123681
+MGI:3044184	DOID:10652	Alzheimer's disease	0	J:90296
+MGI:3573927	DOID:12858	Huntington's disease	0	J:67074
+MGI:3576369	DOID:0060370	Parkinson's disease 7	0	J:190315
+MGI:3577843	DOID:10652	Alzheimer's disease	0	J:69830
+MGI:3579508	DOID:0060370	Parkinson's disease 7	0	J:98436
+MGI:3579532	DOID:5419	schizophrenia	0	J:151029
+MGI:3586839	DOID:12858	Huntington's disease	0	J:25941
+MGI:3604390	DOID:0060370	Parkinson's disease 7	0	J:99905
+MGI:3610950	DOID:0060041	autism spectrum disorder	0	J:194221
+MGI:3618137	DOID:1932	Angelman syndrome	0	J:105412
+MGI:3618137	DOID:11983	Prader-Willi syndrome	0	J:105412
+MGI:3618139	DOID:11983	Prader-Willi syndrome	0	J:47318
+MGI:3619915	DOID:14330	Parkinson's disease	0	J:104902
+MGI:3624551	DOID:1206	Rett syndrome	0	J:78009
+MGI:3624554	DOID:1206	Rett syndrome	0	J:78009
+MGI:3624674	DOID:1206	Rett syndrome	0	J:67909
+MGI:3624676	DOID:1206	Rett syndrome	0	J:181342
+MGI:3624713	DOID:1206	Rett syndrome	0	J:165306|J:67910
+MGI:3624717	DOID:1206	Rett syndrome	0	J:67910
+MGI:3639711	DOID:10652	Alzheimer's disease	0	J:62290
+MGI:3640114	DOID:0060041	autism spectrum disorder	0	J:192363
+MGI:3690093	DOID:0060041	autism spectrum disorder	0	J:188126
+MGI:3690093	DOID:0080422	Dravet syndrome	0	J:113149|J:188126
+MGI:3694359	DOID:1932	Angelman syndrome	0	J:50811
+MGI:3698039	DOID:12858	Huntington's disease	0	J:111237|J:60937|J:99425
+MGI:3698042	DOID:12858	Huntington's disease	0	J:111237|J:60937|J:99425
+MGI:3698855	DOID:12858	Huntington's disease	0	J:76018|J:79137
+MGI:3707972	DOID:1595	melancholic depression	0	J:120634
+MGI:3707975	DOID:5419	schizophrenia	0	J:120634
+MGI:3711235	DOID:0060041	autism spectrum disorder	0	J:121256
+MGI:3712286	DOID:1206	Rett syndrome	0	J:118365
+MGI:3712364	DOID:14330	Parkinson's disease	0	J:98209
+MGI:3713111	DOID:5419	schizophrenia	0	J:163637
+MGI:3713529	DOID:9478	postpartum depression	0	J:145475
+MGI:3716639	DOID:0060369	Parkinson's disease 6	0	J:122728
+MGI:3717173	DOID:0060041	autism spectrum disorder	0	J:228203
+MGI:3719798	DOID:0060041	autism spectrum disorder	0	J:114464
+MGI:3720943	DOID:5419	schizophrenia	0	J:133643
+MGI:3757750	DOID:0060368	Parkinson's disease 2	0	J:125148
+MGI:3758489	DOID:0050888	syndromic intellectual disability	0	J:124943
+MGI:3765154	DOID:14330	Parkinson's disease	0	J:70213
+MGI:3773672	DOID:11983	Prader-Willi syndrome	0	J:119656
+MGI:3774117	DOID:11983	Prader-Willi syndrome	0	J:131427
+MGI:3774594	DOID:14330	Parkinson's disease	0	J:131376
+MGI:3783593	DOID:0060041	autism spectrum disorder	0	J:131843
+MGI:3801152	DOID:1595	melancholic depression	0	J:196373
+MGI:3801487	DOID:1206	Rett syndrome	0	J:137344
+MGI:3815023	DOID:0050879	fragile X-associated tremor/ataxia syndrome	0	J:104445
+MGI:3817230	DOID:1206	Rett syndrome	0	J:235553
+MGI:3817461	DOID:1206	Rett syndrome	0	J:135825
+MGI:3817462	DOID:1206	Rett syndrome	0	J:135825
+MGI:3818698	DOID:5419	schizophrenia	0	J:141501
+MGI:3819267	DOID:5419	schizophrenia	0	J:214099
+MGI:3833428	DOID:0050776	non-syndromic X-linked intellectual disability	0	J:142806
+MGI:3833851	DOID:0060370	Parkinson's disease 7	0	J:141628
+MGI:3834842	DOID:11983	Prader-Willi syndrome	0	J:144836
+MGI:3841583	DOID:5419	schizophrenia	0	J:147544
+MGI:3848697	DOID:0060371	Parkinson's disease 8	0	J:149135
+MGI:3850371	DOID:0060369	Parkinson's disease 6	0	J:150206
+MGI:3852128	DOID:1932	Angelman syndrome	0	J:75622
+MGI:4353654	DOID:0060041	autism spectrum disorder	0	J:151116
+MGI:4353812	DOID:5419	schizophrenia	0	J:151070
+MGI:4354165	DOID:5419	schizophrenia	0	J:151337
+MGI:4358724	DOID:5419	schizophrenia	0	J:143912
+MGI:4366351	DOID:14261	fragile X syndrome	0	J:19220|J:221083
+MGI:4366442	DOID:14261	fragile X syndrome	0	J:101021|J:34449
+MGI:4415714	DOID:14261	fragile X syndrome	0	J:155593
+MGI:4429423	DOID:14330	Parkinson's disease	0	J:156878
+MGI:4438921	DOID:5419	schizophrenia	0	J:158266
+MGI:4456472	DOID:0060041	autism spectrum disorder	0	J:159701
+MGI:4461155	DOID:0060041	autism spectrum disorder	0	J:153165
+MGI:4830462	DOID:11983	Prader-Willi syndrome	0	J:163043
+MGI:4843917	DOID:0060041	autism spectrum disorder	0	J:166116
+MGI:4849542	DOID:0050881	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	0	J:166320
+MGI:4888960	DOID:5418	schizoaffective disorder	0	J:167264
+MGI:4936868	DOID:14330	Parkinson's disease	0	J:167234
+MGI:4941907	DOID:0060369	Parkinson's disease 6	0	J:169471
+MGI:4949761	DOID:0060041	autism spectrum disorder	0	J:171113
+MGI:4949888	DOID:1206	Rett syndrome	0	J:171410
+MGI:4950076	DOID:14261	fragile X syndrome	0	J:170720
+MGI:5014041	DOID:10652	Alzheimer's disease	0	J:168335
+MGI:5056404	DOID:0060041	autism spectrum disorder	0	J:173402
+MGI:5085920	DOID:5419	schizophrenia	0	J:174350
+MGI:5085985	DOID:5419	schizophrenia	0	J:174352
+MGI:5086221	DOID:0060041	autism spectrum disorder	0	J:198768
+MGI:5285395	DOID:0060041	autism spectrum disorder	0	J:175320
+MGI:5285873	DOID:5419	schizophrenia	0	J:175056
+MGI:5292357	DOID:14261	fragile X syndrome	0	J:176553
+MGI:5292519	DOID:12858	Huntington's disease	0	J:175800
+MGI:5294357	DOID:10652	Alzheimer's disease	0	J:176575
+MGI:5295223	DOID:0060041	autism spectrum disorder	0	J:175436
+MGI:5295223	DOID:1928	Williams-Beuren syndrome	0	J:175436
+MGI:5295268	DOID:0060041	autism spectrum disorder	0	J:177110
+MGI:5295268	DOID:0090130	cortical dysplasia-focal epilepsy syndrome	0	J:177110
+MGI:5297858	DOID:0060367	Parkinson's disease 1	0	J:77344
+MGI:5302204	DOID:0060308	autosomal recessive intellectual developmental disorder	0	J:259276
+MGI:5306241	DOID:1206	Rett syndrome	0	J:106973
+MGI:5310735	DOID:1206	Rett syndrome	0	J:181311
+MGI:5314147	DOID:0060041	autism spectrum disorder	0	J:177772
+MGI:5316396	DOID:0060041	autism spectrum disorder	0	J:171069
+MGI:5318689	DOID:1094	attention deficit hyperactivity disorder	0	J:99880
+MGI:5318689	DOID:0060041	autism spectrum disorder	0	J:99880
+MGI:5318976	DOID:0060799	syndromic X-linked intellectual disability Lubs type	0	J:182685
+MGI:5428133	DOID:0060041	autism spectrum disorder	0	J:153748
+MGI:5428133	DOID:5419	schizophrenia	0	J:153748
+MGI:5428448	DOID:5419	schizophrenia	0	J:119733
+MGI:5432176	DOID:12858	Huntington's disease	0	J:243843
+MGI:5432177	DOID:12858	Huntington's disease	0	J:243843
+MGI:5435702	DOID:0060041	autism spectrum disorder	0	J:186719
+MGI:5436309	DOID:0060369	Parkinson's disease 6	0	J:183290
+MGI:5437480	DOID:0060041	autism spectrum disorder	0	J:186718|J:237188
+MGI:5440731	DOID:0060041	autism spectrum disorder	0	J:187744
+MGI:5444200	DOID:0060672	frontotemporal dementia 2	0	J:218705
+MGI:5465282	DOID:5419	schizophrenia	0	J:192388
+MGI:5466506	DOID:12858	Huntington's disease	0	J:191129
+MGI:5469320	DOID:0060041	autism spectrum disorder	0	J:301716
+MGI:5469320	DOID:705	Leber hereditary optic neuropathy	0	J:192260
+MGI:5471773	DOID:0060371	Parkinson's disease 8	0	J:204940
+MGI:5485349	DOID:5419	schizophrenia	0	J:194146
+MGI:5491051	DOID:1206	Rett syndrome	0	J:194039
+MGI:5495922	DOID:0060041	autism spectrum disorder	0	J:197577
+MGI:5500068	DOID:0050881	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	0	J:191963
+MGI:5517482	DOID:0060041	autism spectrum disorder	0	J:201707
+MGI:5517484	DOID:0060041	autism spectrum disorder	0	J:201707
+MGI:5517669	DOID:0060367	Parkinson's disease 1	0	J:201391
+MGI:5529468	DOID:1206	Rett syndrome	0	J:203745
+MGI:5538526	DOID:1206	Rett syndrome	0	J:204723
+MGI:5546408	DOID:11949	Creutzfeldt-Jakob disease	0	J:200974
+MGI:5559028	DOID:5419	schizophrenia	0	J:204368
+MGI:5568994	DOID:1206	Rett syndrome	0	J:209637
+MGI:5568998	DOID:1206	Rett syndrome	0	J:209637
+MGI:5574284	DOID:5419	schizophrenia	0	J:209700
+MGI:5576781	DOID:0080312	neurodevelopmental disorder with midbrain and hindbrain malformations	0	J:242973
+MGI:5584025	DOID:1206	Rett syndrome	0	J:209069
+MGI:5617140	DOID:14261	fragile X syndrome	0	J:196840
+MGI:5617468	DOID:0060307	autosomal dominant intellectual developmental disorder	0	J:212073
+MGI:5629811	DOID:0060867	macrocephaly-autism syndrome	0	J:210487
+MGI:5632308	DOID:0060041	autism spectrum disorder	0	J:220076
+MGI:5638672	DOID:10652	Alzheimer's disease	0	J:212758
+MGI:5638675	DOID:10652	Alzheimer's disease	0	J:212758
+MGI:5641392	DOID:0060041	autism spectrum disorder	0	J:221239
+MGI:5641392	DOID:13515	tuberous sclerosis	0	J:221239
+MGI:5660857	DOID:0060041	autism spectrum disorder	0	J:214636
+MGI:5660929	DOID:5419	schizophrenia	0	J:214737
+MGI:5661462	DOID:0060800	syndromic X-linked intellectual disability 5	0	J:218588
+MGI:5689331	DOID:5419	schizophrenia	0	J:197066|J:223954
+MGI:5694657	DOID:5419	schizophrenia	0	J:225083
+MGI:5694660	DOID:5419	schizophrenia	0	J:225083
+MGI:5695247	DOID:0060897	Parkinson's disease 17	0	J:225806
+MGI:5698523	DOID:12858	Huntington's disease	0	J:220868
+MGI:5699086	DOID:5419	schizophrenia	0	J:214267
+MGI:5702941	DOID:1206	Rett syndrome	0	J:227401
+MGI:5702951	DOID:1206	Rett syndrome	0	J:227401
+MGI:5702952	DOID:1206	Rett syndrome	0	J:227401
+MGI:5704111	DOID:1932	Angelman syndrome	0	J:222400
+MGI:5750066	DOID:0060041	autism spectrum disorder	0	J:228732
+MGI:5751707	DOID:1206	Rett syndrome	0	J:220859
+MGI:5751716	DOID:1206	Rett syndrome	0	J:220859
+MGI:5752313	DOID:0060041	autism spectrum disorder	0	J:208050
+MGI:5752786	DOID:5419	schizophrenia	0	J:229661
+MGI:5756630	DOID:14330	Parkinson's disease	0	J:298983
+MGI:5762957	DOID:5419	schizophrenia	0	J:217297
+MGI:5763612	DOID:0060041	autism spectrum disorder	0	J:138605|J:138842|J:222265
+MGI:5766814	DOID:0060041	autism spectrum disorder	0	J:230850
+MGI:5770244	DOID:1094	attention deficit hyperactivity disorder	0	J:231288
+MGI:5770244	DOID:0060041	autism spectrum disorder	0	J:231288
+MGI:5776354	DOID:0060041	autism spectrum disorder	0	J:229668
+MGI:5776377	DOID:0060041	autism spectrum disorder	0	J:230887
+MGI:5776380	DOID:5419	schizophrenia	0	J:230887
+MGI:5781308	DOID:11983	Prader-Willi syndrome	0	J:233299
+MGI:5790841	DOID:10652	Alzheimer's disease	0	J:251814
+MGI:5805821	DOID:0060041	autism spectrum disorder	0	J:235927
+MGI:5806112	DOID:1206	Rett syndrome	0	J:235875
+MGI:5811989	DOID:0060041	autism spectrum disorder	0	J:236753
+MGI:5823987	DOID:0081072	craniofacial dysmorphism, skeletal anomalies, and mental retardation syndrome	0	J:233671
+MGI:5824119	DOID:0060041	autism spectrum disorder	0	J:217829
+MGI:5824730	DOID:0050776	non-syndromic X-linked intellectual disability	0	J:238576
+MGI:5825287	DOID:0060041	autism spectrum disorder	0	J:225200
+MGI:5825304	DOID:0060041	autism spectrum disorder	0	J:225200
+MGI:5829468	DOID:0060041	autism spectrum disorder	0	J:238065
+MGI:5883282	DOID:0060041	autism spectrum disorder	0	J:224381
+MGI:5902071	DOID:0060825	Christianson syndrome	0	J:229166|J:241124|J:262453
+MGI:5902072	DOID:0060825	Christianson syndrome	0	J:241124
+MGI:5902076	DOID:0060825	Christianson syndrome	0	J:229166
+MGI:5904009	DOID:0060041	autism spectrum disorder	0	J:241916
+MGI:5904595	DOID:9255	frontotemporal dementia	0	J:242126
+MGI:5908397	DOID:0060041	autism spectrum disorder	0	J:228332
+MGI:6098717	DOID:1470	major depressive disorder	0	J:244400
+MGI:6098752	DOID:1206	Rett syndrome	0	J:241788
+MGI:6098753	DOID:1206	Rett syndrome	0	J:241788
+MGI:6098754	DOID:1206	Rett syndrome	0	J:241788
+MGI:6112031	DOID:0060041	autism spectrum disorder	0	J:249352
+MGI:6156953	DOID:0070056	autosomal dominant intellectual developmental disorder 26	0	J:261355
+MGI:6157969	DOID:0060488	Pitt-Hopkins syndrome	0	J:254983
+MGI:6157970	DOID:0060488	Pitt-Hopkins syndrome	0	J:254983
+MGI:6159715	DOID:0060041	autism spectrum disorder	0	J:256668
+MGI:6159715	DOID:0070042	Coffin-Siris syndrome 1	0	J:256668
+MGI:6163736	DOID:0060809	syndromic X-linked intellectual disability Claes-Jensen type	0	J:262206
+MGI:6164125	DOID:0060041	autism spectrum disorder	0	J:257371
+MGI:6187717	DOID:0060201	amyotrophic lateral sclerosis type 10	0	J:261673
+MGI:6187717	DOID:9255	frontotemporal dementia	0	J:261673
+MGI:6189103	DOID:0060041	autism spectrum disorder	0	J:235128
+MGI:6189180	DOID:1059	intellectual disability	0	J:271912
+MGI:6189180	DOID:5419	schizophrenia	0	J:271912
+MGI:6189202	DOID:5419	schizophrenia	0	J:263351
+MGI:6195853	DOID:0050709	early infantile epileptic encephalopathy	0	J:262482
+MGI:6195853	DOID:0060309	syndromic X-linked intellectual disability	0	J:262482
+MGI:6199038	DOID:0060672	frontotemporal dementia 2	0	J:259943
+MGI:6201596	DOID:0060041	autism spectrum disorder	0	J:258593
+MGI:6258771	DOID:0060041	autism spectrum disorder	0	J:203256
+MGI:6278937	DOID:9255	frontotemporal dementia	0	J:237873
+MGI:6278937	DOID:0111227	frontotemporal dementia and/or amyotrophic lateral sclerosis 7	0	J:237873
+MGI:6278939	DOID:9255	frontotemporal dementia	0	J:237873
+MGI:6278939	DOID:0111227	frontotemporal dementia and/or amyotrophic lateral sclerosis 7	0	J:237873
+MGI:6283412	DOID:5419	schizophrenia	0	J:270199
+MGI:6286096	DOID:0060041	autism spectrum disorder	0	J:271850
+MGI:6287207	DOID:0060041	autism spectrum disorder	0	J:271943
+MGI:6287871	DOID:0060041	autism spectrum disorder	0	J:273373
+MGI:6287871	DOID:1059	intellectual disability	0	J:273373
+MGI:6294052	DOID:0060041	autism spectrum disorder	0	J:271067
+MGI:6294898	DOID:5419	schizophrenia	0	J:272181
+MGI:6295127	DOID:0050681	Borjeson-Forssman-Lehmann syndrome	0	J:271089
+MGI:6295856	DOID:0111456	Kaufman oculocerebrofacial syndrome	0	J:273879
+MGI:6314154	DOID:0060672	frontotemporal dementia 2	0	J:259651
+MGI:6315636	DOID:0060824	syndromic X-linked intellectual disability Raymond type	0	J:268248
+MGI:6315641	DOID:5419	schizophrenia	0	J:268239
+MGI:6316332	DOID:0060041	autism spectrum disorder	0	J:202876|J:237081
+MGI:6324924	DOID:0060041	autism spectrum disorder	0	J:239596
+MGI:6357214	DOID:1206	Rett syndrome	0	J:256665
+MGI:6358593	DOID:0060041	autism spectrum disorder	0	J:277713
+MGI:6358832	DOID:0111403	mega-corpus-callosum syndrome with cerebellar hypoplasia and cortical malformations	0	J:268904
+MGI:6364110	DOID:0060041	autism spectrum disorder	0	J:279537
+MGI:6370003	DOID:0060812	syndromic X-linked intellectual disability Siderius type	0	J:258245
+MGI:6388550	DOID:0060041	autism spectrum disorder	0	J:281878
+MGI:6390918	DOID:0060041	autism spectrum disorder	0	J:267025
+MGI:6392615	DOID:0050776	non-syndromic X-linked intellectual disability	0	J:284762
+MGI:6393881	DOID:0060041	autism spectrum disorder	0	J:284914
+MGI:6400710	DOID:12858	Huntington's disease	0	J:250587
+MGI:6423106	DOID:5419	schizophrenia	0	J:286227
+MGI:6430623	DOID:0060041	autism spectrum disorder	0	J:270945
+MGI:6437929	DOID:0060041	autism spectrum disorder	0	J:289874
+MGI:6437930	DOID:0060041	autism spectrum disorder	0	J:289874
+MGI:6438116	DOID:0060041	autism spectrum disorder	0	J:289884
+MGI:6438116	DOID:0080354	Phelan-McDermid syndrome	0	J:289884
+MGI:6438117	DOID:0060041	autism spectrum disorder	0	J:289884
+MGI:6438117	DOID:0080354	Phelan-McDermid syndrome	0	J:289884
+MGI:6451664	DOID:0112247	congenital heart defects, dysmorphic facial features, and intellectual developmental disorder	0	J:291583
+MGI:6466594	DOID:0112051	non-syndromic X-linked intellectual disability 30	0	J:292116
+MGI:6468250	DOID:0060041	autism spectrum disorder	0	J:283395
+MGI:6468250	DOID:0112044	non-syndromic X-linked intellectual disability 98	0	J:283395
+MGI:6472629	DOID:1206	Rett syndrome	0	J:296009
+MGI:6479882	DOID:0060488	Pitt-Hopkins syndrome	0	J:239016
+MGI:6479897	DOID:0060488	Pitt-Hopkins syndrome	0	J:265025
+MGI:6489606	DOID:14330	Parkinson's disease	0	J:298664
+MGI:6507205	DOID:0050681	Borjeson-Forssman-Lehmann syndrome	0	J:299742
+MGI:6695982	DOID:0060309	syndromic X-linked intellectual disability	0	J:287752
+MGI:6715154	DOID:1059	intellectual disability	0	J:304877
+MGI:6715314	DOID:0060041	autism spectrum disorder	0	J:305052
+MGI:6715340	DOID:14261	fragile X syndrome	0	J:304982
+MGI:6717362	DOID:1059	intellectual disability	0	J:294716
+MGI:6726265	DOID:0060041	autism spectrum disorder	0	J:306854
+MGI:6726265	DOID:0080354	Phelan-McDermid syndrome	0	J:306854
+MGI:6729187	DOID:1059	intellectual disability	0	J:307501
+MGI:6754173	DOID:0060041	autism spectrum disorder	0	J:306113
+MGI:6754173	DOID:1059	intellectual disability	0	J:306113
+MGI:6754175	DOID:0060041	autism spectrum disorder	0	J:306113
+MGI:6754175	DOID:1059	intellectual disability	0	J:306113
+MGI:6754183	DOID:0060041	autism spectrum disorder	0	J:306113
+MGI:6754183	DOID:1059	intellectual disability	0	J:306113
+MGI:6783448	DOID:0060041	autism spectrum disorder	0	J:311772
+MGI:6790238	DOID:12849	autistic disorder	0	J:277752
+MGI:6810192	DOID:5419	schizophrenia	0	J:313946
+MGI:6828730	DOID:5419	schizophrenia	0	J:312498
+MGI:6849976	DOID:0060900	Parkinson's disease 14	0	J:317126
+MGI:6887846	DOID:0070677	Ferguson-Bonni neurodevelopmental syndrome	0	J:320745
+MGI:6890374	DOID:0060041	autism spectrum disorder	0	J:321396
+MGI:6890374	DOID:0111448	progressive myoclonus epilepsy 1B	0	J:321396
+MGI:7260147	DOID:1470	major depressive disorder	0	J:281839
+MGI:7264822	DOID:0070037	autosomal dominant intellectual developmental disorder 7	0	J:259596
+MGI:7265077	DOID:0070069	autosomal dominant intellectual developmental disorder 39	0	J:321206
+MGI:7266261	DOID:1206	Rett syndrome	0	J:268051
+MGI:7266266	DOID:1206	Rett syndrome	0	J:268051
+MGI:7266283	DOID:1206	Rett syndrome	0	J:268051
+MGI:7266284	DOID:1206	Rett syndrome	0	J:268051
+MGI:7277684	DOID:0070068	autosomal dominant intellectual developmental disorder 38	0	J:296080
+MGI:7284278	DOID:9255	frontotemporal dementia	0	J:308471
+MGI:7284279	DOID:9255	frontotemporal dementia	0	J:308471
+MGI:7284280	DOID:9255	frontotemporal dementia	0	J:308471
+MGI:7328859	DOID:0070069	autosomal dominant intellectual developmental disorder 39	0	J:326588
+MGI:7341464	DOID:0112034	non-syndromic X-linked intellectual disability 9	0	J:328916
+MGI:7378550	DOID:5419	schizophrenia	0	J:328716
+MGI:7378801	DOID:14330	Parkinson's disease	0	J:303283
+MGI:7413047	DOID:0060041	autism spectrum disorder	0	J:235128
+MGI:7466182	DOID:0060897	Parkinson's disease 17	0	J:329507
+MGI:7469827	DOID:0081362	Pierpont syndrome	0	J:335355
+MGI:7531415	DOID:0060041	autism spectrum disorder	0	J:313900
+MGI:7541226	DOID:0070538	syndromic X-linked intellectual developmental disorder bain type	0	J:338313
+MGI:7541228	DOID:0070538	syndromic X-linked intellectual developmental disorder bain type	0	J:338313
+MGI:7547388	DOID:0112059	non-syndromic X-linked intellectual disability 72	0	J:341888
+MGI:7574259	DOID:0070537	spastic tetraplegia, thin corpus callosum, and progressive microcephaly	0	J:344184
+MGI:7579102	DOID:0070538	syndromic X-linked intellectual developmental disorder bain type	0	J:338313
+MGI:7580988	DOID:0070048	GAND syndrome	0	J:344365
+MGI:7595529	DOID:0070055	Xia-Gibbs Syndrome	0	J:326009
+MGI:7606740	DOID:0081206	autosomal recessive intellectual developmental disorder 41	0	J:343200
+MGI:7610011	DOID:0081444	neurodevelopmental disorder with poor growth and behavioral abnormalities	0	J:335674
+MGI:7611646	DOID:0060041	autism spectrum disorder	0	J:345640
+MGI:7616244	DOID:0060041	autism spectrum disorder	0	J:286398
+MGI:7711308	DOID:0112056	X-linked intellectual disability-short stature-overweight syndrome	0	J:345229
+MGI:7718590	DOID:1470	major depressive disorder	0	J:336771
+MGI:7860846	DOID:649	prion disease	0	J:361333
+MGI:7860847	DOID:649	prion disease	0	J:361333
+MGI:7867619	DOID:0070058	Helsmoortel-Van Der Aa Syndrome	0	J:101977
+MGI:7867699	DOID:0070058	Helsmoortel-Van Der Aa Syndrome	0	J:361953
+MGI:8175487	DOID:0112339	Tatton-Brown-Rahman syndrome	0	J:348795|J:348991
+MGI:8175639	DOID:0112339	Tatton-Brown-Rahman syndrome	0	J:321204|J:348795|J:348991
+MGI:8187632	DOID:384	Wolff-Parkinson-White syndrome	0	J:237375
+MGI:8187633	DOID:384	Wolff-Parkinson-White syndrome	0	J:237375
+MGI:8219473	DOID:1307	dementia	0	J:368740
+MGI:8219473	DOID:1596	depressive disorder	0	J:368740
+MGI:8220251	DOID:0070657	congenital variant of Rett syndrome	0	J:367353
+MGI:8237980	DOID:0060041	autism spectrum disorder	0	J:256001
+MGI:8237980	DOID:1059	intellectual disability	0	J:256001
+MGI:8248856	DOID:1059	intellectual disability	0	J:370017
+MGI:8250466	DOID:1059	intellectual disability	0	J:370017
+MGI:8256897	DOID:1596	depressive disorder	0	J:373573

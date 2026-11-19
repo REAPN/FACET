@@ -1,0 +1,12 @@
+runs 8 | pairs with a definite rating 152 | pairs with two or more 107 | of which admitted by the LLM 56
+LLM against a single rater, all rated pairs: 0.772 (268 ratings on 152 pairs), 95 percent 0.712 to 0.833
+   admitted: 0.659 (138 ratings on 77 pairs)
+   refused: 0.892 (130 ratings on 75 pairs)
+LLM against a single rater, pairs with two or more raters: 0.776 (223 ratings on 107 pairs), 95 percent 0.705 to 0.842
+   admitted: 0.658 (117 ratings on 56 pairs)
+   refused: 0.906 (106 ratings on 51 pairs)
+two raters on the same pair: 0.792 (125 dyads on 107 pairs), 95 percent 0.712 to 0.868
+   admitted by the LLM: 0.697 (66 dyads on 56 pairs)
+   refused by the LLM: 0.898 (59 dyads on 51 pairs)
+difference on the same pairs, LLM-rater minus rater-rater: -0.016, 95 percent -0.093 to +0.053
+LLM against the rater majority (ties dropped): 0.811 on 132 pairs

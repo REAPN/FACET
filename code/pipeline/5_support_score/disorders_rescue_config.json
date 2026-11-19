@@ -1,0 +1,1128 @@
+{
+ "$schema": "./disorder_config.schema.json",
+ "$description": "Multi-disorder rescue configuration with 4 primary targets (ASD, MDD, SCZ, SubstanceAbuse) and 8 comparator disorders (Bipolar, Anxiety, PTSD, OCD, ADHD, IntellectualDisability, EatingDisorders, Neurocognitive). All 12 disorders receive identical rescue treatment (paradigm-LLM-scoring + DisGeNET fetch + tier classification) so cross-disorder contrasts are evidence-symmetric. Only the 4 primaries are benchmarked with Stage 1-7; the 8 comparators populate per-(target, contrast) negative pools at the same tier as the target's positive set.",
+ "$created": "2026-05-23",
+ "$updated": "2026-06-04",
+ "$version": "2.3",
+ "tier_definitions": {
+  "Tier_0_disease_terms": {
+   "label": "disease_terms",
+   "description": "Per-genotype published-mouse-test evidence from MGI_Geno_DiseaseDO.rpt."
+  },
+  "Tier_1_mendelian_confirmed": {
+   "label": "Mendelian-confirmed",
+   "description": "Two independent human Mendelian-curation pipelines agree. Headline tier.",
+   "disgenet_sources_mendelian_confirmed": [
+    "CLINVAR",
+    "ORPHANET",
+    "CLINGEN",
+    "GENCC",
+    "UNIPROT"
+   ]
+  },
+  "Tier_1b_mendelian_suggestive": {
+   "label": "Mendelian-suggestive",
+   "description": "Single-source Mendelian evidence.",
+   "disgenet_sources_mendelian_suggestive": [
+    "HPO",
+    "CLINPGX",
+    "PSYGENET"
+   ]
+  },
+  "Tier_2_common_variant_permissive": {
+   "label": "common-variant-permissive",
+   "description": "Tier 1b plus GWAS-only evidence. Sensitivity layer.",
+   "disgenet_sources_common_variant": [
+    "GWASCAT",
+    "FINNGEN",
+    "UKBIOBANK"
+   ]
+  }
+ },
+ "disgenet_source_classification": {
+  "mendelian_confirmed": [
+   "CLINVAR",
+   "ORPHANET",
+   "CLINGEN",
+   "GENCC",
+   "UNIPROT"
+  ],
+  "mendelian_suggestive": [
+   "HPO",
+   "CLINPGX",
+   "PSYGENET"
+  ],
+  "common_variant": [
+   "GWASCAT",
+   "FINNGEN",
+   "UKBIOBANK"
+  ],
+  "literature_only": [
+   "TEXTMINING_HUMAN"
+  ],
+  "circular_excluded": [
+   "MGD_HUMAN",
+   "MGD_MOUSE",
+   "RGD",
+   "RGD_RAT",
+   "TEXTMINING_MODELS"
+  ],
+  "clinical_other": [
+   "CLINICALTRIALS"
+  ]
+ },
+ "disorder_role": {
+  "primary": [
+   "ASD",
+   "MDD",
+   "SCZ",
+   "SubstanceAbuse"
+  ],
+  "comparator": [
+   "Bipolar",
+   "Anxiety",
+   "PTSD",
+   "OCD",
+   "ADHD",
+   "IntellectualDisability",
+   "EatingDisorders",
+   "Neurocognitive",
+   "Sleep",
+   "Dissociative",
+   "Somatic",
+   "Elimination",
+   "SexualGender",
+   "DisruptiveImpulseControl",
+   "PersonalityDisorders",
+   "Paraphilic"
+  ]
+ },
+ "disorders": [
+  {
+   "name": "ASD",
+   "role": "primary",
+   "label": "autism_spectrum_disorder",
+   "dsm5_chapter": 1,
+   "doids": [
+    "DOID:0050432",
+    "DOID:0060041",
+    "DOID:0060867",
+    "DOID:0061147",
+    "DOID:0081430",
+    "DOID:12849"
+   ],
+   "umls_cuis": [
+    "C1510586",
+    "C0004352"
+   ],
+   "disease_terms_regex": "autism|autistic|asperger|pervasive developmental|kanner",
+   "paradigm_scoring_file": "paradigm_scoring/asd/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "asd.disorder.json",
+   "special_sources": {
+    "sfari": {
+     "enabled": true,
+     "file": "SFARI-Gene_animal-genes_03-22-2026.csv",
+     "treatment": "uniform_one_source",
+     "category_column": "human-gene-score",
+     "syndromic_column": "human-syndromic",
+     "category_to_tier_mapping": {
+      "1": {
+       "tier": "Mendelian-confirmed",
+       "rationale": "Cat 1: 3+ de novo LGD, FDR<0.1."
+      },
+      "2": {
+       "tier": "Mendelian-confirmed",
+       "rationale": "Cat 2: 2 de novo LGD OR uniquely-GWAS-with-functional. De novo path dominates."
+      },
+      "3": {
+       "tier": "Mendelian-suggestive",
+       "rationale": "Cat 3: 1 de novo LGD OR unreplicated assoc OR rare inherited."
+      },
+      "S": {
+       "tier": "syndromic_no_independent_asd_evidence",
+       "rationale": "Plain S: syndromic without independent ASD evidence. Flagged separately."
+      }
+     },
+     "syndromic_prefixed_rule": "Numeric+S (1S/2S/3S) use the numeric component.",
+     "note": "v1: all categories treated uniformly as Mendelian-confirmed. Per-category mapping is task #93."
+    }
+   },
+   "notes": "ASD has the most curated gene resources. Expect Tier 1 n in the high hundreds.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 2,
+     "n_after": 6,
+     "added": [
+      "DOID:0050432",
+      "DOID:0060867",
+      "DOID:0061147",
+      "DOID:0081430"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "autism|autistic|asperger|pervasive developmental",
+     "after": "autism|autistic|asperger|pervasive developmental|kanner"
+    }
+   }
+  },
+  {
+   "name": "MDD",
+   "role": "primary",
+   "label": "major_depressive_disorder",
+   "dsm5_chapter": 4,
+   "doids": [
+    "DOID:1470",
+    "DOID:1595",
+    "DOID:1596",
+    "DOID:9478"
+   ],
+   "umls_cuis": [
+    "C1269683",
+    "C0011570",
+    "C0011581"
+   ],
+   "disease_terms_regex": "depression|depressive|melancholic|dysthymic|disruptive mood dysregulation|premenstrual dysphoric|seasonal affective|postpartum depress|atypical depress|major depressive",
+   "paradigm_scoring_file": "paradigm_scoring/mdd/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "mdd.disorder.json",
+   "special_sources": {},
+   "notes": "Highly polygenic; Tier 1 small, Tier 1b/Tier 2 larger via GWAS.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 2,
+     "n_after": 4,
+     "added": [
+      "DOID:1595",
+      "DOID:9478"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "depression|depressive|melancholic|dysthymic",
+     "after": "depression|depressive|melancholic|dysthymic|disruptive mood dysregulation|premenstrual dysphoric|seasonal affective|postpartum depress|atypical depress|major depressive"
+    }
+   },
+   "rescue_build": {
+    "build_date": "2026-06-04",
+    "instance": "MDD rescue-implementation executor",
+    "source_schema": "v3_t1d binary masks via build_rescuepools_from_v3t1d.py (PM flag 6). rescue_line_output/MDD_per_genotype_tiers_v2.tsv v1 files are STALE, not consumed.",
+    "etiology_route": "T1g-primary (PGC-MDD 2025 / Als 2023; 243-244 GWS loci; h2~0.084). MDD is a no-T1d-source disorder by design (PM flag 2).",
+    "l2g_status": {
+     "l2g_layer_applied": false,
+     "policy": "OpenTargets L2G is not accessible for non-SCZ disorders from this environment. Per Knowledge-Dump F.3, T1g headline uses MAGMA-Bonferroni INTERSECT MHC-excluded INTERSECT FUMA proximity-window as the documented operational substitute. Locked cross-disorder caveat, NOT a spec violation (PM flag 1). Uniform across all 10 non-SCZ disorders. SCZ is the only L2G-intersected headline (Trubetskoy 2022 Supp Table 11 surrogate).",
+     "methods_sentence": "For non-SCZ disorders, OpenTargets L2G data is not accessible from our environment; T1g headline uses MAGMA-Bonferroni ∩ MHC-excluded ∩ FUMA proximity window as the documented operational substitute."
+    },
+    "preflight_asd_contamination": {
+     "check1_taxonomy_mdd_keyed_pathA": "PASS (180 strict / 9 domains; 0 tier-5; 0 anti-direction strict in unidir-deficit)",
+     "check2_config_refs_mdd_keyed": "PASS (no asd_v3 refs in mdd.disorder.json)",
+     "check3_gene_sources_mdd_derived": "PASS (sources MDD-derived & ASD/SCZ-clean; T1g uses documented F.3 fallback, l2g_layer_applied=false)",
+     "check4_phenodigm_seed_mdd_keyed": "PASS (pilot_hpo_run_mdd_v1/07_final_resolved_hpo_terms.tsv; depressive/vegetative terms)",
+     "check5_cross_disorder_comparator_doc": "DOC (A5-class comparators must use separate per-disorder taxonomy paths)",
+     "check6_spotcheck": "PASS-adapted (T1g positives 8/8 trace to MDD gene source; no ASD)"
+    },
+    "tiers": {
+     "T1d_sensitivity": {
+      "status": "NO_CREDIBLE_CATALOG",
+      "n_rescue_genes": 0,
+      "n_rescue_genotypes": 0,
+      "source": "dnv_catalogs/denovo_db_mdd_genes.tsv (empty stub)",
+      "reason": "No MDD/depression DNV cohort exists (publishedDeNovos has none; denovo-db UW server proxy-blocked). MDD is T1g-only by design; empty stub NOT promoted to T1d-strict.",
+      "pool_file": "benchmark_tables_per_tier/MDD_tier_T1d_sensitivity_rescuepool.csv (T0-only, schema-valid)"
+     },
+     "T1g_headline": {
+      "status": "HEADLINE_F3_FALLBACK",
+      "operational_definition": "MAGMA-Bonferroni ∩ MHC-excluded ∩ FUMA proximity (l2g_layer_applied=false)",
+      "source": "FUMA_job738723 (PGC-MDD 2025, 244 GWS loci) -> rescue_line_output/mdd_t1g_REAL_human_genes.tsv (186 genes)",
+      "n_rescue_genotypes": 974,
+      "n_target_stage5": 982,
+      "pool_file": "benchmark_tables_per_tier/MDD_tier_T1g_headline_rescuepool.csv",
+      "note": "v3 T1c_DGM uses T0_DGM=6 (-> 980); Stage-5 base uses MDD_primary=8 (-> 982). Same set bar T0-definition."
+     },
+     "T1c_headline": {
+      "status": "EMITTED_EQ_T1G",
+      "definition": "T1g_headline UNION T1d_sensitivity; T1d empty => T1c == T1g",
+      "n_target_stage5": 983,
+      "pool_file": "benchmark_tables_per_tier/MDD_tier_T1c_headline_rescuepool.csv"
+     }
+    },
+    "depth_mpclass": {
+     "T0_anchor": {
+      "n": 8,
+      "median_n_mp": 7.5,
+      "behavioral_frac": 0.585
+     },
+     "T1g_additions": {
+      "n": 974,
+      "median_n_mp": 3,
+      "behavioral_frac": 0.122,
+      "delta_depth_vs_T0": 0.52,
+      "delta_behav_vs_T0": 0.809
+     },
+     "broad_other_floor": {
+      "n": 75674,
+      "median_n_mp": 3,
+      "behavioral_frac": 0.077
+     },
+     "interpretation": "T1g additions collapse to the broad_other floor on behavioral content (0.122 vs floor 0.077); they do NOT enrich for behavioral terms (delta_behav 0.809 > delta_depth 0.520). Empirical prior: the GWAS route alone is unlikely to lift A2 above Phenodigm 0.77 -- reinforces MDD as the negative boundary case."
+    },
+    "tier0_baseline_for_downstream": {
+     "A2_paired_auroc": "0.65 pipeline vs 0.77 Phenodigm (pipeline does NOT beat Phenodigm)",
+     "A1": "0.499 (chance)",
+     "B1": "vacuous (n_pos=0; worthlessness/suicidality have 0 strict pairs)",
+     "B4_affective": "delta +0.65 (lone within-disorder win, nominal/un-gated)",
+     "rescue_mandate": "lift A2 above 0.77 AND make B1 nontrivial via rescue-tier positive pool"
+    }
+   }
+  },
+  {
+   "name": "SCZ",
+   "role": "primary",
+   "label": "schizophrenia_spectrum",
+   "dsm5_chapter": 2,
+   "doids": [
+    "DOID:0060827",
+    "DOID:0070080",
+    "DOID:0070082",
+    "DOID:0070085",
+    "DOID:0070091",
+    "DOID:0070093",
+    "DOID:0080281",
+    "DOID:10646",
+    "DOID:1229",
+    "DOID:1742",
+    "DOID:2468",
+    "DOID:252",
+    "DOID:5418",
+    "DOID:5419"
+   ],
+   "umls_cuis": [
+    "C0036341",
+    "C0036337",
+    "C0349204"
+   ],
+   "disease_terms_regex": "schizophren|schizoaffective|schizophreniform|brief psychotic|delusional disorder|psychotic disorder|schizotypal|psychosis|hallucinatory",
+   "paradigm_scoring_file": "paradigm_scoring/scz/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "scz.disorder.json",
+   "special_sources": {},
+   "notes": "Mostly GWAS architecture with rare-variant CNVs (NRXN1, SETD1A, 22q11.2).",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 1,
+     "n_after": 14,
+     "added": [
+      "DOID:0060827",
+      "DOID:0070080",
+      "DOID:0070082",
+      "DOID:0070085",
+      "DOID:0070091",
+      "DOID:0070093",
+      "DOID:0080281",
+      "DOID:10646",
+      "DOID:1229",
+      "DOID:1742",
+      "DOID:2468",
+      "DOID:252",
+      "DOID:5418"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "schizophren|schizoaffective|psychotic|psychosis",
+     "after": "schizophren|schizoaffective|schizophreniform|brief psychotic|delusional disorder|psychotic disorder|schizotypal|psychosis|hallucinatory"
+    }
+   }
+  },
+  {
+   "name": "SubstanceAbuse",
+   "role": "primary",
+   "label": "substance_use_disorder",
+   "dsm5_chapter": 15,
+   "doids": [
+    "DOID:0050668",
+    "DOID:0050696",
+    "DOID:0050739",
+    "DOID:0050741",
+    "DOID:0050742",
+    "DOID:0070508",
+    "DOID:0070658",
+    "DOID:11206",
+    "DOID:12351",
+    "DOID:14018",
+    "DOID:1574",
+    "DOID:1849",
+    "DOID:251",
+    "DOID:252",
+    "DOID:302",
+    "DOID:303",
+    "DOID:4988",
+    "DOID:670",
+    "DOID:809",
+    "DOID:9505",
+    "DOID:9974",
+    "DOID:9975",
+    "DOID:9976"
+   ],
+   "umls_cuis": [
+    "C0740858",
+    "C0001973",
+    "C0029110",
+    "C0028040"
+   ],
+   "disease_terms_regex": "substance|cocaine|alcohol|opioid|nicotine|amphetamine|cannabis|tobacco|heroin|stimulant use|drug abuse|drug dependence|addict|gambling disorder|ethanol",
+   "paradigm_scoring_file": "paradigm_scoring/substance/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "substance.disorder.json",
+   "special_sources": {},
+   "notes": "Mixed architecture: Mendelian (ALDH2, ADH1B, OPRM1) plus GWAS.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 3,
+     "n_after": 23,
+     "added": [
+      "DOID:0050668",
+      "DOID:0050696",
+      "DOID:0050741",
+      "DOID:0070508",
+      "DOID:0070658",
+      "DOID:11206",
+      "DOID:12351",
+      "DOID:14018",
+      "DOID:1574",
+      "DOID:1849",
+      "DOID:251",
+      "DOID:252",
+      "DOID:303",
+      "DOID:4988",
+      "DOID:670",
+      "DOID:809",
+      "DOID:9505",
+      "DOID:9974",
+      "DOID:9975",
+      "DOID:9976"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "substance|cocaine|alcohol|opioid|nicotine|amphetamine|drug abuse|addict",
+     "after": "substance|cocaine|alcohol|opioid|nicotine|amphetamine|cannabis|tobacco|heroin|stimulant use|drug abuse|drug dependence|addict|gambling disorder|ethanol"
+    }
+   }
+  },
+  {
+   "name": "Bipolar",
+   "role": "comparator",
+   "label": "bipolar_and_related_disorders",
+   "dsm5_chapter": 3,
+   "doids": [
+    "DOID:0050587",
+    "DOID:14039",
+    "DOID:14042",
+    "DOID:3312",
+    "DOID:9111",
+    "DOID:9146",
+    "DOID:9155"
+   ],
+   "umls_cuis": [
+    "C0005586",
+    "C0005587",
+    "C0853193",
+    "C0005583"
+   ],
+   "disease_terms_regex": "bipolar|cyclothymic|manic|hypomanic|mania|manic[- ]depressive|rapid cycling",
+   "paradigm_scoring_file": "paradigm_scoring/bipolar/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "bipolar.disorder.json",
+   "special_sources": {},
+   "notes": "Key MDD contrast disorder (mood family, separate chapter since DSM-5). Mouse models centered on lithium responsiveness, mania-like hyperactivity, circadian rhythm disruption.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 3,
+     "n_after": 7,
+     "added": [
+      "DOID:0050587",
+      "DOID:9111",
+      "DOID:9146",
+      "DOID:9155"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "bipolar|cyclothymic|mania|manic episode|hypomanic",
+     "after": "bipolar|cyclothymic|manic|hypomanic|mania|manic[- ]depressive|rapid cycling"
+    }
+   }
+  },
+  {
+   "name": "Anxiety",
+   "role": "comparator",
+   "label": "anxiety_disorders",
+   "dsm5_chapter": 5,
+   "doids": [
+    "DOID:11257",
+    "DOID:14320",
+    "DOID:14502",
+    "DOID:1474",
+    "DOID:2030",
+    "DOID:591",
+    "DOID:594"
+   ],
+   "umls_cuis": [
+    "C0003469",
+    "C0085631",
+    "C0030319",
+    "C0085595",
+    "C0036572"
+   ],
+   "disease_terms_regex": "\\banxiety\\b|generalized anxiety|\\bgad\\b|panic disorder|panic attack|social anxiety|specific phobia|\\bphobi|agoraphobia|separation anxiety|selective mutism|anxious",
+   "paradigm_scoring_file": "paradigm_scoring/anxiety/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "anxiety.disorder.json",
+   "special_sources": {},
+   "notes": "MDD contrast disorder (high comorbidity but distinct neurobiology). Mouse models: EPM, open field, light-dark box, stress-induced hyperthermia.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 4,
+     "n_after": 7,
+     "added": [
+      "DOID:11257",
+      "DOID:14320",
+      "DOID:591"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "anxiety disorder|generalized anxiety|gad |panic disorder|social anxiety|specific phobia|agoraphobia|separation anxiety|selective mutism",
+     "after": "\\banxiety\\b|generalized anxiety|\\bgad\\b|panic disorder|panic attack|social anxiety|specific phobia|\\bphobi|agoraphobia|separation anxiety|selective mutism|anxious"
+    }
+   }
+  },
+  {
+   "name": "PTSD",
+   "role": "comparator",
+   "label": "post_traumatic_stress_disorder",
+   "dsm5_chapter": 7,
+   "doids": [
+    "DOID:0050766",
+    "DOID:0070078",
+    "DOID:14289",
+    "DOID:2055"
+   ],
+   "umls_cuis": [
+    "C0038436",
+    "C0086793",
+    "C0001956"
+   ],
+   "disease_terms_regex": "post[- ]traumatic stress|\\bptsd\\b|acute stress disorder|adjustment disorder|adjustment reaction|reactive attachment|disinhibited social engagement|prolonged grief|complicated grief|persistent complex bereavement",
+   "paradigm_scoring_file": "paradigm_scoring/ptsd/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "ptsd.disorder.json",
+   "special_sources": {},
+   "notes": "Split from anxiety in DSM-5 (HPA-axis/fear-circuit divergence). Mouse models: fear conditioning + extinction failure, predator stress, footshock, chronic restraint stress.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 2,
+     "n_after": 2,
+     "added": []
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "post[- ]traumatic stress|\\bptsd\\b|acute stress disorder|adjustment disorder|reactive attachment|disinhibited social engagement|prolonged grief",
+     "after": "post[- ]?traumatic stress|\\bptsd\\b|acute stress disorder|adjustment disorder|reactive attachment|disinhibited social engagement|prolonged grief|traumatic stress"
+    },
+    "chapter7_completion_2026_05_24": {
+     "doids_added": [
+      "DOID:0050766",
+      "DOID:0070078"
+     ],
+     "regex_added": "complicated grief, persistent complex bereavement, adjustment reaction (PTSD chapter 7 now fully covers chapter scope)"
+    }
+   }
+  },
+  {
+   "name": "OCD",
+   "role": "comparator",
+   "label": "obsessive_compulsive_and_related",
+   "dsm5_chapter": 6,
+   "doids": [
+    "DOID:0050587",
+    "DOID:0050717",
+    "DOID:10933"
+   ],
+   "umls_cuis": [
+    "C0028768",
+    "C1142272"
+   ],
+   "disease_terms_regex": "obsessive[- ]?compulsive|\\bocd\\b|body dysmorphic|hoarding|trichotillomania|excoriation|skin[- ]picking",
+   "paradigm_scoring_file": "paradigm_scoring/ocd/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "ocd.disorder.json",
+   "special_sources": {},
+   "notes": "Split from anxiety in DSM-5 (CSTC-loop neurobiology). Mouse models: compulsive grooming, marble burying, stereotypy, perseveration.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 2,
+     "n_after": 3,
+     "added": [
+      "DOID:0050587"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "obsessive[- ]compulsive|\\bocd\\b|body dysmorphic|hoarding|trichotillomania|excoriation",
+     "after": "obsessive[- ]?compulsive|\\bocd\\b|body dysmorphic|hoarding|trichotillomania|excoriation|skin[- ]picking"
+    }
+   }
+  },
+  {
+   "name": "ADHD",
+   "role": "comparator",
+   "label": "attention_deficit_hyperactivity_disorder",
+   "dsm5_chapter": 1,
+   "doids": [
+    "DOID:1094"
+   ],
+   "umls_cuis": [
+    "C1263846",
+    "C0041671"
+   ],
+   "disease_terms_regex": "attention[- ]?deficit|\\badhd\\b|attention deficit hyperactivity|hyperkinetic disorder",
+   "paradigm_scoring_file": "paradigm_scoring/adhd/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "adhd.disorder.json",
+   "special_sources": {},
+   "notes": "NDD chapter, sibling to ASD. Mouse models: hyperactivity, impulsivity (5-CSRTT), attention failure, MPH-responsive locomotion.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 1,
+     "n_after": 1,
+     "added": []
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "attention[- ]deficit|adhd|attention deficit hyperactivity",
+     "after": "attention[- ]?deficit|\\badhd\\b|attention deficit hyperactivity|hyperkinetic disorder"
+    }
+   }
+  },
+  {
+   "name": "IntellectualDisability",
+   "role": "comparator",
+   "label": "intellectual_disability",
+   "dsm5_chapter": 1,
+   "doids": [
+    "DOID:0050776",
+    "DOID:0050879",
+    "DOID:0050888",
+    "DOID:0050889",
+    "DOID:0050998",
+    "DOID:0060309",
+    "DOID:0060349",
+    "DOID:0060799",
+    "DOID:0060800",
+    "DOID:0060802",
+    "DOID:0060806",
+    "DOID:0060807",
+    "DOID:0060809",
+    "DOID:0060810",
+    "DOID:0060811",
+    "DOID:0060812",
+    "DOID:0060816",
+    "DOID:0060817",
+    "DOID:0060820",
+    "DOID:0060821",
+    "DOID:0060822",
+    "DOID:0060823",
+    "DOID:0060824",
+    "DOID:0060826",
+    "DOID:0060827",
+    "DOID:0070422",
+    "DOID:0070600",
+    "DOID:0070657",
+    "DOID:0080197",
+    "DOID:0080240",
+    "DOID:0080241",
+    "DOID:0080242",
+    "DOID:0080628",
+    "DOID:0080798",
+    "DOID:0080832",
+    "DOID:0080950",
+    "DOID:0080982",
+    "DOID:0081072",
+    "DOID:0081123",
+    "DOID:0110030",
+    "DOID:0111249",
+    "DOID:0111331",
+    "DOID:0111697",
+    "DOID:0112018",
+    "DOID:0112019",
+    "DOID:0112020",
+    "DOID:0112021",
+    "DOID:0112022",
+    "DOID:0112024",
+    "DOID:0112025",
+    "DOID:0112026",
+    "DOID:0112029",
+    "DOID:0112034",
+    "DOID:0112035",
+    "DOID:0112036",
+    "DOID:0112038",
+    "DOID:0112040",
+    "DOID:0112041",
+    "DOID:0112044",
+    "DOID:0112045",
+    "DOID:0112046",
+    "DOID:0112048",
+    "DOID:0112050",
+    "DOID:0112051",
+    "DOID:0112054",
+    "DOID:0112056",
+    "DOID:0112058",
+    "DOID:0112059",
+    "DOID:1059",
+    "DOID:11983",
+    "DOID:1206",
+    "DOID:14250",
+    "DOID:14261",
+    "DOID:1932"
+   ],
+   "umls_cuis": [
+    "C3714756",
+    "C0025363",
+    "C0917816"
+   ],
+   "disease_terms_regex": "intellectual disability|mental retardation|fragile x|rett syndrome|cognitive disability|cognitive impairment|down syndrome|williams syndrome|prader[- ]willi|angelman",
+   "paradigm_scoring_file": "paradigm_scoring/intellectualdisability/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "intellectualdisability.disorder.json",
+   "special_sources": {},
+   "notes": "NDD chapter sibling. Often comorbid with ASD. Mouse models: Morris water maze, novel object recognition, contextual fear conditioning, working memory.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 3,
+     "n_after": 75,
+     "added": [
+      "DOID:0050776",
+      "DOID:0050879",
+      "DOID:0050888",
+      "DOID:0050998",
+      "DOID:0060309",
+      "DOID:0060349",
+      "DOID:0060799",
+      "DOID:0060800",
+      "DOID:0060802",
+      "DOID:0060806",
+      "DOID:0060807",
+      "DOID:0060809",
+      "DOID:0060810",
+      "DOID:0060811",
+      "DOID:0060812",
+      "DOID:0060816",
+      "DOID:0060817",
+      "DOID:0060820",
+      "DOID:0060821",
+      "DOID:0060822",
+      "DOID:0060823",
+      "DOID:0060824",
+      "DOID:0060826",
+      "DOID:0060827",
+      "DOID:0070422",
+      "DOID:0070600",
+      "DOID:0070657",
+      "DOID:0080197",
+      "DOID:0080240",
+      "DOID:0080241"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "intellectual disability|mental retardation|fragile x|rett syndrome|cognitive disability|cognitive impairment",
+     "after": "intellectual disability|mental retardation|fragile x|rett syndrome|cognitive disability|cognitive impairment|down syndrome|williams syndrome|prader[- ]willi|angelman"
+    },
+    "doid_false_positive_removed_2026_05_24": {
+     "removed": "DOID:10937",
+     "reason": "impulse control disorder belongs in Chapter 14 (DisruptiveImpulseControl), not NDD/IntellectualDisability"
+    }
+   },
+   "rescue_build": {
+    "build_date": "2026-06-04",
+    "instance": "ID rescue-implementation executor",
+    "source_schema": "v3_t1d binary masks (generated by build_id_tier_masks.py; no prior v3_t1d/ID_* existed) -> build_rescuepools_from_v3t1d.py (PM flag 6).",
+    "etiology_route": "T1d-primary (DDG2P-confirmed; DDD). GWAS coverage partial; T1g not in headline.",
+    "config_naming_note": "Prompt referenced id.disorder.json + a taxonomy_columns block; neither exists. Real configs: intellectualdisability_2dom.disorder.json (2-domain canonical per Tier-0 close-out) and intellectualdisability.disorder.json (3-domain). Check 2 adapted to a recursive ASD-leak walk; both configs PASS.",
+    "preflight_asd_contamination": {
+     "check1_taxonomy_id_keyed": "PASS (156 strict / 3 domains; 0 strict at tier-5)",
+     "check2_config_refs_id_keyed": "PASS-adapted (no asd_v3 refs in either ID config; no taxonomy_columns block exists)",
+     "check3_gene_sources_id_derived": "PASS (DDG2P-confirmed ID; no SFARI/AutDB/Grove/iPSYCH-ASD)",
+     "check4_phenodigm_seed_id_keyed": "PASS (pilot_hpo_run_intellectualdisability_v1/07_final_resolved_hpo_terms.tsv; ID/adaptive/cognitive terms)",
+     "check5_cross_disorder_comparator_doc": "DOC (A5 ID-vs-ASD must use --id_taxonomy + --asd_taxonomy as two independent inputs)",
+     "check6_spotcheck": "PASS-adapted (sampled T1d positives carry a DDG2P-confirmed gene; ID-strict, not ASD-strict)"
+    },
+    "tiers": {
+     "T1d_consortium": {
+      "status": "HEADLINE",
+      "source": "dnv_catalogs/ddg2p_id_confirmed_dominant.tsv (934 Green/confirmed genes)",
+      "n_genes": 934,
+      "n_rescue_genotypes": 6999,
+      "n_target_stage5": 7090,
+      "pool_file": "benchmark_tables_per_tier/ID_tier_T1d_consortium_rescuepool.csv",
+      "note": "934 is broader than Kaplanis 2020's empirical 285 because PanelApp Green-confirmed dominant has expanded via continued curation since 2020. Recall-oriented operational state. Historical Kaplanis-285 = one-line intersect with Kaplanis 2020 Supp S1 if a reviewer asks (not a re-run)."
+     },
+     "T1d_provisional": {
+      "status": "PENDING_FOLLOWUP",
+      "source": "publishedDeNovos ID subset (1,332 DNVs, >=2-DNV cutoff) -> denovo_db_id_genes.tsv (NOT YET EXTRACTED)",
+      "reason": "PM flag 4: extract in parallel; do NOT block ID evaluation. DDG2P-only T1d_strict is publishable now. Once extracted, append to t1d_catalog.json (in_t1d_strict_provisional:true) and rebuild.",
+      "pool_file": null
+     },
+     "T1g_sensitivity": {
+      "status": "NOT_IN_HEADLINE",
+      "reason": "PM flag 5: Savage 2018 is a cognitive-ability GWAS, not an ID GWAS; cross-trait proxy excluded from headline (etiology route = T1d). Supplementary-only under a separate report.",
+      "n_genotypes": 0
+     },
+     "T1c_consortium": {
+      "status": "EMITTED",
+      "definition": "T0_DGM UNION T1d_consortium (T1g=0)",
+      "n_target_stage5": 7090,
+      "pool_file": "benchmark_tables_per_tier/ID_tier_T1c_consortium_rescuepool.csv"
+     }
+    },
+    "depth_mpclass": {
+     "T0_anchor": {
+      "n": 91,
+      "median_n_mp": 9,
+      "behavioral_frac": 0.431
+     },
+     "T1d_consortium_additions": {
+      "n": 6999,
+      "median_n_mp": 3,
+      "behavioral_frac": 0.099,
+      "delta_depth_vs_T0": 0.473,
+      "delta_behav_vs_T0": 0.647
+     },
+     "broad_other_floor": {
+      "n": 75674,
+      "median_n_mp": 3,
+      "behavioral_frac": 0.077
+     },
+     "interpretation": "Same canonical pattern as ASD/SCZ/MDD: DDG2P rescue additions collapse toward the broad_other floor (behavioral 0.099 vs 0.077). ID T0 behavioral_frac (0.431) is lower than ASD 0.675 / SCZ 0.563 -- consistent with ID's mouse signal being cognitive/learning rather than socially saturated (Tier-0 close-out)."
+    },
+    "tier0_baseline_for_downstream": {
+     "A2_paired_auroc_strict": "0.693 pipeline vs 0.585 Phenodigm (Δ+0.107, p=0.016)",
+     "A5_ID_vs_ASD": "0.228 (Δ-0.20, p=0.0007) strong inversion -- ASD mice score higher on ID criteria (shared cognitive axis + gene overlap).",
+     "note": "ID Tier 0 already beats Phenodigm on A2; rescue tests whether the DDG2P-defined positive pool sustains the headline at higher n."
+    }
+   }
+  },
+  {
+   "name": "EatingDisorders",
+   "role": "comparator",
+   "label": "feeding_and_eating_disorders",
+   "dsm5_chapter": 10,
+   "doids": [
+    "DOID:11247",
+    "DOID:12129",
+    "DOID:8669",
+    "DOID:8670",
+    "DOID:8689"
+   ],
+   "umls_cuis": [
+    "C0003123",
+    "C0006413",
+    "C0036572",
+    "C0240310"
+   ],
+   "disease_terms_regex": "anorexia nervosa|bulimia|binge[- ]?eating|\\barfid\\b|avoidant restrictive food|\\bpica\\b|rumination disorder|eating disorder|food restriction",
+   "paradigm_scoring_file": "paradigm_scoring/eatingdisorders/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "eatingdisorders.disorder.json",
+   "special_sources": {},
+   "notes": "Exploratory comparator. Mouse models: food intake regulation, sucrose preference, activity-based anorexia, binge-eating paradigms.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 3,
+     "n_after": 5,
+     "added": [
+      "DOID:12129",
+      "DOID:8689"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "anorexia nervosa|bulimia|binge[- ]eating|\\barfid\\b|avoidant restrictive food|\\bpica\\b|rumination disorder|eating disorder",
+     "after": "anorexia nervosa|bulimia|binge[- ]?eating|\\barfid\\b|avoidant restrictive food|\\bpica\\b|rumination disorder|eating disorder|food restriction"
+    }
+   }
+  },
+  {
+   "name": "Neurocognitive",
+   "role": "comparator",
+   "label": "neurocognitive_disorders",
+   "dsm5_chapter": 16,
+   "doids": [
+    "DOID:0050881",
+    "DOID:0051060",
+    "DOID:0060205",
+    "DOID:0060213",
+    "DOID:0060214",
+    "DOID:0060367",
+    "DOID:0060368",
+    "DOID:0060369",
+    "DOID:0060370",
+    "DOID:0060371",
+    "DOID:0060372",
+    "DOID:0060672",
+    "DOID:0060891",
+    "DOID:0060892",
+    "DOID:0060895",
+    "DOID:0060896",
+    "DOID:0060897",
+    "DOID:0060898",
+    "DOID:0060900",
+    "DOID:0070486",
+    "DOID:0070490",
+    "DOID:0080348",
+    "DOID:0080504",
+    "DOID:0080855",
+    "DOID:0081292",
+    "DOID:0090057",
+    "DOID:0090103",
+    "DOID:0090104",
+    "DOID:0110035",
+    "DOID:0110040",
+    "DOID:0110042",
+    "DOID:0110049",
+    "DOID:0110050",
+    "DOID:0110068",
+    "DOID:0110069",
+    "DOID:0111227",
+    "DOID:0111246",
+    "DOID:0111364",
+    "DOID:0111384",
+    "DOID:0111385",
+    "DOID:0111386",
+    "DOID:0112105",
+    "DOID:10652",
+    "DOID:11949",
+    "DOID:12217",
+    "DOID:12858",
+    "DOID:1289",
+    "DOID:1307",
+    "DOID:14330",
+    "DOID:384",
+    "DOID:649",
+    "DOID:8645",
+    "DOID:8725",
+    "DOID:9255"
+   ],
+   "umls_cuis": [
+    "C0497327",
+    "C0002395",
+    "C0030567",
+    "C0020179",
+    "C0011265"
+   ],
+   "disease_terms_regex": "alzheimer|frontotemporal dementia|lewy body|vascular dementia|major neurocognitive|mild neurocognitive|delirium|prion disease|creutzfeldt|huntington|parkinson|traumatic brain injury|\\btbi\\b|cognitive decline|dementia",
+   "paradigm_scoring_file": "paradigm_scoring/neurocognitive/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "neurocognitive.disorder.json",
+   "special_sources": {},
+   "notes": "Boundary test: more neurological than psychiatric. Useful for testing whether the psychiatric benchmark dissociates from progressive neurodegeneration. Mouse models: age-dependent cognitive decline, plaque/tangle pathology, motor decline.",
+   "_expansion_audit": {
+    "doids_2026_05_24": {
+     "n_before": 5,
+     "n_after": 54,
+     "added": [
+      "DOID:0050881",
+      "DOID:0051060",
+      "DOID:0060205",
+      "DOID:0060213",
+      "DOID:0060214",
+      "DOID:0060367",
+      "DOID:0060368",
+      "DOID:0060369",
+      "DOID:0060370",
+      "DOID:0060371",
+      "DOID:0060372",
+      "DOID:0060672",
+      "DOID:0060891",
+      "DOID:0060892",
+      "DOID:0060895",
+      "DOID:0060896",
+      "DOID:0060897",
+      "DOID:0060898",
+      "DOID:0060900",
+      "DOID:0070486",
+      "DOID:0070490",
+      "DOID:0080348",
+      "DOID:0080504",
+      "DOID:0080855",
+      "DOID:0081292",
+      "DOID:0090057",
+      "DOID:0090103",
+      "DOID:0090104",
+      "DOID:0110035",
+      "DOID:0110040"
+     ]
+    },
+    "disease_terms_regex_2026_05_24": {
+     "before": "alzheimer|frontotemporal dementia|lewy body|vascular dementia|major neurocognitive|mild neurocognitive|delirium|prion disease|creutzfeldt|huntington|parkinson|traumatic brain injury|\\btbi\\b",
+     "after": "alzheimer|frontotemporal dementia|lewy body|vascular dementia|major neurocognitive|mild neurocognitive|delirium|prion disease|creutzfeldt|huntington|parkinson|traumatic brain injury|\\btbi\\b|cognitive decline|dementia"
+    }
+   }
+  },
+  {
+   "name": "Sleep",
+   "role": "comparator",
+   "label": "sleep_wake_disorders",
+   "dsm5_chapter": 12,
+   "doids": [
+    "DOID:535",
+    "DOID:8628",
+    "DOID:14110",
+    "DOID:8718",
+    "DOID:0050743"
+   ],
+   "umls_cuis": [
+    "C0037315",
+    "C0021344",
+    "C0027404",
+    "C0917799",
+    "C3537245"
+   ],
+   "disease_terms_regex": "insomnia disorder|hypersomnolence|narcolepsy|cataplexy|breathing[- ]related sleep|circadian rhythm sleep|parasomnia|restless leg|nightmare disorder|rem sleep behavior|sleep[- ]wake|sleep disorder",
+   "paradigm_scoring_file": "paradigm_scoring/sleep/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "sleep.disorder.json",
+   "special_sources": {},
+   "notes": "Adjacent to MDD (insomnia/hypersomnia in Criterion A) and Bipolar (circadian disruption mechanism). Required for differential-diagnosis specificity testing."
+  },
+  {
+   "name": "Dissociative",
+   "role": "comparator",
+   "label": "dissociative_disorders",
+   "dsm5_chapter": 8,
+   "doids": [
+    "DOID:8584",
+    "DOID:8587",
+    "DOID:8591"
+   ],
+   "umls_cuis": [
+    "C0012746",
+    "C0001736",
+    "C0011758"
+   ],
+   "disease_terms_regex": "dissociative identity|dissociative amnesia|depersonalization|derealization|dissociative disorder",
+   "paradigm_scoring_file": "paradigm_scoring/dissociative/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "dissociative.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 8 included for DSM-5 comprehensiveness; mouse model coverage is essentially nil. Expect Tier 1 n near zero. Inclusion prevents broad_other contamination."
+  },
+  {
+   "name": "Somatic",
+   "role": "comparator",
+   "label": "somatic_symptom_and_related_disorders",
+   "dsm5_chapter": 9,
+   "doids": [
+    "DOID:14066",
+    "DOID:1546"
+   ],
+   "umls_cuis": [
+    "C0264532",
+    "C0009946",
+    "C0026818"
+   ],
+   "disease_terms_regex": "somatic symptom|illness anxiety|conversion disorder|factitious|hypochondriasis|munchausen",
+   "paradigm_scoring_file": "paradigm_scoring/somatic/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "somatic.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 9 included for completeness; mouse construct validity is questionable. Chronic-pain and sickness-behavior paradigms are the closest behavioral analogues."
+  },
+  {
+   "name": "Elimination",
+   "role": "comparator",
+   "label": "elimination_disorders",
+   "dsm5_chapter": 11,
+   "doids": [
+    "DOID:0050437",
+    "DOID:14072"
+   ],
+   "umls_cuis": [
+    "C0014394",
+    "C0014083"
+   ],
+   "disease_terms_regex": "enuresis|encopresis|elimination disorder|urinary incontinence|fecal incontinence",
+   "paradigm_scoring_file": "paradigm_scoring/elimination/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "elimination.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 11. Mouse voiding-behavior phenotyping exists but rarely tagged as psychiatric; included for coverage symmetry."
+  },
+  {
+   "name": "SexualGender",
+   "role": "comparator",
+   "label": "sexual_dysfunctions_and_gender_dysphoria",
+   "dsm5_chapter": 13,
+   "doids": [
+    "DOID:1875",
+    "DOID:0050744"
+   ],
+   "umls_cuis": [
+    "C0036916",
+    "C0017415"
+   ],
+   "disease_terms_regex": "sexual dysfunction|erectile dysfunction|hypoactive sexual desire|female sexual arousal|gender dysphoria|gender identity disorder|delayed ejaculation|orgasmic disorder",
+   "paradigm_scoring_file": "paradigm_scoring/sexualgender/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "sexualgender.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 13. Mouse copulatory/mating behavior phenotyping exists. Gender dysphoria has no animal analogue; covered nominally."
+  },
+  {
+   "name": "DisruptiveImpulseControl",
+   "role": "comparator",
+   "label": "disruptive_impulse-control_and_conduct_disorders",
+   "dsm5_chapter": 14,
+   "doids": [
+    "DOID:8499",
+    "DOID:10937",
+    "DOID:0050743"
+   ],
+   "umls_cuis": [
+    "C0009454",
+    "C0029134",
+    "C0008063"
+   ],
+   "disease_terms_regex": "oppositional defiant|conduct disorder|intermittent explosive|antisocial personality|pyromania|kleptomania|impulse control disorder",
+   "paradigm_scoring_file": "paradigm_scoring/disruptiveimpulsecontrol/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "disruptiveimpulsecontrol.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 14. Note: DOID:10937 (impulse control disorder) belongs here, NOT in IntellectualDisability (M3 pitfall fix)."
+  },
+  {
+   "name": "PersonalityDisorders",
+   "role": "comparator",
+   "label": "personality_disorders_(clusters_a_b_c)",
+   "dsm5_chapter": 17,
+   "doids": [
+    "DOID:3247",
+    "DOID:14248",
+    "DOID:14199",
+    "DOID:1071",
+    "DOID:1072"
+   ],
+   "umls_cuis": [
+    "C0030567",
+    "C0006012",
+    "C0003040",
+    "C0023095",
+    "C0029134"
+   ],
+   "disease_terms_regex": "personality disorder|borderline personality|narcissistic personality|histrionic personality|avoidant personality|dependent personality|paranoid personality|schizoid personality|obsessive[- ]compulsive personality|antisocial personality",
+   "paradigm_scoring_file": "paradigm_scoring/personalitydisorders/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "personalitydisorders.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 17. Borderline (cluster B) flagged in user's MDD differential as high-stakes confound. Mouse models are limited but components are tractable."
+  },
+  {
+   "name": "Paraphilic",
+   "role": "comparator",
+   "label": "paraphilic_disorders",
+   "dsm5_chapter": 18,
+   "doids": [
+    "DOID:9967"
+   ],
+   "umls_cuis": [
+    "C0030477"
+   ],
+   "disease_terms_regex": "paraphilia|paraphilic|sexual deviance|fetishism|pedophilia|exhibitionism",
+   "paradigm_scoring_file": "paradigm_scoring/paraphilic/01_paradigm_mp_scoring.tsv",
+   "disorder_config_file": "paraphilic.disorder.json",
+   "special_sources": {},
+   "notes": "Chapter 18. Expect Tier 1 n ≈ 0; included only to prevent broad_other contamination by any paraphilia-tagged DOID."
+  }
+ ],
+ "candidate_gene_seeding": {
+  "include_mgi_disease_gene_model": true,
+  "include_disease_terms_genes": true,
+  "include_sfari_for_asd": true,
+  "include_paradigm_scored_genes": true,
+  "paradigm_score_minimum_confidence": "moderate",
+  "comment": "Seeding determines which genes are sent to DisGeNET. Inclusion is gated by DisGeNET source classification, not seeding."
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "new": {
+  "labels": "labels_corrected_2026-11-02.tsv",
+  "positives": 71,
+  "curated_genes": 34,
+  "relatives_independent": 191,
+  "background": 8261,
+  "attention_control": 635,
+  "relatives_vs_background": {
+   "n": 190,
+   "n_background": 8086,
+   "auroc": 0.5816,
+   "ci_gene": [
+    0.5247,
+    0.6332
+   ],
+   "p_approx": 0.0046
+  },
+  "relatives_vs_attention_control": {
+   "n": 190,
+   "n_background": 620,
+   "auroc": 0.5565,
+   "ci_gene": [
+    0.4844,
+    0.6297
+   ],
+   "p_approx": 0.1225
+  }
+ }
+}

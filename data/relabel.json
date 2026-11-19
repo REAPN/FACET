@@ -1,0 +1,922 @@
+{
+ "added": {
+  "ASD": [
+   [
+    "MGI:5318689",
+    "Chrnb2<tm1Jpc>/Chrnb2<tm1Jpc>",
+    "attention deficit hyperactivity disorder | autism spectrum disorder",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:5428133",
+    "Nrxn1<tm1Sud>/Nrxn1<tm1Sud>",
+    "autism spectrum disorder | schizophrenia",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:5770244",
+    "Brinp1<tm1.1Pib>/Brinp1<tm1.1Pib>",
+    "attention deficit hyperactivity disorder | autism spectrum disorder",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6287871",
+    "Gprasp2<tm1.1Jpe>/Y",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6468250",
+    "Nexmif<tm1(KOMP)Wtsi>/Y",
+    "autism spectrum disorder | non-syndromic X-linked intellectual disabil",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6754173",
+    "Elp2<em2Bjw>/Elp2<em2Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6754175",
+    "Elp2<em2Bjw>/Elp2<em2Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6754183",
+    "Elp2<em2Bjw>/Elp2<em3Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6790238",
+    "Ank2<em1Bnt>/Ank2<em1Bnt>",
+    "autistic disorder",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6790245",
+    "Ank2<tm1Bnt>/Ank2<tm1Bnt>",
+    "autistic disorder",
+    "mixed: annotated to this disorder and another",
+    false
+   ],
+   [
+    "MGI:8237980",
+    "Arid1b<tm1b(EUCOMM)Hmgu>/Arid1b<+>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ]
+  ],
+  "SCZ": [
+   [
+    "MGI:2654500",
+    "Slc6a3<tm1Mca>/Slc6a3<tm1Mca>",
+    "attention deficit hyperactivity disorder | schizophrenia",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:5428133",
+    "Nrxn1<tm1Sud>/Nrxn1<tm1Sud>",
+    "autism spectrum disorder | schizophrenia",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6189180",
+    "Hivep2<tm1Sis>/Hivep2<tm1Sis>",
+    "intellectual disability | schizophrenia",
+    "mixed: annotated to this disorder and another",
+    true
+   ]
+  ],
+  "IDD": [
+   [
+    "MGI:5302204",
+    "Crbn<tm1.2Jjh>/Crbn<tm1.2Jjh>",
+    "autosomal recessive intellectual developmental disorder",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:5576781",
+    "Arhgef2<Gt(IST13976A8)Tigm>/Arhgef2<Gt(IST139",
+    "neurodevelopmental disorder with midbrain and hindbrain malformations",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:5617468",
+    "Mbd5<Gt(Ayu21-B205)Imeg>/Mbd5<+>",
+    "autosomal dominant intellectual developmental disorder",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:5902071",
+    "Slc9a6<tm1Dgen>/Y",
+    "Christianson syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:5902072",
+    "Slc9a6<tm1Dgen>/Slc9a6<tm1Dgen>",
+    "Christianson syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:5902076",
+    "Slc9a6<tm1Dgen>/Slc9a6<+>",
+    "Christianson syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6156953",
+    "Auts2<tm1Mhos>/Auts2<+>",
+    "autosomal dominant intellectual developmental disorder 26",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:6157969",
+    "Tcf4<em1Bdph>/?",
+    "Pitt-Hopkins syndrome",
+    "override: Pitt-Hopkins syndrome",
+    true
+   ],
+   [
+    "MGI:6157970",
+    "Tcf4<em2Bdph>/?",
+    "Pitt-Hopkins syndrome",
+    "override: Pitt-Hopkins syndrome",
+    true
+   ],
+   [
+    "MGI:6159715",
+    "Arid1b<em1Hzhu>/Arid1b<+>",
+    "Coffin-Siris syndrome 1 | autism spectrum disorder",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6189180",
+    "Hivep2<tm1Sis>/Hivep2<tm1Sis>",
+    "intellectual disability | schizophrenia",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6287871",
+    "Gprasp2<tm1.1Jpe>/Y",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6295127",
+    "Phf6<em1Azbi>/Y",
+    "Borjeson-Forssman-Lehmann syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6295856",
+    "Ube3b<tm1a(EUCOMM)Hmgu>/Ube3b<tm1a(EUCOMM)Hmg",
+    "Kaufman oculocerebrofacial syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6358832",
+    "Mast1<em1Dak>/Mast1<+>",
+    "mega-corpus-callosum syndrome with cerebellar hypoplasia and cortical ",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6451664",
+    "Cdk13<tm1a(EUCOMM)Hmgu>/Cdk13<tm1a(EUCOMM)Hmg",
+    "congenital heart defects, dysmorphic facial features, and intellectual",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:6468250",
+    "Nexmif<tm1(KOMP)Wtsi>/Y",
+    "autism spectrum disorder | non-syndromic X-linked intellectual disabil",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6479882",
+    "Tcf4<tm1Zhu>/Tcf4<+>",
+    "Pitt-Hopkins syndrome",
+    "override: Pitt-Hopkins syndrome",
+    true
+   ],
+   [
+    "MGI:6479897",
+    "Tcf4<tm1a(EUCOMM)Wtsi>/Tcf4<+>",
+    "Pitt-Hopkins syndrome",
+    "override: Pitt-Hopkins syndrome",
+    true
+   ],
+   [
+    "MGI:6507205",
+    "Phf6<tm1.2Avo>/Y",
+    "Borjeson-Forssman-Lehmann syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:6754173",
+    "Elp2<em2Bjw>/Elp2<em2Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6754175",
+    "Elp2<em2Bjw>/Elp2<em2Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:6754183",
+    "Elp2<em2Bjw>/Elp2<em3Bjw>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ],
+   [
+    "MGI:7264822",
+    "Dyrk1a<em1Kzy>/Dyrk1a<+>",
+    "autosomal dominant intellectual developmental disorder 7",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7265077",
+    "Myt1l<em1Jdd>/Myt1l<+>",
+    "autosomal dominant intellectual developmental disorder 39",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7277684",
+    "Eef1a2<em#Abb>/Eef1a2<+>",
+    "autosomal dominant intellectual developmental disorder 38",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7328859",
+    "Myt1l<em1Mwer>/Myt1l<+>",
+    "autosomal dominant intellectual developmental disorder 39",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7469827",
+    "Tbl1xr1<em2H>/Tbl1xr1<em2H>",
+    "Pierpont syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7541226",
+    "Hnrnph2<em2Jpat>/Y",
+    "syndromic X-linked intellectual developmental disorder bain type",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7541228",
+    "Hnrnph2<em1Jpat>/Y",
+    "syndromic X-linked intellectual developmental disorder bain type",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7574259",
+    "Slc1a4<em2Tmg>/Slc1a4<em2Tmg>",
+    "spastic tetraplegia, thin corpus callosum, and progressive microcephal",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7579102",
+    "Hnrnph2<em1Jpat>/Hnrnph2<+>",
+    "syndromic X-linked intellectual developmental disorder bain type",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7580988",
+    "Gatad2b<tm1a(EUCOMM)Hmgu>/Gatad2b<+>",
+    "GAND syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7595529",
+    "Ahdc1<em#Oro>/?",
+    "Xia-Gibbs Syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7606740",
+    "Kptn<tm1a(EUCOMM)Wtsi>/Kptn<tm1a(EUCOMM)Wtsi>",
+    "autosomal recessive intellectual developmental disorder 41",
+    "name: intellectual developmental disorder",
+    true
+   ],
+   [
+    "MGI:7610011",
+    "Atp9a<em1Bcgen>/Atp9a<em1Bcgen>",
+    "neurodevelopmental disorder with poor growth and behavioral abnormalit",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7867619",
+    "Adnp<em1Ant>/Adnp<+>",
+    "Helsmoortel-Van Der Aa Syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:7867699",
+    "Adnp<em1Goz>/Adnp<+>",
+    "Helsmoortel-Van Der Aa Syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:8175487",
+    "Dnmt3a<em1Hwg>/Dnmt3a<+>",
+    "Tatton-Brown-Rahman syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:8175639",
+    "Dnmt3a<tm1.1Rlvn>/Dnmt3a<+>",
+    "Tatton-Brown-Rahman syndrome",
+    "DO closure under DOID:1059",
+    true
+   ],
+   [
+    "MGI:8237980",
+    "Arid1b<tm1b(EUCOMM)Hmgu>/Arid1b<+>",
+    "autism spectrum disorder | intellectual disability",
+    "mixed: annotated to this disorder and another",
+    true
+   ]
+  ],
+  "MDD": [
+   [
+    "MGI:8219473",
+    "Calhm2<em1Zyu>/Calhm2<em1Zyu>",
+    "dementia | depressive disorder",
+    "mixed: annotated to this disorder and another",
+    true
+   ]
+  ]
+ },
+ "override_review_candidates": [
+  [
+   "CHARGE syndrome",
+   16
+  ],
+  [
+   "DiGeorge syndrome",
+   15
+  ],
+  [
+   "hydrocephalus",
+   15
+  ],
+  [
+   "mucopolysaccharidosis type VII",
+   8
+  ],
+  [
+   "DiGeorge syndrome | velocardiofacial syndrome",
+   6
+  ],
+  [
+   "muscular dystrophy-dystroglycanopathy type B1",
+   5
+  ],
+  [
+   "cerebral creatine deficiency syndrome 1",
+   4
+  ],
+  [
+   "Miller-Dieker lissencephaly syndrome",
+   4
+  ],
+  [
+   "Danon disease",
+   3
+  ],
+  [
+   "Bosch-Boonstra-Schaaf optic atrophy syndrome",
+   3
+  ],
+  [
+   "alternating hemiplegia of childhood",
+   3
+  ],
+  [
+   "velocardiofacial syndrome",
+   3
+  ],
+  [
+   "Miller-Dieker lissencephaly syndrome | lissencephaly",
+   3
+  ],
+  [
+   "Kabuki syndrome",
+   2
+  ],
+  [
+   "subcortical band heterotopia",
+   2
+  ],
+  [
+   "Pelizaeus-Merzbacher disease",
+   2
+  ],
+  [
+   "Cornelia de Lange syndrome 1",
+   2
+  ],
+  [
+   "Weaver syndrome",
+   2
+  ],
+  [
+   "Niemann-Pick disease type C1",
+   2
+  ],
+  [
+   "Bardet-Biedl syndrome 2",
+   2
+  ],
+  [
+   "homocystinuria",
+   2
+  ],
+  [
+   "Rubinstein-Taybi syndrome",
+   2
+  ],
+  [
+   "Goldberg-Shprintzen syndrome",
+   2
+  ],
+  [
+   "Zaki syndrome",
+   2
+  ],
+  [
+   "microcephaly | pontocerebellar hypoplasia type 14",
+   2
+  ],
+  [
+   "hereditary sensory neuropathy type 4",
+   2
+  ],
+  [
+   "Joubert syndrome 3",
+   1
+  ],
+  [
+   "Bardet-Biedl syndrome 7",
+   1
+  ],
+  [
+   "autosomal recessive spinocerebellar ataxia 12",
+   1
+  ],
+  [
+   "Noonan syndrome 3",
+   1
+  ],
+  [
+   "Joubert syndrome 5",
+   1
+  ],
+  [
+   "Sotos syndrome 2",
+   1
+  ],
+  [
+   "Feingold syndrome",
+   1
+  ],
+  [
+   "3-methylglutaconic aciduria with deafness, encephalopathy, and Leigh-like syndrome",
+   1
+  ],
+  [
+   "glucose transporter type 1 deficiency syndrome 1",
+   1
+  ],
+  [
+   "developmental and epileptic encephalopathy 37",
+   1
+  ],
+  [
+   "diphthamide deficiency syndrome 1",
+   1
+  ],
+  [
+   "branched-chain keto acid dehydrogenase kinase deficiency",
+   1
+  ],
+  [
+   "guanidinoacetate methyltransferase deficiency",
+   1
+  ],
+  [
+   "alternating hemiplegia of childhood | bipolar disorder",
+   1
+  ],
+  [
+   "autosomal recessive spinocerebellar ataxia 34",
+   1
+  ],
+  [
+   "DiGeorge syndrome | visceral heterotaxy",
+   1
+  ],
+  [
+   "L-2-hydroxyglutaric aciduria",
+   1
+  ],
+  [
+   "primary autosomal recessive microcephaly 2 with or without cortical malformations",
+   1
+  ],
+  [
+   "Mowat-Wilson syndrome",
+   1
+  ],
+  [
+   "alacrima, achalasia, and impaired intellectual development syndrome",
+   1
+  ],
+  [
+   "autism spectrum disorder | cortical dysplasia-focal epilepsy syndrome",
+   1
+  ],
+  [
+   "DiGeorge syndrome | newborn respiratory distress syndrome",
+   1
+  ],
+  [
+   "Joubert syndrome 5 | nephronophthisis",
+   1
+  ],
+  [
+   "Cornelia de Lange syndrome 3",
+   1
+  ],
+  [
+   "Rubinstein-Taybi syndrome | acute myeloid leukemia | myelodysplastic syndrome",
+   1
+  ],
+  [
+   "Joubert syndrome 7 | Meckel syndrome",
+   1
+  ],
+  [
+   "ZTTK syndrome",
+   1
+  ],
+  [
+   "Bardet-Biedl syndrome 5",
+   1
+  ],
+  [
+   "complex cortical dysplasia with other brain malformations 7",
+   1
+  ],
+  [
+   "hydrocephalus | primary ciliary dyskinesia",
+   1
+  ],
+  [
+   "DiGeorge syndrome | otitis media | velocardiofacial syndrome",
+   1
+  ],
+  [
+   "megaconial type congenital muscular dystrophy",
+   1
+  ],
+  [
+   "acrocallosal syndrome | ciliopathy | hydrolethalus syndrome",
+   1
+  ],
+  [
+   "autosomal recessive spinocerebellar ataxia 13",
+   1
+  ]
+ ],
+ "recomputed": [
+  {
+   "disorder": "ASD",
+   "labels": "as run",
+   "positives_in_pool": 75,
+   "genes": 53,
+   "any_evidence": 71,
+   "convergent_auroc": 0.9603,
+   "headline_n_pos": 75,
+   "headline_auroc": 0.9552,
+   "headline_ci_gene": [
+    0.914,
+    0.986
+   ],
+   "headline_delta_arm3": 0.1826,
+   "headline_delta_arm3_ci": [
+    0.12,
+    0.256
+   ],
+   "headline_delta_arm3_p": 0.0,
+   "headline_delta_pub": 0.2925,
+   "headline_delta_pub_ci": [
+    0.218,
+    0.383
+   ],
+   "fullpool_n_pos": 75,
+   "fullpool_auroc": 0.9667,
+   "fullpool_ci_gene": [
+    0.928,
+    0.994
+   ],
+   "fullpool_delta_arm3": 0.0924,
+   "fullpool_delta_arm3_ci": [
+    0.051,
+    0.143
+   ],
+   "fullpool_delta_arm3_p": 0.0,
+   "fullpool_delta_pub": 0.248,
+   "fullpool_delta_pub_ci": [
+    0.177,
+    0.346
+   ]
+  },
+  {
+   "disorder": "ASD",
+   "labels": "corrected",
+   "positives_in_pool": 85,
+   "genes": 60,
+   "any_evidence": 81,
+   "convergent_auroc": 0.9641,
+   "headline_n_pos": 85,
+   "headline_auroc": 0.9557,
+   "headline_ci_gene": [
+    0.92,
+    0.983
+   ],
+   "headline_delta_arm3": 0.1837,
+   "headline_delta_arm3_ci": [
+    0.126,
+    0.248
+   ],
+   "headline_delta_arm3_p": 0.0,
+   "headline_delta_pub": 0.3001,
+   "headline_delta_pub_ci": [
+    0.226,
+    0.382
+   ],
+   "fullpool_n_pos": 85,
+   "fullpool_auroc": 0.9689,
+   "fullpool_ci_gene": [
+    0.936,
+    0.993
+   ],
+   "fullpool_delta_arm3": 0.0924,
+   "fullpool_delta_arm3_ci": [
+    0.053,
+    0.139
+   ],
+   "fullpool_delta_arm3_p": 0.0,
+   "fullpool_delta_pub": 0.2568,
+   "fullpool_delta_pub_ci": [
+    0.183,
+    0.345
+   ]
+  },
+  {
+   "disorder": "SCZ",
+   "labels": "as run",
+   "positives_in_pool": 39,
+   "genes": 33,
+   "any_evidence": 34,
+   "convergent_auroc": 0.886,
+   "headline_n_pos": 39,
+   "headline_auroc": 0.6995,
+   "headline_ci_gene": [
+    0.614,
+    0.78
+   ],
+   "headline_delta_arm3": -0.084,
+   "headline_delta_arm3_ci": [
+    -0.189,
+    0.009
+   ],
+   "headline_delta_arm3_p": 0.079,
+   "headline_delta_pub": -0.0428,
+   "headline_delta_pub_ci": [
+    -0.141,
+    0.051
+   ],
+   "fullpool_n_pos": 39,
+   "fullpool_auroc": 0.7267,
+   "fullpool_ci_gene": [
+    0.644,
+    0.81
+   ],
+   "fullpool_delta_arm3": -0.1463,
+   "fullpool_delta_arm3_ci": [
+    -0.238,
+    -0.057
+   ],
+   "fullpool_delta_arm3_p": 0.004,
+   "fullpool_delta_pub": -0.0841,
+   "fullpool_delta_pub_ci": [
+    -0.18,
+    0.016
+   ]
+  },
+  {
+   "disorder": "SCZ",
+   "labels": "corrected",
+   "positives_in_pool": 42,
+   "genes": 35,
+   "any_evidence": 36,
+   "convergent_auroc": 0.8772,
+   "headline_n_pos": 42,
+   "headline_auroc": 0.6823,
+   "headline_ci_gene": [
+    0.603,
+    0.761
+   ],
+   "headline_delta_arm3": -0.0899,
+   "headline_delta_arm3_ci": [
+    -0.191,
+    0.001
+   ],
+   "headline_delta_arm3_p": 0.054,
+   "headline_delta_pub": -0.0431,
+   "headline_delta_pub_ci": [
+    -0.143,
+    0.046
+   ],
+   "fullpool_n_pos": 42,
+   "fullpool_auroc": 0.7094,
+   "fullpool_ci_gene": [
+    0.633,
+    0.787
+   ],
+   "fullpool_delta_arm3": -0.1546,
+   "fullpool_delta_arm3_ci": [
+    -0.243,
+    -0.068
+   ],
+   "fullpool_delta_arm3_p": 0.001,
+   "fullpool_delta_pub": -0.084,
+   "fullpool_delta_pub_ci": [
+    -0.178,
+    0.012
+   ]
+  },
+  {
+   "disorder": "IDD",
+   "labels": "as run",
+   "positives_in_pool": 80,
+   "genes": 29,
+   "any_evidence": 48,
+   "convergent_auroc": 0.7611,
+   "curated_meeting_rule": 11,
+   "curated_meeting_rule_leaf": 3,
+   "uncurated_meeting_rule": 322,
+   "headline_n_pos": 73,
+   "headline_auroc": 0.7332,
+   "headline_ci_gene": [
+    0.679,
+    0.832
+   ],
+   "headline_delta_arm3": -0.0143,
+   "headline_delta_arm3_ci": [
+    -0.08,
+    0.133
+   ],
+   "headline_delta_arm3_p": 0.858,
+   "headline_delta_pub": 0.0903,
+   "headline_delta_pub_ci": [
+    0.019,
+    0.226
+   ],
+   "fullpool_n_pos": 80,
+   "fullpool_auroc": 0.7408,
+   "fullpool_ci_gene": [
+    0.687,
+    0.856
+   ],
+   "fullpool_delta_arm3": -0.1021,
+   "fullpool_delta_arm3_ci": [
+    -0.16,
+    0.039
+   ],
+   "fullpool_delta_arm3_p": 0.164,
+   "fullpool_delta_pub": 0.0243,
+   "fullpool_delta_pub_ci": [
+    -0.066,
+    0.193
+   ]
+  },
+  {
+   "disorder": "IDD",
+   "labels": "corrected",
+   "positives_in_pool": 121,
+   "genes": 56,
+   "any_evidence": 74,
+   "convergent_auroc": 0.7705,
+   "curated_meeting_rule": 26,
+   "curated_meeting_rule_leaf": 8,
+   "uncurated_meeting_rule": 307,
+   "headline_n_pos": 111,
+   "headline_auroc": 0.7511,
+   "headline_ci_gene": [
+    0.705,
+    0.82
+   ],
+   "headline_delta_arm3": 0.0448,
+   "headline_delta_arm3_ci": [
+    -0.028,
+    0.157
+   ],
+   "headline_delta_arm3_p": 0.277,
+   "headline_delta_pub": 0.1352,
+   "headline_delta_pub_ci": [
+    0.068,
+    0.24
+   ],
+   "fullpool_n_pos": 121,
+   "fullpool_auroc": 0.7591,
+   "fullpool_ci_gene": [
+    0.715,
+    0.833
+   ],
+   "fullpool_delta_arm3": -0.0508,
+   "fullpool_delta_arm3_ci": [
+    -0.115,
+    0.051
+   ],
+   "fullpool_delta_arm3_p": 0.396,
+   "fullpool_delta_pub": 0.0719,
+   "fullpool_delta_pub_ci": [
+    0.002,
+    0.187
+   ]
+  },
+  {
+   "disorder": "MDD",
+   "labels": "as run",
+   "positives_in_pool": 7,
+   "genes": 7,
+   "any_evidence": 7,
+   "convergent_auroc": 0.9953
+  },
+  {
+   "disorder": "MDD",
+   "labels": "corrected",
+   "positives_in_pool": 8,
+   "genes": 8,
+   "any_evidence": 8,
+   "convergent_auroc": 0.9953
+  }
+ ]
+}

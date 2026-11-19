@@ -1,0 +1,26 @@
+disorder	hpo_id	hpo_label	category	centrality	item_id	second_item_id	attributable	confidence	needs_manual_review	prompt_sha	spec_version	model
+ID	HP:0033055	Impaired ability to plan	intellectual_functioning	core	A	none	True	0.99	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0031058	Impairment of activities of daily living	adaptive_functioning	core	B	none	True	0.98	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0001249	Intellectual disability	developmental_onset	core	none	none	False	0.98	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0033056	Impaired ability to organize	adaptive_functioning	supporting	A	none	True	0.85	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0000745	Abnormal diminished volition	adaptive_functioning	supporting	none	none	False	0.94	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0002354	Memory impairment	adaptive_functioning	supporting	A	none	True	0.62	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200037	Lack of expressed empathy	adaptive_functioning	supporting	B	none	True	0.57	True	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0002463	Language impairment	adaptive_functioning	supporting	B	none	True	0.93	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0010522	Dyslexia	adaptive_functioning	supporting	A	none	True	0.93	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0100543	Cognitive impairment	intellectual_functioning	core	A	none	True	0.98	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0020007	Abnormal affect regulation	adaptive_functioning	supporting	none	none	False	0.96	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0034434	Abnormal communication	adaptive_functioning	core	B	none	True	0.98	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0002442	Dyscalculia	adaptive_functioning	supporting	A	none	True	0.85	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200316	Diminishment of interpersonal communication	adaptive_functioning	supporting	B	none	True	0.96	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0000728	Reduced ability to form peer relationships	adaptive_functioning	supporting	B	none	True	0.95	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200021	Reduced social insight	adaptive_functioning	supporting	B	none	True	0.79	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0001328	Specific learning disability	intellectual_functioning	core	A	none	True	0.97	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0033051	Impaired executive functioning	intellectual_functioning	core	A	none	True	0.98	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200401	Abnormal judgment	intellectual_functioning	core	A	none	True	0.99	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200310	Diminishment of social interactions	adaptive_functioning	core	B	none	True	0.95	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0010526	Dysgraphia	adaptive_functioning	supporting	A	none	True	0.76	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0007086	Social and occupational deterioration	adaptive_functioning	supporting	B	none	True	0.73	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:0410280	Pediatric onset	developmental_onset	core	none	none	False	0.99	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200024	Abnormal relationship	adaptive_functioning	supporting	B	none	True	0.85	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05
+ID	HP:5200118	Difficulty recognizing another's emotions	adaptive_functioning	supporting	B	none	True	0.72	False	e0c3b39ef6521de79a24976489acd92a2e8ff75ead1f6b816105e772768019ff	2026-07-27	gpt-5.4-2026-03-05

@@ -1,0 +1,99 @@
+{
+ "ASD at 3": {
+  "gene_prior_H": {
+   "n_tier_uncurated": 441,
+   "OR": [
+    2.47,
+    1.64,
+    3.73
+   ]
+  },
+  "SFARI": {
+   "n_tier_uncurated": 441,
+   "OR": [
+    1.89,
+    1.43,
+    2.5
+   ]
+  },
+  "curated_in_tier": 66,
+  "overlap_ratio_stratified": {
+   "ASD-SCZ": 1.11,
+   "ASD-IDD": 2.78,
+   "ASD-NCD": 1.02,
+   "ASD-MDD": 1.18
+  }
+ },
+ "ASD at 4": {
+  "gene_prior_H": {
+   "n_tier_uncurated": 204,
+   "OR": [
+    2.97,
+    1.82,
+    4.84
+   ]
+  },
+  "SFARI": {
+   "n_tier_uncurated": 204,
+   "OR": [
+    2.49,
+    1.76,
+    3.53
+   ]
+  },
+  "curated_in_tier": 48,
+  "overlap_ratio_stratified": {
+   "ASD-SCZ": 1.57,
+   "ASD-IDD": 3.97,
+   "ASD-NCD": 1.2,
+   "ASD-MDD": 1.62
+  }
+ },
+ "ASD at 5": {
+  "gene_prior_H": {
+   "n_tier_uncurated": 44,
+   "OR": [
+    3.42,
+    1.44,
+    8.11
+   ]
+  },
+  "SFARI": {
+   "n_tier_uncurated": 44,
+   "OR": [
+    3.26,
+    1.64,
+    6.48
+   ]
+  },
+  "curated_in_tier": 20,
+  "overlap_ratio_stratified": {
+   "ASD-SCZ": 1.27,
+   "ASD-IDD": 1.83,
+   "ASD-NCD": 2.34,
+   "ASD-MDD": 1.16
+  }
+ },
+ "MDD at 2": {
+  "gene_prior_H": {
+   "n_tier_uncurated": 306,
+   "OR": [
+    0.84,
+    0.35,
+    2.02
+   ]
+  },
+  "curated_in_tier": 8
+ },
+ "MDD at 3": {
+  "gene_prior_H": {
+   "n_tier_uncurated": 46,
+   "OR": [
+    0.83,
+    0.11,
+    6.21
+   ]
+  },
+  "curated_in_tier": 1
+ }
+}

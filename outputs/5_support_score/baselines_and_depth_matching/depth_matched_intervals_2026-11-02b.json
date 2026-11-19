@@ -1,0 +1,154 @@
+{
+ "ASD": {
+  "support": {
+   "auroc": 0.8954,
+   "ci_gene": [
+    0.8522,
+    0.9311
+   ]
+  },
+  "retrieval": {
+   "auroc": 0.7679,
+   "ci_gene": [
+    0.7179,
+    0.8192
+   ]
+  },
+  "count": {
+   "auroc": 0.5238,
+   "ci_gene": [
+    0.4993,
+    0.5446
+   ]
+  },
+  "admitted": {
+   "auroc": 0.8932,
+   "ci_gene": [
+    0.8511,
+    0.9351
+   ]
+  },
+  "support_minus_retrieval": {
+   "diff": 0.1275,
+   "ci_gene": [
+    0.0863,
+    0.1651
+   ],
+   "p": 0.0
+  }
+ },
+ "SCZ": {
+  "support": {
+   "auroc": 0.5961,
+   "ci_gene": [
+    0.5171,
+    0.6741
+   ]
+  },
+  "retrieval": {
+   "auroc": 0.54,
+   "ci_gene": [
+    0.4865,
+    0.5922
+   ]
+  },
+  "count": {
+   "auroc": 0.5275,
+   "ci_gene": [
+    0.4928,
+    0.5651
+   ]
+  },
+  "admitted": {
+   "auroc": 0.3969,
+   "ci_gene": [
+    0.3242,
+    0.4776
+   ]
+  },
+  "support_minus_retrieval": {
+   "diff": 0.0561,
+   "ci_gene": [
+    -0.0406,
+    0.1461
+   ],
+   "p": 0.237
+  }
+ },
+ "IDD": {
+  "support": {
+   "auroc": 0.6667,
+   "ci_gene": [
+    0.6181,
+    0.736
+   ]
+  },
+  "retrieval": {
+   "auroc": 0.6025,
+   "ci_gene": [
+    0.5633,
+    0.6517
+   ]
+  },
+  "count": {
+   "auroc": 0.5108,
+   "ci_gene": [
+    0.4989,
+    0.5305
+   ]
+  },
+  "admitted": {
+   "auroc": 0.6498,
+   "ci_gene": [
+    0.5954,
+    0.7307
+   ]
+  },
+  "support_minus_retrieval": {
+   "diff": 0.0642,
+   "ci_gene": [
+    0.0091,
+    0.135
+   ],
+   "p": 0.024
+  }
+ },
+ "NCD": {
+  "support": {
+   "auroc": 0.5818,
+   "ci_gene": [
+    0.5079,
+    0.6534
+   ]
+  },
+  "retrieval": {
+   "auroc": 0.6539,
+   "ci_gene": [
+    0.6107,
+    0.7071
+   ]
+  },
+  "count": {
+   "auroc": 0.5078,
+   "ci_gene": [
+    0.4837,
+    0.5334
+   ]
+  },
+  "admitted": {
+   "auroc": 0.5789,
+   "ci_gene": [
+    0.5026,
+    0.6625
+   ]
+  },
+  "support_minus_retrieval": {
+   "diff": -0.072,
+   "ci_gene": [
+    -0.1497,
+    0.0128
+   ],
+   "p": 0.084
+  }
+ }
+}

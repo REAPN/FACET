@@ -1,0 +1,29 @@
+disorder	hpo_id	hpo_label	category	centrality	item_id	second_item_id	attributable	confidence	needs_manual_review	prompt_sha	spec_version	model
+NCD	HP:0033055	Impaired ability to plan	cognitive_executive	supporting	A	none	True	0.95	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0033051	Impaired executive functioning	cognitive_executive	core	A	none	True	0.99	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0002463	Language impairment	other	core	A	none	True	0.99	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0002186	Apraxia	motor_coordination	supporting	A	none	True	0.94	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:5200118	Difficulty recognizing another's emotions	social_cognition_empathy	supporting	A	none	True	0.96	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0002354	Memory impairment	cognitive_executive	core	A	none	True	0.99	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0001268	Mental deterioration	cognitive_executive	core	A	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0030784	Anomic aphasia	other	supporting	A	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0006977	Deficit in grammar	other	supporting	A	none	True	0.95	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0010794	Impaired visuospatial constructive cognition	motor_coordination	supporting	A	none	True	0.95	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031058	Impairment of activities of daily living	adaptive_functioning	core	B	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0033071	Impaired task monitoring	cognitive_executive	supporting	A	none	True	0.89	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0010863	Receptive language delay	other	supporting	A	none	True	0.84	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:5200044	Reduced attention regulation	cognitive_executive	supporting	A	none	True	0.95	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0033692	Declarative memory loss	cognitive_executive	supporting	A	none	True	0.93	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0100543	Cognitive impairment	cognitive_executive	core	A	none	True	0.9	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0010524	Disturbed sensory perception	motor_coordination	supporting	A	none	True	0.68	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:5200021	Reduced social insight	social_cognition_empathy	core	A	none	True	0.94	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031059	Impaired ability to bathe oneself	adaptive_functioning	supporting	B	none	True	0.97	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031060	Impaired ability to dress oneself	adaptive_functioning	supporting	B	none	True	0.99	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031061	Impaired toileting ability	adaptive_functioning	supporting	B	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031062	Impaired transferring ability	adaptive_functioning	supporting	B	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031063	Impaired feeding ability	adaptive_functioning	supporting	B	none	True	0.97	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0031064	Impaired continence	adaptive_functioning	supporting	B	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0000020	Urinary incontinence	adaptive_functioning	supporting	B	none	True	0.98	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0002607	Bowel incontinence	adaptive_functioning	supporting	B	none	True	0.95	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0040183	Encopresis	adaptive_functioning	supporting	B	none	True	0.97	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05
+NCD	HP:0010992	Stress urinary incontinence	adaptive_functioning	supporting	B	none	True	0.96	False	abfd5259f5cc23d6237f13005b264b6f9f20974e14d7cd89adf621cc5ba6e609	2026-07-27	gpt-5.4-2026-03-05

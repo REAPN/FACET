@@ -1,0 +1,16 @@
+[
+ {
+  "mp_id": "MP:0002572",
+  "label_hint": "abnormal emotion/affect behavior",
+  "expected_domain": "negative_symptoms",
+  "expected_strict": true,
+  "expected_direction": "bidirectional"
+ },
+ {
+  "mp_id": "MP:0002064",
+  "label_hint": "seizures",
+  "expected_domain": "mechanistic_neurobiology",
+  "expected_strict": false,
+  "expected_direction": "n/a"
+ }
+]

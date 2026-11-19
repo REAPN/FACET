@@ -1,0 +1,6 @@
+| Disorder | support score | retrieval only, no LLM | retrieval, admitted pairs only | support score, depth matched | retrieval only, depth matched |
+|---|---|---|---|---|---|
+| ASD | 0.956 | 0.938 | 0.960 | 0.895 | 0.768 |
+| SCZ | 0.682 | 0.827 | 0.590 | 0.596 | 0.540 |
+| IDD | 0.751 | 0.784 | 0.747 | 0.667 | 0.603 |
+| NCD | 0.668 | 0.781 | 0.672 | 0.582 | 0.654 |

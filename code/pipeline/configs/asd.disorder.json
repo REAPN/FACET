@@ -1,0 +1,723 @@
+{
+ "$schema": "./disorder_config.schema.json",
+ "$config_version": "1.0",
+ "$generated": "2026-05-16 — Phase A reverse-engineering from current ASD pipeline state | 2026-05-27: lexical_factor_when_structural_missing=0.5 sensitivity test | 2026-07-27 CRITERION-STRICT: trimmed the prepulse-inhibition/gating endophenotype proxy from sensory_reactivity (now scores only DSM Criterion B.4 behavioral sensory reactivity); gating moved to the mechanism axis. Domains otherwise unchanged; a stability check on the ASD number is the only re-run needed.",
+ "disorder": {
+  "id": "ASD",
+  "name": "Autism Spectrum Disorder",
+  "dsm5_section": "DSM-5-TR / Neurodevelopmental Disorders / Autism Spectrum Disorder",
+  "icd10_codes": [
+   "F84.0"
+  ]
+ },
+ "domains": {
+  "strict": [
+   {
+    "name": "social_interaction",
+    "description": "Initiation and maintenance of social contact; reciprocal social engagement; preference for social over nonsocial novelty; dyadic conspecific interaction. Mouse anchors: three-chamber sociability (Crawley 2004), social interaction test (File & Hyde 1978), reciprocal dyadic encounter, social novelty preference.",
+    "polarity": "negative"
+   },
+   {
+    "name": "communication",
+    "description": "Deficits in verbal and nonverbal social communication; reduced or absent prelinguistic vocalizations; atypical prosody; limited use of communicative gestures; abnormal ultrasonic vocalizations (USV) in pups. Mouse anchors: USV quantification in isolation (Scattoni 2008), interaction-elicited USV (Wohr 2009), gestural communication proxies, pup USV rate and structure.",
+    "polarity": "negative"
+   },
+   {
+    "name": "repetitive_restricted",
+    "description": "<DSM-5-TR text redacted> behaviors; insistence on sameness, inflexible adherence to routines; compulsive habit-like motor acts driven by distress reduction (OCD) or by intrinsic patterning (ASD). Mouse anchors: Sapap3 KO over-grooming (Welch 2007), Slitrk5 KO (Shmelkov 2010), marble burying (Deacon 2006), nestlet shredding, stereotypy scoring.",
+    "polarity": "positive"
+   },
+   {
+    "name": "sensory_reactivity",
+    "description": "Hyper- or hypo-reactivity to sensory stimuli; atypical sensory-seeking or sensory-avoidance behavior DSM-5-TR Criterion B.4. Mouse anchors: acoustic startle, hot-plate latency (thermal sensitivity), von Frey monofilaments (tactile sensitivity), cliff avoidance, open-field light preference. Robertson & Baron-Cohen 2017 sensory decomposition framework. [2026-07-27 criterion-strict: prepulse-inhibition / sensorimotor-gating is an endophenotype proxy, NOT DSM-5 ASD Criterion B.4 behavioral sensory reactivity; it is reported on the mechanism axis, not scored as a face-validity analog here. This domain scores only B.4 behavioral hyper/hyporeactivity and sensory-seeking/avoidance.]",
+    "polarity": "bidirectional"
+   }
+  ],
+  "broad_extras": [
+   "developmental_support",
+   "cognitive_behavioral_support",
+   "motor_support"
+  ],
+  "bidirectional": [],
+  "short_labels": {
+   "social_interaction": "Social",
+   "communication": "Communication",
+   "repetitive_restricted": "RRB",
+   "sensory_reactivity": "Sensory"
+  },
+  "mechanism_axis": {
+   "name": "sensorimotor_gating_endophenotype",
+   "reported": "separately from face validity; NOT scored in a face-validity domain",
+   "content": "prepulse inhibition / sensorimotor gating (a gating endophenotype sometimes reported in autism models)",
+   "rationale": "an endophenotype proxy, not DSM-5 ASD Criterion B.4 behavioral sensory reactivity; kept off the face-validity domains under the uniform criterion-strict rule",
+   "measurement": "the mechanism axis / Phenodigm-contrast, reported distinct from criterion face validity"
+  }
+ },
+ "adjacency": {
+  "social_interaction": [
+   "communication",
+   "developmental_support"
+  ],
+  "communication": [
+   "social_interaction",
+   "developmental_support"
+  ],
+  "repetitive_restricted": [
+   "sensory_reactivity",
+   "developmental_support"
+  ],
+  "sensory_reactivity": [
+   "repetitive_restricted"
+  ],
+  "developmental_support": [
+   "social_interaction",
+   "communication",
+   "repetitive_restricted"
+  ]
+ },
+ "adjacency_citations": {
+  "edges": [
+   {
+    "edge": [
+     "social_interaction",
+     "communication"
+    ],
+    "source": "DSM-5-TR Criterion A combines social interaction + social communication into a single criterion (A.1, A.2, A.3)",
+    "note": "Tight clinical coupling: the two are jointly required per DSM-5-TR, hence adjacent"
+   },
+   {
+    "edge": [
+     "repetitive_restricted",
+     "sensory_reactivity"
+    ],
+    "source": "DSM-5-TR Criterion B groups RRB and sensory hyper/hyporeactivity into the same criterion (B.1-B.4)",
+    "note": "Sensory_reactivity was added as B.4 in DSM-5 (2013); RRB and sensory are clustered under Criterion B"
+   },
+   {
+    "edge": [
+     "social_interaction",
+     "developmental_support"
+    ],
+    "source": "DSM-5-TR Criterion C requires early developmental onset of social-communication deficits",
+    "note": "Developmental temporality on social phenotypes is part of the diagnostic structure"
+   },
+   {
+    "edge": [
+     "communication",
+     "developmental_support"
+    ],
+    "source": "Same as above; language milestones are developmental"
+   },
+   {
+    "edge": [
+     "repetitive_restricted",
+     "developmental_support"
+    ],
+    "source": "Stereotypies and developmental motor milestones often appear in early childhood"
+   }
+  ]
+ },
+ "stage0_dsm5_extraction": {
+  "pdf_input": "DSM5_ASD.pdf",
+  "outdir": "DSM5_ASD_preprocessed/",
+  "chapter_start_anchor": "Diagnostic Criteria(?:\\s+299\\.00\\s+\\(F84\\.0\\))?",
+  "chapter_start_anchor_keep": true,
+  "chapter_end_anchor": "Attention-Deficit/Hyperactivity\\s+Disorder",
+  "criteria_trim_anchors": [
+   "\\bNote:\\b",
+   "\\bSpecify if:\\b"
+  ],
+  "text_normalization": {
+   "hyphen_join_min_chars": 1,
+   "criterion_marker_rejoin": false,
+   "paren_note_rejoin": false
+  },
+  "headings_to_extract": [
+   {
+    "name": "Diagnostic Criteria",
+    "regex": "Diagnostic Criteria(?:\\s+299\\.00\\s+\\(F84\\.0\\))?"
+   },
+   {
+    "name": "Recording Procedures",
+    "regex": "Recording Procedures"
+   },
+   {
+    "name": "Specifiers",
+    "regex": "Specifiers"
+   },
+   {
+    "name": "Diagnostic Features",
+    "regex": "Diagnostic Features"
+   },
+   {
+    "name": "Associated Features Supporting Diagnosis",
+    "regex": "Associated Features Supporting Diagnosis"
+   },
+   {
+    "name": "Prevalence",
+    "regex": "Prevalence"
+   },
+   {
+    "name": "Development and Course",
+    "regex": "Development and Course"
+   },
+   {
+    "name": "Risk and Prognostic Factors",
+    "regex": "Risk and Prognostic Factors"
+   },
+   {
+    "name": "Culture-Related Diagnostic Issues",
+    "regex": "Culture-Related Diagnostic Issues"
+   },
+   {
+    "name": "Gender-Related Diagnostic Issues",
+    "regex": "Gender-Related Diagnostic Issues"
+   },
+   {
+    "name": "Functional Consequences of Autism Spectrum Disorder",
+    "regex": "Functional Consequences of Autism Spectrum Disorder"
+   },
+   {
+    "name": "Differential Diagnosis",
+    "regex": "Differential Diagnosis"
+   },
+   {
+    "name": "Comorbidity",
+    "regex": "Comorbidity"
+   }
+  ],
+  "core_phenotype_headings": [
+   "Diagnostic Criteria",
+   "Diagnostic Features"
+  ],
+  "running_header_strip_patterns": [
+   "(?mi)^\\s*Autism Spectrum Disorder\\s*$",
+   "(?mi)^\\s*Neurodevelopmental Disorders\\s*$",
+   "(?mi)^\\s*\\d+\\s*$"
+  ],
+  "text_replacements": [
+   {
+    "mode": "region",
+    "start_pattern": "limited language\\)\\.",
+    "end_pattern": "To use the specifier",
+    "replacement": "\nTABLE 2. Severity levels for autism spectrum disorder\n\nLevel 3\n“Requiring very substantial support”\n\nSocial communication:\nSevere <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n\n\nLevel 2\n“Requiring substantial support”\n\nSocial communication:\nMarked <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n\n\nLevel 1\n“Requiring support”\n\nSocial communication:\nWithout <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n",
+    "comment": "Splice in readable Table 2 (severity levels) content; pypdf renders the original table as column-fragment garbage that confuses the LLM and costs ~5 communication/speech HPOs."
+   },
+   {
+    "mode": "literal",
+    "find": "inteliectual",
+    "replace": "intellectual",
+    "comment": "pypdf OCR misread"
+   },
+   {
+    "mode": "literal",
+    "find": "icnown",
+    "replace": "known",
+    "comment": "pypdf OCR misread"
+   },
+   {
+    "mode": "literal",
+    "find": "medicai",
+    "replace": "medical",
+    "comment": "pypdf OCR misread"
+   },
+   {
+    "mode": "literal",
+    "find": "othenwise",
+    "replace": "otherwise",
+    "comment": "pypdf OCR misread"
+   }
+  ]
+ },
+ "stage1_hpo_curation": {
+  "core_text_input": "DSM5_ASD_preprocessed/ASD_core_phenotype_only.txt",
+  "hpo_json_input": "hp.json",
+  "outdir": "pilot_hpo_run_hybrid_v3/",
+  "extraction_schema": {
+   "categories_enum": [
+    "social_communication",
+    "restricted_repetitive_behavior",
+    "sensory",
+    "language",
+    "developmental_course",
+    "motor",
+    "other"
+   ],
+   "polarity_enum": [
+    "present",
+    "absent",
+    "negated",
+    "uncertain"
+   ],
+   "centrality_enum": [
+    "core",
+    "supporting",
+    "context_only"
+   ],
+   "temporality_enum": [
+    "current",
+    "history",
+    "developmental",
+    "unspecified"
+   ]
+  },
+  "extraction_prompt_addendum": "Extract phenotype FEATURES, not diagnoses. Keep short normalized phrases. Capture sensory hyper-/hypo-reactivity per DSM-5-TR Criterion B.4 (added in 2013).",
+  "resolution_prompt_addendum": null,
+  "seed_terms_per_domain": {
+   "social_interaction": [
+    "social-emotional reciprocity",
+    "eye contact",
+    "shared attention",
+    "social interest",
+    "peer relationships"
+   ],
+   "communication": [
+    "communication",
+    "language",
+    "vocalization",
+    "gesture use",
+    "pragmatic communication"
+   ],
+   "repetitive_restricted": [
+    "stereotypy",
+    "insistence on sameness",
+    "restricted interests",
+    "ritualized behavior",
+    "motor stereotypy"
+   ],
+   "sensory_reactivity": [
+    "sensory hyperreactivity",
+    "sensory hyporeactivity",
+    "sensory seeking",
+    "tactile defensiveness",
+    "auditory hypersensitivity"
+   ]
+  },
+  "llm_model": "gpt-5.4",
+  "embedding_model": "text-embedding-3-large",
+  "llm_seed": 1,
+  "final_filter": {
+   "allowed_centrality": [
+    "core",
+    "supporting"
+   ],
+   "allowed_polarity": [
+    "present",
+    "bidirectional"
+   ],
+   "allowed_relations": [
+    "exact",
+    "broader_than_source",
+    "narrower_than_source"
+   ]
+  }
+ },
+ "stage2_candidate_features": {
+  "hpo_targets_input": "pilot_hpo_run_hybrid_v3/07_final_resolved_hpo_terms.tsv",
+  "mouse_mp_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv": "mp_term_taxonomy_criterion_v1_ASD/03_mp_term_taxonomy.tsv",
+  "pairwise_similarity_tsv": "phenio-monarch-hp-mp.0.4.semsimian.tsv",
+  "outdir": "asd_candidate_features_broad_v3/",
+  "mouse_domain_routing": {
+   "mode": "single_bucket",
+   "single_bucket_label": "asd_criterion_pool",
+   "mapping": null,
+   "changed_2026_07_28": "Was mode 'natural', which routed mouse terms through primary_domain, a HAND-AUTHORED domain paraphrase predating the criterion-anchored design. Measured that day: of the 80 terms the criterion-grounded classifier admitted for ASD, only 29 sat in a domain any ASD human target could reach, so 51 admitted terms paired zero times, including the entire nociception and thermosensation cluster that answers Criterion B4's own first parenthetical. The old design was therefore filtering the new judgment. Switched to single_bucket so the criterion admission is what decides, matching SCZ, ID and NCD, all of which already route this way.",
+   "known_limitation_2026_07_28": "This REMOVES the pre-criterion gate; it does not yet route BY criterion. True unit-to-unit routing, pairing a mouse term carrying criterion_unit B4 with HPO targets resolved from B4, requires stage 1 to emit a criterion identifier per target. Its current output (07_final_resolved_hpo_terms.tsv) carries only a free-text `category` column and no criterion id, so that is a follow-up and not a tonight change."
+  },
+  "tier_filter": {
+   "include": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "exclude": [
+    5
+   ],
+   "tier_5_caveat": null
+  },
+  "include_supporting_hpo": true,
+  "include_tier2_mouse": true,
+  "use_embedding_retrieval": true,
+  "use_lexical_retrieval": true,
+  "use_spillover_default": false,
+  "use_spillover_v2_target": true,
+  "top_k_embedding": 20,
+  "top_k_lexical": 20,
+  "mode": "union",
+  "inject_descendants": true,
+  "mp_obo": "MPheno_OBO.ontology",
+  "carriage_csv": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "taxonomy_tsv_previous": "mp_term_taxonomy_broad_v3/03_mp_term_taxonomy.tsv",
+  "taxonomy_provenance_2026_07_28": "Repointed to the criterion-grounded taxonomy for ASD, built by build_stage2a_taxonomy.py from that disorder's own run and from no other disorder. The previous file carried ASD's relevance_tier column verbatim for SCZ and NCD, 11485 of 11485 values identical, which made the candidate universe for those disorders ASD's universe.",
+  "spillover_change_2026_07_28": "Was true, and ASD was the only disorder with it on; ID, SCZ and NCD are all false. Spillover admits every mouse term the domain gate calls compatible. Under the old `natural` routing that was a real filter. Under the `single_bucket` routing adopted the same day every term is compatible with every target, so spillover admitted the entire universe: ASD stage 2a produced exactly 43 targets times 1,566 terms equals 67,338 pairs, a complete cross product, of which 65,785 (98 percent) entered through the spillover channel alone with no lexical or embedding evidence. Setting this false restores retrieval selectivity and makes all four disorders match."
+ },
+ "stage2_rerank": {
+  "outdir": "asd_pair_rerank_v3_broad_v3/",
+  "developer_prompt_addendum": "strict_eligible=true only for high-quality organism-level analogs suitable for strict ASD-domain support.",
+  "behavioral_analog_enum": [
+   "direct_analog",
+   "close_support",
+   "weak_support",
+   "mechanistic_only",
+   "mismatch"
+  ],
+  "evidence_scope_enum": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "mechanistic",
+   "unclear",
+   "cellular_or_circuit_only"
+  ],
+  "score_floor": {
+   "value": 0.57,
+   "calibration_basis": "BA-max on 180 ASD LLM-judged pairs; BA=0.736, precision=0.83, recall=0.70",
+   "needs_recalibration_for_this_disorder": false
+  },
+  "weights": {
+   "embed": 0.45,
+   "lexical": 0.25,
+   "resnik": 0.2,
+   "jaccard": 0.1,
+   "owl": 0.0
+  },
+  "top_n_bundle": 5,
+  "ambiguity_margin": 0.08,
+  "gray_low": 0.35,
+  "gray_high": 0.7,
+  "promote_bonus": 0.1,
+  "demote_penalty": 0.1,
+  "llm_model": "gpt-5.4",
+  "llm_seed": 1,
+  "lexical_factor_when_structural_missing": 0.5,
+  "_lexical_downweight_rationale": "Lexical channel was originally introduced as a guard against LLM/semantic over-reach in ontology mapping (no established protocol for using LLMs in ontology research at design time). When both Resnik IC AND Jaccard channels are absent (structural_missing=True), the redistribution math inflates lexical's effective contribution from its 25%% baseline to ~35.7%% — exactly when lexical's guard role is also least defensible because there is no ontology channel left to validate either signal. Setting factor=0.5 halves lexical's weight in that case (effective ~22%% vs original 25%%), letting embed dominate (~78%%) for cross-jargon semantic matches like Catalepsy↔Catatonia where token overlap is zero but semantic similarity is high. Validated by parity test on ASD: if ASD headline AUROC is stable (most ASD pairs have IC/Jaccard present, factor doesn't fire), the change is defensible to apply across disorders. Test date 2026-05-27."
+ },
+ "stage3_aggregation": {
+  "outdir_template": "asd_support_aggregated_broad_v3_pol{regime}/",
+  "polarity_regimes_to_run": [
+   "off",
+   "soft",
+   "strict",
+   "schema"
+  ],
+  "polarity_regimes_deferred": [],
+  "polarity_deferral_note": null,
+  "polarity_weight_maps": {
+   "soft": {
+    "asd_like": 1.0,
+    "na": 1.0,
+    "bidirectional": 0.5,
+    "anti_asd": 0.0
+   },
+   "strict": {
+    "asd_like": 1.0,
+    "na": 1.0,
+    "bidirectional": 0.0,
+    "anti_asd": 0.0
+   }
+  },
+  "support_threshold": 0.3,
+  "lexical_cluster_threshold": 0.65,
+  "overall_aggregator": "mean",
+  "strict_analog_gate": "strong",
+  "eligibility_mode": "score_assisted_broad",
+  "broad_score_threshold": 0.57,
+  "strict_score_threshold": 0.62,
+  "allowed_evidence_scope_strict": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior"
+  ],
+  "allowed_evidence_scope_broad": [
+   "organism_behavior",
+   "organism_sensory",
+   "developmental_behavior",
+   "unclear"
+  ],
+  "strong_behavioral_analog_types": [
+   "direct_analog",
+   "close_support"
+  ]
+ },
+ "stage4_permutation_null": {
+  "outdir_template": "asd_pvalue_broad_v3_pol{regime}/",
+  "n_permutations": 10000,
+  "seed": 1,
+  "max_depth_cap": 200,
+  "score_function_fix_version": "2026-05-14"
+ },
+ "stage5_benchmark": {
+  "outdir_template": "benchmark/run_2026-07-28_criterion_v1_asd_pol{regime}_{mode}/",
+  "benchmark_group_table": "broad_benchmark_setup/06_benchmark_group_table.csv",
+  "contrasts": [
+   {
+    "name": "A1",
+    "description": "ASD-primary vs psychiatric pool (NDD + non-NDD psychiatric + language confound)",
+    "positive_group": "ASD_primary",
+    "negative_groups": [
+     "NDD_non_ASD",
+     "language_social_confound_non_ASD",
+     "psychiatric_non_NDD_non_ASD"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   },
+   {
+    "name": "A1prime",
+    "description": "ASD-primary vs all non-ASD genotypes in MGI — the headline broad contrast",
+    "positive_group": "ASD_primary",
+    "negative_groups": [
+     "__all_non_ASD_primary__"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   },
+   {
+    "name": "A3",
+    "description": "ASD vs neurodevelopmental controls (ID, Rett-spectrum, dev delay)",
+    "positive_group": "ASD_primary",
+    "negative_groups": [
+     "NDD_non_ASD"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   },
+   {
+    "name": "A4",
+    "description": "ASD vs non-NDD psychiatric (depression, anxiety, schizophrenia, bipolar)",
+    "positive_group": "ASD_primary",
+    "negative_groups": [
+     "psychiatric_non_NDD_non_ASD"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   },
+   {
+    "name": "A5",
+    "description": "ASD vs language/social confound (descriptive only, n_neg=1)",
+    "positive_group": "ASD_primary",
+    "negative_groups": [
+     "language_social_confound_non_ASD"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   },
+   {
+    "name": "S1",
+    "description": "ASD-mixed vs ASD-primary (specificity sanity; expected AUROC<0.5)",
+    "positive_group": "ASD_mixed",
+    "negative_groups": [
+     "ASD_primary"
+    ],
+    "expected_direction": "<0.5",
+    "is_specificity_sanity_check": true
+   },
+   {
+    "name": "S2",
+    "description": "Pooled ASD (primary+mixed) vs psychiatric pool",
+    "positive_group": "ASD_pooled",
+    "negative_groups": [
+     "psychiatric_non_ASD"
+    ],
+    "expected_direction": ">0.5",
+    "is_specificity_sanity_check": false
+   }
+  ],
+  "b_family": [
+   {
+    "name": "B1",
+    "type": "composite_mean",
+    "domains": "all_strict",
+    "label": "Strict 4-domain composite",
+    "gated_by": null,
+    "multiplicity_correction": null,
+    "comparator_pool_id": "A1"
+   },
+   {
+    "name": "B2",
+    "type": "per_domain",
+    "domains": [
+     "social_interaction"
+    ],
+    "label": "Social interaction (gated on B1)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_id": "A1"
+   },
+   {
+    "name": "B3",
+    "type": "per_domain",
+    "domains": [
+     "communication"
+    ],
+    "label": "Communication (gated on B1)",
+    "gated_by": "B1",
+    "multiplicity_correction": "holm",
+    "comparator_pool_id": "A1"
+   }
+  ],
+  "m_family": [
+   {
+    "name": "M1",
+    "model_type": "binary_logit",
+    "positive_label": "ASD_primary",
+    "comparator_pool": "psychiatric_non_ASD",
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "comparator_groups": [
+     "NDD_non_ASD",
+     "psychiatric_non_NDD_non_ASD",
+     "language_social_confound_non_ASD"
+    ],
+    "_comparator_groups_provenance": "Migrated 2026-07-15 to the post-H1-fix explicit-group format. Mirrors the A-family: M1/M3 use the A1 negative set; M2 uses A1prime's __all_non_ASD_primary__ = every benchmark_group except ASD_primary, including ASD_mixed."
+   },
+   {
+    "name": "M2",
+    "model_type": "binary_logit",
+    "positive_label": "ASD_primary",
+    "comparator_pool": "all_non_ASD",
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "comparator_groups": [
+     "NDD_non_ASD",
+     "psychiatric_non_NDD_non_ASD",
+     "language_social_confound_non_ASD",
+     "broad_other",
+     "ASD_mixed"
+    ],
+    "_comparator_groups_provenance": "Migrated 2026-07-15 to the post-H1-fix explicit-group format. Mirrors the A-family: M1/M3 use the A1 negative set; M2 uses A1prime's __all_non_ASD_primary__ = every benchmark_group except ASD_primary, including ASD_mixed."
+   },
+   {
+    "name": "M3",
+    "model_type": "multinomial_logit",
+    "positive_label": "ASD_primary",
+    "comparator_pool": "psychiatric_pool_multinomial",
+    "covariates": [
+     "log_n_mp_terms_z",
+     "assessable_fraction_z"
+    ],
+    "comparator_groups": [
+     "NDD_non_ASD",
+     "psychiatric_non_NDD_non_ASD",
+     "language_social_confound_non_ASD"
+    ],
+    "_comparator_groups_provenance": "Migrated 2026-07-15 to the post-H1-fix explicit-group format. Mirrors the A-family: M1/M3 use the A1 negative set; M2 uses A1prime's __all_non_ASD_primary__ = every benchmark_group except ASD_primary, including ASD_mixed."
+   }
+  ],
+  "n_bootstrap": 1000,
+  "phenodigm_baseline_score_file_template": "benchmark/run_2026-05-11_v3_pol{regime}_{mode}/baseline_scores/01_baseline_genotype_scores__B1_phenodigm_plain.tsv",
+  "n_mp_thresholds": [
+   1,
+   3,
+   4,
+   5,
+   7,
+   10
+  ],
+  "n_mp_terms_file": "broad_benchmark_setup/08_all_genotype_phenotypes_long_blinded.csv",
+  "outdir_template_previous": "benchmark/run_2026-05-11_v3_pol{regime}_{mode}/",
+  "outdir_template_change_2026_07_28": "Each disorder carried its own stale dated stamp: ASD 2026-05-11, SCZ 2026-05-28, ID 2026-06-02, NCD 2026-07-27. ASD's contained no disorder name at all, so its benchmark directories were generically named and could collide. All four now carry one stamp that also records the substrate, which is the distinction that decides whether two run directories are comparable."
+ },
+ "stage6_within_disorder": {
+  "diagnostic_ceiling": {
+   "k_of_n": [
+    4,
+    4
+   ],
+   "label": "4-of-4 strict-domain coverage ceiling exact binomial"
+  },
+  "cochran_q_over_strict_domains": true,
+  "pairwise_mcnemar_correction": "holm",
+  "cochran_armitage_trend": true,
+  "trend_levels": 5
+ },
+ "stage7_viz": {
+  "domain_order": [
+   "social_interaction",
+   "communication",
+   "repetitive_restricted",
+   "sensory_reactivity"
+  ],
+  "domain_short_labels": {
+   "social_interaction": "Social",
+   "communication": "Communication",
+   "repetitive_restricted": "RRB",
+   "sensory_reactivity": "Sensory"
+  },
+  "domain_colors": null,
+  "palette_name": "RdBu",
+  "b_family_panel_labels": {
+   "B1": "Strict composite",
+   "B2": "Social interaction",
+   "B3": "Communication"
+  },
+  "headline_contrast": "A1prime"
+ },
+ "rescue": {
+  "enabled": true,
+  "outdir": "rescue_audit_asd/",
+  "paradigms": [
+   {
+    "name": "ASD_social_communication_deficits",
+    "include": "social withdrawal|decreased social investigation|abnormal social investigation|decreased social novelty preference|abnormal communication|impaired ultrasonic vocalization|abnormal vocalization|decreased social interaction|abnormal social behavior",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high",
+    "citations": [
+     "Silverman et al. 2010 (ASD mouse behavioral phenotyping review)",
+     "Crawley 2007"
+    ]
+   },
+   {
+    "name": "ASD_restricted_repetitive_behavior",
+    "include": "stereotypic behavior|increased stereotypic behavior|increased grooming behavior|abnormal grooming behavior|cognitive inflexibility|spinning|repetitive behavior|abnormal repetitive behavior|marble burying",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "high",
+    "citations": [
+     "Crawley 2007",
+     "Peca et al. 2011 (Shank3 KO)"
+    ]
+   },
+   {
+    "name": "ASD_sensory_reactivity",
+    "include": "abnormal sensory gating|prepulse inhibition|abnormal startle reflex|abnormal acoustic startle|sensory hyperreactivity|sensory hyporeactivity|abnormal tactile response",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "moderate",
+    "citations": [
+     "Robertson & Baron-Cohen 2017 (sensory decomposition in ASD)"
+    ]
+   },
+   {
+    "name": "ASD_cognitive_inflexibility",
+    "include": "impaired reversal learning|cognitive inflexibility|abnormal latent inhibition|impaired set shifting|abnormal extinction learning|impaired behavioral flexibility",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "moderate"
+   },
+   {
+    "name": "ASD_anxiety_overlap",
+    "include": "anxiety[- ]related response|increased anxiety[- ]related response|abnormal anxiety[- ]related response",
+    "exclude": "",
+    "min_hits": 1,
+    "confidence": "low",
+    "note": "Anxiety phenotypes are highly co-morbid with ASD per Silverman 2010; included as a low-confidence paradigm because anxiety alone is not ASD-specific."
+   }
+  ],
+  "phenotype_evidence_weights": {
+   "high": 2.0,
+   "moderate": 1.0,
+   "low": 0.5,
+   "none": 0.0
+  },
+  "min_phenotype_evidence_score": 1.0
+ },
+ "$updated": "2026-05-24 — added 5 rescue.paradigms (was empty; required for score_mp_terms_for_paradigm.py and pitfall #2 primary-disorder check)"
+}
