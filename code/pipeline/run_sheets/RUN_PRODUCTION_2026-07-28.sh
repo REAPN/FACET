@@ -8,8 +8,8 @@ M="${MODEL:-gpt-5.4}"
 TARGET="${1:-all}"
 
 ARMS=(
-  "SCZ_dsmdef:fd777227494a5513:SCZ:1657:6"
-  "NCD_dsmdef:991109811bab19ee:NCD:1710:2"
+  "SCZ_dsmdef:c6853a6bd0a58fda:SCZ:1657:6"
+  "NCD_dsmdef:2330f79d059f16b1:NCD:1710:2"
 )
 
 prompt_sha () {
@@ -44,7 +44,7 @@ sys.path.insert(0, ".")
 from criterion_spec import load_spec, extract
 from criterion_prompt import build_developer_prompt
 ok = True
-for D, want in (("ASD", "313ec80ceb9d1caf"), ("ID", "e5db1b06dfb0f3bd")):
+for D, want in (("ASD", "679539aea9a31e99"), ("ID", "f495ff735b361000")):
     sp = load_spec(f"criterion_specs/{D}.json")
     c, s, _ = extract(sp, ".")
     got = hashlib.sha256(build_developer_prompt(sp, c, s, mode="joint").encode()).hexdigest()[:16]
@@ -54,8 +54,7 @@ sys.exit(0 if ok else 1)
 PY
 if [ "$FAIL" != "0" ]; then
   echo; echo "GATES FAILED. Nothing was spent."
-  echo "  rebuild with: python3 build_dsmdef_specs.py --disorders SCZ,NCD \\"
-  echo "                  --spec_version 2026-07-28_criterion_plus_dsmdef --no_frozen_check"
+  echo "  check the criterion specifications and the frozen prompt hashes before running"
   exit 1
 fi
 echo "gates passed"

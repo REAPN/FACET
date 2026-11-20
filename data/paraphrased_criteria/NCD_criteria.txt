@@ -1,0 +1,9 @@
+Diagnostic Criteria
+===================
+
+A. Evidence of a substantial drop in cognitive performance compared with the person's earlier level, in at least one cognitive domain (learning and memory, executive function, complex attention, language, social cognition, or perceptual-motor function), resting on both of the following:
+  1. The person, someone who knows the person well, or the clinician is concerned that cognitive function has clearly declined; and
+  2. Cognitive performance is substantially impaired, ideally as shown by standardized neuropsychological tests or, without such tests, by some other clinical assessment that yields numbers.
+B. These deficits get in the way of independence in everyday life (at the least, the person needs help with demanding instrumental activities of daily living, for example handling bills or keeping track of medicines).
+C. The deficits do not happen only during a delirium.
+D. Another mental disorder (for example major depressive disorder or schizophrenia) does not account better for the deficits.

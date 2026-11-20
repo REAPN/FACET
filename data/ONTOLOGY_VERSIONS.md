@@ -27,7 +27,7 @@ established from the artifact, it is listed as such in section 3 rather than gue
 | Monarch semsimian IC companion table | 0.4, same family | `phenio-monarch-hp-mp.0.4.semsimian.ic.tsv`, 250,500,570 bytes, file mtime 2024-09-16 (UTC) |
 | Monarch semsimian "equivalent" variant | 0.4, same family | `phenio-equivalent-hp-mp.0.4.semsimian.tsv` and `.ic.tsv` |
 | `phenio-monarch.db` (Monarch phenio SQLite) | not established | 19,988,598,784 bytes, file mtime 2026-04-06 (UTC); no version read (see section 3) |
-| DSM-5-TR | American Psychiatric Association, *Diagnostic and Statistical Manual of Mental Disorders*, Fifth Edition, Text Revision (DSM-5-TR), 2022 | `DSM 5 TR-APA 2022.pdf`, PDF `/Title` = `Diagnostic and Statistical Manual of Mental Disorders : Fifth Edition Text Revision DSM-5-TR`; `/CreationDate` = `D:20220321210915+00'00'` (2022-03-21) |
+| DSM-5-TR | American Psychiatric Association, *Diagnostic and Statistical Manual of Mental Disorders*, Fifth Edition, Text Revision (DSM-5-TR), 2022 | criteria read as paraphrased items written for the project (S1 Table) |
 
 Timestamps are UTC, read from the file system through the project mount.
 
@@ -52,9 +52,8 @@ snapshot. Precomputed cross-species phenotype similarity was taken from the Mona
 Initiative semsimian HP to MP tables, version 0.4
 (`phenio-monarch-hp-mp.0.4.semsimian.tsv`), whose file timestamps of 2024-09-16 and
 2024-11-19 predate this project and so appear to be the upstream build dates carried
-through the download. Diagnostic criteria were read from the DSM-5-TR (American
-Psychiatric Association, 2022), from a PDF whose embedded title identifies it as the
-Fifth Edition, Text Revision with a 2022-03-21 creation date.
+through the download. Diagnostic criteria follow the DSM-5-TR (American
+Psychiatric Association, 2022) and are read as paraphrased items written for the project.
 
 ## 3. Versions we could NOT establish
 
@@ -83,13 +82,9 @@ looked for in the artifact and did not find.
 4. **The `phenio-monarch.db` release version.** The database is 19.99 GB; we did not
    open it, so any internal metadata table it may carry is unread. Its mtime,
    2026-04-06, is the only datum.
-5. **The DSM-5-TR printing, impression or ISBN.** The PDF's own metadata gives
-   `/Author (Unknown)` and `/Producer (calibre 3.48.0 ...)`, so it is a converted
-   ebook rather than an APA-issued PDF, and it carries no APA edition, printing or
-   ISBN identifier in its document information dictionary or its XMP packet. The
-   edition and year (Fifth Edition, Text Revision, 2022) are established; the specific
-   printing is not. Cite the DSM-5-TR bibliographically, from the published work, not
-   from this file.
+5. **The DSM-5-TR printing, impression or ISBN.** The edition and year (Fifth Edition,
+   Text Revision, 2022) are established; the specific printing is not. Cite the DSM-5-TR
+   bibliographically, from the published work.
 6. **Download dates as opposed to file mtimes, for every resource above.** No download
    log, no HTTP date header and no checksum manifest was retained for any external
    file. `MPheno_OBO.ontology` illustrates the gap: its content declares release

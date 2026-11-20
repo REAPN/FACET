@@ -53,7 +53,7 @@ MDD_DOMAINS: List[Dict[str, Any]] = [
         "in chronic-stress models. Direction: impaired (positive). Overlaps with general cognition — "
         "assign here when an attention/concentration/decision frame is present.")},
     {"name": "suicidality", "is_strict": True, "bidir": False,
-     "description": ("DSM-5-TR A9 — recurrent thoughts of death / suicidal ideation. Mouse anchors (PROXY / "
+     "description": ("DSM-5-TR A9 — repeated thoughts about death / suicidal thoughts. Mouse anchors (PROXY / "
         "controversial): learned-helplessness escape-failure (shuttlebox after inescapable shock), "
         "behavioural-helplessness. NEAR-UNMAPPABLE — suicidal ideation is non-modelable; the LH "
         "escape-failure proxy indexes motivational collapse. Expect very few strict-eligible. EXCLUDE: "

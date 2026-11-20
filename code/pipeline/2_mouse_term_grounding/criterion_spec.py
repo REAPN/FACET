@@ -109,8 +109,6 @@ def component_enum(spec):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--spec", required=True, help="path to criterion_specs/<DISORDER>.json")
-    ap.add_argument("--verify", action="store_true",
-                    help="print the extracted verbatim text and exit. No API call.")
     a = ap.parse_args()
     root = os.environ.get("FACET_ROOT", ".")
     spec = load_spec(a.spec)
@@ -128,7 +126,7 @@ def main():
         print(f"--- {iid}  direction={it.get('direction')}"
               + ("  FLOOR" if it.get("floor") else ""))
         print(f"    stem     : {stems.get(it['letter'],'')[:300]}")
-        print(f"    VERBATIM : {items[iid]}")
+        print(f"    text     : {items[iid]}")
         comps = it.get("components", [])
         if comps:
             print(f"    components ({len(comps)}, illustrative, NOT scored): {', '.join(comps)}")

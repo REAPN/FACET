@@ -1,7 +1,6 @@
 {
  "$schema": "./disorder_config.schema.json",
  "$config_version": "1.0",
- "$generated": "2026-05-16 — Phase A reverse-engineering from current ASD pipeline state | 2026-05-27: lexical_factor_when_structural_missing=0.5 sensitivity test | 2026-07-27 CRITERION-STRICT: trimmed the prepulse-inhibition/gating endophenotype proxy from sensory_reactivity (now scores only DSM Criterion B.4 behavioral sensory reactivity); gating moved to the mechanism axis. Domains otherwise unchanged; a stability check on the ASD number is the only re-run needed.",
  "disorder": {
   "id": "ASD",
   "name": "Autism Spectrum Disorder",
@@ -19,12 +18,12 @@
    },
    {
     "name": "communication",
-    "description": "Deficits in verbal and nonverbal social communication; reduced or absent prelinguistic vocalizations; atypical prosody; limited use of communicative gestures; abnormal ultrasonic vocalizations (USV) in pups. Mouse anchors: USV quantification in isolation (Scattoni 2008), interaction-elicited USV (Wohr 2009), gestural communication proxies, pup USV rate and structure.",
+    "description": "Shortfalls in spoken and nonverbal social communication; reduced or absent prelinguistic vocalizations; atypical prosody; limited use of communicative gestures; abnormal ultrasonic vocalizations (USV) in pups. Mouse anchors: USV quantification in isolation (Scattoni 2008), interaction-elicited USV (Wohr 2009), gestural communication proxies, pup USV rate and structure.",
     "polarity": "negative"
    },
    {
     "name": "repetitive_restricted",
-    "description": "<DSM-5-TR text redacted> behaviors; insistence on sameness, inflexible adherence to routines; compulsive habit-like motor acts driven by distress reduction (OCD) or by intrinsic patterning (ASD). Mouse anchors: Sapap3 KO over-grooming (Welch 2007), Slitrk5 KO (Shmelkov 2010), marble burying (Deacon 2006), nestlet shredding, stereotypy scoring.",
+    "description": "Movements, object use or behaviors that are stereotyped or repeated; a need for sameness and routines kept without flexibility; compulsive habit-like motor acts driven by distress reduction (OCD) or by intrinsic patterning (ASD). Mouse anchors: Sapap3 KO over-grooming (Welch 2007), Slitrk5 KO (Shmelkov 2010), marble burying (Deacon 2006), nestlet shredding, stereotypy scoring.",
     "polarity": "positive"
    },
    {
@@ -117,120 +116,9 @@
    }
   ]
  },
- "stage0_dsm5_extraction": {
-  "pdf_input": "DSM5_ASD.pdf",
-  "outdir": "DSM5_ASD_preprocessed/",
-  "chapter_start_anchor": "Diagnostic Criteria(?:\\s+299\\.00\\s+\\(F84\\.0\\))?",
-  "chapter_start_anchor_keep": true,
-  "chapter_end_anchor": "Attention-Deficit/Hyperactivity\\s+Disorder",
-  "criteria_trim_anchors": [
-   "\\bNote:\\b",
-   "\\bSpecify if:\\b"
-  ],
-  "text_normalization": {
-   "hyphen_join_min_chars": 1,
-   "criterion_marker_rejoin": false,
-   "paren_note_rejoin": false
-  },
-  "headings_to_extract": [
-   {
-    "name": "Diagnostic Criteria",
-    "regex": "Diagnostic Criteria(?:\\s+299\\.00\\s+\\(F84\\.0\\))?"
-   },
-   {
-    "name": "Recording Procedures",
-    "regex": "Recording Procedures"
-   },
-   {
-    "name": "Specifiers",
-    "regex": "Specifiers"
-   },
-   {
-    "name": "Diagnostic Features",
-    "regex": "Diagnostic Features"
-   },
-   {
-    "name": "Associated Features Supporting Diagnosis",
-    "regex": "Associated Features Supporting Diagnosis"
-   },
-   {
-    "name": "Prevalence",
-    "regex": "Prevalence"
-   },
-   {
-    "name": "Development and Course",
-    "regex": "Development and Course"
-   },
-   {
-    "name": "Risk and Prognostic Factors",
-    "regex": "Risk and Prognostic Factors"
-   },
-   {
-    "name": "Culture-Related Diagnostic Issues",
-    "regex": "Culture-Related Diagnostic Issues"
-   },
-   {
-    "name": "Gender-Related Diagnostic Issues",
-    "regex": "Gender-Related Diagnostic Issues"
-   },
-   {
-    "name": "Functional Consequences of Autism Spectrum Disorder",
-    "regex": "Functional Consequences of Autism Spectrum Disorder"
-   },
-   {
-    "name": "Differential Diagnosis",
-    "regex": "Differential Diagnosis"
-   },
-   {
-    "name": "Comorbidity",
-    "regex": "Comorbidity"
-   }
-  ],
-  "core_phenotype_headings": [
-   "Diagnostic Criteria",
-   "Diagnostic Features"
-  ],
-  "running_header_strip_patterns": [
-   "(?mi)^\\s*Autism Spectrum Disorder\\s*$",
-   "(?mi)^\\s*Neurodevelopmental Disorders\\s*$",
-   "(?mi)^\\s*\\d+\\s*$"
-  ],
-  "text_replacements": [
-   {
-    "mode": "region",
-    "start_pattern": "limited language\\)\\.",
-    "end_pattern": "To use the specifier",
-    "replacement": "\nTABLE 2. Severity levels for autism spectrum disorder\n\nLevel 3\n“Requiring very substantial support”\n\nSocial communication:\nSevere <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n\n\nLevel 2\n“Requiring substantial support”\n\nSocial communication:\nMarked <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n\n\nLevel 1\n“Requiring support”\n\nSocial communication:\nWithout <DSM-5-TR text redacted>.\n\nRestricted, repetitive behaviors:\nInflexibility <DSM-5-TR text redacted>.\n",
-    "comment": "Splice in readable Table 2 (severity levels) content; pypdf renders the original table as column-fragment garbage that confuses the LLM and costs ~5 communication/speech HPOs."
-   },
-   {
-    "mode": "literal",
-    "find": "inteliectual",
-    "replace": "intellectual",
-    "comment": "pypdf OCR misread"
-   },
-   {
-    "mode": "literal",
-    "find": "icnown",
-    "replace": "known",
-    "comment": "pypdf OCR misread"
-   },
-   {
-    "mode": "literal",
-    "find": "medicai",
-    "replace": "medical",
-    "comment": "pypdf OCR misread"
-   },
-   {
-    "mode": "literal",
-    "find": "othenwise",
-    "replace": "otherwise",
-    "comment": "pypdf OCR misread"
-   }
-  ]
- },
+ "stage0_dsm5_extraction": {"outdir": "DSM5_ASD_preprocessed/"},
  "stage1_hpo_curation": {
-  "core_text_input": "DSM5_ASD_preprocessed/ASD_core_phenotype_only.txt",
+  "core_text_input": "DSM5_paraphrased/ASD_core_text.txt",
   "hpo_json_input": "hp.json",
   "outdir": "pilot_hpo_run_hybrid_v3/",
   "extraction_schema": {

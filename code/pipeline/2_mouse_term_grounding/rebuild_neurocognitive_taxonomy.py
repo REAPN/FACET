@@ -68,7 +68,8 @@ NCD_DOMAINS: List[Dict[str, Any]] = [
         "name": "adaptive_functioning",
         "is_strict": True,
         "description": (
-            "DSM-5-TR NCD Criterion <DSM-5-TR text redacted> (instrumental activities of daily living). Mouse anchors: "
+            "DSM-5-TR NCD Criterion B -- the cognitive deficits get in the way of independence in "
+            "everyday life (instrumental activities of daily living). Mouse anchors: "
             "abnormal nest-building (Deacon 2006 ADL proxy), abnormal burrowing, impaired "
             "home-cage self-care / grooming competence (as ADL). Direction is deficit/loss."
         ),

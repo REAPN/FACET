@@ -11,16 +11,16 @@ def _unit_block(spec, it, criteria, stems, mark_target=False):
     b = [head]
     if stems.get(letter) and stems[letter] != criteria[iid]:
         b.append(f"  Criterion {letter} stem: {stems[letter]}")
-    b.append(f"  Text (VERBATIM FROM DSM-5-TR): {criteria[iid]}")
+    b.append(f"  Text (PARAPHRASED FROM DSM-5-TR): {criteria[iid]}")
     comps = it.get("components", [])
     if comps:
-        b.append(f"  NAMED COMPONENTS OF THIS CRITERION, {len(comps)}, quoted from the same text: "
+        b.append(f"  NAMED COMPONENTS OF THIS CRITERION, {len(comps)}, named in the same text: "
                  + "; ".join(comps))
         b.append("  These are EXAMPLES, not a list to be satisfied. The criterion is met by any ONE "
                  "of them. Record which one in `component`.")
         desc = it.get("component_descriptions") or {}
         if desc:
-            b.append("  WHAT DSM MEANS BY EACH OF THOSE NAMES. These are DSM's own definitions and they "
+            b.append("  WHAT DSM MEANS BY EACH OF THOSE NAMES. These paraphrase DSM's definitions and they "
                      "OVERRIDE the plain reading of the name. A name like `perceptual-motor` sounds "
                      "broader than DSM's definition of it; use the definition, not the name.")
             for c in comps:
@@ -32,7 +32,7 @@ def _unit_block(spec, it, criteria, stems, mark_target=False):
         b.append(f"  NOTE: {it['note']}")
     dd = it.get("dsm_definition")
     if dd:
-        b.append("  WHAT DSM ITSELF MEANS BY THE TERMS IN THIS UNIT. This is DSM-5-TR's own definitional "
+        b.append("  WHAT DSM ITSELF MEANS BY THE TERMS IN THIS UNIT. This paraphrases DSM-5-TR's definitional "
                  "text from elsewhere in the same chapter, and it OVERRIDES the plain reading of a name. "
                  "A term of art like `perceptual-motor` sounds broader than DSM's definition of it. Use "
                  "the definition, not the name.")
@@ -55,7 +55,7 @@ diagnostic criteria above, which you are required to use.
 
 VOCABULARY REALISM, AND THIS IS THE MOST IMPORTANT INSTRUCTION
 MP labels are terse and are written for mouse phenotyping, not for psychiatry. They almost never carry the
-qualifiers the DSM text uses. MP has no way to say "rigid", "fixated", "excessive", "abnormal in intensity
+qualifiers the DSM text uses. MP has no way to say "rigid", "fixated", "excessive", "unusual in strength
 or focus", "a behavioral response rather than a measured threshold", or "worse than this animal used to
 be".
 
@@ -177,7 +177,7 @@ meaning a defensible mouse instantiation of what that unit describes.
 
 {grain_txt}
 
-THE UNITS, QUOTED VERBATIM. These are the ONLY definitions. Do not substitute your own summary of what
+THE UNITS, PARAPHRASED FROM DSM-5-TR. These are the ONLY definitions. Do not substitute your own summary of what
 this disorder is, and do not apply criteria the text does not state. The parenthetical examples are part
 of the text and are AUTHORITATIVE: a mouse term matching a named example matches the unit.
 
@@ -187,7 +187,7 @@ of the text and are AUTHORITATIVE: a mouse term matching a named example matches
 OUTPUT
 Assign the single best unit to item_id. If a term genuinely serves two, put the second in second_item_id,
 otherwise "none". Set needs_manual_review=true whenever the decision is close, and write one or two
-sentences in reason naming which part of the quoted text you relied on.""".rstrip()
+sentences in reason naming which part of the unit text you relied on.""".rstrip()
         return (head + "\n\n" + tail + "\n" + out).strip()
 
     tail = tail.replace("{NOFIT}", """
@@ -224,7 +224,7 @@ defensible mouse instantiation of what that unit describes. Answer yes or no abo
 
 {grain_txt}
 
-THE UNIT TEXT, QUOTED VERBATIM. This is the ONLY definition. Do not substitute your own summary of what
+THE UNIT TEXT, PARAPHRASED FROM DSM-5-TR. This is the ONLY definition. Do not substitute your own summary of what
 this disorder is, and do not apply criteria the text does not state. The parenthetical examples are part
 of the text and are AUTHORITATIVE: a mouse term matching a named example matches the unit.
 
@@ -233,7 +233,7 @@ of the text and are AUTHORITATIVE: a mouse term matching a named example matches
     out = f"""
 OUTPUT
 Set admissible true or false for UNIT {target} alone. Set needs_manual_review=true whenever the decision is
-close, and write one or two sentences in reason naming which part of the quoted text you relied on.""".rstrip()
+close, and write one or two sentences in reason naming which part of the unit text you relied on.""".rstrip()
     return (head + "\n\n" + tail + "\n" + out).strip()
 
 

@@ -1,0 +1,19 @@
+Diagnostic Criteria
+===================
+
+A. Evidence of a substantial drop in cognitive performance compared with the person's earlier level, in at least one cognitive domain (learning and memory, executive function, complex attention, language, social cognition, or perceptual-motor function), resting on both of the following:
+  1. The person, someone who knows the person well, or the clinician is concerned that cognitive function has clearly declined; and
+  2. Cognitive performance is substantially impaired, ideally as shown by standardized neuropsychological tests or, without such tests, by some other clinical assessment that yields numbers.
+B. These deficits get in the way of independence in everyday life (at the least, the person needs help with demanding instrumental activities of daily living, for example handling bills or keeping track of medicines).
+C. The deficits do not happen only during a delirium.
+D. Another mental disorder (for example major depressive disorder or schizophrenia) does not account better for the deficits.
+
+Neurocognitive Domains
+======================
+
+Complex attention: keeping attention over time, splitting it between tasks, choosing what to attend to, and speed of processing.
+Executive function: planning, making decisions, holding and using information in working memory, using feedback to correct errors, suppressing habitual responses, and switching flexibly between mental sets.
+Learning and memory: immediate memory; memory for recent events, tested by free recall, by recall with cues and by recognition; very long-term memory for facts and for one's own life; and learning without awareness (implicit learning).
+Language: producing language (naming things, finding words, fluency, grammar and sentence structure) and understanding it.
+Perceptual-motor function: visual perception, building or copying with visual guidance, coordinating perception with movement, carrying out learned skilled movements (praxis), and recognizing what is perceived (gnosis).
+Social cognition: recognizing emotions in others, and understanding the mental states of other people (theory of mind).

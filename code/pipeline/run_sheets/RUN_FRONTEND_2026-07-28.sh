@@ -57,10 +57,10 @@ PY
 
   python3 - <<'PY' || fail=1
 import io, sys
-p = "DSM5_ASD_preprocessed/ASD_core_phenotype_only.txt"
+p = "DSM5_paraphrased/ASD_core_text.txt"
 t = io.open(p, encoding="utf-8", errors="replace").read()
-hasB = "Restricted, repetitive patterns" in t
-hasB4 = "Hyper- or hyporeactivity to sensory input" in t
+hasB = "Narrow, repeated patterns" in t
+hasB4 = "under-response to sensory stimulation" in t
 print(f"  B2 ASD core file {len(t)} bytes, criterion B {hasB}, B4 sensory item {hasB4}")
 sys.exit(0 if (hasB and hasB4) else 1)
 PY

@@ -11,7 +11,7 @@ NEXT = len(next(iter(runs.values()))["ext"])
 
 CANDIDATES = [
     ("Anhedonia", "decreased sucrose preference",
-     "Persistent loss of interest or pleasure in nearly all activities.",
+     "Much less interest in, or enjoyment of, nearly every activity.",
      "reduced preference for a sweetened solution over plain water in a two bottle choice test"),
     ("Psychomotor agitation", "increased grooming behavior",
      "Psychomotor agitation or slowing, observable by others.",

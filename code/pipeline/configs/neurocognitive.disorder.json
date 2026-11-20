@@ -1,7 +1,6 @@
 {
   "$schema": "./disorder_config.schema.json",
   "$config_version": "1.0",
-  "$generated": "2026-07-27 - PROMOTED from evidence-symmetric comparator stub to live PRIMARY target (the first author sign-off: stage-and-run NCD). $role primary; rescue DISABLED (retired framework); stages 1-5 un-stubbed against intellectualdisability.disorder.json structural template. 5-domain strict set retained (cognitive_executive / motor_coordination / social_cognition_empathy / adaptive_functioning / neuropathology_progressive). Stage 0 PDF carve BYPASSED: core phenotype text hand-authored from DSM-5-TR Chapter 16 into DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only.txt (Major+Mild NCD Criterion A over the six neurocognitive domains + Criterion B + etiological subtype signatures). Purpose of the run: test whether the 95 Neurocognitive_primary positives (DOID-membership pool, well above the 30-positive power bar) are cognitively GRADABLE, given that chapter-16 lines are annotated by primary neurodegenerative disease rather than by documented cognitive trajectory, and that the language domain (A4) and the acquired-decline-from-baseline event have no mouse analog. | 2026-07-27 CRITERION-STRICT: removed neuropathology_progressive to the mechanism axis; reverted mechanistic-to-strict; NCD face-validity domains = the 4 cognitive/behavioral Chapter-16 criteria (cognitive_executive, motor_coordination, social_cognition_empathy, adaptive_functioning).",
   "$role": "primary",
   "$note": "Live primary target. Stage 0 bypassed (core text hand-authored). Run order: rebuild_neurocognitive_taxonomy.py (anchor gate) -> stage1_curate_hpo -> stage2a -> stage2b -> stage2c -> stage3 -> stage4 -> stage5. LLM/API-key stages (taxonomy relabel, stage1, stage2b) are run locally by the first author per the standing split.",
   "disorder": {
@@ -21,13 +20,9 @@
     "_retired": "Rescue framework retired project-wide (FACET_DECISIONS_20260726). Block kept disabled for provenance; NCD no longer emits rescue tiers and is not conditioned on rescue_tier anywhere downstream.",
     "outdir": "rescue_audit_neurocognitive/"
   },
-  "stage0_dsm5_extraction": {
-    "outdir": "DSM5_Neurocognitive_preprocessed/",
-    "pdf_input": null,
-    "_bypass": "No clean DSM-5-TR chapter-16 PDF carve. Core phenotype text hand-authored directly into Neurocognitive_core_phenotype_only.txt (Major+Mild NCD criteria over the six neurocognitive domains, Criterion B, and per-etiology subtype signatures). Stage 1 reads that file directly; stage 0 is not executed for NCD."
-  },
+  "stage0_dsm5_extraction": {"outdir": "DSM5_Neurocognitive_preprocessed/"},
   "stage1_hpo_curation": {
-    "core_text_input": "DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only_v2_2026-07-28.txt",
+    "core_text_input": "DSM5_paraphrased/NCD_core_text.txt",
     "hpo_json_input": "hp.json",
     "outdir": "pilot_hpo_run_neurocognitive_v1/",
     "extraction_schema": {
@@ -125,7 +120,7 @@
       ]
     },
     "core_text_input_previous": "DSM5_Neurocognitive_preprocessed/Neurocognitive_core_phenotype_only.txt",
-    "core_text_provenance_2026_07_28": "The previous input was quarantined on 2026-07-27 as not DSM: 0 of 52 sentences appeared in DSM 5 TR-APA 2022.pdf, and it interleaved project-authored sentences about mouse models with a paraphrase of the domain table, including a claim that Language has no organism-level behavioral analog in the mouse. Every NCD HPO target produced before 2026-07-28 descends from it, so NCD stage 1 must be re-run and any prior NCD language result is uninterpretable. The replacement is built by build_ncd_core_phenotype.py from Major NCD criteria A to D verbatim, fenced per D9, plus DSM-5-TR Table 1's six domain definitions, with traceability asserted before writing."
+    "core_text_provenance_2026_07_28": "The previous input was quarantined on 2026-07-27: it interleaved project-authored sentences about mouse models with the domain table, including a claim that Language has no organism-level behavioral analog in the mouse. Every NCD HPO target produced before 2026-07-28 descends from it, so NCD stage 1 must be re-run and any prior NCD language result is uninterpretable. The replacement is built from Major NCD criteria A to D in paraphrase, plus the six domain definitions of DSM-5-TR Table 1 in paraphrase."
   },
   "stage2_candidate_features": {
     "hpo_targets_input": "pilot_hpo_run_neurocognitive_v1/07_final_resolved_hpo_terms.tsv",

@@ -23,7 +23,9 @@ ID_DOMAINS: List[Dict[str, Any]] = [
         "name": "intellectual_functioning",
         "is_strict": True,
         "description": (
-            "DSM-5-TR ID Criterion A — deficits in intellectual functions: <DSM-5-TR text redacted>. Includes the learning/memory cognitive pole. "
+            "DSM-5-TR ID Criterion A — shortfalls in intellectual abilities, for example reasoning, "
+            "solving problems, planning, abstract thought, judgment, school learning "
+            "and learning from experience. Includes the learning/memory cognitive pole. "
             "Mouse anchors: impaired spatial learning / Morris water maze (incl. reversal), "
             "impaired novel object recognition, working-memory deficits (radial-arm, T-maze "
             "delayed alternation), attentional set-shifting, reversal learning, contextual/"
@@ -39,8 +41,8 @@ ID_DOMAINS: List[Dict[str, Any]] = [
         "description": (
             "DSM-5-TR ID Criterion B UMBRELLA — deficits in adaptive functioning across the "
             "conceptual, social, AND/OR practical sub-domains (a deficit in any one satisfies "
-            "the criterion; do NOT split into separate domains). Failure to meet developmental/"
-            "<DSM-5-TR text redacted>: "
+            "the criterion; do NOT split into separate domains). Not meeting developmental/"
+            "sociocultural expectations for independence and social responsibility: "
             "communication, social participation/judgment, independent living, self-care, "
             "daily-living skills. Mouse anchors: abnormal nest-building (Deacon 2006 ADL proxy), "
             "abnormal burrowing, impaired home-cage self-care / grooming competence (as ADL), "
@@ -54,8 +56,8 @@ ID_DOMAINS: List[Dict[str, Any]] = [
         "name": "developmental_onset",
         "is_strict": True,
         "description": (
-            "DSM-5-TR ID Criterion C — onset of intellectual/adaptive deficits during the "
-            "developmental period. POSTNATAL BEHAVIOURAL / SENSORIMOTOR developmental MILESTONES ONLY. "
+            "DSM-5-TR ID Criterion C — intellectual/adaptive shortfalls beginning during "
+            "development. POSTNATAL BEHAVIOURAL / SENSORIMOTOR developmental MILESTONES ONLY. "
             "Mouse anchors: behavioural developmental delay, delayed acquisition of postnatal "
             "milestones (delayed eyelid opening, righting reflex, negative geotaxis), pup USV "
             "ontogeny delay. EXPECTED NEAR-STRUCTURAL-ZERO: most MGI annotations are adult-mouse. "

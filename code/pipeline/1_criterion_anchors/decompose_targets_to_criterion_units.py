@@ -30,7 +30,7 @@ def build_prompt(spec, criteria, stems):
 
 This is the mirror of the mouse-side task. There the question was which unit an MP term instantiates.
 Here the phenotype is a human one, resolved from the DSM text itself into a Human Phenotype Ontology
-term, so attribution should usually be possible and clean. The units below are quoted verbatim from
+term, so attribution should usually be possible and clean. The units below are paraphrased from
 DSM-5-TR and are the same strings used to judge the mouse vocabulary.
 
 {blocks}
@@ -41,7 +41,7 @@ HOW TO DECIDE
   - A phenotype that belongs to this disorder but to NO scored unit, for example an associated
     feature, an onset statement, a severity specifier or an exclusion, is NOT attributable: set
     item_id to "none" and attributable to false. Do not force it into the nearest unit.
-  - Judge against the unit's own verbatim text, not against the disorder in general. A phenotype
+  - Judge against the unit's own text, not against the disorder in general. A phenotype
     about the disorder as a whole, with no unit that names it, is "none".
   - Set needs_manual_review when two units are genuinely close and the choice would change a count.
 

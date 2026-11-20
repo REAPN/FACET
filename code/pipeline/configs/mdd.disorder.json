@@ -1,7 +1,6 @@
 {
   "$schema": "./disorder_config.schema.json",
   "$config_version": "1.0",
-  "$generated": "2026-05-16 — Phase A artifact, codifying decisions from 2026-05-15 MDD generalization work",
   "disorder": {
     "id": "MDD",
     "name": "Major Depressive Disorder",
@@ -63,12 +62,12 @@
       },
       {
         "name": "concentration_indecisiveness",
-        "description": "Diminished ability to think or concentrate; indecisiveness nearly every day. DSM-5-TR Criterion A8. Snyder 2013 meta-analytic framework on executive dysfunction in depression. Mouse anchors: 5-CSRTT attentional performance (Robbins 2002), reversal learning deficits, T-maze delayed alternation, cognitive flexibility assays in chronic-stress models.",
+        "description": "Reduced capacity to think clearly or concentrate, or trouble making decisions, on most days. DSM-5-TR Criterion A8. Snyder 2013 meta-analytic framework on executive dysfunction in depression. Mouse anchors: 5-CSRTT attentional performance (Robbins 2002), reversal learning deficits, T-maze delayed alternation, cognitive flexibility assays in chronic-stress models.",
         "polarity": "negative"
       },
       {
         "name": "suicidality",
-        "description": "Recurrent thoughts of death, suicidal ideation, or suicide attempt. DSM-5-TR Criterion A9. Beck hopelessness triad — suicidal cognition component. Mouse anchors: passive coping in learned helplessness (LH) paradigm (Seligman 1972), escape-failure in shuttlebox after inescapable shock, deficit in escape learning. Note: direct suicidal ideation is non-modelable; the LH escape-failure proxy is used as a behavioral analog for motivational collapse.",
+        "description": "Repeated thoughts about death, suicidal thoughts, or a suicide attempt. DSM-5-TR Criterion A9. Beck hopelessness triad — suicidal cognition component. Mouse anchors: passive coping in learned helplessness (LH) paradigm (Seligman 1972), escape-failure in shuttlebox after inescapable shock, deficit in escape learning. Note: direct suicidal ideation is non-modelable; the LH escape-failure proxy is used as a behavioral analog for motivational collapse.",
         "polarity": "negative"
       }
     ],
@@ -244,91 +243,9 @@
       }
     ]
   },
-  "stage0_dsm5_extraction": {
-    "pdf_input": "DSM5_MDD.pdf",
-    "outdir": "DSM5_MDD_preprocessed/",
-    "chapter_start_anchor": "(?m)^\\s*Major Depressive Disorder\\s*$",
-    "chapter_start_anchor_keep": false,
-    "chapter_end_anchor": "(?m)^\\s*Persistent Depressive Disorder\\s*$",
-    "criteria_trim_anchors": [
-      "\\bSpecify if:\\b"
-    ],
-    "text_normalization": {
-      "hyphen_join_min_chars": 2,
-      "criterion_marker_rejoin": true,
-      "paren_note_rejoin": true
-    },
-    "headings_to_extract": [
-      {
-        "name": "Diagnostic Criteria",
-        "regex": "Diagnostic Criteria(?:\\s+F3[23](?:\\.[0-9x]+)?)?"
-      },
-      {
-        "name": "Coding and Recording Procedures",
-        "regex": "Coding and Recording Procedures|Recording Procedures"
-      },
-      {
-        "name": "Specifiers",
-        "regex": "Specifiers"
-      },
-      {
-        "name": "Diagnostic Features",
-        "regex": "Diagnostic Features"
-      },
-      {
-        "name": "Associated Features Supporting Diagnosis",
-        "regex": "Associated Features Supporting Diagnosis|Associated Features"
-      },
-      {
-        "name": "Prevalence",
-        "regex": "Prevalence"
-      },
-      {
-        "name": "Development and Course",
-        "regex": "Development and Course"
-      },
-      {
-        "name": "Risk and Prognostic Factors",
-        "regex": "Risk and Prognostic Factors"
-      },
-      {
-        "name": "Culture-Related Diagnostic Issues",
-        "regex": "Culture-Related Diagnostic Issues"
-      },
-      {
-        "name": "Sex- and Gender-Related Diagnostic Issues",
-        "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
-      },
-      {
-        "name": "Association With Suicidal Thoughts or Behavior",
-        "regex": "Association With Suicidal Thoughts or Behavior|Suicide Risk"
-      },
-      {
-        "name": "Functional Consequences of Major Depressive Disorder",
-        "regex": "Functional Consequences of Major Depressive Disorder"
-      },
-      {
-        "name": "Differential Diagnosis",
-        "regex": "Differential Diagnosis"
-      },
-      {
-        "name": "Comorbidity",
-        "regex": "Comorbidity"
-      }
-    ],
-    "core_phenotype_headings": [
-      "Diagnostic Criteria",
-      "Diagnostic Features"
-    ],
-    "running_header_strip_patterns": [
-      "(?mi)^\\s*Major Depressive Disorder\\s*$",
-      "(?mi)^\\s*Depressive Disorders\\s*$",
-      "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
-      "(?mi)^\\s*\\d+\\s*$"
-    ]
-  },
+  "stage0_dsm5_extraction": {"outdir": "DSM5_MDD_preprocessed/"},
   "stage1_hpo_curation": {
-    "core_text_input": "DSM5_MDD_preprocessed/MDD_core_phenotype_only.txt",
+    "core_text_input": "DSM5_paraphrased/MDD_core_text.txt",
     "hpo_json_input": "hp.json",
     "outdir": "pilot_hpo_run_mdd_v1/",
     "extraction_schema": {
@@ -363,7 +280,7 @@
         "unspecified"
       ]
     },
-    "extraction_prompt_addendum": "Three MDD Criterion A symptoms are intrinsically BIDIRECTIONAL per DSM-5-TR: A.3 weight_appetite_change (gain OR loss), A.4 sleep_disturbance (insomnia OR hypersomnia), A.5 psychomotor_change (agitation OR retardation). When the DSM text gives both directions in one criterion, emit TWO separate items (one per direction) and set polarity = 'bidirectional' on each. Do NOT extract from 'Note:' blocks unless the Note directly qualifies a specific Criterion item (e.g., A.1 children/adolescents irritable mood). The A.1 children/adolescents 'irritable mood' Note must use temporality='developmental'.",
+    "extraction_prompt_addendum": "Three MDD Criterion A symptoms are intrinsically BIDIRECTIONAL per DSM-5-TR: A.3 weight_appetite_change (gain OR loss), A.4 sleep_disturbance (insomnia OR hypersomnia), A.5 psychomotor_change (agitation OR retardation). When the DSM text gives both directions in one criterion, emit TWO separate items (one per direction) and set polarity = 'bidirectional' on each. Do NOT extract from 'Note:' blocks unless the Note directly qualifies a specific Criterion item (the clause of item A.1 on irritable mood in children and adolescents is part of that item). The A.1 clause on irritable mood in children and adolescents must use temporality='developmental'.",
     "resolution_prompt_addendum": null,
     "seed_terms_per_domain": {
       "depressed_mood": [

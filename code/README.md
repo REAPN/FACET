@@ -7,12 +7,12 @@ Every script that produced a result reported in the manuscript or its supplement
 | Folder | What it does |
 |---|---|
 | `pipeline/0_genotypes_and_labels/` | the 32,535 genotypes and the curated-model labels |
-| `pipeline/1_criterion_anchors/` | criterion text sectioning, resolution of criteria to HPO anchors and attribution of anchors to criterion units |
-| `pipeline/2_mouse_term_grounding/` | grounding of MP terms to criteria, with the criterion specifications |
+| `pipeline/1_criterion_anchors/` | resolution of criteria to HPO anchors and attribution of anchors to criterion units |
+| `pipeline/2_mouse_term_grounding/` | mapping of MP terms to criteria (mouse criterion mapping), with the criterion specifications |
 | `pipeline/3_pair_judgment/` | retrieval of candidate pairs and the LLM judgment |
 | `pipeline/4_diagnostic_coverage/` | the per-genotype catalogue |
 | `pipeline/5_support_score/` | the support score, the permutation nulls and the benchmarks |
-| `pipeline/configs/`, `pipeline/run_sheets/`, `pipeline/shared/` | the disorder configurations, the run sheets of record and shared modules |
+| `pipeline/configs/`, `pipeline/run_sheets/`, `pipeline/shared/` | the disorder configurations, the primary run sheets and shared modules |
 | `analyses/` | one folder per analysis, with its driver and its pre-specification where one was written. `analyses/geneclust_2026-10-08/common.py` holds the shared loaders (gene clustering, bootstrap, AUROC) |
 | `expert_study/` | instrument build, design check and agreement analysis |
 | `figures/`, `supplement_tables/` | the figure builders and the scripts behind S1, S4, S5, S7, S9 and S11 Tables and S1 Fig |
@@ -136,32 +136,26 @@ Generated from `MANIFEST.tsv`.
 | `pipeline/0_genotypes_and_labels/build_per_tier_benchmark_tables.py` | S3 Table |
 | `pipeline/0_genotypes_and_labels/construct_disorder_tiers.py` | S3 Table |
 | `pipeline/0_genotypes_and_labels/setup_external_benchmark_universe_v_3.py` | Methods, genotype set |
-| `pipeline/1_criterion_anchors/build_dsmdef_specs.py` | Methods |
 | `pipeline/1_criterion_anchors/decompose_targets_to_criterion_units.py` | Methods, anchors |
 | `pipeline/1_criterion_anchors/emit_noncriterion_hpo_exclusions.py` | Methods, anchors |
-| `pipeline/1_criterion_anchors/extract_ASD.py` | Methods, criteria |
-| `pipeline/1_criterion_anchors/extract_MDD.py` | Methods, criteria |
-| `pipeline/1_criterion_anchors/extract_dsm5.py` | Methods, criteria |
-| `pipeline/1_criterion_anchors/extract_dsm_definitions.py` | Methods, criteria |
 | `pipeline/1_criterion_anchors/pilot_asd_to_hpo_hybrid.py` | Methods, anchors |
 | `pipeline/1_criterion_anchors/pilot_asd_to_hpo_hybrid_rev.py` | Methods, anchors |
 | `pipeline/1_criterion_anchors/pilot_mdd_to_hpo_hybrid.py` | Methods, anchors |
 | `pipeline/1_criterion_anchors/stage1_curate_hpo.py` | Methods, anchors |
-| `pipeline/1_criterion_anchors/verify_criteria_provenance.py` | Methods |
 | `pipeline/2_mouse_term_grounding/annotate_polarity_schema.py` | Methods |
 | `pipeline/2_mouse_term_grounding/apply_polarity_overrides.py` | Methods |
-| `pipeline/2_mouse_term_grounding/build_stage2a_taxonomy.py` | Methods, mouse term grounding |
-| `pipeline/2_mouse_term_grounding/classify_mp_terms_criterion_grounded.py` | Methods, mouse term grounding |
-| `pipeline/2_mouse_term_grounding/classify_mp_terms_for_asd.py` | Methods, mouse term grounding |
-| `pipeline/2_mouse_term_grounding/criterion_prompt.py` | Methods, criteria and grounding |
-| `pipeline/2_mouse_term_grounding/criterion_rules.py` | Methods, criteria and grounding |
-| `pipeline/2_mouse_term_grounding/criterion_spec.py` | Methods, criteria and grounding |
-| `pipeline/2_mouse_term_grounding/rebuild_behavioral_taxonomy.py` | Methods, mouse term grounding |
+| `pipeline/2_mouse_term_grounding/build_stage2a_taxonomy.py` | Methods, mouse criterion mapping |
+| `pipeline/2_mouse_term_grounding/classify_mp_terms_criterion_grounded.py` | Methods, mouse criterion mapping |
+| `pipeline/2_mouse_term_grounding/classify_mp_terms_for_asd.py` | Methods, mouse criterion mapping |
+| `pipeline/2_mouse_term_grounding/criterion_prompt.py` | Methods, criteria and mapping |
+| `pipeline/2_mouse_term_grounding/criterion_rules.py` | Methods, criteria and mapping |
+| `pipeline/2_mouse_term_grounding/criterion_spec.py` | Methods, criteria and mapping |
+| `pipeline/2_mouse_term_grounding/rebuild_behavioral_taxonomy.py` | Methods, mouse criterion mapping |
 | `pipeline/2_mouse_term_grounding/rebuild_id_taxonomy.py` | S21 Table |
 | `pipeline/2_mouse_term_grounding/rebuild_mdd_taxonomy.py` | S21 Table |
 | `pipeline/2_mouse_term_grounding/rebuild_neurocognitive_taxonomy.py` | S21 Table |
-| `pipeline/2_mouse_term_grounding/rebuild_scz_taxonomy.py` | Methods, mouse term grounding |
-| `pipeline/2_mouse_term_grounding/rebuild_scz_taxonomy_5domain.py` | Methods, mouse term grounding |
+| `pipeline/2_mouse_term_grounding/rebuild_scz_taxonomy.py` | Methods, mouse criterion mapping |
+| `pipeline/2_mouse_term_grounding/rebuild_scz_taxonomy_5domain.py` | Methods, mouse criterion mapping |
 | `pipeline/3_pair_judgment/build_candidate_feature_table.py` | Methods, retrieval |
 | `pipeline/3_pair_judgment/build_candidate_feature_table_mdd.py` | Methods, retrieval |
 | `pipeline/3_pair_judgment/bundle_independent_judge.py` | imported by the scripts above |

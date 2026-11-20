@@ -149,7 +149,7 @@ Rules:
    - suicidal ideation
 3. Three MDD Criterion A symptoms are BIDIRECTIONAL: weight change (loss OR
    gain), sleep disturbance (insomnia OR hypersomnia), psychomotor change
-   (agitation OR retardation). When the DSM text gives both directions in
+   (agitation OR retardation). When the criterion text gives both directions in
    one criterion, emit TWO separate items (one per direction) and set
    polarity = "bidirectional" on each. Do NOT mark either as anti-MDD.
 4. The 9 valid categories correspond to DSM-5-TR Criterion A.1-A.9:
@@ -165,8 +165,8 @@ Rules:
    centrality = "context_only".
 8. Be conservative. If a phrase is not really a phenotype, exclude it.
 9. DO NOT extract from "Note:" blocks UNLESS the Note directly qualifies a
-   specific Criterion item (e.g., the A.1 <DSM-5-TR text redacted>"<DSM-5-TR text redacted>
-<DSM-5-TR text redacted>" qualifies Criterion A.1 directly and should
+   specific Criterion item (e.g., the A.1 note that in children and adolescents the mood can be
+   irritable instead qualifies Criterion A.1 directly and should
    produce an item). Differential-diagnosis Notes (e.g., the bereavement
    Note that appears after Criterion C) describe context for clinical
    judgment, NOT new MDD phenotypes — if you extract anything from those,

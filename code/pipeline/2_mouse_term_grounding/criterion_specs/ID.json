@@ -1,55 +1,56 @@
 {
-  "disorder": "ID",
-  "disorder_long": "Intellectual Developmental Disorder (Intellectual Disability)",
-  "criteria_txt": "DSM5_IntellectualDisability_preprocessed/01_diagnostic_criteria.txt",
-  "spec_version": "2026-07-27",
-  "section": null,
-  "counting_rule": "DSM-5-TR requires ALL THREE criteria A, B and C to be met. There is NO counting threshold over a numbered list, so there are no numbered items to count. The lists inside A and B are introduced by \"such as\" and are ILLUSTRATIVE, not a menu to be satisfied in part.",
-  "scored_grain": "criterion",
-  "scored_grain_note": "Two scored criteria, A and B. The named components below are ILLUSTRATIVE enumeration, given to the classifier as description text so it has real constructs to match instead of a paragraph, and recorded per term in the `component` field so the roll-up to the criterion is auditable. They are NOT separately scored, because DSM does not count them. Criterion C is onset and is reported in methods rather than scored, per D8.",
-  "items": [
-    {
-      "item_id": "A",
-      "letter": "A",
-      "number": null,
-      "extract": "lettered_criterion",
-      "direction": "deficit",
-      "components": [
-        "reasoning",
-        "problem solving",
-        "planning",
-        "abstract thinking",
-        "judgment",
-        "academic learning",
-        "learning from experience"
-      ],
-      "components_provenance": "Verbatim from Criterion <DSM-5-TR text redacted>\". Introduced by \"such as\", therefore illustrative."
-    },
-    {
-      "item_id": "B",
-      "letter": "B",
-      "number": null,
-      "extract": "lettered_criterion",
-      "direction": "deficit",
-      "components": [
-        "communication",
-        "social participation",
-        "independent living"
-      ],
-      "components_provenance": "Verbatim from Criterion B: \"<DSM-5-TR text redacted>\". Introduced by \"such as\", therefore illustrative, and the threshold is one or more, which sets no counting gate."
-    }
-  ],
-  "excluded_criteria": {
-    "C": "Onset during the developmental period. Reported in methods, not scored, per D8."
+ "disorder": "ID",
+ "disorder_long": "Intellectual Developmental Disorder (Intellectual Disability)",
+ "criteria_txt": "DSM5_paraphrased/ID_criteria.txt",
+ "spec_version": "2026-07-27_paraphrased_2026-11-19",
+ "section": null,
+ "counting_rule": "DSM-5-TR requires ALL THREE criteria A, B and C to be met. There is NO counting threshold over a numbered list, so there are no numbered items to count. The lists inside A and B are given as examples and are ILLUSTRATIVE, not a menu to be satisfied in part.",
+ "scored_grain": "criterion",
+ "scored_grain_note": "Two scored criteria, A and B. The named components below are ILLUSTRATIVE enumeration, given to the classifier as description text so it has real constructs to match instead of a paragraph, and recorded per term in the `component` field so the roll-up to the criterion is auditable. They are NOT separately scored, because DSM does not count them. Criterion C is onset and is reported in methods rather than scored, per D8.",
+ "items": [
+  {
+   "item_id": "A",
+   "letter": "A",
+   "number": null,
+   "extract": "lettered_criterion",
+   "direction": "deficit",
+   "components": [
+    "reasoning",
+    "solving problems",
+    "planning",
+    "abstract thought",
+    "judgment",
+    "school learning",
+    "learning from experience"
+   ],
+   "components_provenance": "Paraphrased by the project in DSM5_paraphrased/ID_criteria.txt. The names below are the construct names that text uses, listed for the component field only."
   },
-  "worked_examples": [],
-  "worked_examples_provenance": "Deliberately empty. See the note in ASD.json. ID has no documented prior over-exclusion to reverse, so supplying mouse-side examples would supply the answer rather than remove a block. The mouse-side mapping recorded in project notes (communication to vocalization, social participation to social investigation and recognition, independent living to nest building, grooming and circadian feeding) is a STAGE 1 target-resolution hypothesis and is deliberately NOT shown to this classifier, so that stage 2a can either corroborate or contradict it.",
-  "extra_rules": [
-    "human_schooling_constructs"
-  ],
-  "known_defect_being_fixed": "The current ID spine resolves Criterion B's \"activities of daily life\" to Dyscalculia and Dysgraphia, both human schooling constructs with zero mouse analog, and Criterion A's \"Language impairment\" pulled a pool made entirely of HEARING terms. The current ID taxonomy also has one undifferentiated adaptive_functioning bucket of 109 strict terms where DSM names three components, so a criterion can look covered without any named component being covered. The component field exists to make that visible.",
-  "satisfaction_rule": "ILLUSTRATIVE. The components are examples, not a list to be satisfied. A criterion is MET as soon as ANY ONE component has a strict match; there is no partial credit denominator across components and no requirement to cover more than one. Diagnostic gate: A AND B (C is onset, reported not scored). Breadth denominator is 2 units, each far easier to satisfy than an ASD or SCZ item, so raw breadth is NOT comparable across disorders.",
-  "breadth_denominator": 2,
-  "unit_kind": "criterion",
-  "comparability_note": "Breadth denominators differ across disorders (ASD 7, SCZ 5, ID 2, NCD 2) AND the units differ in difficulty, because DSM counts enumerated items in ASD and SCZ but accepts a single example in ID and NCD. Report fraction of scored units met alongside the raw count, and never rank disorders on raw breadth."
+  {
+   "item_id": "B",
+   "letter": "B",
+   "number": null,
+   "extract": "lettered_criterion",
+   "direction": "deficit",
+   "components": [
+    "communicating",
+    "taking part in social life",
+    "living independently"
+   ],
+   "components_provenance": "Paraphrased by the project in DSM5_paraphrased/ID_criteria.txt. The names below are the construct names that text uses, listed for the component field only."
+  }
+ ],
+ "excluded_criteria": {
+  "C": "Onset during the developmental period. Reported in methods, not scored, per D8."
+ },
+ "worked_examples": [],
+ "worked_examples_provenance": "Deliberately empty. See the note in ASD.json. ID has no documented prior over-exclusion to reverse, so supplying mouse-side examples would supply the answer rather than remove a block. The mouse-side mapping recorded in project notes (communication to vocalization, social participation to social investigation and recognition, independent living to nest building, grooming and circadian feeding) is a STAGE 1 target-resolution hypothesis and is deliberately NOT shown to this classifier, so that stage 2a can either corroborate or contradict it.",
+ "extra_rules": [
+  "human_schooling_constructs"
+ ],
+ "known_defect_being_fixed": "The current ID spine resolves Criterion B's \"activities of daily life\" to Dyscalculia and Dysgraphia, both human schooling constructs with zero mouse analog, and Criterion A's \"Language impairment\" pulled a pool made entirely of HEARING terms. The current ID taxonomy also has one undifferentiated adaptive_functioning bucket of 109 strict terms where DSM names three components, so a criterion can look covered without any named component being covered. The component field exists to make that visible.",
+ "satisfaction_rule": "ILLUSTRATIVE. The components are examples, not a list to be satisfied. A criterion is MET as soon as ANY ONE component has a strict match; there is no partial credit denominator across components and no requirement to cover more than one. Diagnostic gate: A AND B (C is onset, reported not scored). Breadth denominator is 2 units, each far easier to satisfy than an ASD or SCZ item, so raw breadth is NOT comparable across disorders.",
+ "breadth_denominator": 2,
+ "unit_kind": "criterion",
+ "comparability_note": "Breadth denominators differ across disorders (ASD 7, SCZ 5, ID 2, NCD 2) AND the units differ in difficulty, because DSM counts enumerated items in ASD and SCZ but accepts a single example in ID and NCD. Report fraction of scored units met alongside the raw count, and never rank disorders on raw breadth.",
+ "text_form": "paraphrased"
 }

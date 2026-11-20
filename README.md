@@ -10,8 +10,8 @@ The pipeline has three steps. Anchoring resolves each criterion to Human Phenoty
 
 | Path | Content |
 |---|---|
-| `data/` | the labels of record, the genotype tables derived from MGI, the human gene lists and the third-party snapshots the run read. See `data/README.md` |
-| `code/pipeline/` | the scripts of each step, with the disorder configurations and the run sheets of record |
+| `data/` | the primary labels, the genotype tables derived from MGI, the human gene lists and the third-party snapshots the run read. See `data/README.md` |
+| `code/pipeline/` | the scripts of each step, with the disorder configurations and the primary run sheets |
 | `code/analyses/` | one folder per validation or sensitivity analysis |
 | `code/expert_study/` | the build of the rating instrument and the agreement analysis |
 | `code/figures/`, `code/supplement_tables/` | the figure builders and the scripts behind the supplementary tables |
@@ -25,14 +25,14 @@ The folders of `code/pipeline/` and `outputs/` carry the same numbers, so the sc
 |---|---|---|
 | Inputs | `0_genotypes_and_labels` | the genotype set and the curated-model labels |
 | Anchoring | `1_criterion_anchors` | criterion text sectioning, HPO anchors and their attribution to criterion units |
-| Anchoring | `2_mouse_term_grounding` | grounding of the 11,485 annotated MP terms to criteria |
+| Anchoring | `2_mouse_term_grounding` | mapping of the 11,485 annotated MP terms to criteria (mouse criterion mapping) |
 | Judgment | `3_pair_judgment` | retrieval of candidate pairs and the LLM judgment |
 | Aggregation | `4_diagnostic_coverage` | the per-genotype catalogue of credited criteria |
 | Aggregation | `5_support_score` | the support score, its permutation null and the benchmarks against the curated labels |
 
 ## Requirements
 
-Python 3.10 with numpy, pandas and scipy runs the aggregation and the analyses. Single analyses also import statsmodels, scikit-learn and matplotlib. The anchoring and judgment steps import openai, rapidfuzz, pypdf and pydantic, and the tests with alternate LLMs import the Anthropic and Google clients.
+Python 3.10 with numpy, pandas and scipy runs the aggregation and the analyses. Single analyses also import statsmodels, scikit-learn and matplotlib. The anchoring and judgment steps import openai, rapidfuzz and pydantic, and the tests with alternate LLMs import the Anthropic and Google clients.
 
 ## Preparing the working tree
 
@@ -89,11 +89,10 @@ python3 rebuild_fv_seco_criterion.py --breadth_requires_strict --max_prevalence 
 
 ### Anchoring and judgment
 
-These steps call the LLM and read the diagnostic criteria. They need an OpenAI key in the environment (`OPENAI_API_KEY`) and a licensed copy of the DSM-5-TR, since the manual's text is not redistributed. The tests with alternate LLMs read `ANTHROPIC_API_KEY` and `GOOGLE_API_KEY`.
+These steps call the LLM and read the diagnostic criteria as paraphrased items written for the project. They need an OpenAI key in the environment (`OPENAI_API_KEY`). No DSM-5-TR text enters a prompt, and the manual's text is not redistributed. Each disorder's paraphrased criterion file is read from the path named by `criteria_txt` in its criterion specification. The paraphrased criteria and the stage 1 core texts are in `data/paraphrased_criteria/`. The tests with alternate LLMs read `ANTHROPIC_API_KEY` and `GOOGLE_API_KEY`.
 
 ```
-python3 extract_dsm5.py --config asd.disorder.json --pdf <DSM-5-TR PDF>     # sections the criterion text of one disorder
-bash RUN_FRONTEND_2026-07-28.sh gates                                       # checks code, criterion text and MP term grounding
+bash RUN_FRONTEND_2026-07-28.sh gates                                       # checks code, criterion text and MP term mapping
 bash RUN_FRONTEND_2026-07-28.sh ASD                                         # anchoring and judgment for one disorder
 ```
 
@@ -101,18 +100,18 @@ The run sheet calls the following scripts in order and skips a step whose output
 
 | Step | Script | LLM |
 |---|---|---|
-| Grounding of MP terms to criteria | `classify_mp_terms_criterion_grounded.py`, then `build_stage2a_taxonomy.py` | yes |
+| Mapping of MP terms to criteria (mouse criterion mapping) | `classify_mp_terms_criterion_grounded.py`, then `build_stage2a_taxonomy.py` | yes |
 | Resolution of criteria to HPO anchors | `stage1_curate_hpo.py` | yes |
 | Attribution of anchors to criterion units | `decompose_targets_to_criterion_units.py` | yes |
 | Retrieval of candidate pairs | `stage2a_candidate_features.py` | embeddings only |
 | Judgment of ambiguous pairs | `stage2b_rerank.py` | yes |
 | Judgment of the remaining pairs above the score floor | `stage2c_score_floor_fill.py` | yes |
 
-The configuration files and criterion specifications carry the marker `<DSM-5-TR text redacted>` where they held criterion wording, which the user restores from the licensed copy. A new run reproduces the procedure. Its verdicts can differ from the recorded ones, because the LLM is not deterministic (S1 Text reports the reproducibility of the verdicts).
+The manuscript and this repository report the diagnostic criteria in paraphrase due to copyright restrictions. The pipeline reads the same paraphrased items. The LLM can quote the manual in its output regardless, and the free-text reasons it logged are therefore removed from the recorded outputs. A new run reproduces the procedure. Its verdicts can differ from the recorded ones because the LLM is not deterministic (S1 Text reports the reproducibility of the verdicts).
 
 ## What is not deposited
 
-- DSM-5-TR text (copyright American Psychiatric Association). The free-text reasons the LLM logged are also removed from the recorded outputs, because they can quote the manual.
+- DSM-5-TR text (copyright American Psychiatric Association) and the free-text reasons the LLM logged, which can quote it.
 - Expert rating returns. `outputs/6_validation/expert_study/` holds aggregate agreement only.
 - Third-party files that are large or restricted: the Monarch similarity tables, the PubTator3 files, the IMPC statistical results, and the SFARI Gene export. `data/README.md` gives their versions and S2 Table gives their checksums.
 - The run folders of the alternate LLM tests. Their per-genotype support p-values are deposited, which is what the evaluations read.

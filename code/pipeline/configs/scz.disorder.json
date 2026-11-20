@@ -1,7 +1,6 @@
 {
  "$schema": "./disorder_config.schema.json",
  "$config_version": "1.0",
- "$generated": "2026-05-26 — primary disorder config for SCZ pipeline (MDD-template contamination fixed) | 2026-05-27: added 'Associated Features Supporting Diagnosis' to core_phenotype_headings — SCZ-specific (SCZ packs phenotype elaboration in Associated Features, unlike MDD which packs it in Diagnostic Features) | 2026-05-27: added text_replacements for 3 pypdf OCR errors in Associated Features section | 2026-05-27: top_n_bundle 5→10 per per-HPO biology-vs-pipeline audit | 2026-05-27: lexical_factor_when_structural_missing=0.5 sensitivity test | 2026-05-27: contrast rename S_A1↔A2, S_A2↔A1 + drop S_ prefix | 2026-05-27: benchmark_group_table fixed → SCZ_tier_0.csv (was canonical ASD-centric — caused all SCZ contrasts to fail) | 2026-05-27 FULL RESTART surgery (rebuild_scz_config_h1.py): categories_enum + seed_terms_per_domain → SCZ Criterion A (was MDD); b_family → SCZ Criterion A clusters; stage6 k_of_n [5,9]→[2,5]; stage7_viz/domains.strict → SCZ; H1 fix — m_family entries get explicit comparator_groups lists. | 2026-05-27 score-floor policy: keep universal 0.57 (ASD-derived); drop needs_recalibration flag; defer per-floor sensitivity sweep to supplementary. | 2026-05-27 b_family comparator: B1-B4 -> comparator_pool_ids=[A1,A5] (psych pool union ASD). | 2026-05-27 stage1 MDD-residue cleanup: extraction_schema.categories_enum + seed_terms_per_domain replaced with SCZ canonical (mirrors stage2_rerank). Stage 1 output already canonical — schema now self-consistent for re-run. | 2026-05-27 depth-bias sweep: stage5_benchmark.n_mp_thresholds [1,3,4,5,7,10] + n_mp_terms_file (universe-wide phenotype long table). Primary headline threshold n_mp>=4 per §6g audit. | 2026-05-27 taxonomy_tsv repointed to mp_term_taxonomy_scz_v1/03_mp_term_taxonomy.tsv (SCZ-keyed; replaces ASD-derived v3). 237 strict-eligible MPs across the 5 SCZ strict domains; unblocks Stage 3 aggregation of salience/disorganization/negative_symptoms/cognitive_executive. | 2026-05-27 hpo_domain_regex_fallback added to stage2_candidate_features (5 SCZ-strict-domain regex maps); triggers install_mdd_style_hpo_domain_inference monkey-patch in stage2a_candidate_features.py so Stage 1 SCZ category is respected at Stage 2a's human_domain assignment. | 2026-07-27 CRITERION-STRICT 5-DOMAIN REDESIGN (LOCKED): SCZ face-validity domains = the five DSM-5-TR Criterion A items, one domain each (delusions A.1, hallucinations A.2, disorganized_speech A.3, catatonic_disorganized_behavior A.4, negative_symptoms A.5). salience_dysregulation removed to the mechanism axis (endophenotype substrate, not a criterion); cognitive/social associated-feature categories dropped. A.1-A.3 are the scored face-validity floor. SCZ-only recompute (stage1-5) required.",
  "disorder": {
   "id": "SCZ",
   "name": "Schizophrenia Spectrum and Other Psychotic Disorders",
@@ -14,119 +13,9 @@
    "F21"
   ]
  },
- "stage0_dsm5_extraction": {
-  "pdf_input": "DSM5_SCZ.pdf",
-  "outdir": "DSM5_SCZ_preprocessed/",
-  "chapter_start_anchor": "(?m)^\\s*Schizophrenia\\s*$",
-  "chapter_start_anchor_keep": false,
-  "chapter_end_anchor": "(?m)^\\s*Schizoaffective Disorder\\s*$",
-  "criteria_trim_anchors": [
-   "\\bSpecify if:\\b",
-   "\\bSpecify current severity:\\b"
-  ],
-  "text_normalization": {
-   "hyphen_join_min_chars": 2,
-   "criterion_marker_rejoin": true,
-   "paren_note_rejoin": true
-  },
-  "headings_to_extract": [
-   {
-    "name": "Diagnostic Criteria",
-    "regex": "Diagnostic Criteria(?:\\s+295\\.90\\s+\\(F20\\.9\\))?"
-   },
-   {
-    "name": "Subtypes",
-    "regex": "Subtypes"
-   },
-   {
-    "name": "Specifiers",
-    "regex": "Specifiers"
-   },
-   {
-    "name": "Diagnostic Features",
-    "regex": "Diagnostic Features"
-   },
-   {
-    "name": "Associated Features Supporting Diagnosis",
-    "regex": "Associated Features Supporting Diagnosis|Associated Features"
-   },
-   {
-    "name": "Prevalence",
-    "regex": "Prevalence"
-   },
-   {
-    "name": "Development and Course",
-    "regex": "Development and Course"
-   },
-   {
-    "name": "Risk and Prognostic Factors",
-    "regex": "Risk and Prognostic Factors"
-   },
-   {
-    "name": "Culture-Related Diagnostic Issues",
-    "regex": "Culture-Related Diagnostic Issues"
-   },
-   {
-    "name": "Sex- and Gender-Related Diagnostic Issues",
-    "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
-   },
-   {
-    "name": "Association With Suicidal Thoughts or Behavior",
-    "regex": "Association With Suicidal Thoughts or Behavior|Suicide Risk"
-   },
-   {
-    "name": "Functional Consequences of Schizophrenia",
-    "regex": "Functional Consequences of Schizophrenia"
-   },
-   {
-    "name": "Differential Diagnosis",
-    "regex": "Differential Diagnosis"
-   },
-   {
-    "name": "Comorbidity",
-    "regex": "Comorbidity"
-   }
-  ],
-  "core_phenotype_headings": [
-   "Diagnostic Criteria",
-   "Diagnostic Features",
-   "Associated Features Supporting Diagnosis"
-  ],
-  "running_header_strip_patterns": [
-   "(?mi)^\\s*Schizophrenia\\s*$",
-   "(?mi)^\\s*Schizophrenia Spectrum and Other Psychotic Disorders\\s*$",
-   "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
-   "(?mi)^\\s*\\d+\\s*$"
-  ],
-  "text_replacements": [
-   {
-    "mode": "literal",
-    "find": "Pi;odromal",
-    "replace": "Prodromal",
-    "comment": "pypdf OCR misread: semicolon-for-r"
-   },
-   {
-    "mode": "literal",
-    "find": "conrmion",
-    "replace": "common",
-    "comment": "pypdf OCR misread: rm-for-mm"
-   },
-   {
-    "mode": "literal",
-    "find": "inteφret",
-    "replace": "interpret",
-    "comment": "pypdf OCR misread: Greek phi for rp ligature"
-   },
-   {
-    "mode": "literal",
-    "find": "■",
-    "replace": "",
-    "comment": "stray pypdf mojibake glyph (U+25A0 BLACK SQUARE) — drop"
-   }
-  ]
- },
+ "stage0_dsm5_extraction": {"outdir": "DSM5_SCZ_preprocessed/"},
  "stage1_hpo_curation": {
-  "core_text_input": "DSM5_SCZ_preprocessed/SCZ_core_phenotype_only.txt",
+  "core_text_input": "DSM5_paraphrased/SCZ_core_text.txt",
   "hpo_json_input": "hp.json",
   "outdir": "pilot_hpo_run_scz_v1/",
   "extraction_schema": {
@@ -157,7 +46,7 @@
     "unspecified"
    ]
   },
-  "extraction_prompt_addendum": "DSM-5-TR Schizophrenia Criterion A is polythetic (2 or more of five distinct symptoms; at least one from A.1, A.2, A.3). Route each to its OWN domain: A.1 delusions -> delusions; A.2 hallucinations -> hallucinations; A.3 disorganized speech / formal thought disorder -> disorganized_speech; A.4 grossly disorganized or catatonic behavior -> catatonic_disorganized_behavior (bidirectional: immobility AND excessive purposeless activity, emit two items); A.5 negative symptoms -> negative_symptoms (emit diminished emotional expression and avolition as separate items). Do NOT map any symptom to a salience or PPI substrate: the aberrant-salience endophenotype is the mechanism axis, populated on the mouse side, NOT a face-valid analog of the phenomenology. Do NOT emit cognitive-executive or generic-social items as SCZ criteria (those are DSM associated features, not Criterion A) -> other. Extract phenotype FEATURES as short normalized phrases. Delusions, hallucinations, and disorganized speech have no direct mouse analog; that unmodellability is the result and is captured by those domains scoring near zero.",
+  "extraction_prompt_addendum": "DSM-5-TR Schizophrenia Criterion A is polythetic (2 or more of five distinct symptoms; at least one from A.1, A.2, A.3). Route each to its OWN domain: A.1 delusions -> delusions; A.2 hallucinations -> hallucinations; A.3 disorganized speech / formal thought disorder -> disorganized_speech; A.4 behavior that is grossly disorganized or catatonic -> catatonic_disorganized_behavior (bidirectional: immobility AND excessive purposeless activity, emit two items); A.5 negative symptoms -> negative_symptoms (emit diminished emotional expression and avolition as separate items). Do NOT map any symptom to a salience or PPI substrate: the aberrant-salience endophenotype is the mechanism axis, populated on the mouse side, NOT a face-valid analog of the phenomenology. Do NOT emit cognitive-executive or generic-social items as SCZ criteria (those are DSM associated features, not Criterion A) -> other. Extract phenotype FEATURES as short normalized phrases. Delusions, hallucinations, and disorganized speech have no direct mouse analog; that unmodellability is the result and is captured by those domains scoring near zero.",
   "resolution_prompt_addendum": null,
   "seed_terms_per_domain": {
    "delusions": [
@@ -769,7 +658,7 @@
   "strict": [
    {
     "name": "delusions",
-    "description": "DSM-5-TR SCZ Criterion A.1: delusions, fixed false beliefs <DSM-5-TR text redacted> (persecutory, referential, grandiose, thought insertion/withdrawal/broadcasting).",
+    "description": "DSM-5-TR SCZ Criterion A.1: delusions, firmly held false beliefs that do not shift when evidence runs against them (persecutory, referential, grandiose, thought insertion/withdrawal/broadcasting).",
     "polarity": "negative"
    },
    {
@@ -784,7 +673,7 @@
    },
    {
     "name": "catatonic_disorganized_behavior",
-    "description": "DSM-5-TR SCZ Criterion A.4: grossly disorganized or catatonic behavior, from childlike silliness to unpredictable agitation, and catatonia (immobility, waxy flexibility, mutism, stupor, negativism, posturing, OR excessive purposeless motor activity). PARTIALLY MODELLABLE and the most tractable positive-pole criterion: catatonia has organism-level mouse analogs. Bidirectional (immobility AND excessive activity). Mouse anchors: catalepsy / bar test, waxy flexibility, immobility, locomotor disorganization.",
+    "description": "DSM-5-TR SCZ Criterion A.4: behavior that is grossly disorganized or catatonic, from childlike silliness to agitation that cannot be predicted, and catatonia (immobility, waxy flexibility, mutism, stupor, negativism, posturing, OR excessive purposeless motor activity). PARTIALLY MODELLABLE and the most tractable positive-pole criterion: catatonia has organism-level mouse analogs. Bidirectional (immobility AND excessive activity). Mouse anchors: catalepsy / bar test, waxy flexibility, immobility, locomotor disorganization.",
     "polarity": "bidirectional"
    },
    {

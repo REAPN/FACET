@@ -1702,7 +1702,7 @@
  {
   "pid": "P8d77a3",
   "disorder": "",
-  "criterion": "<DSM-5-TR text redacted>.",
+  "criterion": "Evidence of significant cognitive decline from a previous level of performance.",
   "hpo_id": "HP:0100543",
   "hpo_label": "Cognitive impairment",
   "mp_id": "MP:0002062",

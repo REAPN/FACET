@@ -1,7 +1,6 @@
 {
  "$schema": "./disorder_config.schema.json",
  "$config_version": "1.0",
- "$generated": "2026-06-02 — IntellectualDisability primary-disorder config authored from scz.disorder.json structural template (ID + MDD Tier 0 executor instance). 3-domain strict enum signed off by the first author (intellectual_functioning Crit A / adaptive_functioning Crit B umbrella / developmental_onset Crit C). Stage 0 carved from DSM-5-TR master pages 133-141 -> DSM5_IntellectualDisability.pdf; Diagnostic Criteria trimmed at the (pypdf-garbled) severity Table 1, rich phenotype detail retained via Diagnostic Features. score_floor = universal 0.57 (RL §1, no per-disorder recalibration); lexical_factor_when_structural_missing=0.5 (RL §2); m_family explicit comparator_groups (RL §10); n_mp depth sweep [1,3,4,5,7,10] (RL §3). taxonomy_tsv points to mp_term_taxonomy_id_v1/ (to be built via rebuild_id_taxonomy.py with 15-MP anchor gate).",
  "disorder": {
   "id": "IntellectualDisability",
   "name": "Intellectual Disability",
@@ -15,96 +14,9 @@
    "F79"
   ]
  },
- "stage0_dsm5_extraction": {
-  "pdf_input": "DSM5_IntellectualDisability.pdf",
-  "outdir": "DSM5_IntellectualDisability_preprocessed/",
-  "chapter_start_anchor": "(?m)^\\s*Diagnostic Criteria\\s*$",
-  "chapter_start_anchor_keep": true,
-  "chapter_end_anchor": "(?m)^\\s*Global Developmental Delay\\s*$",
-  "criteria_trim_anchors": [
-   "Note:",
-   "Specify current severity",
-   "Specify if:"
-  ],
-  "text_normalization": {
-   "hyphen_join_min_chars": 2,
-   "criterion_marker_rejoin": true,
-   "paren_note_rejoin": true
-  },
-  "headings_to_extract": [
-   {
-    "name": "Diagnostic Criteria",
-    "regex": "Diagnostic Criteria"
-   },
-   {
-    "name": "Specifiers",
-    "regex": "Specifiers"
-   },
-   {
-    "name": "Diagnostic Features",
-    "regex": "Diagnostic Features"
-   },
-   {
-    "name": "Associated Features Supporting Diagnosis",
-    "regex": "Associated Features Supporting Diagnosis|Associated Features"
-   },
-   {
-    "name": "Prevalence",
-    "regex": "Prevalence"
-   },
-   {
-    "name": "Development and Course",
-    "regex": "Development and Course"
-   },
-   {
-    "name": "Risk and Prognostic Factors",
-    "regex": "Risk and Prognostic Factors"
-   },
-   {
-    "name": "Culture-Related Diagnostic Issues",
-    "regex": "Culture-Related Diagnostic Issues"
-   },
-   {
-    "name": "Sex- and Gender-Related Diagnostic Issues",
-    "regex": "Sex-?\\s*and Gender-Related Diagnostic Issues|Gender-Related Diagnostic Issues"
-   },
-   {
-    "name": "Differential Diagnosis",
-    "regex": "Differential Diagnosis"
-   },
-   {
-    "name": "Comorbidity",
-    "regex": "Comorbidity"
-   }
-  ],
-  "core_phenotype_headings": [
-   "Diagnostic Criteria",
-   "Diagnostic Features",
-   "Associated Features Supporting Diagnosis"
-  ],
-  "running_header_strip_patterns": [
-   "(?mi)^\\s*Intellectual Developmental Disorder\\s*$",
-   "(?mi)^\\s*Neurodevelopmental Disorders\\s*$",
-   "(?mi)^\\s*DSM-5(?:-TR)?\\s*$",
-   "(?mi)^\\s*\\d+\\s*$"
-  ],
-  "text_replacements": [
-   {
-    "mode": "literal",
-    "find": "\u0000",
-    "replace": "",
-    "comment": "strip pypdf NUL bytes (pitfall #10)"
-   },
-   {
-    "mode": "literal",
-    "find": "�",
-    "replace": "",
-    "comment": "strip pypdf replacement-char mojibake"
-   }
-  ]
- },
+ "stage0_dsm5_extraction": {"outdir": "DSM5_IntellectualDisability_preprocessed/"},
  "stage1_hpo_curation": {
-  "core_text_input": "DSM5_IntellectualDisability_preprocessed/IntellectualDisability_core_phenotype_only.txt",
+  "core_text_input": "DSM5_paraphrased/ID_core_text.txt",
   "hpo_json_input": "hp.json",
   "outdir": "pilot_hpo_run_intellectualdisability_v1/",
   "extraction_schema": {
@@ -133,7 +45,7 @@
     "unspecified"
    ]
   },
-  "extraction_prompt_addendum": "DSM-5-TR Intellectual Disability (Intellectual Developmental Disorder) requires ALL THREE criteria: A. Deficits in intellectual functions (<DSM-5-TR text redacted>, learning from experience) -> domain intellectual_functioning. B. Deficits in adaptive functioning across conceptual, social, and/or practical domains (communication, social participation, independent living, self-care, daily-living skills) -> domain adaptive_functioning (a single umbrella domain; do NOT split conceptual/social/practical into separate domains, tag them all as adaptive_functioning). C. Onset during the developmental period -> domain developmental_onset (a temporal criterion; tag onset/milestone/developmental-period features here, temporality='developmental'). There are NO bidirectional domains for ID (all domains are deficit/loss-direction). Severity specifiers (mild/moderate/severe/profound) GRADE the same A/B deficits — extract the described deficits into intellectual_functioning or adaptive_functioning, not as separate items. Extract phenotype FEATURES, not diagnoses or IQ cutoffs. Do NOT extract from Differential Diagnosis exclusions or from the ICD-11 terminology Note. Mouse models cannot directly have 'academic skills' — operationalized downstream via learning/memory and adaptive-behavior paradigms — but extraction here stays at the human-symptom level.",
+  "extraction_prompt_addendum": "DSM-5-TR Intellectual Disability (Intellectual Developmental Disorder) requires ALL THREE criteria: A. Shortfalls in intellectual abilities (for example reasoning, solving problems, planning, abstract thought, judgment, school learning, learning from experience) -> domain intellectual_functioning. B. Deficits in adaptive functioning across conceptual, social, and/or practical domains (communication, social participation, independent living, self-care, daily-living skills) -> domain adaptive_functioning (a single umbrella domain; do NOT split conceptual/social/practical into separate domains, tag them all as adaptive_functioning). C. Shortfalls beginning during development -> domain developmental_onset (a temporal criterion; tag onset/milestone/developmental-period features here, temporality='developmental'). There are NO bidirectional domains for ID (all domains are deficit/loss-direction). Severity specifiers (mild/moderate/severe/profound) GRADE the same A/B deficits — extract the described deficits into intellectual_functioning or adaptive_functioning, not as separate items. Extract phenotype FEATURES, not diagnoses or IQ cutoffs. Do NOT extract from Differential Diagnosis exclusions or from the ICD-11 terminology Note. Mouse models cannot directly have 'academic skills' — operationalized downstream via learning/memory and adaptive-behavior paradigms — but extraction here stays at the human-symptom level.",
   "resolution_prompt_addendum": null,
   "seed_terms_per_domain": {
    "intellectual_functioning": [
@@ -245,7 +157,7 @@
  },
  "stage2_rerank": {
   "outdir": "intellectualdisability_pair_rerank_v1/",
-  "developer_prompt_addendum": "The 3 DSM-5-TR Intellectual Disability criteria define the strict domains: intellectual_functioning (Criterion A — <DSM-5-TR text redacted>, learning from experience), adaptive_functioning (Criterion B umbrella — conceptual/social/practical adaptive skills: communication, social participation, independent living, self-care), developmental_onset (Criterion C — onset during the developmental period). Mouse-proxy guidance: (a) intellectual_functioning: impaired Morris water maze / spatial learning, impaired novel object recognition, working-memory deficits (radial-arm, T-maze delayed alternation), attentional set-shifting, reversal learning, puzzle-box problem-solving -> direct_analog / close_support; generic 'abnormal learning/memory/cognition' -> close_support. (b) adaptive_functioning: abnormal nest-building (Deacon ADL proxy), abnormal burrowing, impaired home-cage self-care/grooming competence, reduced social investigation/participation -> close_support; the social sub-component overlaps with ASD — disambiguation comes downstream via disorder-specific gene evidence, NOT by inflating ID strict-eligibility. (c) developmental_onset: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening), pup USV ontogeny delay -> close_support; BUT most MGI annotations are adult-mouse, so expect sparse strict-eligible coverage — judge on construct merit, do not force analogs. ID NOTE: many ID genes are also ASD/SCZ genes (TSC1, SHANK3, MECP2, FMR1); cross-disorder substrate overlap is expected and handled downstream, not by relaxing the construct-validity bar. There are NO bidirectional domains for ID. strict_eligible=true only for high-quality organism-level analogs suitable for strict ID-domain support.",
+  "developer_prompt_addendum": "The 3 DSM-5-TR Intellectual Disability criteria define the strict domains: intellectual_functioning (Criterion A — reasoning, solving problems, planning, abstract thought, judgment, school learning, learning from experience), adaptive_functioning (Criterion B umbrella — conceptual/social/practical adaptive skills: communication, social participation, independent living, self-care), developmental_onset (Criterion C — shortfalls beginning during development). Mouse-proxy guidance: (a) intellectual_functioning: impaired Morris water maze / spatial learning, impaired novel object recognition, working-memory deficits (radial-arm, T-maze delayed alternation), attentional set-shifting, reversal learning, puzzle-box problem-solving -> direct_analog / close_support; generic 'abnormal learning/memory/cognition' -> close_support. (b) adaptive_functioning: abnormal nest-building (Deacon ADL proxy), abnormal burrowing, impaired home-cage self-care/grooming competence, reduced social investigation/participation -> close_support; the social sub-component overlaps with ASD — disambiguation comes downstream via disorder-specific gene evidence, NOT by inflating ID strict-eligibility. (c) developmental_onset: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening), pup USV ontogeny delay -> close_support; BUT most MGI annotations are adult-mouse, so expect sparse strict-eligible coverage — judge on construct merit, do not force analogs. ID NOTE: many ID genes are also ASD/SCZ genes (TSC1, SHANK3, MECP2, FMR1); cross-disorder substrate overlap is expected and handled downstream, not by relaxing the construct-validity bar. There are NO bidirectional domains for ID. strict_eligible=true only for high-quality organism-level analogs suitable for strict ID-domain support.",
   "behavioral_analog_enum": [
    "direct_analog",
    "close_support",
@@ -706,17 +618,17 @@
   "strict": [
    {
     "name": "intellectual_functioning",
-    "description": "DSM-5-TR Intellectual Disability Criterion A — deficits in intellectual functions: <DSM-5-TR text redacted> clinical assessment and standardized intelligence testing. Folds the learning/memory cognitive sub-pole in (per the first author sign-off: plain 3-domain, not split). Mouse anchors: impaired spatial learning / Morris water maze incl. reversal (Morris 1984), impaired novel object recognition, working-memory deficits (radial-arm maze, T-maze delayed alternation), attentional set-shifting (Birrell & Brown 2000), reversal learning, puzzle-box problem-solving (Ben Abdallah 2011), impaired associative/operant discrimination learning. Literature anchors: Kaplanis 2020 (DDD de novo landscape), Vissers 2016 (ID genetics), Wieczorek 2024.",
+    "description": "DSM-5-TR Intellectual Disability Criterion A — shortfalls in intellectual abilities, for example reasoning, solving problems, planning, thinking in the abstract, judgment, learning in school and learning from experience, shown by clinical assessment and by individually given standardized intelligence tests. Folds the learning/memory cognitive sub-pole in (per the first author sign-off: plain 3-domain, not split). Mouse anchors: impaired spatial learning / Morris water maze incl. reversal (Morris 1984), impaired novel object recognition, working-memory deficits (radial-arm maze, T-maze delayed alternation), attentional set-shifting (Birrell & Brown 2000), reversal learning, puzzle-box problem-solving (Ben Abdallah 2011), impaired associative/operant discrimination learning. Literature anchors: Kaplanis 2020 (DDD de novo landscape), Vissers 2016 (ID genetics), Wieczorek 2024.",
     "polarity": "negative"
    },
    {
     "name": "adaptive_functioning",
-    "description": "DSM-5-TR Intellectual Disability Criterion B (UMBRELLA cluster — conceptual + social + practical adaptive sub-domains held together; deficit in >=1 sub-domain satisfies the criterion). Failure to meet developmental/<DSM-5-TR text redacted>: communication, social participation/judgment, independent living, self-care, daily-living skills, across multiple environments. Kept as an umbrella (not decomposed) to avoid a standalone social axis (ASD-overlap risk) and a near-empty conceptual/academic axis; sub-domain composition is reported descriptively in the close-out. Mouse anchors: nest-building score (Deacon 2006 ADL proxy), burrowing, home-cage self-care/grooming competence, three-chamber social approach (social sub-domain). Literature anchors: AAIDD/Schalock adaptive-behavior framework; Deacon 2006.",
+    "description": "DSM-5-TR Intellectual Disability Criterion B (UMBRELLA cluster — conceptual + social + practical adaptive sub-domains held together; deficit in >=1 sub-domain satisfies the criterion). Not meeting the developmental and sociocultural expectations for independence and social responsibility: communication, social participation/judgment, independent living, self-care, daily-living skills, across multiple environments. Kept as an umbrella (not decomposed) to avoid a standalone social axis (ASD-overlap risk) and a near-empty conceptual/academic axis; sub-domain composition is reported descriptively in the close-out. Mouse anchors: nest-building score (Deacon 2006 ADL proxy), burrowing, home-cage self-care/grooming competence, three-chamber social approach (social sub-domain). Literature anchors: AAIDD/Schalock adaptive-behavior framework; Deacon 2006.",
     "polarity": "negative"
    },
    {
     "name": "developmental_onset",
-    "description": "DSM-5-TR Intellectual Disability Criterion <DSM-5-TR text redacted> (before age 18). Mouse anchors: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening; Fox 1965), pup USV ontogeny delay. EXPECTED NEAR-STRUCTURAL-ZERO domain: MGI annotations are overwhelmingly adult-mouse, so strict-eligible coverage is expected to be sparse (analogous to SCZ salience_dysregulation). Reported transparently as a coverage floor + flagged as an endophenotype-layer candidate, not dropped. Literature anchors: Fox 1965; Kaplanis 2020 (developmental-onset framing of DDD).",
+    "description": "DSM-5-TR Intellectual Disability Criterion C — the intellectual and adaptive shortfalls begin during development (before age 18). Mouse anchors: delayed developmental milestones, Fox neonatal battery abnormalities (righting reflex, negative geotaxis, eye-opening; Fox 1965), pup USV ontogeny delay. EXPECTED NEAR-STRUCTURAL-ZERO domain: MGI annotations are overwhelmingly adult-mouse, so strict-eligible coverage is expected to be sparse (analogous to SCZ salience_dysregulation). Reported transparently as a coverage floor + flagged as an endophenotype-layer candidate, not dropped. Literature anchors: Fox 1965; Kaplanis 2020 (developmental-onset framing of DDD).",
     "polarity": "negative"
    }
   ]

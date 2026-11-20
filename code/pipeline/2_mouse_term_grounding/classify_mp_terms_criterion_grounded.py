@@ -16,7 +16,7 @@ try:
 except Exception:
     TRANSIENT = ()
 
-PROMPT_VERSION = "v4_2026-07-27"
+PROMPT_VERSION = "v5_paraphrased_2026-11-19"
 
 
 def _is_permanent(e):

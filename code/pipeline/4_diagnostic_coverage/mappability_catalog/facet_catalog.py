@@ -357,7 +357,7 @@ def add_disorder(did):
     spine_ok = os.path.exists(os.path.join(BASE, p['dsm5'], "01_diagnostic_criteria.txt"))
     step(f"[stage0/spine] {p['dsm5']}/01_diagnostic_criteria.txt : {'present' if spine_ok else 'MISSING -> run:'}")
     if not spine_ok:
-        step(f'    python3 extract_dsm5.py --config {DISORDER_CONFIG[did]} --pdf "DSM 5 TR-APA 2022.pdf" --outdir {p["dsm5"]}/')
+        step(f'    place the paraphrased criterion file at {p["dsm5"]}/01_diagnostic_criteria.txt')
         return log
     res_ok = os.path.exists(os.path.join(BASE, p['pilot'], "06b_llm_hpo_resolutions.csv"))
     if not res_ok:
