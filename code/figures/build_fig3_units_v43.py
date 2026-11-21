@@ -19,7 +19,7 @@ U = {'ASD': [('A1', 'social reciprocity', 76, 637), ('A2', 'nonverbal communicat
 HIST = {'ASD': [4, 1, 14, 18, 28, 19, 1, 0], 'SCZ': [6, 11, 25, 0, 0, 0], 'IDD': [47, 48, 26], 'NCD': [24, 47, 0], 'MDD': [0, 0, 7, 0, 1, 0, 0, 0, 0, 0]}
 ORDER = ['ASD', 'SCZ', 'IDD', 'NCD', 'MDD']
 
-fig = plt.figure(figsize=(7.5, 11.0), dpi=300)
+fig = plt.figure(figsize=(9.4, 11.0), dpi=300)
 fig.text(0.01, 0.99, 'A', fontsize=14, fontweight='bold', va='top')
 fig.text(0.05, 0.988, 'Curated models by the number of criterion units credited (red: none)', fontsize=11, va='top', color=INK)
 POS = {'ASD': [0.08, 0.875, 0.25, 0.085], 'SCZ': [0.41, 0.875, 0.19, 0.085], 'IDD': [0.70, 0.875, 0.14, 0.085],
@@ -39,7 +39,7 @@ for D in ORDER:
 
 fig.text(0.01, 0.675, 'B', fontsize=14, fontweight='bold', va='top')
 fig.text(0.05, 0.673, 'Percent of curated models and of background genotypes credited with each criterion unit', fontsize=11, va='top', color=INK)
-axB = fig.add_axes([0.47, 0.04, 0.51, 0.6])
+axB = fig.add_axes([0.36, 0.04, 0.39, 0.6])
 rows = []; y = 0; ticks = []; labels = []; colors = []; groups = []
 STEP = 1.3
 for D in ORDER:
@@ -56,18 +56,21 @@ for yy, D, code, gloss, cp, bp, c in rows:
     if c == 0 and bp == 0:
         axB.text(1.5, yy, kind, va='center', fontsize=9.5, color=RED, style='italic'); continue
     if c == 0 and kind:
-        axB.text(bp + 1.5, yy + bh / 2, f'{bp:.1f}', va='center', fontsize=9, color='#2a6db0')
-        axB.text(max(bp + 12, 30), yy - bh / 2, kind, va='center', fontsize=9.5, color=RED, style='italic'); continue
-    axB.text(cp + 1.5, yy - bh / 2, f'{cp:.0f}', va='center', fontsize=9, color=DARK)
-    axB.text(bp + 1.5, yy + bh / 2, f'{bp:.1f}', va='center', fontsize=9, color='#2a6db0')
+        axB.text(bp + 1.5, yy, f'{bp:.1f}', va='center', fontsize=9, color='#2a6db0')
+        axB.text(max(bp + 12, 30), yy, kind, va='center', fontsize=9.5, color=RED, style='italic'); continue
+    xr = max(cp, bp) + 1.5; s1 = f'{cp:.0f}'
+    axB.text(xr, yy, s1, va='center', fontsize=9, color=DARK)
+    axB.text(xr + 2.6 * len(s1) + 2.2, yy, f'{bp:.1f}', va='center', fontsize=9, color='#2a6db0')
 axB.set_yticks(ticks); axB.set_yticklabels(labels, fontsize=9.5)
 for t, c in zip(axB.get_yticklabels(), colors): t.set_color(c)
-axB.set_ylim(y - 0.9 - 0.3, -0.8); axB.set_xlim(0, 114); axB.set_xticks([0, 25, 50, 75, 100]); axB.tick_params(axis='x', labelsize=9); axB.tick_params(axis='y', length=0)
+axB.set_ylim(y - 0.9 - 0.3, -0.8); axB.set_xlim(0, 122); axB.set_xticks([0, 25, 50, 75, 100]); axB.tick_params(axis='x', labelsize=9); axB.tick_params(axis='y', length=0)
 axB.set_xlabel('percent credited with the unit', fontsize=10)
 for s_ in ('top', 'right'): axB.spines[s_].set_visible(False)
 XB = -72
 for D, ya, yb in groups:
     axB.plot([XB + 2, XB, XB, XB + 2], [ya - 0.45, ya - 0.45, yb + 0.45, yb + 0.45], color=INK, lw=1.1, clip_on=False)
     axB.text(XB - 2.5, (ya + yb) / 2, f'{D}\n({N[D][0]})', ha='right', va='center', fontsize=10, fontweight='bold', color=INK, clip_on=False, linespacing=1.1)
-axB.legend(handles=[Patch(color=DARK, label='curated models'), Patch(color=LIGHT, label='background genotypes')], loc='upper right', bbox_to_anchor=(1.0, 0.75), fontsize=9.5, frameon=False)
-fig.savefig('fig3_units_2026-11-08.png', dpi=300, facecolor='white'); print('ok')
+leg = axB.legend(handles=[Patch(color=DARK, label='curated models\n(first value, dark)'), Patch(color=LIGHT, label='background genotypes\n(second value, light)')],
+                 loc='upper left', bbox_to_anchor=(1.03, 0.985), fontsize=9.5, frameon=False, labelspacing=0.8, borderaxespad=0)
+for txt, col in zip(leg.get_texts(), (DARK, '#2a6db0')): txt.set_color(col)
+fig.savefig('fig3_units_2026-11-20.png', dpi=300, facecolor='white'); print('ok')

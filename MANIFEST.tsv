@@ -1,7 +1,7 @@
 repo_path	original_path	bytes	sha256	role	reported_in	note
 .gitignore		69	fb4a4125ca20205a60029ae0558540bed966211a7d3158cddd282b4eb29af8fc	tool		
-README.md		9316	e5a5610abed12b6ef38af988c73b590708d5a838c4d820b0425d019363bca2bf	documentation		
-code/README.md		16649	83d9581ee23621e7ed35e632f83ac9b33e8cdc9f40ebff5d57735e8ca6492064	documentation		
+README.md		9224	1d5a1741f9a9516c9cf220098a49bbcdbc2380666177bd79f7580a9ed3d86797	documentation		
+code/README.md		16649	e4f229725437d8a98737f92a16c316b07153a571db1d45783a575a75277dc971	documentation		
 code/analyses/anchor_gate_2026-11-07/RUN.md	audit/anchor_gate_2026-11-07/RUN.md	1893	fdeefd27f1ea3bbfee6086e321c69b354bae87a1c1df5255a3442dc0e3cbfa85	driver or pre-specification	S21 and S22 Tables	personal names replaced by roles
 code/analyses/anchor_gate_2026-11-07/build_gate_sets.py	audit/anchor_gate_2026-11-07/build_gate_sets.py	4479	99669423e5dc8330fc0b864dcacaf265ea57e926ca355c9ebd167f95b84094a6	analysis code	S21 and S22 Tables	comments and docstrings removed, statements unchanged
 code/analyses/anchor_gate_2026-11-07/run_scz_gate.py	audit/anchor_gate_2026-11-07/run_scz_gate.py	568	d8f7a08555eba481375fbd001e0043a0944a6b0116c766cee8009e147977461c	analysis code	S21 and S22 Tables	comments and docstrings removed, statements unchanged
@@ -93,8 +93,8 @@ code/expert_study/_rating_analysis_v9.py	_rating_analysis_v9.py	19668	0b29127989
 code/expert_study/_rating_criterion_map.py	_rating_criterion_map.py	1901	33856c03aeeae49acf8ae4b620b2fda233f2d76584ed541d6f55111a785f5bd8	pipeline or analysis module	Methods, expert study	comments and docstrings removed, statements unchanged
 code/expert_study/_rating_pilot_build_v9.py	_rating_pilot_build_v9.py	13510	cd19ad41b8ae340a8735ee4ca0ba7c31b6063b6e1746b4fbffe793d07d75003b	pipeline or analysis module	Methods, expert study	comments and docstrings removed, statements unchanged
 code/expert_study/_rating_pilot_render_v9.py	_rating_pilot_render_v9.py	19487	8893b7c93e7f5cce0b95a1742b2b607b7e18558c2deeb925739ec124dab4a394	pipeline or analysis module	Methods, expert study	comments and docstrings removed, statements unchanged
-code/figures/build_fig1_flow_v38.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig1_flow_v38.py	5903	3abe39835c92919ef36ce343e14efe929bc8e81d205a64ce007e6ffd02723b2d	figure builder	Figure 1	comments and docstrings removed, statements unchanged
-code/figures/build_fig3_units_v22.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig3_units_v22.py	5622	e4e7f45d2abee25cd383c19771a22e69133778ed92e1f6767729634025e42f6b	figure builder	Figure 2	comments and docstrings removed, statements unchanged
+code/figures/build_fig1_flow_v43.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig1_flow_v43.py	6946	cf419a326ceabaa6249038bd780fcf42d7abf5901076933868206068b684ad98	figure builder	Figure 1	comments and docstrings removed, statements unchanged
+code/figures/build_fig3_units_v43.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig3_units_v43.py	5811	7403a9cf0e557a742313fd9804a7479b2cac608c250f192105f2b4c0bc4e9597	figure builder	Figure 2	comments and docstrings removed, statements unchanged
 code/figures/build_fig5_top10_v19.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig5_top10_v19.py	4813	122edfa3895f4a51ec79b077abb05d6b545b1ed6bd7021d8c93ee114ad05c576	figure builder	Figure 4	comments and docstrings removed, statements unchanged
 code/figures/build_fig6_auroc_v22.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig6_auroc_v22.py	2635	5fc8f1c585b6ca9a14fdeb96f55e4bae0fe331625674f027d9e901113050e454	figure builder	S2 Fig	comments and docstrings removed, statements unchanged
 code/figures/build_fig7_raters_v37.py	FACET_SEND_PACKAGE_2026-09-10/fig_builders/build_fig7_raters_v37.py	3261	9f27c0214fd6d94ac3d2fd3ab7ca785e91d45a5938b6ea01b56ea6cccbfe49de	figure builder	Figure 5	comments and docstrings removed, statements unchanged
@@ -417,8 +417,8 @@ outputs/6_validation/judgment_floor/build_floor_arms.json	audit/floor_sweep_reco
 outputs/6_validation/multiplicity/S4_holm_family.tsv		1541	fa2629e5236582713a017ca9853b48781b7d2198566cb0ecd4f21f46a53ff0c8	result of record	S4 Table	the 16 headline claims on the labels of record, written by s4_holm_recompute.py, 2026-11-10
 outputs/6_validation/power/RESULT_power.md	audit/power_2026-11-18/RESULT_power.md	438	c7bb1848f74ae1025f86c897d638ab3982268b5ac06bee830c01cd9fc3fa3538	result of record	S32 Table	
 outputs/README.md		2587	9434483d69bbf85e38091173ef01d19c45f5e27a3f53ca876e126964def4f77b	documentation		
-outputs/figures/Figure_1__fig1_flow_2026-11-19.png		204303	2c2f68b2ab1c51eb99e6636542da191eba4b98062044c33a8b05362d284026ac	result of record	Figure 1	
-outputs/figures/Figure_2__fig3_units_2026-11-08.png		629558	2a53801b487c8064e07c473e722143086ba556c95a4e734c208fa1dd46e62f57	result of record	Figure 2	
+outputs/figures/Figure_1__fig1_flow_2026-11-20.png		215271	7db9c82e99d4481e62bb1ed9dcdb8467bcaa4843d7fbd4e41b7b7efb5b43bfdb	result of record	Figure 1	
+outputs/figures/Figure_2__fig3_units_2026-11-20.png		677826	90bbebd3599801931badbf1445d2f42ecaae3a0ccfabf1470f64b1ab1eff2af1	result of record	Figure 2	
 outputs/figures/Figure_3__fig_composition_2026-11-06d.png		445544	760042e43a86d6be1d68813551ad460aecd56050b361bff0d3e8537a29c2fed8	result of record	Figure 3	
 outputs/figures/Figure_4__fig5_top10_2026-11-07.png		596525	3bcf8749a05fc1a1390ffcece7ecb1d3c9c03a6e620ac601aaa8471719c4a7ba	result of record	Figure 4	
 outputs/figures/Figure_5__fig7_raters_2026-11-17.png		250221	4dbbe1c94d30169724e0cff9e8ba24240203579b382d6b76b489a3043d4cbd39	result of record	Figure 5	

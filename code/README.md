@@ -127,8 +127,8 @@ Generated from `MANIFEST.tsv`.
 | `expert_study/_rating_criterion_map.py` | Methods, expert study |
 | `expert_study/_rating_pilot_build_v9.py` | Methods, expert study |
 | `expert_study/_rating_pilot_render_v9.py` | Methods, expert study |
-| `figures/build_fig1_flow_v38.py` | Figure 1 |
-| `figures/build_fig3_units_v22.py` | Figure 2 |
+| `figures/build_fig1_flow_v43.py` | Figure 1 |
+| `figures/build_fig3_units_v43.py` | Figure 2 |
 | `figures/build_fig5_top10_v19.py` | Figure 4 |
 | `figures/build_fig6_auroc_v22.py` | S2 Fig |
 | `figures/build_fig7_raters_v37.py` | Figure 5 |
